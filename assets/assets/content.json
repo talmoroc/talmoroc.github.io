@@ -1,0 +1,106 @@
+{
+  "content": [
+    {
+      "id": "1",
+      "title": "Musiques pour un jeu-vidéo qui n'existe pas",
+      "description": "Projet de bande son imaginaire pour un jeu-vidéo",
+      "categories": [
+        "games",
+        "music"
+      ],
+      "thumbnail":"assets/content_item_thumbnails/picture.webp",
+      "attributes": {
+        "url": "soundcloud.com/monotom"
+      },
+      "type": "project"
+    },
+    {
+      "id": "2",
+      "title": "Soirs à Pressoirs 2018",
+      "description": "Musique et son pour l'édition 2018 festival de théâtre Soirs à Pressoirs",
+      "categories": [
+        "music",
+        "theatre"
+      ],
+      "thumbnail":"assets/content_item_thumbnails/picture.webp",
+      "attributes": {},
+      "type": "project",
+      "children": [
+        {
+          "id": "2a",
+          "title": "Brûle Harold (tant tu trouveras l'essence)",
+          "description": "Musique concrète à partir de sons industriels",
+          "type": "soundcloud",
+          "attributes": {
+            "url": "soundcloud.com/monotom"
+          }
+        },
+        {
+          "id": "2b",
+          "title": "L'enterrement de Madame Rose",
+          "description": "Musique instrumentale",
+          "type": "soundcloud",
+          "attributes": {
+            "url": "soundcloud.com/monotom"
+          }
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "DeepCarrol",
+      "description": "ML Project to generate surrealist text with the style of Lewis Carroll",
+      "categories": [
+        "ml",
+        "maths",
+        "literature"
+      ],
+      "thumbnail":"assets/content_item_thumbnails/picture.webp",
+      "attributes": {
+        "url": "github.com/monotom/deepcarrol"
+      },
+      "type": "project"
+    },
+    {
+      "id": "4",
+      "title": "Deep Musical Training",
+      "description": "Application mobile permettant d'entraîner son oreille musicale avec l'aide d'intelligence artificielle",
+      "categories": [
+        "maths",
+        "ml",
+        "games"
+      ],
+      "thumbnail":"assets/content_item_thumbnails/picture.webp",
+      "attributes": {
+        "url": "github.com/monotom/deepcarrol"
+      },
+      "type": "project"
+    },
+    {
+      "id": "5",
+      "title": "Le cercle familial",
+      "description": "Pièce de théâtre autobiographique",
+      "categories": [
+        "theatre"
+      ],
+      "thumbnail":"assets/content_item_thumbnails/picture.webp",
+      "attributes": {
+        "url": "github.com/monotom"
+      },
+      "type": "document"
+    },
+    {
+      "id": "6",
+      "title": "Bio",
+      "description": "Blablabla",
+      "categories": [
+        "about"
+      ],
+      "thumbnail":"assets/content_item_thumbnails/picture.webp",
+      "attributes": {
+        "url": "github.com/monotom"
+      },
+      "type": "document"
+    }
+  ]
+}
