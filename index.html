@@ -104,6 +104,7 @@
 
         #errorMessage {
             color: #dc3545; /* Bootstrap danger color */
+            /* margin-top: 10px; Removed as giveUpButton has margin-bottom */
             min-height: 1.2em; /* Reserve space to prevent layout shift */
             font-size: 0.9em;
         }
@@ -116,16 +117,12 @@
             width: 100%;
             height: 100%;
             background-color: #000; /* Background for the fullscreen image area */
-            display: flex; /* For centering the image if it's smaller */
-            align-items: center; /* For centering the image if it's smaller */
-            justify-content: center; /* For centering the image if it's smaller */
         }
 
         #fullscreen-image {
-            max-width: 100%;  /* Use max-width and max-height with contain */
-            max-height: 100%;
-            object-fit: contain; /* Ensures the whole image is visible, letterboxed if necessary */
-            /* object-position is implicitly center with flexbox on parent, but good to keep if parent wasn't flex */
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
             object-position: center center;
         }
 
@@ -153,7 +150,7 @@
         <p id="errorMessage"></p>
     </div>
 
-    <div id="fullscreen-image-container" style="display: none;"> <!-- Initially hidden via style attribute for clarity -->
+    <div id="fullscreen-image-container">
         <img id="fullscreen-image" src="assets/texte_chinois.png" alt="Texte Chinois - Félicitations !">
     </div>
 
@@ -174,24 +171,10 @@
             const questionImageElement = document.getElementById('questionImage');
             const nameInputElement = document.getElementById('nameInput');
             const validateButtonElement = document.getElementById('validateButton');
-            const giveUpButtonElement = document.getElementById('giveUpButton');
+            const giveUpButtonElement = document.getElementById('giveUpButton'); // Get the new button
             const initialViewElement = document.getElementById('initial-view');
             const fullscreenImageContainerElement = document.getElementById('fullscreen-image-container');
             const errorMessageElement = document.getElementById('errorMessage');
-
-            /**
-             * Normalizes a string by trimming, converting to lowercase, and removing diacritics.
-             * @param {string} str The string to normalize.
-             * @returns {string} The normalized string.
-             */
-            function normalizeString(str) {
-                if (typeof str !== 'string') return '';
-                return str
-                    .trim()
-                    .toLowerCase()
-                    .normalize("NFD") // Decomposes combined graphemes into base characters and diacritics
-                    .replace(/[\u0300-\u036f]/g, ""); // Removes diacritical marks
-            }
 
             function loadQuestion(index) {
                 if (index < questions.length) {
@@ -203,12 +186,11 @@
                     errorMessageElement.textContent = '';
                     nameInputElement.focus();
                     initialViewElement.style.display = 'block';
-                    fullscreenImageContainerElement.style.display = 'none'; // Ensure fullscreen is hidden
                     questionTitleElement.style.display = 'block';
-                    document.body.style.backgroundColor = '#e9ebee'; // Reset background
 
+                    // Show "Give Up" button only for the last question
                     if (index === questions.length - 1) {
-                        giveUpButtonElement.style.display = 'inline-block';
+                        giveUpButtonElement.style.display = 'inline-block'; // Or 'block' if you prefer full width
                     } else {
                         giveUpButtonElement.style.display = 'none';
                     }
@@ -220,18 +202,15 @@
 
             function showFullscreenImage() {
                 initialViewElement.style.display = 'none';
-                fullscreenImageContainerElement.style.display = 'flex'; // Changed from 'block' to 'flex' to use align/justify
+                fullscreenImageContainerElement.style.display = 'block';
                 document.body.style.backgroundColor = '#000';
             }
 
             validateButtonElement.addEventListener('click', function() {
-                const enteredName = nameInputElement.value; // Raw input
+                const enteredName = nameInputElement.value.trim();
                 const correctAnswer = questions[currentQuestionIndex].answer;
 
-                const normalizedEnteredName = normalizeString(enteredName);
-                const normalizedCorrectAnswer = normalizeString(correctAnswer);
-
-                if (normalizedEnteredName === normalizedCorrectAnswer) {
+                if (enteredName === correctAnswer) {
                     currentQuestionIndex++;
                     loadQuestion(currentQuestionIndex);
                 } else {
@@ -240,7 +219,6 @@
                     setTimeout(() => {
                          nameInputElement.classList.remove('input-error-shake');
                     }, 500);
-                    nameInputElement.select(); // Select text for easy correction
                     nameInputElement.focus();
                 }
             });
@@ -252,6 +230,7 @@
                 }
             });
 
+            // Event listener for the "Give Up" button
             giveUpButtonElement.addEventListener('click', function() {
                 showFullscreenImage();
             });
