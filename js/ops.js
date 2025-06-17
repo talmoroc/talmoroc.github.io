@@ -9107,200 +9107,6 @@ CABLES.OPS["e6f8de46-65d9-41f1-8bdf-47b17f17e89a"]={f:Ops.Local.ScreenOrientatio
 
 // **************************************************************
 // 
-// Ops.Patch.PMZcxaN.FruchtermanReingoldComputation
-// 
-// **************************************************************
-
-Ops.Patch.PMZcxaN.FruchtermanReingoldComputation= class extends CABLES.Op 
-{
-constructor()
-{
-super(...arguments);
-const op=this;
-const attachments=op.attachments={};
-const exec = op.inTrigger("Execute");
-const reset = op.inTrigger("Reset");
-const n = op.inInt("Graph Size");
-const pos = op.inArray("Positions");
-const adj = op.inArray("Adjacency Matrix");
-const textScaleFactorIn = op.inArray("Node Text Sizes 2D");
-const initTemp = op.inFloat("Initial Temperature", 1.0);
-const cooldown = op.inFloat("Cooldown", 0.005);
-const densityIn = op.inFloat("Density", 0.8);
-const centerGraph = op.inBool("Center Graph in Bounds", true);
-const aspectRatioIn = op.inFloat("Aspect Ratio", 1);
-const marginIn = op.inFloat("Margin", 0.1);
-const categoriesCountIn = op.inInt("Categories Count");
-const categoriesBoundsIn = op.inObject("Categories Bounds");
-const contentBoundsIn = op.inObject("Content Bounds");
-const nodesMaskIn = op.inArray("Nodes Mask");
-const nodesSelectionIn = op.inArray("Nodes Selected");
-
-
-const next = op.outTrigger("Trigger");
-const nextPos = op.outArray("Next Positions");
-
-let currentTemperature = initTemp.get();
-
-reset.onTriggered = () => {
-    currentTemperature = initTemp.get();
-};
-
-function calculateBoundaryForceComponent(coord, minBound, maxBound, k, strength) {
-    let force = 0;
-    let distToMin = coord - minBound;
-    if (distToMin < k && distToMin > 0) {
-        force += strength * (k / distToMin);
-    } else if (distToMin <= 0) {
-        force += strength * 2;
-    }
-
-    let distToMax = maxBound - coord;
-    if (distToMax < k && distToMax > 0) {
-        force -= strength * (k / distToMax);
-    } else if (distToMax <= 0) {
-        force -= strength * 2;
-    }
-    return force;
-}
-
-exec.onTriggered = () => {
-    let positions = pos.get();
-    let adjacencyMatrixFlat = adj.get();
-    const numNodes = n.get();
-    const coolDownRate = cooldown.get();
-    const epsilon = 1e-6; // prevent division by zero
-    const shouldCenter = centerGraph.get();
-    const density = densityIn.get();
-    const aspectRatio = aspectRatioIn.get();
-    const margin = marginIn.get();
-    const textScaleFactor = textScaleFactorIn.get();
-
-    const bMinY = (-1 + margin);
-    const bMaxY = (1 - margin);
-    const bMinX = aspectRatio * bMinY;
-    const bMaxX = aspectRatio * bMaxY;
-
-    const categoriesCount = categoriesCountIn.get();
-    const categoriesBounds =categoriesBoundsIn.get();
-    const contentBounds = contentBoundsIn.get();
-    const nodesMask = nodesMaskIn.get();
-    const nodesSelection = nodesSelectionIn.get();
-
-    const k = Math.sqrt((bMaxX - bMinX) * (bMaxY - bMinY) / numNodes);
-    const kSquared = k * k;
-
-    const displacementsFlat = new Float32Array(numNodes * 2); // [dx0, dy0, dx1, dy1, ...]
-
-    // Calculate Repulsive and Attractive Forces
-    for (let i = 0; i < numNodes; i++) {
-        const iPos_x = positions[i * 2];
-        const iPos_y = positions[i * 2 + 1];
-
-        for (let j = i + 1; j < numNodes; j++) {
-            const jPos_x = positions[j * 2];
-            const jPos_y = positions[j * 2 + 1];
-
-            let deltaX = iPos_x - jPos_x;
-            let deltaY = iPos_y - jPos_y;
-
-            let distanceSq = deltaX * deltaX + deltaY * deltaY;
-            let distance = Math.sqrt(distanceSq);
-            distance = Math.max(epsilon, distance); // Avoid division by zero
-
-            const dirX = deltaX / distance;
-            const dirY = deltaY / distance;
-
-            // Repulsive force
-            const repulsiveForceMag = kSquared / distance;
-            if(nodesMask[i] != 0 && nodesMask[j] != 0) {
-            displacementsFlat[i * 2]     += dirX * repulsiveForceMag;
-            displacementsFlat[i * 2 + 1] += dirY * repulsiveForceMag;
-            displacementsFlat[j * 2]     -= dirX * repulsiveForceMag;
-            displacementsFlat[j * 2 + 1] -= dirY * repulsiveForceMag;
-
-
-            // Attractive force (if edge exists)
-            const edgeWeight = adjacencyMatrixFlat[i * numNodes + j];
-            if (edgeWeight > 0) {
-                const attractiveForceMag = (distanceSq / k) * edgeWeight * (1 / density);
-                displacementsFlat[i * 2]     -= dirX * attractiveForceMag;
-                displacementsFlat[i * 2 + 1] -= dirY * attractiveForceMag;
-                displacementsFlat[j * 2]     += dirX * attractiveForceMag;
-                displacementsFlat[j * 2 + 1] += dirY * attractiveForceMag;
-            }
-            }
-        }
-    }
-
-    // Add forces to repel from boundaries ---
-    if (shouldCenter) {
-        const boundaryForceStrength = currentTemperature * 10;
-        for (let i = 0; i < numNodes; i++) {
-            let currentBounds;
-
-            const isCategory = i < categoriesCount;
-            if(isCategory) {
-                currentBounds = categoriesBounds;
-            } else {
-                currentBounds = contentBounds;
-            }
-            displacementsFlat[i * 2]     += calculateBoundaryForceComponent(positions[i * 2],     currentBounds.minX, currentBounds.maxX, k, boundaryForceStrength);
-            displacementsFlat[i * 2 + 1] += calculateBoundaryForceComponent(positions[i * 2 + 1], currentBounds.minY, currentBounds.maxY, k, boundaryForceStrength);
-        }
-    }
-
-    // Update Positions
-    const newPositionsFlatOutput = new Float32Array(numNodes * 2);
-    for (let i = 0; i < numNodes; i++) {
-        if (nodesMask[i] != 0) {
-            const dispX = displacementsFlat[i * 2];
-            const dispY = displacementsFlat[i * 2 + 1];
-
-            const dispMagSq = dispX * dispX + dispY * dispY;
-            let finalDispX = 0;
-            let finalDispY = 0;
-
-            if (dispMagSq > epsilon * epsilon) { // Check against squared epsilon to avoid sqrt
-                const dispMag = Math.sqrt(dispMagSq);
-                const limitedMovement = Math.min(dispMag, currentTemperature);
-                finalDispX = (dispX / dispMag) * limitedMovement;
-                finalDispY = (dispY / dispMag) * limitedMovement;
-            }
-
-            let newX = positions[i * 2]     + finalDispX;
-            let newY = positions[i * 2 + 1] + finalDispY;
-
-            // Clamp positions to the defined boundaries
-            newX = Math.max(bMinX, Math.min(bMaxX, newX));
-            newY = Math.max(bMinY, Math.min(bMaxY, newY));
-
-            newPositionsFlatOutput[i * 2]     = newX;
-            newPositionsFlatOutput[i * 2 + 1] = newY;
-        }
-        else {
-            newPositionsFlatOutput[i * 2]     = positions[i * 2];
-            newPositionsFlatOutput[i * 2 + 1] = positions[i * 2 + 1];
-
-        }
-
-    }
-
-    currentTemperature = Math.max(0, currentTemperature - coolDownRate);
-
-    nextPos.set(newPositionsFlatOutput);
-    next.trigger();
-};
-}
-};
-
-CABLES.OPS["c15fb7f1-52d1-4b9d-b999-f067e7deeb9f"]={f:Ops.Patch.PMZcxaN.FruchtermanReingoldComputation,objName:"Ops.Patch.PMZcxaN.FruchtermanReingoldComputation"};
-
-
-
-
-// **************************************************************
-// 
 // Ops.Local.ExtractContentNodesPositions
 // 
 // **************************************************************
@@ -9555,95 +9361,6 @@ triggerIn.onTriggered = () => {
 };
 
 CABLES.OPS["ce79e9f4-fb85-46de-9cce-e4f03a163b96"]={f:Ops.Patch.PMZcxaN.DrawVariableWidthEdgesContent,objName:"Ops.Patch.PMZcxaN.DrawVariableWidthEdgesContent"};
-
-
-
-
-// **************************************************************
-// 
-// Ops.Trigger.TriggerOnChangeArray_v2
-// 
-// **************************************************************
-
-Ops.Trigger.TriggerOnChangeArray_v2= class extends CABLES.Op 
-{
-constructor()
-{
-super(...arguments);
-const op=this;
-const attachments=op.attachments={};
-const
-    inval = op.inArray("Array"),
-    next = op.outTrigger("Changed"),
-    outArr = op.outArray("Result");
-
-inval.onChange = function ()
-{
-    outArr.set(inval.get());
-    next.trigger();
-};
-
-op.init = () =>
-{
-    if (inval.get())next.trigger();
-};
-
-}
-};
-
-CABLES.OPS["cd51b224-eef4-4f32-a4ca-7d5a5a594b7a"]={f:Ops.Trigger.TriggerOnChangeArray_v2,objName:"Ops.Trigger.TriggerOnChangeArray_v2"};
-
-
-
-
-// **************************************************************
-// 
-// Ops.Trigger.NthTrigger_v2
-// 
-// **************************************************************
-
-Ops.Trigger.NthTrigger_v2= class extends CABLES.Op 
-{
-constructor()
-{
-super(...arguments);
-const op=this;
-const attachments=op.attachments={};
-let DEFAULT_NTH = 5;
-
-// inputs
-let exePort = op.inTriggerButton("Execute");
-let nthPort = op.inValue("Nth", DEFAULT_NTH);
-
-// outputs
-let triggerPort = op.outTrigger("Next");
-
-let count = 0;
-let nth = DEFAULT_NTH;
-
-exePort.onTriggered = onExeTriggered;
-nthPort.onChange = valueChanged;
-
-function onExeTriggered()
-{
-    count++;
-    if (count % nth === 0)
-    {
-        count = 0;
-        triggerPort.trigger();
-    }
-}
-
-function valueChanged()
-{
-    nth = nthPort.get();
-    count = 0;
-}
-
-}
-};
-
-CABLES.OPS["ea43c184-5842-4aa1-b298-5db4515cbed0"]={f:Ops.Trigger.NthTrigger_v2,objName:"Ops.Trigger.NthTrigger_v2"};
 
 
 
@@ -10215,6 +9932,200 @@ colorSelectedIn.onChange = updateColors;
 };
 
 CABLES.OPS["7ef0826b-08c4-4044-b560-39476c1c66d5"]={f:Ops.Patch.PMZcxaN.EdgesColor,objName:"Ops.Patch.PMZcxaN.EdgesColor"};
+
+
+
+
+// **************************************************************
+// 
+// Ops.Patch.PMZcxaN.FruchtermanReingoldComputation
+// 
+// **************************************************************
+
+Ops.Patch.PMZcxaN.FruchtermanReingoldComputation= class extends CABLES.Op 
+{
+constructor()
+{
+super(...arguments);
+const op=this;
+const attachments=op.attachments={};
+const exec = op.inTrigger("Execute");
+const reset = op.inTrigger("Reset");
+const n = op.inInt("Graph Size");
+const pos = op.inArray("Positions");
+const adj = op.inArray("Adjacency Matrix");
+const textScaleFactorIn = op.inArray("Node Text Sizes 2D");
+const initTemp = op.inFloat("Initial Temperature", 1.0);
+const cooldown = op.inFloat("Cooldown", 0.005);
+const densityIn = op.inFloat("Density", 0.8);
+const centerGraph = op.inBool("Center Graph in Bounds", true);
+const aspectRatioIn = op.inFloat("Aspect Ratio", 1);
+const marginIn = op.inFloat("Margin", 0.1);
+const categoriesCountIn = op.inInt("Categories Count");
+const categoriesBoundsIn = op.inObject("Categories Bounds");
+const contentBoundsIn = op.inObject("Content Bounds");
+const nodesMaskIn = op.inArray("Nodes Mask");
+const nodesSelectionIn = op.inArray("Nodes Selected");
+
+
+const next = op.outTrigger("Trigger");
+const nextPos = op.outArray("Next Positions");
+
+let currentTemperature = initTemp.get();
+
+reset.onTriggered = () => {
+    currentTemperature = initTemp.get();
+};
+
+function calculateBoundaryForceComponent(coord, minBound, maxBound, k, strength) {
+    let force = 0;
+    let distToMin = coord - minBound;
+    if (distToMin < k && distToMin > 0) {
+        force += strength * (k / distToMin);
+    } else if (distToMin <= 0) {
+        force += strength * 2;
+    }
+
+    let distToMax = maxBound - coord;
+    if (distToMax < k && distToMax > 0) {
+        force -= strength * (k / distToMax);
+    } else if (distToMax <= 0) {
+        force -= strength * 2;
+    }
+    return force;
+}
+
+exec.onTriggered = () => {
+    let positions = pos.get();
+    let adjacencyMatrixFlat = adj.get();
+    const numNodes = n.get();
+    const coolDownRate = cooldown.get();
+    const epsilon = 1e-6; // prevent division by zero
+    const shouldCenter = centerGraph.get();
+    const density = densityIn.get();
+    const aspectRatio = aspectRatioIn.get();
+    const margin = marginIn.get();
+    const textScaleFactor = textScaleFactorIn.get();
+
+    const bMinY = (-1 + margin);
+    const bMaxY = (1 - margin);
+    const bMinX = aspectRatio * bMinY;
+    const bMaxX = aspectRatio * bMaxY;
+
+    const categoriesCount = categoriesCountIn.get();
+    const categoriesBounds =categoriesBoundsIn.get();
+    const contentBounds = contentBoundsIn.get();
+    const nodesMask = nodesMaskIn.get();
+    const nodesSelection = nodesSelectionIn.get();
+
+    const k = Math.sqrt((bMaxX - bMinX) * (bMaxY - bMinY) / numNodes);
+    const kSquared = k * k;
+
+    const displacementsFlat = new Float32Array(numNodes * 2); // [dx0, dy0, dx1, dy1, ...]
+
+    // Calculate Repulsive and Attractive Forces
+    for (let i = 0; i < numNodes; i++) {
+        const iPos_x = positions[i * 2];
+        const iPos_y = positions[i * 2 + 1];
+
+        for (let j = i + 1; j < numNodes; j++) {
+            const jPos_x = positions[j * 2];
+            const jPos_y = positions[j * 2 + 1];
+
+            let deltaX = iPos_x - jPos_x;
+            let deltaY = iPos_y - jPos_y;
+
+            let distanceSq = deltaX * deltaX + deltaY * deltaY;
+            let distance = Math.sqrt(distanceSq);
+            distance = Math.max(epsilon, distance); // Avoid division by zero
+
+            const dirX = deltaX / distance;
+            const dirY = deltaY / distance;
+
+            // Repulsive force
+            const repulsiveForceMag = kSquared / distance;
+            if(nodesMask[i] != 0 && nodesMask[j] != 0) {
+            displacementsFlat[i * 2]     += dirX * repulsiveForceMag;
+            displacementsFlat[i * 2 + 1] += dirY * repulsiveForceMag;
+            displacementsFlat[j * 2]     -= dirX * repulsiveForceMag;
+            displacementsFlat[j * 2 + 1] -= dirY * repulsiveForceMag;
+
+
+            // Attractive force (if edge exists)
+            const edgeWeight = adjacencyMatrixFlat[i * numNodes + j];
+            if (edgeWeight > 0) {
+                const attractiveForceMag = (distanceSq / k) * edgeWeight * (1 / density);
+                displacementsFlat[i * 2]     -= dirX * attractiveForceMag;
+                displacementsFlat[i * 2 + 1] -= dirY * attractiveForceMag;
+                displacementsFlat[j * 2]     += dirX * attractiveForceMag;
+                displacementsFlat[j * 2 + 1] += dirY * attractiveForceMag;
+            }
+            }
+        }
+    }
+
+    // Add forces to repel from boundaries ---
+    if (shouldCenter) {
+        const boundaryForceStrength = currentTemperature;
+        for (let i = 0; i < numNodes; i++) {
+            let currentBounds;
+
+            const isCategory = i < categoriesCount;
+            if(isCategory) {
+                currentBounds = categoriesBounds;
+            } else {
+                currentBounds = contentBounds;
+            }
+            displacementsFlat[i * 2]     += calculateBoundaryForceComponent(positions[i * 2],     currentBounds.minX, currentBounds.maxX, k, boundaryForceStrength);
+            displacementsFlat[i * 2 + 1] += calculateBoundaryForceComponent(positions[i * 2 + 1], currentBounds.minY, currentBounds.maxY, k, boundaryForceStrength);
+        }
+    }
+
+    // Update Positions
+    const newPositionsFlatOutput = new Float32Array(numNodes * 2);
+    for (let i = 0; i < numNodes; i++) {
+        if (nodesMask[i] != 0) {
+            const dispX = displacementsFlat[i * 2];
+            const dispY = displacementsFlat[i * 2 + 1];
+
+            const dispMagSq = dispX * dispX + dispY * dispY;
+            let finalDispX = 0;
+            let finalDispY = 0;
+
+            if (dispMagSq > epsilon * epsilon) { // Check against squared epsilon to avoid sqrt
+                const dispMag = Math.sqrt(dispMagSq);
+                const limitedMovement = Math.min(dispMag, currentTemperature);
+                finalDispX = (dispX / dispMag) * limitedMovement;
+                finalDispY = (dispY / dispMag) * limitedMovement;
+            }
+
+            let newX = positions[i * 2]     + finalDispX;
+            let newY = positions[i * 2 + 1] + finalDispY;
+
+            // Clamp positions to the defined boundaries
+            newX = Math.max(bMinX, Math.min(bMaxX, newX));
+            newY = Math.max(bMinY, Math.min(bMaxY, newY));
+
+            newPositionsFlatOutput[i * 2]     = newX;
+            newPositionsFlatOutput[i * 2 + 1] = newY;
+        }
+        else {
+            newPositionsFlatOutput[i * 2]     = positions[i * 2];
+            newPositionsFlatOutput[i * 2 + 1] = positions[i * 2 + 1];
+
+        }
+
+    }
+
+    currentTemperature = Math.max(0, currentTemperature - coolDownRate);
+
+    nextPos.set(newPositionsFlatOutput);
+    next.trigger();
+};
+}
+};
+
+CABLES.OPS["c15fb7f1-52d1-4b9d-b999-f067e7deeb9f"]={f:Ops.Patch.PMZcxaN.FruchtermanReingoldComputation,objName:"Ops.Patch.PMZcxaN.FruchtermanReingoldComputation"};
 
 
 

@@ -40,11 +40,11 @@
                 },
                 {
                     "name": "width",
-                    "value": 612
+                    "value": 1281
                 },
                 {
                     "name": "height",
-                    "value": 976.5
+                    "value": 819
                 },
                 {
                     "name": "Pixel Density",
@@ -74,7 +74,7 @@
                         {
                             "portIn": "Execute",
                             "portOut": "trigger 1",
-                            "objIn": "60zv6kr46",
+                            "objIn": "515v934yg",
                             "objOut": "3m7gxs2jt"
                         }
                     ]
@@ -159,7 +159,7 @@
                         {
                             "portIn": "Positions",
                             "portOut": "Value",
-                            "objIn": "60zv6kr46",
+                            "objIn": "515v934yg",
                             "objOut": "snzo52cgu"
                         }
                     ]
@@ -288,7 +288,7 @@
                         {
                             "portIn": "Graph Size",
                             "portOut": "Value",
-                            "objIn": "60zv6kr46",
+                            "objIn": "515v934yg",
                             "objOut": "524i93zs0"
                         }
                     ]
@@ -368,7 +368,7 @@
                         {
                             "portIn": "Adjacency Matrix",
                             "portOut": "Value",
-                            "objIn": "60zv6kr46",
+                            "objIn": "515v934yg",
                             "objOut": "ladd3g5qt"
                         }
                     ]
@@ -685,7 +685,7 @@
             "portsIn": [
                 {
                     "name": "Value",
-                    "value": 0.1
+                    "value": 0.2
                 },
                 {
                     "name": "Variable",
@@ -740,7 +740,7 @@
                         {
                             "portIn": "Initial Temperature",
                             "portOut": "Value",
-                            "objIn": "60zv6kr46",
+                            "objIn": "515v934yg",
                             "objOut": "e87z7oznr"
                         }
                     ]
@@ -764,7 +764,7 @@
                         {
                             "portIn": "Cooldown",
                             "portOut": "Value",
-                            "objIn": "60zv6kr46",
+                            "objIn": "515v934yg",
                             "objOut": "brkod0ze6"
                         }
                     ]
@@ -980,7 +980,7 @@
                         {
                             "portIn": "Reset",
                             "portOut": "Triggered",
-                            "objIn": "60zv6kr46",
+                            "objIn": "515v934yg",
                             "objOut": "a4z4yvl4c"
                         }
                     ]
@@ -1019,7 +1019,7 @@
                         {
                             "portIn": "Density",
                             "portOut": "Value",
-                            "objIn": "60zv6kr46",
+                            "objIn": "515v934yg",
                             "objOut": "6lx1xzhl8"
                         }
                     ]
@@ -1251,7 +1251,7 @@
                         {
                             "portIn": "Aspect Ratio",
                             "portOut": "Value",
-                            "objIn": "60zv6kr46",
+                            "objIn": "515v934yg",
                             "objOut": "tkx6l35ec"
                         }
                     ]
@@ -1439,15 +1439,15 @@
                 },
                 {
                     "name": "Mouse is hovering",
-                    "value": 1
+                    "value": 0
                 },
                 {
                     "name": "Movement X",
-                    "value": 0.6666666666666666
+                    "value": -2.6666666666666665
                 },
                 {
                     "name": "Movement Y",
-                    "value": 0
+                    "value": -4.666666666666667
                 }
             ],
             "objName": "Ops.Devices.Mouse.Mouse_v3"
@@ -1863,7 +1863,7 @@
                 },
                 {
                     "name": "Number",
-                    "value": 0.6264073694984647
+                    "value": 1.564102564102564
                 }
             ],
             "objName": "Ops.Number.TriggerOnChangeNumber"
@@ -3473,11 +3473,11 @@
                 },
                 {
                     "name": "Ratio",
-                    "value": 0.6264073694984647
+                    "value": 1.564102564102564
                 },
                 {
                     "name": "Width",
-                    "value": 1.2528147389969293
+                    "value": 3.128205128205128
                 },
                 {
                     "name": "Height",
@@ -4555,7 +4555,7 @@
                         {
                             "portIn": "Node Text Sizes 2D",
                             "portOut": "Value",
-                            "objIn": "60zv6kr46",
+                            "objIn": "515v934yg",
                             "objOut": "3pd7eddli"
                         }
                     ]
@@ -5122,7 +5122,7 @@
                 },
                 {
                     "name": "MS",
-                    "value": 0.29
+                    "value": 0.35
                 }
             ],
             "objName": "Ops.Cables.FPS_v2"
@@ -5762,7 +5762,7 @@
                         {
                             "portIn": "Nodes Mask",
                             "portOut": "Value",
-                            "objIn": "60zv6kr46",
+                            "objIn": "515v934yg",
                             "objOut": "epkfwne13"
                         }
                     ]
@@ -5786,7 +5786,7 @@
                         {
                             "portIn": "Nodes Selected",
                             "portOut": "Value",
-                            "objIn": "60zv6kr46",
+                            "objIn": "515v934yg",
                             "objOut": "ak3m6a3fd"
                         }
                     ]
@@ -6317,7 +6317,7 @@
             "portsOut": [
                 {
                     "name": "Num",
-                    "value": 0
+                    "value": 13
                 }
             ],
             "objName": "Ops.Gl.MeshInstancer_v4"
@@ -6645,7 +6645,7 @@
                 },
                 {
                     "name": "Array length",
-                    "value": 30
+                    "value": 82
                 }
             ],
             "objName": "Ops.Array.ArrayMerge_v3"
@@ -7778,7 +7778,7 @@
             "portsOut": [
                 {
                     "name": "Num",
-                    "value": 0
+                    "value": 8
                 }
             ],
             "objName": "Ops.Gl.MeshInstancer_v4"
@@ -7856,11 +7856,11 @@
                 },
                 {
                     "name": "Total points",
-                    "value": 0
+                    "value": 8
                 },
                 {
                     "name": "Array length",
-                    "value": 0
+                    "value": 24
                 }
             ],
             "objName": "Ops.Array.Array2To3"
@@ -8206,7 +8206,7 @@
                         {
                             "portIn": "Categories Count",
                             "portOut": "Value",
-                            "objIn": "60zv6kr46",
+                            "objIn": "515v934yg",
                             "objOut": "imtq53pb1"
                         }
                     ]
@@ -8400,7 +8400,7 @@
                         {
                             "portIn": "Categories Bounds",
                             "portOut": "Value",
-                            "objIn": "60zv6kr46",
+                            "objIn": "515v934yg",
                             "objOut": "l3dlg5fr5"
                         }
                     ]
@@ -8424,7 +8424,7 @@
                         {
                             "portIn": "Content Bounds",
                             "portOut": "Value",
-                            "objIn": "60zv6kr46",
+                            "objIn": "515v934yg",
                             "objOut": "24wldohew"
                         }
                     ]
@@ -8512,45 +8512,6 @@
                 }
             ],
             "objName": "Ops.Vars.VarGetArray_v2"
-        },
-        {
-            "id": "60zv6kr46",
-            "uiAttribs": {},
-            "portsIn": [
-                {
-                    "name": "Center Graph in Bounds",
-                    "value": 1
-                },
-                {
-                    "name": "Margin",
-                    "value": 0.3
-                }
-            ],
-            "portsOut": [
-                {
-                    "name": "Trigger",
-                    "links": [
-                        {
-                            "portIn": "Trigger",
-                            "portOut": "Trigger",
-                            "objIn": "cinfsrkbq",
-                            "objOut": "60zv6kr46"
-                        }
-                    ]
-                },
-                {
-                    "name": "Next Positions",
-                    "links": [
-                        {
-                            "portIn": "Array",
-                            "portOut": "Next Positions",
-                            "objIn": "cinfsrkbq",
-                            "objOut": "60zv6kr46"
-                        }
-                    ]
-                }
-            ],
-            "objName": "Ops.Patch.PMZcxaN.FruchtermanReingoldComputation"
         },
         {
             "id": "uubzzgk1v",
@@ -8876,83 +8837,6 @@
             "objName": "Ops.Patch.PMZcxaN.DrawVariableWidthEdgesContent"
         },
         {
-            "id": "dg0ciio0f",
-            "uiAttribs": {},
-            "portsIn": [
-                {
-                    "name": "Variable",
-                    "value": "NodesMask"
-                }
-            ],
-            "portsOut": [
-                {
-                    "name": "Value",
-                    "links": [
-                        {
-                            "portIn": "Array",
-                            "portOut": "Value",
-                            "objIn": "jaewu6edq",
-                            "objOut": "dg0ciio0f"
-                        }
-                    ]
-                }
-            ],
-            "objName": "Ops.Vars.VarGetArray_v2"
-        },
-        {
-            "id": "jaewu6edq",
-            "uiAttribs": {},
-            "portsOut": [
-                {
-                    "name": "Changed",
-                    "links": [
-                        {
-                            "portIn": "Execute",
-                            "portOut": "Changed",
-                            "objIn": "f020y1oj0",
-                            "objOut": "jaewu6edq"
-                        }
-                    ]
-                }
-            ],
-            "objName": "Ops.Trigger.TriggerOnChangeArray_v2"
-        },
-        {
-            "id": "yehzf4gbu",
-            "uiAttribs": {},
-            "portsIn": [
-                {
-                    "name": "Named Trigger",
-                    "value": "Init Simulation"
-                }
-            ],
-            "objName": "Ops.Trigger.TriggerSend"
-        },
-        {
-            "id": "f020y1oj0",
-            "uiAttribs": {},
-            "portsIn": [
-                {
-                    "name": "Nth",
-                    "value": 2
-                }
-            ],
-            "portsOut": [
-                {
-                    "name": "Next",
-                    "links": [
-                        {
-                            "portIn": "Trigger",
-                            "portOut": "Next",
-                            "objIn": "yehzf4gbu",
-                            "objOut": "f020y1oj0"
-                        }
-                    ]
-                }
-            ],
-            "objName": "Ops.Trigger.NthTrigger_v2"
-        },
-        {
             "id": "dvv4j5ini",
             "uiAttribs": {},
             "portsIn": [
@@ -9039,7 +8923,7 @@
                 },
                 {
                     "name": "Input",
-                    "value": 0
+                    "value": 8
                 },
                 {
                     "name": "Default",
@@ -9095,12 +8979,6 @@
                             "portOut": "Next",
                             "objIn": "drkqsqsd5",
                             "objOut": "aoykb7cnq"
-                        },
-                        {
-                            "portIn": "Trigger",
-                            "portOut": "Next",
-                            "objIn": "pj33xmvpz",
-                            "objOut": "aoykb7cnq"
                         }
                     ]
                 },
@@ -9117,17 +8995,6 @@
                 }
             ],
             "objName": "Ops.Number.TriggerOnChangeNumber_v2"
-        },
-        {
-            "id": "pj33xmvpz",
-            "uiAttribs": {},
-            "portsIn": [
-                {
-                    "name": "Named Trigger",
-                    "value": "Update Positions"
-                }
-            ],
-            "objName": "Ops.Trigger.TriggerSend"
         },
         {
             "id": "hh3k0g9m1",
@@ -9212,11 +9079,50 @@
                 }
             ],
             "objName": "Ops.Patch.PMZcxaN.EdgesColor"
+        },
+        {
+            "id": "515v934yg",
+            "uiAttribs": {},
+            "portsIn": [
+                {
+                    "name": "Center Graph in Bounds",
+                    "value": 1
+                },
+                {
+                    "name": "Margin",
+                    "value": 0.3
+                }
+            ],
+            "portsOut": [
+                {
+                    "name": "Trigger",
+                    "links": [
+                        {
+                            "portIn": "Trigger",
+                            "portOut": "Trigger",
+                            "objIn": "cinfsrkbq",
+                            "objOut": "515v934yg"
+                        }
+                    ]
+                },
+                {
+                    "name": "Next Positions",
+                    "links": [
+                        {
+                            "portIn": "Array",
+                            "portOut": "Next Positions",
+                            "objIn": "cinfsrkbq",
+                            "objOut": "515v934yg"
+                        }
+                    ]
+                }
+            ],
+            "objName": "Ops.Patch.PMZcxaN.FruchtermanReingoldComputation"
         }
     ],
     "export": {
-        "time": "2025-06-17 14:12",
+        "time": "2025-06-17 14:35",
         "service": "html",
-        "exportNumber": 9
+        "exportNumber": 10
     }
 }
