@@ -9938,6 +9938,662 @@ CABLES.OPS["7ef0826b-08c4-4044-b560-39476c1c66d5"]={f:Ops.Patch.PMZcxaN.EdgesCol
 
 // **************************************************************
 // 
+// Ops.Ui.VizTexture
+// 
+// **************************************************************
+
+Ops.Ui.VizTexture= class extends CABLES.Op 
+{
+constructor()
+{
+super(...arguments);
+const op=this;
+const attachments=op.attachments={"viztex_frag":"IN vec2 texCoord;\r\nUNI sampler2D tex;\r\nUNI samplerCube cubeMap;\r\nUNI float width;\r\nUNI float height;\r\nUNI float type;\r\nUNI float time;\r\n\r\nfloat LinearizeDepth(float d,float zNear,float zFar)\r\n{\r\n    float z_n = 2.0 * d - 1.0;\r\n    return 2.0 * zNear / (zFar + zNear - z_n * (zFar - zNear));\r\n}\r\n\r\nvoid main()\r\n{\r\n    vec4 col=vec4(vec3(0.),0.0);\r\n\r\n    vec4 colTex=texture(tex,texCoord);\r\n\r\n\r\n\r\n    if(type==1.0)\r\n    {\r\n        vec4 depth=vec4(0.);\r\n        vec2 localST=texCoord;\r\n        localST.y = 1. - localST.y;\r\n\r\n        localST.t = mod(localST.t*3.,1.);\r\n        localST.s = mod(localST.s*4.,1.);\r\n\r\n        #ifdef WEBGL2\r\n            #define texCube texture\r\n        #endif\r\n        #ifdef WEBGL1\r\n            #define texCube textureCube\r\n        #endif\r\n\r\n//         //Due to the way my depth-cubeMap is rendered, objects to the -x,y,z side is projected to the positive x,y,z side\r\n//         //Inside where top/bottom is to be drawn?\r\n        if (texCoord.s*4.> 1. && texCoord.s*4.<2.)\r\n        {\r\n            //Bottom (-y) quad\r\n            if (texCoord.t*3. < 1.)\r\n            {\r\n                vec3 dir=vec3(localST.s*2.-1.,-1.,-localST.t*2.+1.);//Due to the (arbitrary) way I choose as up in my depth-viewmatrix, i her emultiply the latter coordinate with -1\r\n                depth = texCube(cubeMap, dir);\r\n            }\r\n            //top (+y) quad\r\n            else if (texCoord.t*3. > 2.)\r\n            {\r\n                vec3 dir=vec3(localST.s*2.-1.,1.,localST.t*2.-1.);//Get lower y texture, which is projected to the +y part of my cubeMap\r\n                depth = texCube(cubeMap, dir);\r\n            }\r\n            else//Front (-z) quad\r\n            {\r\n                vec3 dir=vec3(localST.s*2.-1.,-localST.t*2.+1.,1.);\r\n                depth = texCube(cubeMap, dir);\r\n            }\r\n        }\r\n//         //If not, only these ranges should be drawn\r\n        else if (texCoord.t*3. > 1. && texCoord.t*3. < 2.)\r\n        {\r\n            if (texCoord.x*4. < 1.)//left (-x) quad\r\n            {\r\n                vec3 dir=vec3(-1.,-localST.t*2.+1.,localST.s*2.-1.);\r\n                depth = texCube(cubeMap, dir);\r\n            }\r\n            else if (texCoord.x*4. < 3.)//right (+x) quad (front was done above)\r\n            {\r\n                vec3 dir=vec3(1,-localST.t*2.+1.,-localST.s*2.+1.);\r\n                depth = texCube(cubeMap, dir);\r\n            }\r\n            else //back (+z) quad\r\n            {\r\n                vec3 dir=vec3(-localST.s*2.+1.,-localST.t*2.+1.,-1.);\r\n                depth = texCube(cubeMap, dir);\r\n            }\r\n        }\r\n        // colTex = vec4(vec3(depth),1.);\r\n        colTex = vec4(depth);\r\n    }\r\n\r\n    if(type==2.0)\r\n    {\r\n       float near = 0.1;\r\n       float far = 50.;\r\n       float depth = LinearizeDepth(colTex.r, near, far);\r\n       colTex.rgb = vec3(depth);\r\n    }\r\n\r\n\r\n\r\n\r\n    #ifdef ANIM_RANGE\r\n\r\n        if(colTex.r>1.0 || colTex.r<0.0)\r\n            colTex.r=mod(colTex.r,1.0)*0.5+(sin(colTex.r+mod(colTex.r*3.0,1.0)+time*5.0)*0.5+0.5)*0.5;\r\n        if(colTex.g>1.0 || colTex.g<0.0)\r\n            colTex.g=mod(colTex.g,1.0)*0.5+(sin(colTex.g+mod(colTex.g*3.0,1.0)+time*5.0)*0.5+0.5)*0.5;\r\n        if(colTex.b>1.0 || colTex.b<0.0)\r\n            colTex.b=mod(colTex.b,1.0)*0.5+(sin(colTex.b+mod(colTex.b*3.0,1.0)+time*5.0)*0.5+0.5)*0.5;\r\n\r\n    #endif\r\n\r\n\r\n    // #ifdef ANIM_RANGE\r\n    //     if(colTex.r>1.0 || colTex.r<0.0)\r\n    //     {\r\n    //         float r=mod( time+colTex.r,1.0)*0.5+0.5;\r\n    //         colTex.r=r;\r\n    //     }\r\n    //     if(colTex.g>1.0 || colTex.g<0.0)\r\n    //     {\r\n    //         float r=mod( time+colTex.g,1.0)*0.5+0.5;\r\n    //         colTex.g=r;\r\n    //     }\r\n    //     if(colTex.b>1.0 || colTex.b<0.0)\r\n    //     {\r\n    //         float r=mod( time+colTex.b,1.0)*0.5+0.5;\r\n    //         colTex.b=r;\r\n    //     }\r\n    // #endif\r\n\r\n    #ifdef MOD_RANGE\r\n        colTex.r=mod(colTex.r,1.0001);\r\n        colTex.g=mod(colTex.g,1.0001);\r\n        colTex.b=mod(colTex.b,1.0001);\r\n\r\n    #endif\r\n\r\n    #ifdef ALPHA_ONE\r\n        colTex.a=1.0;\r\n    #endif\r\n    #ifdef ALPHA_INV\r\n        colTex.a=1.0-colTex.a;\r\n    #endif\r\n\r\n    outColor = mix(col,colTex,colTex.a);\r\n}\r\n\r\n","viztex_vert":"IN vec3 vPosition;\r\nIN vec2 attrTexCoord;\r\nOUT vec2 texCoord;\r\nUNI mat4 projMatrix;\r\nUNI mat4 modelMatrix;\r\nUNI mat4 viewMatrix;\r\n\r\nvoid main()\r\n{\r\n    texCoord=vec2(attrTexCoord.x,1.0-attrTexCoord.y);\r\n    vec4 pos = vec4( vPosition, 1. );\r\n    mat4 mvMatrix=viewMatrix * modelMatrix;\r\n    gl_Position = projMatrix * mvMatrix * pos;\r\n}",};
+const
+    inTex = op.inTexture("Texture In"),
+    inShowInfo = op.inBool("Show Info", false),
+    inVizRange = op.inSwitch("Visualize outside 0-1", ["Off", "Anim", "Modulo"], "Anim"),
+    inAlpha = op.inSwitch("Alpha", ["A", "1", "1-A"], "A"),
+    inPickColor = op.inBool("Show Color", false),
+    inX = op.inFloatSlider("X", 0.5),
+    inY = op.inFloatSlider("Y", 0.5),
+    outTex = op.outTexture("Texture Out"),
+    outInfo = op.outString("Info");
+
+op.setUiAttrib({ "height": 150, "resizable": true });
+
+const timer = new CABLES.Timer();
+let shader = null;
+let fb = null;
+let pixelReader = null;
+let colorString = "";
+let firstTime = true;
+
+inAlpha.onChange =
+    inVizRange.onChange = updateDefines;
+
+inPickColor.onChange = updateUi;
+updateUi();
+
+if (CABLES.UI)
+{
+    timer.play();
+}
+
+function updateUi()
+{
+    inX.setUiAttribs({ "greyout": !inPickColor.get() });
+    inY.setUiAttribs({ "greyout": !inPickColor.get() });
+}
+
+inTex.onChange = () =>
+{
+    const t = inTex.get();
+
+    outTex.setRef(t);
+
+    let title = "";
+
+    if (inTex.get() && inTex.isLinked()) title = inTex.links[0].getOtherPort(inTex).name;
+
+    op.setUiAttrib({ "extendTitle": title });
+};
+
+function updateDefines()
+{
+    if (!shader) return;
+
+    shader.toggleDefine("MOD_RANGE", inVizRange.get() == "Modulo");
+    shader.toggleDefine("ANIM_RANGE", inVizRange.get() == "Anim");
+    shader.toggleDefine("ALPHA_INV", inAlpha.get() == "1-A");
+    shader.toggleDefine("ALPHA_ONE", inAlpha.get() == "1");
+    // op.checkMainloopExists();
+}
+
+op.renderVizLayerGl = (ctx, layer) =>
+{
+    if (!inTex.isLinked()) return;
+    if (!layer.useGl) return;
+
+    const port = inTex;
+    const texSlot = 5;
+    const texSlotCubemap = texSlot + 1;
+
+    const perf = gui.uiProfiler.start("previewlayer texture");
+    const cgl = port.op.patch.cgl;
+
+    if (!this._emptyCubemap) this._emptyCubemap = CGL.Texture.getEmptyCubemapTexture(cgl);
+    port.op.patch.cgl.profileData.profileTexPreviews++;
+
+    const portTex = port.get() || CGL.Texture.getEmptyTexture(cgl);
+
+    if (!this._mesh)
+    {
+        const geom = new CGL.Geometry("vizTexture rect");
+        geom.vertices = [1.0, 1.0, 0.0, -1.0, 1.0, 0.0, 1.0, -1.0, 0.0, -1.0, -1.0, 0.0];
+        geom.texCoords = [
+            1.0, 1.0,
+            0.0, 1.0,
+            1.0, 0.0,
+            0.0, 0.0];
+        geom.verticesIndices = [0, 1, 2, 3, 1, 2];
+        this._mesh = new CGL.Mesh(cgl, geom);
+    }
+    if (!this._shader)
+    {
+        this._shader = new CGL.Shader(cgl, "glpreviewtex");
+        this._shader.setModules(["MODULE_VERTEX_POSITION", "MODULE_COLOR", "MODULE_BEGIN_FRAG"]);
+        this._shader.setSource(attachments.viztex_vert, attachments.viztex_frag);
+        this._shaderTexUniform = new CGL.Uniform(this._shader, "t", "tex", texSlot);
+        this._shaderTexCubemapUniform = new CGL.Uniform(this._shader, "tc", "cubeMap", texSlotCubemap);
+        shader = this._shader;
+        updateDefines();
+
+        this._shaderTexUniformW = new CGL.Uniform(this._shader, "f", "width", portTex.width);
+        this._shaderTexUniformH = new CGL.Uniform(this._shader, "f", "height", portTex.height);
+        this._shaderTypeUniform = new CGL.Uniform(this._shader, "f", "type", 0);
+        this._shaderTimeUniform = new CGL.Uniform(this._shader, "f", "time", 0);
+    }
+
+    cgl.pushPMatrix();
+    const sizeTex = [portTex.width, portTex.height];
+    const small = port.op.patch.cgl.canvasWidth > sizeTex[0] && port.op.patch.cgl.canvasHeight > sizeTex[1];
+
+    if (small)
+    {
+        mat4.ortho(cgl.pMatrix, 0, port.op.patch.cgl.canvasWidth, port.op.patch.cgl.canvasHeight, 0, 0.001, 11);
+    }
+    else mat4.ortho(cgl.pMatrix, -1, 1, 1, -1, 0.001, 11);
+
+    const oldTex = cgl.getTexture(texSlot);
+    const oldTexCubemap = cgl.getTexture(texSlotCubemap);
+
+    let texType = 0;
+    if (portTex)
+    {
+        if (portTex.cubemap) texType = 1;
+        if (portTex.textureType == CGL.Texture.TYPE_DEPTH) texType = 2;
+
+        if (texType == 0 || texType == 2)
+        {
+            cgl.setTexture(texSlot, portTex.tex);
+            cgl.setTexture(texSlotCubemap, this._emptyCubemap.cubemap, cgl.gl.TEXTURE_CUBE_MAP);
+        }
+        else if (texType == 1)
+        {
+            cgl.setTexture(texSlotCubemap, portTex.cubemap, cgl.gl.TEXTURE_CUBE_MAP);
+        }
+
+        timer.update();
+        this._shaderTimeUniform.setValue(timer.get());
+
+        this._shaderTypeUniform.setValue(texType);
+        let s = [port.op.patch.cgl.canvasWidth, port.op.patch.cgl.canvasHeight];
+
+        cgl.gl.clearColor(0, 0, 0, 0);
+        cgl.gl.clear(cgl.gl.COLOR_BUFFER_BIT | cgl.gl.DEPTH_BUFFER_BIT);
+
+        cgl.pushModelMatrix();
+        if (small)
+        {
+            s = sizeTex;
+            mat4.translate(cgl.mMatrix, cgl.mMatrix, [sizeTex[0] / 2, sizeTex[1] / 2, 0]);
+            mat4.scale(cgl.mMatrix, cgl.mMatrix, [sizeTex[0] / 2, sizeTex[1] / 2, 0]);
+        }
+        this._mesh.render(this._shader);
+        cgl.popModelMatrix();
+
+        if (texType == 0) cgl.setTexture(texSlot, oldTex);
+        if (texType == 1) cgl.setTexture(texSlotCubemap, oldTexCubemap);
+
+        cgl.popPMatrix();
+        cgl.resetViewPort();
+
+        const sizeImg = [layer.width, layer.height];
+
+        const stretch = false;
+        // if (!stretch)
+        // {
+        if (portTex.width > portTex.height) sizeImg[1] = layer.width * sizeTex[1] / sizeTex[0];
+        else
+        {
+            sizeImg[1] = layer.width * (sizeTex[1] / sizeTex[0]);
+
+            if (sizeImg[1] > layer.height)
+            {
+                const r = layer.height / sizeImg[1];
+                sizeImg[0] *= r;
+                sizeImg[1] *= r;
+            }
+        }
+
+        const scaledDown = sizeImg[0] > sizeTex[0] && sizeImg[1] > sizeTex[1];
+
+        // ctx.imageSmoothingEnabled = !small || !scaledDown;
+        ctx.imageSmoothingEnabled = true;
+
+        ctx.fillStyle = "#ffffff";
+        ctx.fillRect(layer.x, layer.y - 10, 10, 10);
+        ctx.fillStyle = "#000000";
+        ctx.fillRect(layer.x, layer.y - 10, 5, 5);
+        ctx.fillRect(layer.x + 5, layer.y - 10 + 5, 5, 5);
+
+        let layerHeight = layer.height;
+        let numX = (10 * layer.width / layerHeight);
+        let stepY = (layerHeight / 10);
+        let stepX = (layer.width / numX);
+        for (let x = 0; x < numX; x++)
+            for (let y = 0; y < 10; y++)
+            {
+                if ((x + y) % 2 == 0)ctx.fillStyle = "#333333";
+                else ctx.fillStyle = "#393939";
+                ctx.fillRect(layer.x + stepX * x, layer.y + stepY * y, stepX, stepY);
+            }
+
+        ctx.fillStyle = "#222";
+        const borderLeft = (layer.width - sizeImg[0]) / 2;
+        const borderTop = (layerHeight - sizeImg[1]) / 2;
+
+        let imgPosX = layer.x + (layer.width - sizeImg[0]) / 2;
+        let imgPosY = layer.y + (layerHeight - sizeImg[1]) / 2;
+        let imgSizeW = sizeImg[0];
+        let imgSizeH = sizeImg[1];
+
+        if (layerHeight - sizeImg[1] < 0)
+        {
+            imgPosX = layer.x + (layer.width - sizeImg[0] * layerHeight / sizeImg[1]) / 2;
+            imgPosY = layer.y;
+            imgSizeW = sizeImg[0] * layerHeight / sizeImg[1];
+            imgSizeH = layerHeight;
+        }
+
+        ctx.fillRect(layer.x, layer.y, imgPosX - layer.x, layerHeight);
+        ctx.fillRect(layer.x + imgSizeW + imgPosX - layer.x, layer.y, imgSizeW, layerHeight);
+        ctx.fillRect(layer.x, layer.y, layer.width, borderTop);
+        ctx.fillRect(layer.x, layer.y + sizeImg[1] + borderTop, layer.width, borderTop);
+
+        if (cgl.canvas && cgl.canvasWidth > 0 && cgl.canvasHeight > 0 && cgl.canvas.width > 0 && cgl.canvas.height > 0)
+        {
+            try
+            {
+                const bigPixels = imgSizeW / s[0] > 3 || imgSizeH / s[1] > 3;
+                const veryBigPixels = imgSizeW / s[0] > 10 || imgSizeH / s[1] > 10;
+
+                if (sizeTex[1] == 1)
+                {
+                    ctx.imageSmoothingEnabled = false;// workaround filtering problems
+                    ctx.drawImage(cgl.canvas,
+                        0,
+                        0,
+                        s[0],
+                        s[1],
+                        layer.x,
+                        layer.y,
+                        layer.width,
+                        layerHeight);// workaround filtering problems
+                    ctx.imageSmoothingEnabled = true;
+                }
+                else
+                if (sizeTex[0] == 1)
+                {
+                    ctx.imageSmoothingEnabled = false;// workaround filtering problems
+                    ctx.drawImage(cgl.canvas,
+                        0,
+                        0,
+                        s[0],
+                        s[1],
+                        layer.x,
+                        layer.y,
+                        layer.width,
+                        layerHeight);
+                    ctx.imageSmoothingEnabled = true;
+                }
+                else
+                if (sizeImg[0] != 0 && sizeImg[1] != 0 && layer.width != 0 && layerHeight != 0 && imgSizeW != 0 && imgSizeH != 0)
+                {
+                    ctx.imageSmoothingEnabled = !bigPixels;
+
+                    ctx.drawImage(cgl.canvas,
+                        0,
+                        0,
+                        s[0],
+                        s[1],
+                        imgPosX,
+                        imgPosY,
+                        imgSizeW,
+                        imgSizeH);
+                }
+
+                if (veryBigPixels)
+                {
+                    const stepx = imgSizeW / s[0];
+                    const stepy = imgSizeH / s[1];
+
+                    ctx.imageSmoothingEnabled = true;
+                    ctx.lineWidth = 1;
+                    ctx.globalAlpha = 0.5;
+                    ctx.beginPath();
+
+                    for (let x = 0; x <= s[0]; x++)
+                    {
+                        ctx.moveTo(imgPosX + x * stepx, imgPosY);
+                        ctx.lineTo(imgPosX + x * stepx, imgPosY + imgSizeH);
+                    }
+
+                    for (let y = 0; y <= s[1]; y++)
+                    {
+                        ctx.moveTo(imgPosX, imgPosY + y * stepy);
+                        ctx.lineTo(imgPosX + imgSizeW, imgPosY + y * stepy);
+                    }
+
+                    ctx.strokeStyle = "#555";
+                    ctx.stroke();
+                    ctx.globalAlpha = 1;
+                }
+            }
+            catch (e)
+            {
+                console.error("canvas drawimage exception...", e);
+            }
+            // }
+        }
+
+        let info = "";
+        if (inShowInfo.get() && port.get() && port.get().getInfoOneLine) info += port.get().getInfoOneLine() + "\n";
+        outInfo.set(info);
+
+        if (inPickColor.get())
+        {
+            info += colorString + "\n";
+
+            const x = imgPosX + imgSizeW * inX.get();
+            const y = imgPosY + imgSizeH * inY.get();
+
+            for (let ii = 0; ii < 2; ii++)
+            {
+                if (ii == 0)ctx.fillStyle = "#000";
+                else ctx.fillStyle = "#fff";
+
+                ctx.fillRect(
+                    x - 1 + ii,
+                    y - 10 + ii,
+                    1,
+                    20);
+
+                ctx.fillRect(
+                    x - 10 + ii,
+                    y - 1 + ii,
+                    20,
+                    1);
+            }
+        }
+
+        if (inShowInfo.get() || inPickColor.get())
+        {
+            op.setUiAttrib({ "comment": info });
+        }
+
+        if (inPickColor.get())
+        {
+            const gl = cgl.gl;
+
+            const realTexture = inTex.get();
+            if (!realTexture)
+            {
+                colorString = "";
+                return;
+            }
+            if (!fb) fb = gl.createFramebuffer();
+            if (!pixelReader) pixelReader = new CGL.PixelReader();
+
+            gl.bindFramebuffer(gl.FRAMEBUFFER, fb);
+            gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, gl.TEXTURE_2D, realTexture.tex, 0);
+            gl.bindFramebuffer(gl.FRAMEBUFFER, null);
+
+            pixelReader.read(cgl, fb, realTexture.pixelFormat, inX.get() * realTexture.width, realTexture.height - inY.get() * realTexture.height, 1, 1, (pixel) =>
+            {
+                if (!CGL.Texture.isPixelFormatFloat(realTexture.pixelFormat))
+                {
+                    colorString = "Pixel Float: " + Math.floor(pixel[0] / 255 * 100) / 100;
+                    if (!isNaN(pixel[1]))colorString += ", " + Math.floor(pixel[1] / 255 * 100) / 100;
+                    if (!isNaN(pixel[2]))colorString += ", " + Math.floor(pixel[2] / 255 * 100) / 100;
+                    if (!isNaN(pixel[3]))colorString += ", " + Math.floor(pixel[3] / 255 * 100) / 100;
+                    colorString += "\n";
+
+                    if (realTexture.pixelFormat.indexOf("ubyte") > 0)
+                    {
+                        colorString += "Pixel UByte: ";
+                        colorString += Math.round(pixel[0]);
+                        if (!isNaN(pixel[1]))colorString += ", " + Math.round(pixel[1]);
+                        if (!isNaN(pixel[2]))colorString += ", " + Math.round(pixel[2]);
+                        if (!isNaN(pixel[3]))colorString += ", " + Math.round(pixel[3]);
+
+                        colorString += "\n";
+                    }
+                }
+                else
+                {
+                    colorString = "Pixel Float: " + Math.round(pixel[0] * 100) / 100 + ", " + Math.round(pixel[1] * 100) / 100 + ", " + Math.round(pixel[2] * 100) / 100 + ", " + Math.round(pixel[3] * 100) / 100;
+                    colorString += "\n";
+                }
+            });
+        }
+    }
+
+    cgl.gl.clearColor(0, 0, 0, 0);
+    cgl.gl.clear(cgl.gl.COLOR_BUFFER_BIT | cgl.gl.DEPTH_BUFFER_BIT);
+
+    perf.finish();
+};
+
+}
+};
+
+CABLES.OPS["4ea2d7b0-ca74-45db-962b-4d1965ac20c0"]={f:Ops.Ui.VizTexture,objName:"Ops.Ui.VizTexture"};
+
+
+
+
+// **************************************************************
+// 
+// Ops.Gl.Texture_v2
+// 
+// **************************************************************
+
+Ops.Gl.Texture_v2= class extends CABLES.Op 
+{
+constructor()
+{
+super(...arguments);
+const op=this;
+const attachments=op.attachments={};
+const
+    filename = op.inUrl("File", [".jpg", ".png", ".webp", ".jpeg", ".avif"]),
+    tfilter = op.inSwitch("Filter", ["nearest", "linear", "mipmap"]),
+    wrap = op.inValueSelect("Wrap", ["repeat", "mirrored repeat", "clamp to edge"], "clamp to edge"),
+    aniso = op.inSwitch("Anisotropic", ["0", "1", "2", "4", "8", "16"], "0"),
+    dataFrmt = op.inSwitch("Data Format", ["R", "RG", "RGB", "RGBA", "SRGBA"], "RGBA"),
+    flip = op.inValueBool("Flip", false),
+    unpackAlpha = op.inValueBool("Pre Multiplied Alpha", false),
+    active = op.inValueBool("Active", true),
+    inFreeMemory = op.inBool("Save Memory", true),
+    textureOut = op.outTexture("Texture"),
+    addCacheBust = op.inBool("Add Cachebuster", false),
+    inReload = op.inTriggerButton("Reload"),
+    width = op.outNumber("Width"),
+    height = op.outNumber("Height"),
+    ratio = op.outNumber("Aspect Ratio"),
+    loaded = op.outBoolNum("Loaded", 0),
+    loading = op.outBoolNum("Loading", 0);
+
+const cgl = op.patch.cgl;
+
+op.toWorkPortsNeedToBeLinked(textureOut);
+op.setPortGroup("Size", [width, height]);
+
+let loadedFilename = null;
+let loadingId = null;
+let tex = null;
+let cgl_filter = CGL.Texture.FILTER_MIPMAP;
+let cgl_wrap = CGL.Texture.WRAP_REPEAT;
+let cgl_aniso = 0;
+let timedLoader = 0;
+
+unpackAlpha.setUiAttribs({ "hidePort": true });
+unpackAlpha.onChange =
+    filename.onChange =
+    dataFrmt.onChange =
+    addCacheBust.onChange =
+    flip.onChange = reloadSoon;
+aniso.onChange = tfilter.onChange = onFilterChange;
+wrap.onChange = onWrapChange;
+
+tfilter.set("mipmap");
+wrap.set("repeat");
+
+textureOut.setRef(CGL.Texture.getEmptyTexture(cgl));
+
+inReload.onTriggered = reloadSoon;
+
+active.onChange = function ()
+{
+    if (active.get())
+    {
+        if (loadedFilename != filename.get() || !tex) reloadSoon();
+        else textureOut.setRef(tex);
+    }
+    else
+    {
+        textureOut.setRef(CGL.Texture.getEmptyTexture(cgl));
+        width.set(CGL.Texture.getEmptyTexture(cgl).width);
+        height.set(CGL.Texture.getEmptyTexture(cgl).height);
+        if (tex)tex.delete();
+        op.setUiAttrib({ "extendTitle": "" });
+        tex = null;
+    }
+};
+
+const setTempTexture = function ()
+{
+    const t = CGL.Texture.getTempTexture(cgl);
+    textureOut.setRef(t);
+};
+
+function reloadSoon(nocache)
+{
+    clearTimeout(timedLoader);
+    timedLoader = setTimeout(function ()
+    {
+        realReload(nocache);
+    }, 1);
+}
+
+function getPixelFormat()
+{
+    if (dataFrmt.get() == "R") return CGL.Texture.PFORMATSTR_R8UB;
+    if (dataFrmt.get() == "RG") return CGL.Texture.PFORMATSTR_RG8UB;
+    if (dataFrmt.get() == "RGB") return CGL.Texture.PFORMATSTR_RGB8UB;
+    if (dataFrmt.get() == "SRGBA") return CGL.Texture.PFORMATSTR_SRGBA8;
+
+    return CGL.Texture.PFORMATSTR_RGBA8UB;
+}
+
+function realReload(nocache)
+{
+    op.checkMainloopExists();
+    if (!active.get()) return;
+    if (loadingId)loadingId = cgl.patch.loading.finished(loadingId);
+
+    loadingId = cgl.patch.loading.start(op.objName, filename.get(), op);
+
+    let url = op.patch.getFilePath(String(filename.get()));
+
+    if (addCacheBust.get() || nocache === true) url = CABLES.cacheBust(url);
+
+    if (String(filename.get()).indexOf("data:") == 0) url = filename.get();
+
+    let needsRefresh = false;
+    loadedFilename = filename.get();
+
+    if ((filename.get() && filename.get().length > 1))
+    {
+        loaded.set(false);
+        loading.set(true);
+
+        const fileToLoad = filename.get();
+
+        op.setUiAttrib({ "extendTitle": CABLES.basename(url) });
+        if (needsRefresh) op.refreshParams();
+
+        cgl.patch.loading.addAssetLoadingTask(() =>
+        {
+            op.setUiError("urlerror", null);
+            CGL.Texture.load(cgl, url, function (err, newTex)
+            {
+                cgl.checkFrameStarted("texture inittexture");
+
+                if (filename.get() != fileToLoad)
+                {
+                    loadingId = cgl.patch.loading.finished(loadingId);
+                    return;
+                }
+
+                if (tex)tex.delete();
+
+                if (err)
+                {
+                    const t = CGL.Texture.getErrorTexture(cgl);
+                    textureOut.setRef(t);
+
+                    op.setUiError("urlerror", "could not load texture: \"" + filename.get() + "\"", 2);
+                    loadingId = cgl.patch.loading.finished(loadingId);
+                    return;
+                }
+
+                // textureOut.setRef(newTex);
+
+                width.set(newTex.width);
+                height.set(newTex.height);
+                ratio.set(newTex.width / newTex.height);
+
+                // if (!newTex.isPowerOfTwo()) op.setUiError("npot", "Texture dimensions not power of two! - Texture filtering will not work in WebGL 1.", 0);
+                // else op.setUiError("npot", null);
+
+                tex = newTex;
+                // textureOut.setRef(null);
+                textureOut.setRef(tex);
+
+                loading.set(false);
+                loaded.set(true);
+
+                if (inFreeMemory.get()) tex.image = null;
+
+                if (loadingId)
+                {
+                    loadingId = cgl.patch.loading.finished(loadingId);
+                }
+                op.checkMainloopExists();
+            }, {
+                "anisotropic": cgl_aniso,
+                "wrap": cgl_wrap,
+                "flip": flip.get(),
+                "unpackAlpha": unpackAlpha.get(),
+                "pixelFormat": getPixelFormat(),
+                "filter": cgl_filter
+            });
+
+            op.checkMainloopExists();
+        });
+    }
+    else
+    {
+        setTempTexture();
+        loadingId = cgl.patch.loading.finished(loadingId);
+    }
+}
+
+function onFilterChange()
+{
+    if (tfilter.get() == "nearest") cgl_filter = CGL.Texture.FILTER_NEAREST;
+    else if (tfilter.get() == "linear") cgl_filter = CGL.Texture.FILTER_LINEAR;
+    else if (tfilter.get() == "mipmap") cgl_filter = CGL.Texture.FILTER_MIPMAP;
+    else if (tfilter.get() == "Anisotropic") cgl_filter = CGL.Texture.FILTER_ANISOTROPIC;
+    aniso.setUiAttribs({ "greyout": cgl_filter != CGL.Texture.FILTER_MIPMAP });
+
+    cgl_aniso = parseFloat(aniso.get());
+
+    reloadSoon();
+}
+
+function onWrapChange()
+{
+    if (wrap.get() == "repeat") cgl_wrap = CGL.Texture.WRAP_REPEAT;
+    if (wrap.get() == "mirrored repeat") cgl_wrap = CGL.Texture.WRAP_MIRRORED_REPEAT;
+    if (wrap.get() == "clamp to edge") cgl_wrap = CGL.Texture.WRAP_CLAMP_TO_EDGE;
+
+    reloadSoon();
+}
+
+op.onFileChanged = function (fn)
+{
+    if (filename.get() && filename.get().indexOf(fn) > -1)
+    {
+        textureOut.setRef(CGL.Texture.getEmptyTexture(op.patch.cgl));
+        textureOut.setRef(CGL.Texture.getTempTexture(cgl));
+        realReload(true);
+    }
+};
+
+}
+};
+
+CABLES.OPS["790f3702-9833-464e-8e37-6f0f813f7e16"]={f:Ops.Gl.Texture_v2,objName:"Ops.Gl.Texture_v2"};
+
+
+
+
+// **************************************************************
+// 
 // Ops.Patch.PMZcxaN.FruchtermanReingoldComputation
 // 
 // **************************************************************
@@ -10066,7 +10722,7 @@ exec.onTriggered = () => {
 
     // Add forces to repel from boundaries ---
     if (shouldCenter) {
-        const boundaryForceStrength = currentTemperature;
+        const boundaryForceStrength = currentTemperature * 4;
         for (let i = 0; i < numNodes; i++) {
             let currentBounds;
 
