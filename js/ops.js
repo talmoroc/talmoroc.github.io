@@ -3687,154 +3687,6 @@ CABLES.OPS["68177370-116e-4c76-aef3-3b10d68e7227"]={f:Ops.Html.FontFile_v2,objNa
 
 // **************************************************************
 // 
-// Ops.Patch.PMZcxaN.ArrayMovingAverage
-// 
-// **************************************************************
-
-Ops.Patch.PMZcxaN.ArrayMovingAverage= class extends CABLES.Op 
-{
-constructor()
-{
-super(...arguments);
-const op=this;
-const attachments=op.attachments={};
-const triggerIn = op.inTrigger("Trigger"); // Added a trigger for explicit execution control
-const arrayIn = op.inArray("Array");
-const windowSizeIn = op.inInt("WindowSize", 5); // Window size as Int
-const arraySizeOptionalIn = op.inInt("ArraySize (optional)", 0); // 0 or less means infer from first valid input
-const resetTrigger = op.inTrigger("Reset"); // Added a trigger for reset
-
-const triggerOut = op.outTrigger("Next");
-const avgArrayOut = op.outArray("AveragedArray");
-
-
-// --- Internal State ---
-const history = []; // Stores the last 'windowSize' arrays. Each entry will be a Float32Array.
-let currentAveragedArray = null; // Stores the last computed average
-let determinedArraySize = 0; // The size of arrays being processed, determined by arraySizeOptionalIn or first input
-
-
-// Function to handle the core logic, can be called by trigger or potentially by array input change
-function computeAndUpdate() {
-    const newArray = arrayIn.get(); // Get the current input array
-    const windowSize = Math.max(1, windowSizeIn.get()); // Ensure window size is at least 1
-
-    if (!newArray) {
-        // If no valid new array, output the last known average (if any)
-        if (currentAveragedArray) {
-            avgArrayOut.set(currentAveragedArray);
-        } else {
-            // If no history and no new array, output empty
-            avgArrayOut.set(new Float32Array(determinedArraySize > 0 ? determinedArraySize : 0));
-        }
-        triggerOut.trigger();
-        return;
-    }
-
-    let inputSize = newArray.length;
-    let configuredSize = arraySizeOptionalIn.get();
-
-    // Determine the effective array size for processing
-    if (determinedArraySize === 0) { // If not yet determined (e.g., first run)
-        if (configuredSize > 0) {
-            determinedArraySize = configuredSize;
-        } else if (inputSize > 0) {
-            determinedArraySize = inputSize;
-        } else {
-            // Not enough info to determine size, output empty
-            avgArrayOut.set(new Float32Array(0));
-            triggerOut.trigger();
-            return;
-        }
-    } else {
-        // If determinedArraySize was set, but configuredSize changes, prioritize configuredSize if valid
-        if (configuredSize > 0 && configuredSize !== determinedArraySize) {
-            determinedArraySize = configuredSize;
-            history.length = 0; // Clear history due to size change
-            currentAveragedArray = null;
-        }
-        // If input array size is different from determined, we'll conform the input.
-    }
-
-    if (determinedArraySize === 0) { // Still zero after checks (e.g. initial empty array and no configured size)
-        console.warn('Array Size = 0');
-        avgArrayOut.set(new Float32Array(0));
-        triggerOut.trigger();
-        return;
-    }
-
-
-    // Create a history entry that conforms to determinedArraySize
-    const historyEntry = new Float32Array(determinedArraySize);
-    for (let i = 0; i < determinedArraySize; i++) {
-        if (i < inputSize) {
-            historyEntry[i] = newArray[i]; // Copy from input
-        } else {
-            historyEntry[i] = 0; // Pad with 0 if input is shorter
-        }
-        // If input is longer, it's effectively truncated to determinedArraySize
-    }
-
-    // Add the conformed new array to history
-    history.push(historyEntry);
-
-    // Ensure history does not exceed windowSize
-    while (history.length > windowSize) {
-        history.shift(); // Remove the oldest array
-    }
-
-    // Calculate the moving average
-    const averagedValues = new Float32Array(determinedArraySize);
-    const numArraysInWindow = history.length;
-
-    if (numArraysInWindow > 0) {
-        for (let i = 0; i < determinedArraySize; i++) { // Iterate up to the determined array size
-            let sum = 0;
-            for (let j = 0; j < numArraysInWindow; j++) {
-                // history[j] is guaranteed to be a Float32Array of determinedArraySize
-                sum += history[j][i];
-            }
-            averagedValues[i] = sum / numArraysInWindow;
-        }
-    }
-    // If numArraysInWindow is 0 (should not happen if newArray was valid), averagedValues will be all zeros.
-
-    currentAveragedArray = averagedValues; // Store for next time if needed
-    avgArrayOut.set(currentAveragedArray);
-    triggerOut.trigger();
-}
-
-// Execute when triggered
-triggerIn.onTriggered = () => {
-    computeAndUpdate();
-};
-
-// Optional: also compute if the input array itself receives a new value
-// and no trigger is connected, or if you want it to be highly reactive.
-// arrayIn.onNewValue = () => {
-//    if (!triggerIn.isConnected()) { // Only if trigger is not connected
-//        computeAndUpdate();
-//    }
-// };
-
-function reset() {
-    history.length = 0;
-    currentAveragedArray = null;
-    determinedArraySize = 0;
-}
-
-resetTrigger.onTriggered = reset;
-
-}
-};
-
-CABLES.OPS["00364d0d-dfa9-499b-8e33-44b8a8fce055"]={f:Ops.Patch.PMZcxaN.ArrayMovingAverage,objName:"Ops.Patch.PMZcxaN.ArrayMovingAverage"};
-
-
-
-
-// **************************************************************
-// 
 // Ops.Debug.ConsoleLog
 // 
 // **************************************************************
@@ -10782,6 +10634,154 @@ exec.onTriggered = () => {
 };
 
 CABLES.OPS["c15fb7f1-52d1-4b9d-b999-f067e7deeb9f"]={f:Ops.Patch.PMZcxaN.FruchtermanReingoldComputation,objName:"Ops.Patch.PMZcxaN.FruchtermanReingoldComputation"};
+
+
+
+
+// **************************************************************
+// 
+// Ops.Patch.PMZcxaN.ArrayMovingAverage
+// 
+// **************************************************************
+
+Ops.Patch.PMZcxaN.ArrayMovingAverage= class extends CABLES.Op 
+{
+constructor()
+{
+super(...arguments);
+const op=this;
+const attachments=op.attachments={};
+const triggerIn = op.inTrigger("Trigger"); // Added a trigger for explicit execution control
+const arrayIn = op.inArray("Array");
+const windowSizeIn = op.inInt("WindowSize", 5); // Window size as Int
+const arraySizeOptionalIn = op.inInt("ArraySize (optional)", 0); // 0 or less means infer from first valid input
+const resetTrigger = op.inTrigger("Reset"); // Added a trigger for reset
+
+const triggerOut = op.outTrigger("Next");
+const avgArrayOut = op.outArray("AveragedArray");
+
+
+// --- Internal State ---
+const history = []; // Stores the last 'windowSize' arrays. Each entry will be a Float32Array.
+let currentAveragedArray = null; // Stores the last computed average
+let determinedArraySize = 0; // The size of arrays being processed, determined by arraySizeOptionalIn or first input
+
+
+// Function to handle the core logic, can be called by trigger or potentially by array input change
+function computeAndUpdate() {
+    const newArray = arrayIn.get(); // Get the current input array
+    const windowSize = Math.max(1, windowSizeIn.get()); // Ensure window size is at least 1
+
+    if (!newArray) {
+        // If no valid new array, output the last known average (if any)
+        if (currentAveragedArray) {
+            avgArrayOut.set(currentAveragedArray);
+        } else {
+            // If no history and no new array, output empty
+            avgArrayOut.set(new Float32Array(determinedArraySize > 0 ? determinedArraySize : 0));
+        }
+        triggerOut.trigger();
+        return;
+    }
+
+    let inputSize = newArray.length;
+    let configuredSize = arraySizeOptionalIn.get();
+
+    // Determine the effective array size for processing
+    if (determinedArraySize === 0) { // If not yet determined (e.g., first run)
+        if (configuredSize > 0) {
+            determinedArraySize = configuredSize;
+        } else if (inputSize > 0) {
+            determinedArraySize = inputSize;
+        } else {
+            // Not enough info to determine size, output empty
+            avgArrayOut.set(new Float32Array(0));
+            triggerOut.trigger();
+            return;
+        }
+    } else {
+        // If determinedArraySize was set, but configuredSize changes, prioritize configuredSize if valid
+        if (configuredSize > 0 && configuredSize !== determinedArraySize) {
+            determinedArraySize = configuredSize;
+            history.length = 0; // Clear history due to size change
+            currentAveragedArray = null;
+        }
+        // If input array size is different from determined, we'll conform the input.
+    }
+
+    if (determinedArraySize === 0) { // Still zero after checks (e.g. initial empty array and no configured size)
+        console.warn('Array Size = 0');
+        avgArrayOut.set(new Float32Array(0));
+        triggerOut.trigger();
+        return;
+    }
+
+
+    // Create a history entry that conforms to determinedArraySize
+    const historyEntry = new Float32Array(determinedArraySize);
+    for (let i = 0; i < determinedArraySize; i++) {
+        if (i < inputSize) {
+            historyEntry[i] = newArray[i]; // Copy from input
+        } else {
+            historyEntry[i] = 0; // Pad with 0 if input is shorter
+        }
+        // If input is longer, it's effectively truncated to determinedArraySize
+    }
+
+    // Add the conformed new array to history
+    history.push(historyEntry);
+
+    // Ensure history does not exceed windowSize
+    while (history.length > windowSize) {
+        history.shift(); // Remove the oldest array
+    }
+
+    // Calculate the moving average
+    const averagedValues = new Float32Array(determinedArraySize);
+    const numArraysInWindow = history.length;
+
+    if (numArraysInWindow > 0) {
+        for (let i = 0; i < determinedArraySize; i++) { // Iterate up to the determined array size
+            let sum = 0;
+            for (let j = 0; j < numArraysInWindow; j++) {
+                // history[j] is guaranteed to be a Float32Array of determinedArraySize
+                sum += history[j][i];
+            }
+            averagedValues[i] = sum / numArraysInWindow;
+        }
+    }
+    // If numArraysInWindow is 0 (should not happen if newArray was valid), averagedValues will be all zeros.
+
+    currentAveragedArray = averagedValues; // Store for next time if needed
+    avgArrayOut.set(currentAveragedArray);
+    triggerOut.trigger();
+}
+
+// Execute when triggered
+triggerIn.onTriggered = () => {
+    computeAndUpdate();
+};
+
+// Optional: also compute if the input array itself receives a new value
+// and no trigger is connected, or if you want it to be highly reactive.
+arrayIn.onNewValue = () => {
+   if (!triggerIn.isConnected()) { // Only if trigger is not connected
+       computeAndUpdate();
+   }
+};
+
+function reset() {
+    history.length = 0;
+    currentAveragedArray = null;
+    determinedArraySize = 0;
+}
+
+resetTrigger.onTriggered = reset;
+
+}
+};
+
+CABLES.OPS["00364d0d-dfa9-499b-8e33-44b8a8fce055"]={f:Ops.Patch.PMZcxaN.ArrayMovingAverage,objName:"Ops.Patch.PMZcxaN.ArrayMovingAverage"};
 
 
 

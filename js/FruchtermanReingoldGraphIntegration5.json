@@ -40,11 +40,11 @@
                 },
                 {
                     "name": "width",
-                    "value": 1303.5
+                    "value": 600
                 },
                 {
                     "name": "height",
-                    "value": 891
+                    "value": 901.5
                 },
                 {
                     "name": "Pixel Density",
@@ -671,7 +671,7 @@
                         {
                             "portIn": "ArraySize (optional)",
                             "portOut": "result",
-                            "objIn": "cinfsrkbq",
+                            "objIn": "j7gx29214",
                             "objOut": "dj6ga7slm"
                         }
                     ]
@@ -700,7 +700,7 @@
             "portsIn": [
                 {
                     "name": "Value",
-                    "value": 25
+                    "value": 35
                 },
                 {
                     "name": "Variable",
@@ -788,7 +788,7 @@
                         {
                             "portIn": "WindowSize",
                             "portOut": "Value",
-                            "objIn": "cinfsrkbq",
+                            "objIn": "j7gx29214",
                             "objOut": "0md0czj88"
                         }
                     ]
@@ -1443,11 +1443,11 @@
                 },
                 {
                     "name": "Movement X",
-                    "value": -13.333333333333334
+                    "value": -22
                 },
                 {
                     "name": "Movement Y",
-                    "value": 16
+                    "value": -4
                 }
             ],
             "objName": "Ops.Devices.Mouse.Mouse_v3"
@@ -1863,7 +1863,7 @@
                 },
                 {
                     "name": "Number",
-                    "value": 1.4635241301907969
+                    "value": 0.6651884700665188
                 }
             ],
             "objName": "Ops.Number.TriggerOnChangeNumber"
@@ -2788,36 +2788,6 @@
             "objName": "Ops.Html.FontFile_v2"
         },
         {
-            "id": "cinfsrkbq",
-            "uiAttribs": {},
-            "portsOut": [
-                {
-                    "name": "AveragedArray",
-                    "links": [
-                        {
-                            "portIn": "Value",
-                            "portOut": "AveragedArray",
-                            "objIn": "3kiisqinz",
-                            "objOut": "cinfsrkbq"
-                        },
-                        {
-                            "portIn": "Input Array",
-                            "portOut": "AveragedArray",
-                            "objIn": "67m0bfjme",
-                            "objOut": "cinfsrkbq"
-                        },
-                        {
-                            "portIn": "Current Positions",
-                            "portOut": "AveragedArray",
-                            "objIn": "8qm4icrp4",
-                            "objOut": "cinfsrkbq"
-                        }
-                    ]
-                }
-            ],
-            "objName": "Ops.Patch.PMZcxaN.ArrayMovingAverage"
-        },
-        {
             "id": "fdajwo4dw",
             "uiAttribs": {},
             "portsIn": [
@@ -3473,11 +3443,11 @@
                 },
                 {
                     "name": "Ratio",
-                    "value": 1.4635241301907969
+                    "value": 0.6651884700665188
                 },
                 {
                     "name": "Width",
-                    "value": 2.9270482603815937
+                    "value": 1.3303769401330376
                 },
                 {
                     "name": "Height",
@@ -5122,7 +5092,7 @@
                 },
                 {
                     "name": "MS",
-                    "value": 0.44
+                    "value": 0.3
                 }
             ],
             "objName": "Ops.Cables.FPS_v2"
@@ -6317,7 +6287,7 @@
             "portsOut": [
                 {
                     "name": "Num",
-                    "value": 13
+                    "value": 9
                 }
             ],
             "objName": "Ops.Gl.MeshInstancer_v4"
@@ -6645,7 +6615,7 @@
                 },
                 {
                     "name": "Array length",
-                    "value": 82
+                    "value": 66
                 }
             ],
             "objName": "Ops.Array.ArrayMerge_v3"
@@ -7778,7 +7748,7 @@
             "portsOut": [
                 {
                     "name": "Num",
-                    "value": 8
+                    "value": 5
                 }
             ],
             "objName": "Ops.Gl.MeshInstancer_v4"
@@ -8798,7 +8768,7 @@
                 },
                 {
                     "name": "Input",
-                    "value": 8
+                    "value": 5
                 },
                 {
                     "name": "Default",
@@ -9459,7 +9429,7 @@
                 },
                 {
                     "name": "Num",
-                    "value": 8
+                    "value": 5
                 }
             ],
             "objName": "Ops.Gl.MeshInstancer_v4"
@@ -9505,11 +9475,11 @@
                 },
                 {
                     "name": "Total points",
-                    "value": 8
+                    "value": 5
                 },
                 {
                     "name": "Array length",
-                    "value": 24
+                    "value": 15
                 }
             ],
             "objName": "Ops.Array.Array2To3"
@@ -9644,7 +9614,7 @@
                         {
                             "portIn": "Trigger",
                             "portOut": "Trigger",
-                            "objIn": "cinfsrkbq",
+                            "objIn": "j7gx29214",
                             "objOut": "0k1rnw84o"
                         }
                     ]
@@ -9655,18 +9625,48 @@
                         {
                             "portIn": "Array",
                             "portOut": "Next Positions",
-                            "objIn": "cinfsrkbq",
+                            "objIn": "j7gx29214",
                             "objOut": "0k1rnw84o"
                         }
                     ]
                 }
             ],
             "objName": "Ops.Patch.PMZcxaN.FruchtermanReingoldComputation"
+        },
+        {
+            "id": "j7gx29214",
+            "uiAttribs": {},
+            "portsOut": [
+                {
+                    "name": "AveragedArray",
+                    "links": [
+                        {
+                            "portIn": "Value",
+                            "portOut": "AveragedArray",
+                            "objIn": "3kiisqinz",
+                            "objOut": "j7gx29214"
+                        },
+                        {
+                            "portIn": "Input Array",
+                            "portOut": "AveragedArray",
+                            "objIn": "67m0bfjme",
+                            "objOut": "j7gx29214"
+                        },
+                        {
+                            "portIn": "Current Positions",
+                            "portOut": "AveragedArray",
+                            "objIn": "8qm4icrp4",
+                            "objOut": "j7gx29214"
+                        }
+                    ]
+                }
+            ],
+            "objName": "Ops.Patch.PMZcxaN.ArrayMovingAverage"
         }
     ],
     "export": {
-        "time": "2025-06-17 15:03",
+        "time": "2025-06-17 15:07",
         "service": "html",
-        "exportNumber": 11
+        "exportNumber": 12
     }
 }
