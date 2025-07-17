@@ -2,7 +2,10 @@
 /******/ 	// runtime can't be in strict mode because a global variable is assign and maybe created.
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 823:
+/***/ "./node_modules/gl-matrix/esm/common.js":
+/*!**********************************************!*\
+  !*** ./node_modules/gl-matrix/esm/common.js ***!
+  \**********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -68,7 +71,10 @@ if (!Math.hypot) Math.hypot = function () {
 
 /***/ }),
 
-/***/ 522:
+/***/ "./node_modules/gl-matrix/esm/mat2.js":
+/*!********************************************!*\
+  !*** ./node_modules/gl-matrix/esm/mat2.js ***!
+  \********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -101,7 +107,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   subtract: () => (/* binding */ subtract),
 /* harmony export */   transpose: () => (/* binding */ transpose)
 /* harmony export */ });
-/* harmony import */ var _common_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(823);
+/* harmony import */ var _common_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./common.js */ "./node_modules/gl-matrix/esm/common.js");
 
 /**
  * 2x2 Matrix
@@ -537,7 +543,10 @@ var sub = subtract;
 
 /***/ }),
 
-/***/ 964:
+/***/ "./node_modules/gl-matrix/esm/mat2d.js":
+/*!*********************************************!*\
+  !*** ./node_modules/gl-matrix/esm/mat2d.js ***!
+  \*********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -569,7 +578,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   subtract: () => (/* binding */ subtract),
 /* harmony export */   translate: () => (/* binding */ translate)
 /* harmony export */ });
-/* harmony import */ var _common_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(823);
+/* harmony import */ var _common_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./common.js */ "./node_modules/gl-matrix/esm/common.js");
 
 /**
  * 2x3 Matrix
@@ -1059,7 +1068,10 @@ var sub = subtract;
 
 /***/ }),
 
-/***/ 409:
+/***/ "./node_modules/gl-matrix/esm/mat3.js":
+/*!********************************************!*\
+  !*** ./node_modules/gl-matrix/esm/mat3.js ***!
+  \********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1098,7 +1110,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   translate: () => (/* binding */ translate),
 /* harmony export */   transpose: () => (/* binding */ transpose)
 /* harmony export */ });
-/* harmony import */ var _common_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(823);
+/* harmony import */ var _common_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./common.js */ "./node_modules/gl-matrix/esm/common.js");
 
 /**
  * 3x3 Matrix
@@ -1881,7 +1893,10 @@ var sub = subtract;
 
 /***/ }),
 
-/***/ 684:
+/***/ "./node_modules/gl-matrix/esm/mat4.js":
+/*!********************************************!*\
+  !*** ./node_modules/gl-matrix/esm/mat4.js ***!
+  \********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1935,7 +1950,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   translate: () => (/* binding */ translate),
 /* harmony export */   transpose: () => (/* binding */ transpose)
 /* harmony export */ });
-/* harmony import */ var _common_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(823);
+/* harmony import */ var _common_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./common.js */ "./node_modules/gl-matrix/esm/common.js");
 
 /**
  * 4x4 Matrix<br>Format: column-major, when typed out it looks like row-major<br>The matrices are being post multiplied.
@@ -3754,7 +3769,10 @@ var sub = subtract;
 
 /***/ }),
 
-/***/ 221:
+/***/ "./node_modules/gl-matrix/esm/quat.js":
+/*!********************************************!*\
+  !*** ./node_modules/gl-matrix/esm/quat.js ***!
+  \********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -3800,10 +3818,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   squaredLength: () => (/* binding */ squaredLength),
 /* harmony export */   str: () => (/* binding */ str)
 /* harmony export */ });
-/* harmony import */ var _common_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(823);
-/* harmony import */ var _mat3_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(409);
-/* harmony import */ var _vec3_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(329);
-/* harmony import */ var _vec4_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(796);
+/* harmony import */ var _common_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./common.js */ "./node_modules/gl-matrix/esm/common.js");
+/* harmony import */ var _mat3_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./mat3.js */ "./node_modules/gl-matrix/esm/mat3.js");
+/* harmony import */ var _vec3_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./vec3.js */ "./node_modules/gl-matrix/esm/vec3.js");
+/* harmony import */ var _vec4_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./vec4.js */ "./node_modules/gl-matrix/esm/vec4.js");
 
 
 
@@ -4517,7 +4535,10 @@ var setAxes = function () {
 
 /***/ }),
 
-/***/ 991:
+/***/ "./node_modules/gl-matrix/esm/quat2.js":
+/*!*********************************************!*\
+  !*** ./node_modules/gl-matrix/esm/quat2.js ***!
+  \*********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -4563,9 +4584,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   str: () => (/* binding */ str),
 /* harmony export */   translate: () => (/* binding */ translate)
 /* harmony export */ });
-/* harmony import */ var _common_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(823);
-/* harmony import */ var _quat_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(221);
-/* harmony import */ var _mat4_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(684);
+/* harmony import */ var _common_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./common.js */ "./node_modules/gl-matrix/esm/common.js");
+/* harmony import */ var _quat_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./quat.js */ "./node_modules/gl-matrix/esm/quat.js");
+/* harmony import */ var _mat4_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./mat4.js */ "./node_modules/gl-matrix/esm/mat4.js");
 
 
 
@@ -5404,7 +5425,10 @@ function equals(a, b) {
 
 /***/ }),
 
-/***/ 842:
+/***/ "./node_modules/gl-matrix/esm/vec2.js":
+/*!********************************************!*\
+  !*** ./node_modules/gl-matrix/esm/vec2.js ***!
+  \********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -5456,7 +5480,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   transformMat4: () => (/* binding */ transformMat4),
 /* harmony export */   zero: () => (/* binding */ zero)
 /* harmony export */ });
-/* harmony import */ var _common_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(823);
+/* harmony import */ var _common_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./common.js */ "./node_modules/gl-matrix/esm/common.js");
 
 /**
  * 2 Dimensional Vector
@@ -6101,7 +6125,10 @@ var forEach = function () {
 
 /***/ }),
 
-/***/ 329:
+/***/ "./node_modules/gl-matrix/esm/vec3.js":
+/*!********************************************!*\
+  !*** ./node_modules/gl-matrix/esm/vec3.js ***!
+  \********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -6156,7 +6183,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   transformQuat: () => (/* binding */ transformQuat),
 /* harmony export */   zero: () => (/* binding */ zero)
 /* harmony export */ });
-/* harmony import */ var _common_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(823);
+/* harmony import */ var _common_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./common.js */ "./node_modules/gl-matrix/esm/common.js");
 
 /**
  * 3 Dimensional Vector
@@ -6949,7 +6976,10 @@ var forEach = function () {
 
 /***/ }),
 
-/***/ 796:
+/***/ "./node_modules/gl-matrix/esm/vec4.js":
+/*!********************************************!*\
+  !*** ./node_modules/gl-matrix/esm/vec4.js ***!
+  \********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -6997,7 +7027,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   transformQuat: () => (/* binding */ transformQuat),
 /* harmony export */   zero: () => (/* binding */ zero)
 /* harmony export */ });
-/* harmony import */ var _common_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(823);
+/* harmony import */ var _common_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./common.js */ "./node_modules/gl-matrix/esm/common.js");
 
 /**
  * 4 Dimensional Vector
@@ -7665,17 +7695,20 @@ var forEach = function () {
 
 /***/ }),
 
-/***/ 344:
+/***/ "./src/core/anim.js":
+/*!**************************!*\
+  !*** ./src/core/anim.js ***!
+  \**************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   k: () => (/* binding */ Anim)
+/* harmony export */   Anim: () => (/* binding */ Anim)
 /* harmony export */ });
-/* harmony import */ var cables_shared_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(125);
-/* harmony import */ var cables_shared_client__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(849);
-/* harmony import */ var _utils_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(562);
-/* harmony import */ var _anim_key_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(963);
+/* harmony import */ var cables_shared_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! cables-shared-client */ "../shared/client/src/eventtarget.js");
+/* harmony import */ var cables_shared_client__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! cables-shared-client */ "../shared/client/src/logger.js");
+/* harmony import */ var _utils_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils.js */ "./src/core/utils.js");
+/* harmony import */ var _anim_key_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./anim_key.js */ "./src/core/anim_key.js");
 
 
 
@@ -7694,7 +7727,7 @@ var forEach = function () {
  * anim.getValue(5);    // get value at 5 seconds - this returns 0.5
  */
 
-class Anim extends cables_shared_client__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A
+class Anim extends cables_shared_client__WEBPACK_IMPORTED_MODULE_0__["default"]
 {
     static EVENT_KEY_DELETE = "keyDelete";
     static EVENT_CHANGE = "onChange";
@@ -7761,7 +7794,7 @@ class Anim extends cables_shared_client__WEBPACK_IMPORTED_MODULE_0__/* ["default
         this.stayInTimeline = false;
 
         this.loop = 0;
-        this._log = new cables_shared_client__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A("Anim");
+        this._log = new cables_shared_client__WEBPACK_IMPORTED_MODULE_2__["default"]("Anim");
         this._cachedIndex = 0;
         this.name = cfg.name || null;
 
@@ -8003,7 +8036,7 @@ class Anim extends cables_shared_client__WEBPACK_IMPORTED_MODULE_0__/* ["default
 
         if (!found)
         {
-            found = new _anim_key_js__WEBPACK_IMPORTED_MODULE_3__/* .AnimKey */ .rA(
+            found = new _anim_key_js__WEBPACK_IMPORTED_MODULE_3__.AnimKey(
                 {
                     "time": time,
                     "value": value,
@@ -8045,7 +8078,7 @@ class Anim extends cables_shared_client__WEBPACK_IMPORTED_MODULE_0__/* ["default
         if (obj.tlActive) this.#tlActive = obj.tlActive;
         for (const ani in obj.keys)
         {
-            this.keys.push(new _anim_key_js__WEBPACK_IMPORTED_MODULE_3__/* .AnimKey */ .rA(obj.keys[ani], this));
+            this.keys.push(new _anim_key_js__WEBPACK_IMPORTED_MODULE_3__.AnimKey(obj.keys[ani], this));
         }
         this.sortKeys();
     }
@@ -8366,15 +8399,18 @@ class Anim extends cables_shared_client__WEBPACK_IMPORTED_MODULE_0__/* ["default
 
 /***/ }),
 
-/***/ 963:
+/***/ "./src/core/anim_key.js":
+/*!******************************!*\
+  !*** ./src/core/anim_key.js ***!
+  \******************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   rA: () => (/* binding */ AnimKey)
+/* harmony export */   AnimKey: () => (/* binding */ AnimKey)
 /* harmony export */ });
 /* unused harmony exports easeExpoIn, easeExpoOut, easeExpoInOut, easeCubicIn, easeCubicOut, easeCubicInOut */
-/* harmony import */ var _anim_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(344);
+/* harmony import */ var _anim_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./anim.js */ "./src/core/anim.js");
 
 
 class AnimKey
@@ -8404,7 +8440,7 @@ class AnimKey
     {
         this.anim = obj.anim || an || null;
 
-        this.setEasing(_anim_js__WEBPACK_IMPORTED_MODULE_0__/* .Anim */ .k.EASING_LINEAR);
+        this.setEasing(_anim_js__WEBPACK_IMPORTED_MODULE_0__.Anim.EASING_LINEAR);
         this.set(obj);
     }
 
@@ -8435,7 +8471,7 @@ class AnimKey
             this.uiAttribs[i] = o[i];
             if (o[i] === null) delete this.uiAttribs[i];
         }
-        if (this.anim) this.anim.emitEvent(_anim_js__WEBPACK_IMPORTED_MODULE_0__/* .Anim */ .k.EVENT_CHANGE);
+        if (this.anim) this.anim.emitEvent(_anim_js__WEBPACK_IMPORTED_MODULE_0__.Anim.EVENT_CHANGE);
     }
 
     /**
@@ -8447,34 +8483,34 @@ class AnimKey
         if (this._easing != e)changed = true;
         this._easing = e;
 
-        if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__/* .Anim */ .k.EASING_LINEAR) this.ease = this.easeLinear;
-        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__/* .Anim */ .k.EASING_ABSOLUTE) this.ease = this.easeAbsolute;
-        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__/* .Anim */ .k.EASING_SMOOTHSTEP) this.ease = AnimKey.easeSmoothStep;
-        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__/* .Anim */ .k.EASING_SMOOTHERSTEP) this.ease = AnimKey.easeSmootherStep;
-        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__/* .Anim */ .k.EASING_CUBIC_IN) this.ease = AnimKey.easeCubicIn;
-        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__/* .Anim */ .k.EASING_CUBIC_OUT) this.ease = AnimKey.easeCubicOut;
-        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__/* .Anim */ .k.EASING_CUBIC_INOUT) this.ease = AnimKey.easeCubicInOut;
-        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__/* .Anim */ .k.EASING_EXPO_IN) this.ease = AnimKey.easeExpoIn;
-        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__/* .Anim */ .k.EASING_EXPO_OUT) this.ease = AnimKey.easeExpoOut;
-        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__/* .Anim */ .k.EASING_EXPO_INOUT) this.ease = AnimKey.easeExpoInOut;
-        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__/* .Anim */ .k.EASING_SIN_IN) this.ease = AnimKey.easeSinIn;
-        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__/* .Anim */ .k.EASING_SIN_OUT) this.ease = AnimKey.easeSinOut;
-        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__/* .Anim */ .k.EASING_SIN_INOUT) this.ease = AnimKey.easeSinInOut;
-        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__/* .Anim */ .k.EASING_BACK_OUT) this.ease = AnimKey.easeOutBack;
-        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__/* .Anim */ .k.EASING_BACK_IN) this.ease = AnimKey.easeInBack;
-        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__/* .Anim */ .k.EASING_BACK_INOUT) this.ease = AnimKey.easeInOutBack;
-        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__/* .Anim */ .k.EASING_ELASTIC_IN) this.ease = AnimKey.easeInElastic;
-        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__/* .Anim */ .k.EASING_ELASTIC_OUT) this.ease = AnimKey.easeOutElastic;
+        if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__.Anim.EASING_LINEAR) this.ease = this.easeLinear;
+        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__.Anim.EASING_ABSOLUTE) this.ease = this.easeAbsolute;
+        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__.Anim.EASING_SMOOTHSTEP) this.ease = AnimKey.easeSmoothStep;
+        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__.Anim.EASING_SMOOTHERSTEP) this.ease = AnimKey.easeSmootherStep;
+        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__.Anim.EASING_CUBIC_IN) this.ease = AnimKey.easeCubicIn;
+        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__.Anim.EASING_CUBIC_OUT) this.ease = AnimKey.easeCubicOut;
+        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__.Anim.EASING_CUBIC_INOUT) this.ease = AnimKey.easeCubicInOut;
+        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__.Anim.EASING_EXPO_IN) this.ease = AnimKey.easeExpoIn;
+        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__.Anim.EASING_EXPO_OUT) this.ease = AnimKey.easeExpoOut;
+        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__.Anim.EASING_EXPO_INOUT) this.ease = AnimKey.easeExpoInOut;
+        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__.Anim.EASING_SIN_IN) this.ease = AnimKey.easeSinIn;
+        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__.Anim.EASING_SIN_OUT) this.ease = AnimKey.easeSinOut;
+        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__.Anim.EASING_SIN_INOUT) this.ease = AnimKey.easeSinInOut;
+        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__.Anim.EASING_BACK_OUT) this.ease = AnimKey.easeOutBack;
+        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__.Anim.EASING_BACK_IN) this.ease = AnimKey.easeInBack;
+        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__.Anim.EASING_BACK_INOUT) this.ease = AnimKey.easeInOutBack;
+        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__.Anim.EASING_ELASTIC_IN) this.ease = AnimKey.easeInElastic;
+        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__.Anim.EASING_ELASTIC_OUT) this.ease = AnimKey.easeOutElastic;
         // else if (this._easing == Anim.EASING_ELASTIC_INOUT) this.ease = AnimKey.easeElasticInOut;
-        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__/* .Anim */ .k.EASING_BOUNCE_IN) this.ease = AnimKey.easeInBounce;
-        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__/* .Anim */ .k.EASING_BOUNCE_OUT) this.ease = AnimKey.easeOutBounce;
-        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__/* .Anim */ .k.EASING_QUART_OUT) this.ease = AnimKey.easeOutQuart;
-        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__/* .Anim */ .k.EASING_QUART_IN) this.ease = AnimKey.easeInQuart;
-        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__/* .Anim */ .k.EASING_QUART_INOUT) this.ease = AnimKey.easeInOutQuart;
-        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__/* .Anim */ .k.EASING_QUINT_OUT) this.ease = AnimKey.easeOutQuint;
-        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__/* .Anim */ .k.EASING_QUINT_IN) this.ease = AnimKey.easeInQuint;
-        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__/* .Anim */ .k.EASING_QUINT_INOUT) this.ease = AnimKey.easeInOutQuint;
-        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__/* .Anim */ .k.EASING_CUBICSPLINE)
+        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__.Anim.EASING_BOUNCE_IN) this.ease = AnimKey.easeInBounce;
+        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__.Anim.EASING_BOUNCE_OUT) this.ease = AnimKey.easeOutBounce;
+        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__.Anim.EASING_QUART_OUT) this.ease = AnimKey.easeOutQuart;
+        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__.Anim.EASING_QUART_IN) this.ease = AnimKey.easeInQuart;
+        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__.Anim.EASING_QUART_INOUT) this.ease = AnimKey.easeInOutQuart;
+        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__.Anim.EASING_QUINT_OUT) this.ease = AnimKey.easeOutQuint;
+        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__.Anim.EASING_QUINT_IN) this.ease = AnimKey.easeInQuint;
+        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__.Anim.EASING_QUINT_INOUT) this.ease = AnimKey.easeInOutQuint;
+        else if (this._easing == _anim_js__WEBPACK_IMPORTED_MODULE_0__.Anim.EASING_CUBICSPLINE)
         {
             if (this.ease != this.easeCubicSpline)
             {
@@ -8486,7 +8522,7 @@ class AnimKey
         }
         else
         {
-            this._easing = _anim_js__WEBPACK_IMPORTED_MODULE_0__/* .Anim */ .k.EASING_LINEAR;
+            this._easing = _anim_js__WEBPACK_IMPORTED_MODULE_0__.Anim.EASING_LINEAR;
             this.ease = this.easeLinear;
         }
         if (changed) this.emitChange();
@@ -8584,7 +8620,7 @@ class AnimKey
         obj.e = this._easing;
         obj.uiAttribs = this.uiAttribs;
 
-        if (this._easing === _anim_js__WEBPACK_IMPORTED_MODULE_0__/* .Anim */ .k.EASING_CUBICSPLINE)
+        if (this._easing === _anim_js__WEBPACK_IMPORTED_MODULE_0__.Anim.EASING_CUBICSPLINE)
         {
             obj.cp1 = this.bezCp1;
             obj.cp2 = this.bezCp2;
@@ -8609,7 +8645,7 @@ class AnimKey
             const samples = 30;
 
             // const prevKey = this.anim.getPrevKey(this.time);
-            this.bezAn = new _anim_js__WEBPACK_IMPORTED_MODULE_0__/* .Anim */ .k();
+            this.bezAn = new _anim_js__WEBPACK_IMPORTED_MODULE_0__.Anim();
             for (let i = 0; i <= samples + 1; i++)
             {
                 const c = AnimKey.cubicSpline(i / samples, this, key2);
@@ -8935,19 +8971,22 @@ AnimKey.easeSmootherStep = function (perc, key2)
 
 /***/ }),
 
-/***/ 440:
+/***/ "./src/core/constants.js":
+/*!*******************************!*\
+  !*** ./src/core/constants.js ***!
+  \*******************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   a: () => (/* binding */ CONSTANTS)
+/* harmony export */   CONSTANTS: () => (/* binding */ CONSTANTS)
 /* harmony export */ });
-/* harmony import */ var _anim_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(344);
+/* harmony import */ var _anim_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./anim.js */ "./src/core/anim.js");
 
 
 const CONSTANTS = {
     "ANIM": {
-        "EASINGS": _anim_js__WEBPACK_IMPORTED_MODULE_0__/* .Anim */ .k.EASINGNAMES,
+        "EASINGS": _anim_js__WEBPACK_IMPORTED_MODULE_0__.Anim.EASINGNAMES,
         "EASING_LINEAR": 0,
         "EASING_ABSOLUTE": 1,
         "EASING_SMOOTHSTEP": 2,
@@ -9028,18 +9067,21 @@ const CONSTANTS = {
 
 /***/ }),
 
-/***/ 50:
+/***/ "./src/core/core_port.js":
+/*!*******************************!*\
+  !*** ./src/core/core_port.js ***!
+  \*******************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   I: () => (/* binding */ Port)
+/* harmony export */   Port: () => (/* binding */ Port)
 /* harmony export */ });
-/* harmony import */ var cables_shared_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(125);
-/* harmony import */ var cables_shared_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(849);
-/* harmony import */ var _constants_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(440);
-/* harmony import */ var _utils_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(562);
-/* harmony import */ var _anim_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(344);
+/* harmony import */ var cables_shared_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! cables-shared-client */ "../shared/client/src/eventtarget.js");
+/* harmony import */ var cables_shared_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! cables-shared-client */ "../shared/client/src/logger.js");
+/* harmony import */ var _constants_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./constants.js */ "./src/core/constants.js");
+/* harmony import */ var _utils_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./utils.js */ "./src/core/utils.js");
+/* harmony import */ var _anim_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./anim.js */ "./src/core/anim.js");
 
 
 
@@ -9095,7 +9137,7 @@ const CONSTANTS = {
  * @example
  * const myPort=op.inString("String Port");
  */
-class Port extends cables_shared_client__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A
+class Port extends cables_shared_client__WEBPACK_IMPORTED_MODULE_0__["default"]
 {
     static DIR_IN = 0;
     static DIR_OUT = 1;
@@ -9135,7 +9177,7 @@ class Port extends cables_shared_client__WEBPACK_IMPORTED_MODULE_0__/* ["default
     {
         super();
         this.data = {}; // UNUSED, DEPRECATED, only left in for backwards compatibility with userops
-        this._log = new cables_shared_client__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A("core_port");
+        this._log = new cables_shared_client__WEBPACK_IMPORTED_MODULE_1__["default"]("core_port");
 
         /**
          * @type {Number}
@@ -9434,7 +9476,7 @@ class Port extends cables_shared_client__WEBPACK_IMPORTED_MODULE_0__/* ["default
         if (v === undefined) v = null;
 
         if (CABLES.UI && CABLES.UI.showDevInfos)
-            if (this.direction == _constants_js__WEBPACK_IMPORTED_MODULE_2__/* .CONSTANTS */ .a.PORT.PORT_DIR_OUT && this.type == Port.TYPE_OBJECT && v && !this.forceRefChange)
+            if (this.direction == _constants_js__WEBPACK_IMPORTED_MODULE_2__.CONSTANTS.PORT.PORT_DIR_OUT && this.type == Port.TYPE_OBJECT && v && !this.forceRefChange)
                 this._log.warn("object port [" + this.name + "] uses .set [" + this.op.objName + "]");
 
         if (this._op.enabled && !this.crashed)
@@ -9476,7 +9518,7 @@ class Port extends cables_shared_client__WEBPACK_IMPORTED_MODULE_0__/* ["default
                     if (this._op && this._op.patch && this._op.patch.isEditorMode() && this.type == Port.TYPE_TEXTURE) gui.texturePreview().updateTexturePort(this);
                 }
 
-                if (this.direction == _constants_js__WEBPACK_IMPORTED_MODULE_2__/* .CONSTANTS */ .a.PORT.PORT_DIR_OUT) for (let i = 0; i < this.links.length; ++i) this.links[i].setValue();
+                if (this.direction == _constants_js__WEBPACK_IMPORTED_MODULE_2__.CONSTANTS.PORT.PORT_DIR_OUT) for (let i = 0; i < this.links.length; ++i) this.links[i].setValue();
             }
         }
     }
@@ -9547,9 +9589,9 @@ class Port extends cables_shared_client__WEBPACK_IMPORTED_MODULE_0__/* ["default
 
         if (objPort.anim)
         {
-            if (!this.anim) this.anim = new _anim_js__WEBPACK_IMPORTED_MODULE_3__/* .Anim */ .k({ "name": "port " + this.name });
+            if (!this.anim) this.anim = new _anim_js__WEBPACK_IMPORTED_MODULE_3__.Anim({ "name": "port " + this.name });
             this._op.hasAnimPort = true;
-            this.anim.on(_anim_js__WEBPACK_IMPORTED_MODULE_3__/* .Anim */ .k.EVENT_CHANGE, () =>
+            this.anim.on(_anim_js__WEBPACK_IMPORTED_MODULE_3__.Anim.EVENT_CHANGE, () =>
             {
                 this._op.patch.emitEvent("portAnimUpdated", this._op, this, this.anim);
             });
@@ -9609,7 +9651,7 @@ class Port extends cables_shared_client__WEBPACK_IMPORTED_MODULE_0__/* ["default
             if (this.uiAttribs.hasOwnProperty("order")) obj.order = this.uiAttribs.order;
         }
         if (this.uiAttribs.title) obj.title = this.uiAttribs.title;
-        if ((this.preserveLinks || this.direction == _constants_js__WEBPACK_IMPORTED_MODULE_2__/* .CONSTANTS */ .a.PORT.PORT_DIR_OUT) && this.links.length > 0)
+        if ((this.preserveLinks || this.direction == _constants_js__WEBPACK_IMPORTED_MODULE_2__.CONSTANTS.PORT.PORT_DIR_OUT) && this.links.length > 0)
         {
             obj.links = [];
             for (const i in this.links)
@@ -9976,8 +10018,8 @@ class Port extends cables_shared_client__WEBPACK_IMPORTED_MODULE_0__/* ["default
 
             if (this.#animated && !this.anim)
             {
-                this.anim = new _anim_js__WEBPACK_IMPORTED_MODULE_3__/* .Anim */ .k({ "name": "port " + this.name });
-                this.anim.on(_anim_js__WEBPACK_IMPORTED_MODULE_3__/* .Anim */ .k.EVENT_CHANGE, () =>
+                this.anim = new _anim_js__WEBPACK_IMPORTED_MODULE_3__.Anim({ "name": "port " + this.name });
+                this.anim.on(_anim_js__WEBPACK_IMPORTED_MODULE_3__.Anim.EVENT_CHANGE, () =>
                 {
                     this._op.patch.emitEvent("portAnimUpdated", this._op, this, this.anim);
                 });
@@ -10002,8 +10044,8 @@ class Port extends cables_shared_client__WEBPACK_IMPORTED_MODULE_0__/* ["default
         this.#animated = !this.#animated;
         if (this.#animated && !this.anim)
         {
-            this.anim = new _anim_js__WEBPACK_IMPORTED_MODULE_3__/* .Anim */ .k({ "name": "port " + this.name });
-            this.anim.on(_anim_js__WEBPACK_IMPORTED_MODULE_3__/* .Anim */ .k.EVENT_CHANGE, () =>
+            this.anim = new _anim_js__WEBPACK_IMPORTED_MODULE_3__.Anim({ "name": "port " + this.name });
+            this.anim.on(_anim_js__WEBPACK_IMPORTED_MODULE_3__.Anim.EVENT_CHANGE, () =>
             {
                 this._op.patch.emitEvent("portAnimUpdated", this._op, this, this.anim);
             });
@@ -10144,7 +10186,10 @@ class Port extends cables_shared_client__WEBPACK_IMPORTED_MODULE_0__/* ["default
 
 /***/ }),
 
-/***/ 606:
+/***/ "./src/core/index.js":
+/*!****************************************!*\
+  !*** ./src/core/index.js + 12 modules ***!
+  \****************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -10153,20 +10198,20 @@ __webpack_require__.r(__webpack_exports__);
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  Anim: () => (/* reexport */ anim/* Anim */.k),
-  AnimKey: () => (/* reexport */ anim_key/* AnimKey */.rA),
-  CONSTANTS: () => (/* reexport */ constants/* CONSTANTS */.a),
+  Anim: () => (/* reexport */ anim.Anim),
+  AnimKey: () => (/* reexport */ anim_key.AnimKey),
+  CONSTANTS: () => (/* reexport */ constants.CONSTANTS),
   EMBED: () => (/* reexport */ EMBED),
   Link: () => (/* reexport */ Link),
   LoadingStatus: () => (/* reexport */ LoadingStatus),
   Op: () => (/* reexport */ Op),
   Patch: () => (/* reexport */ Patch),
   PatchVariable: () => (/* reexport */ PatchVariable),
-  Port: () => (/* reexport */ core_port/* Port */.I),
+  Port: () => (/* reexport */ core_port.Port),
   Profiler: () => (/* reexport */ Profiler),
-  Timer: () => (/* reexport */ timer/* Timer */.M4),
+  Timer: () => (/* reexport */ timer.Timer),
   "default": () => (/* binding */ core),
-  now: () => (/* reexport */ timer/* now */.tB),
+  now: () => (/* reexport */ timer.now),
   utils: () => (/* reexport */ utils)
 });
 
@@ -10187,25 +10232,25 @@ __webpack_require__.d(esm_namespaceObject, {
 });
 
 // EXTERNAL MODULE: ./node_modules/gl-matrix/esm/common.js
-var common = __webpack_require__(823);
+var common = __webpack_require__("./node_modules/gl-matrix/esm/common.js");
 // EXTERNAL MODULE: ./node_modules/gl-matrix/esm/mat2.js
-var mat2 = __webpack_require__(522);
+var mat2 = __webpack_require__("./node_modules/gl-matrix/esm/mat2.js");
 // EXTERNAL MODULE: ./node_modules/gl-matrix/esm/mat2d.js
-var mat2d = __webpack_require__(964);
+var mat2d = __webpack_require__("./node_modules/gl-matrix/esm/mat2d.js");
 // EXTERNAL MODULE: ./node_modules/gl-matrix/esm/mat3.js
-var mat3 = __webpack_require__(409);
+var mat3 = __webpack_require__("./node_modules/gl-matrix/esm/mat3.js");
 // EXTERNAL MODULE: ./node_modules/gl-matrix/esm/mat4.js
-var mat4 = __webpack_require__(684);
+var mat4 = __webpack_require__("./node_modules/gl-matrix/esm/mat4.js");
 // EXTERNAL MODULE: ./node_modules/gl-matrix/esm/quat.js
-var quat = __webpack_require__(221);
+var quat = __webpack_require__("./node_modules/gl-matrix/esm/quat.js");
 // EXTERNAL MODULE: ./node_modules/gl-matrix/esm/quat2.js
-var quat2 = __webpack_require__(991);
+var quat2 = __webpack_require__("./node_modules/gl-matrix/esm/quat2.js");
 // EXTERNAL MODULE: ./node_modules/gl-matrix/esm/vec2.js
-var vec2 = __webpack_require__(842);
+var vec2 = __webpack_require__("./node_modules/gl-matrix/esm/vec2.js");
 // EXTERNAL MODULE: ./node_modules/gl-matrix/esm/vec3.js
-var vec3 = __webpack_require__(329);
+var vec3 = __webpack_require__("./node_modules/gl-matrix/esm/vec3.js");
 // EXTERNAL MODULE: ./node_modules/gl-matrix/esm/vec4.js
-var vec4 = __webpack_require__(796);
+var vec4 = __webpack_require__("./node_modules/gl-matrix/esm/vec4.js");
 ;// CONCATENATED MODULE: ./node_modules/gl-matrix/esm/index.js
 
 
@@ -10219,15 +10264,15 @@ var vec4 = __webpack_require__(796);
 
 
 // EXTERNAL MODULE: ../shared/client/src/eventtarget.js + 2 modules
-var eventtarget = __webpack_require__(125);
+var eventtarget = __webpack_require__("../shared/client/src/eventtarget.js");
 // EXTERNAL MODULE: ../shared/client/src/logger.js
-var logger = __webpack_require__(849);
+var logger = __webpack_require__("../shared/client/src/logger.js");
 // EXTERNAL MODULE: ./src/core/utils.js + 1 modules
-var utils = __webpack_require__(562);
+var utils = __webpack_require__("./src/core/utils.js");
 // EXTERNAL MODULE: ./src/core/anim.js
-var anim = __webpack_require__(344);
+var anim = __webpack_require__("./src/core/anim.js");
 // EXTERNAL MODULE: ./src/core/core_port.js
-var core_port = __webpack_require__(50);
+var core_port = __webpack_require__("./src/core/core_port.js");
 ;// CONCATENATED MODULE: ./src/core/core_link.js
 
 
@@ -10239,7 +10284,7 @@ var core_port = __webpack_require__(50);
  * @hideconstructor
  * @class
  */
-class Link extends eventtarget/* default */.A
+class Link extends eventtarget["default"]
 {
 
     /**
@@ -10294,7 +10339,7 @@ class Link extends eventtarget/* default */.A
 
         if (v == v) // NaN is the only JavaScript value that is treated as unequal to itself
         {
-            if (this.portIn.type != core_port/* Port */.I.TYPE_FUNCTION) this.activity();
+            if (this.portIn.type != core_port.Port.TYPE_FUNCTION) this.activity();
 
             if (this.portIn.get() !== v)
             {
@@ -10336,7 +10381,7 @@ class Link extends eventtarget/* default */.A
             this._patch.emitEvent("onUnLink", this.portIn, this.portOut, this);
         }
 
-        if (this.portIn && (this.portIn.type == core_port/* Port */.I.TYPE_OBJECT || this.portIn.type == core_port/* Port */.I.TYPE_ARRAY))
+        if (this.portIn && (this.portIn.type == core_port.Port.TYPE_OBJECT || this.portIn.type == core_port.Port.TYPE_ARRAY))
         {
             this.portIn.set(null);
             if (this.portIn.links.length > 0) this.portIn.set(this.portIn.links[0].getOtherPort(this.portIn).get());
@@ -10366,7 +10411,7 @@ class Link extends eventtarget/* default */.A
             return false;
         }
 
-        if (p1.direction == core_port/* Port */.I.DIR_IN)
+        if (p1.direction == core_port.Port.DIR_IN)
         {
             this.portIn = p1;
             this.portOut = p2;
@@ -10409,16 +10454,16 @@ class Link extends eventtarget/* default */.A
         if (p1.direction == p2.direction)
         {
             let txt = "(out)";
-            if (p2.direction == core_port/* Port */.I.DIR_IN) txt = "(in)";
+            if (p2.direction == core_port.Port.DIR_IN) txt = "(in)";
             return "can not link: same direction " + txt;
         }
         if (p1.op == p2.op) return "can not link: same op";
-        if (p1.type != core_port/* Port */.I.TYPE_DYNAMIC && p2.type != core_port/* Port */.I.TYPE_DYNAMIC)
+        if (p1.type != core_port.Port.TYPE_DYNAMIC && p2.type != core_port.Port.TYPE_DYNAMIC)
         {
             if (p1.type != p2.type) return "can not link: different type";
         }
 
-        if (CABLES.UI && p1.type == core_port/* Port */.I.TYPE_OBJECT && p2.type == core_port/* Port */.I.TYPE_OBJECT)
+        if (CABLES.UI && p1.type == core_port.Port.TYPE_OBJECT && p2.type == core_port.Port.TYPE_OBJECT)
         {
             if (p1.uiAttribs.objType && p2.uiAttribs.objType)
                 if (p1.uiAttribs.objType != p2.uiAttribs.objType)
@@ -10428,8 +10473,8 @@ class Link extends eventtarget/* default */.A
         if (!p1) return "can not link: port 1 invalid";
         if (!p2) return "can not link: port 2 invalid";
 
-        if (p1.direction == core_port/* Port */.I.DIR_IN && p1.isAnimated()) return "can not link: is animated";
-        if (p2.direction == core_port/* Port */.I.DIR_IN && p2.isAnimated()) return "can not link: is animated";
+        if (p1.direction == core_port.Port.DIR_IN && p1.isAnimated()) return "can not link: is animated";
+        if (p2.direction == core_port.Port.DIR_IN && p2.isAnimated()) return "can not link: is animated";
 
         if (p1.isLinkedTo(p2)) return "ports already linked";
 
@@ -10449,8 +10494,8 @@ class Link extends eventtarget/* default */.A
     {
         if (!p1) return false;
         if (!p2) return false;
-        if (p1.direction == core_port/* Port */.I.DIR_IN && p1.isAnimated()) return false;
-        if (p2.direction == core_port/* Port */.I.DIR_IN && p2.isAnimated()) return false;
+        if (p1.direction == core_port.Port.DIR_IN && p1.isAnimated()) return false;
+        if (p2.direction == core_port.Port.DIR_IN && p2.isAnimated()) return false;
 
         if (p1.isHidden() || p2.isHidden()) return false;
 
@@ -10458,7 +10503,7 @@ class Link extends eventtarget/* default */.A
 
         if (p1.direction == p2.direction) return false;
 
-        if (CABLES.UI && p1.type == core_port/* Port */.I.TYPE_OBJECT && p2.type == core_port/* Port */.I.TYPE_OBJECT)
+        if (CABLES.UI && p1.type == core_port.Port.TYPE_OBJECT && p2.type == core_port.Port.TYPE_OBJECT)
         {
             if (p1.uiAttribs.objType && p2.uiAttribs.objType)
             {
@@ -10468,8 +10513,8 @@ class Link extends eventtarget/* default */.A
             }
         }
 
-        if (p1.type != p2.type && (p1.type != core_port/* Port */.I.TYPE_DYNAMIC && p2.type != core_port/* Port */.I.TYPE_DYNAMIC)) return false;
-        if (p1.type == core_port/* Port */.I.TYPE_DYNAMIC || p2.type == core_port/* Port */.I.TYPE_DYNAMIC) return true;
+        if (p1.type != p2.type && (p1.type != core_port.Port.TYPE_DYNAMIC && p2.type != core_port.Port.TYPE_DYNAMIC)) return false;
+        if (p1.type == core_port.Port.TYPE_DYNAMIC || p2.type == core_port.Port.TYPE_DYNAMIC) return true;
 
         if (p1.op == p2.op) return false;
 
@@ -10483,15 +10528,15 @@ class Link extends eventtarget/* default */.A
 // --------------------------------------------
 
 // EXTERNAL MODULE: ./src/corelibs/cgl/index.js + 4 modules
-var cgl = __webpack_require__(772);
+var cgl = __webpack_require__("./src/corelibs/cgl/index.js");
 // EXTERNAL MODULE: ./src/corelibs/cgl/cgl_state.js
-var cgl_state = __webpack_require__(308);
+var cgl_state = __webpack_require__("./src/corelibs/cgl/cgl_state.js");
 // EXTERNAL MODULE: ./src/core/constants.js
-var constants = __webpack_require__(440);
+var constants = __webpack_require__("./src/core/constants.js");
 ;// CONCATENATED MODULE: ./src/core/core_port_switch.js
 
 
-class SwitchPort extends core_port/* Port */.I
+class SwitchPort extends core_port.Port
 {
     constructor(__parent, name, type, uiAttribs, indexPort)
     {
@@ -10584,11 +10629,11 @@ class ValueSelectPort extends SwitchPort
 
 const MIN_NUM_PORTS = 2;
 
-class MultiPort extends core_port/* Port */.I
+class MultiPort extends core_port.Port
 {
     constructor(__parent, name, type, dir, uiAttribs, uiAttribsPorts)
     {
-        super(__parent, name, core_port/* Port */.I.TYPE_ARRAY, uiAttribs);
+        super(__parent, name, core_port.Port.TYPE_ARRAY, uiAttribs);
 
         this.setUiAttribs({ "multiPort": true, "group": this.name, "order": -1 });
         this.ports = [];
@@ -10612,7 +10657,7 @@ class MultiPort extends core_port/* Port */.I
         {
             let grey = !this.uiAttribs.multiPortManual || false;
 
-            if (this.direction == constants/* CONSTANTS */.a.PORT.PORT_DIR_OUT)grey = false;
+            if (this.direction == constants.CONSTANTS.PORT.PORT_DIR_OUT)grey = false;
 
             for (let i = 0; i < this.ports.length; i++)
             {
@@ -10819,16 +10864,16 @@ class MultiPort extends core_port/* Port */.I
             const attrs = {};
             // if (type == CABLES.OP_PORT_TYPE_STRING) attrs.type = "string";
             attrs.type = type;
-            const po = new core_port/* Port */.I(this.op, name + "_" + this.ports.length, type, attrs);
+            const po = new core_port.Port(this.op, name + "_" + this.ports.length, type, attrs);
 
             po.direction = dir;
             this.ports.push(po);
             // console.log("CONSTANTS.PORT_DIR_OUT", CONSTANTS.PORT.PORT_DIR_OUT, this.direction);
-            if (this.direction == constants/* CONSTANTS */.a.PORT.PORT_DIR_OUT) this.op.addOutPort(po);
+            if (this.direction == constants.CONSTANTS.PORT.PORT_DIR_OUT) this.op.addOutPort(po);
             else this.op.addInPort(po);
 
-            if (type == core_port/* Port */.I.TYPE_NUMBER) po.setInitialValue(0);
-            else if (type == core_port/* Port */.I.TYPE_STRING) po.setInitialValue("");
+            if (type == core_port.Port.TYPE_NUMBER) po.setInitialValue(0);
+            else if (type == core_port.Port.TYPE_STRING) po.setInitialValue("");
 
             this.addListeners();
 
@@ -10947,14 +10992,14 @@ class MultiPort extends core_port/* Port */.I
 /**
  * @template {CorePatch} Patch
  */
-class Op extends eventtarget/* default */.A
+class Op extends eventtarget["default"]
 {
     static OP_VERSION_PREFIX = "_v";
     static EVENT_INIT = "init";
     static EVENT_UIATTR_CHANGE = "onUiAttribsChange";
 
     #objName = "";
-    _log = new logger/* default */.A("core_op");
+    _log = new logger["default"]("core_op");
     //    #name = "";
     #shortOpName = "";
 
@@ -11069,7 +11114,7 @@ class Op extends eventtarget/* default */.A
     set _objName(on)
     {
         this.#objName = on;
-        this._log = new logger/* default */.A("op " + on);
+        this._log = new logger["default"]("op " + on);
     }
 
     get objName()
@@ -11251,7 +11296,7 @@ class Op extends eventtarget/* default */.A
      */
     addOutPort(p)
     {
-        p.direction = constants/* CONSTANTS */.a.PORT.PORT_DIR_OUT;
+        p.direction = constants.CONSTANTS.PORT.PORT_DIR_OUT;
         p._op = this;
         this.portsOut.push(p);
         this.emitEvent("onPortAdd", p);
@@ -11263,12 +11308,12 @@ class Op extends eventtarget/* default */.A
         let i = 0;
         for (i = 0; i < this.portsIn.length; i++)
         {
-            if (this.portsIn[i].type == core_port/* Port */.I.TYPE_DYNAMIC) return true;
+            if (this.portsIn[i].type == core_port.Port.TYPE_DYNAMIC) return true;
             if (this.portsIn[i].getName() == "dyn") return true;
         }
         for (i = 0; i < this.portsOut.length; i++)
         {
-            if (this.portsOut[i].type == core_port/* Port */.I.TYPE_DYNAMIC) return true;
+            if (this.portsOut[i].type == core_port.Port.TYPE_DYNAMIC) return true;
             if (this.portsOut[i].getName() == "dyn") return true;
         }
 
@@ -11280,7 +11325,7 @@ class Op extends eventtarget/* default */.A
      */
     addInPort(p)
     {
-        p.direction = core_port/* Port */.I.DIR_IN;
+        p.direction = core_port.Port.DIR_IN;
         p._op = this;
 
         this.portsIn.push(p);
@@ -11308,7 +11353,7 @@ class Op extends eventtarget/* default */.A
      */
     inTrigger(name, v)
     {
-        const p = this.addInPort(new core_port/* Port */.I(this, name, core_port/* Port */.I.TYPE_FUNCTION));
+        const p = this.addInPort(new core_port.Port(this, name, core_port.Port.TYPE_FUNCTION));
         if (v !== undefined) p.set(v);
         return p;
     }
@@ -11322,7 +11367,7 @@ class Op extends eventtarget/* default */.A
     inTriggerButton(name, v)
     {
         const p = this.addInPort(
-            new core_port/* Port */.I(this, name, core_port/* Port */.I.TYPE_FUNCTION, {
+            new core_port.Port(this, name, core_port.Port.TYPE_FUNCTION, {
                 "display": "button"
             })
         );
@@ -11337,7 +11382,7 @@ class Op extends eventtarget/* default */.A
     inUiTriggerButtons(name, v)
     {
         const p = this.addInPort(
-            new core_port/* Port */.I(this, name, core_port/* Port */.I.TYPE_FUNCTION, {
+            new core_port.Port(this, name, core_port.Port.TYPE_FUNCTION, {
                 "display": "buttons"
             })
         );
@@ -11369,7 +11414,7 @@ class Op extends eventtarget/* default */.A
      */
     inFloat(name, v)
     {
-        const p = this.addInPort(new core_port/* Port */.I(this, name, core_port/* Port */.I.TYPE_VALUE));
+        const p = this.addInPort(new core_port.Port(this, name, core_port.Port.TYPE_VALUE));
 
         p.setInitialValue(v);
 
@@ -11393,7 +11438,7 @@ class Op extends eventtarget/* default */.A
     inBool(name, v)
     {
         const p = this.addInPort(
-            new core_port/* Port */.I(this, name, core_port/* Port */.I.TYPE_NUMBER, {
+            new core_port.Port(this, name, core_port.Port.TYPE_NUMBER, {
                 "display": "bool"
             })
         );
@@ -11415,7 +11460,7 @@ class Op extends eventtarget/* default */.A
             this,
             name,
             type,
-            core_port/* Port */.I.DIR_IN,
+            core_port.Port.DIR_IN,
             {
                 "addPort": true,
                 "hidePort": true
@@ -11439,7 +11484,7 @@ class Op extends eventtarget/* default */.A
             this,
             name,
             type,
-            constants/* CONSTANTS */.a.PORT.PORT_DIR_OUT,
+            constants.CONSTANTS.PORT.PORT_DIR_OUT,
             {
                 "display": "multiport",
                 "hidePort": true
@@ -11461,7 +11506,7 @@ class Op extends eventtarget/* default */.A
     inValueString(name, v)
     {
         const p = this.addInPort(
-            new core_port/* Port */.I(this, name, core_port/* Port */.I.TYPE_VALUE, {
+            new core_port.Port(this, name, core_port.Port.TYPE_VALUE, {
                 "type": "string"
             })
         );
@@ -11480,7 +11525,7 @@ class Op extends eventtarget/* default */.A
     inString(name, v)
     {
         const p = this.addInPort(
-            new core_port/* Port */.I(this, name, core_port/* Port */.I.TYPE_STRING, {
+            new core_port.Port(this, name, core_port.Port.TYPE_STRING, {
                 "type": "string"
             })
         );
@@ -11526,7 +11571,7 @@ class Op extends eventtarget/* default */.A
     inTextarea(name, v)
     {
         const p = this.addInPort(
-            new core_port/* Port */.I(this, name, core_port/* Port */.I.TYPE_STRING, {
+            new core_port.Port(this, name, core_port.Port.TYPE_STRING, {
                 "type": "string",
                 "display": "text"
             })
@@ -11551,7 +11596,7 @@ class Op extends eventtarget/* default */.A
     inStringEditor(name, v, syntax, hideFormatButton = true)
     {
         const p = this.addInPort(
-            new core_port/* Port */.I(this, name, core_port/* Port */.I.TYPE_STRING, {
+            new core_port.Port(this, name, core_port.Port.TYPE_STRING, {
                 "type": "string",
                 "display": "editor",
                 "editShortcut": true,
@@ -11577,7 +11622,7 @@ class Op extends eventtarget/* default */.A
     inValueEditor(name, v, syntax, hideFormatButton = true)
     {
         const p = this.addInPort(
-            new core_port/* Port */.I(this, name, core_port/* Port */.I.TYPE_NUMBER, {
+            new core_port.Port(this, name, core_port.Port.TYPE_NUMBER, {
                 "type": "string",
                 "display": "editor",
                 "editorSyntax": syntax,
@@ -11618,7 +11663,7 @@ class Op extends eventtarget/* default */.A
         let p = null;
         if (!noindex)
         {
-            const indexPort = new core_port/* Port */.I(this, name + " index", core_port/* Port */.I.TYPE_NUMBER, {
+            const indexPort = new core_port.Port(this, name + " index", core_port.Port.TYPE_NUMBER, {
                 "increment": "integer",
                 "hideParam": true
             });
@@ -11629,7 +11674,7 @@ class Op extends eventtarget/* default */.A
             const valuePort = new ValueSelectPort(
                 this,
                 name,
-                core_port/* Port */.I.TYPE_NUMBER,
+                core_port.Port.TYPE_NUMBER,
                 {
                     "display": "dropdown",
                     "hidePort": true,
@@ -11668,7 +11713,7 @@ class Op extends eventtarget/* default */.A
         }
         else
         {
-            const valuePort = new core_port/* Port */.I(this, name, core_port/* Port */.I.TYPE_VALUE, {
+            const valuePort = new core_port.Port(this, name, core_port.Port.TYPE_VALUE, {
                 "display": "dropdown",
                 "hidePort": true,
                 "type": "string",
@@ -11695,7 +11740,7 @@ class Op extends eventtarget/* default */.A
         if (!noindex)
         {
             if (!v)v = values[0];
-            const indexPort = new core_port/* Port */.I(this, name + " index", core_port/* Port */.I.TYPE_VALUE, {
+            const indexPort = new core_port.Port(this, name + " index", core_port.Port.TYPE_VALUE, {
                 "increment": "integer",
                 "values": values,
                 "hideParam": true
@@ -11707,7 +11752,7 @@ class Op extends eventtarget/* default */.A
             const switchPort = new SwitchPort(
                 this,
                 name,
-                core_port/* Port */.I.TYPE_STRING,
+                core_port.Port.TYPE_STRING,
                 {
                     "display": "switch",
                     "hidePort": true,
@@ -11745,7 +11790,7 @@ class Op extends eventtarget/* default */.A
         }
         else
         {
-            const switchPort = new core_port/* Port */.I(this, name, core_port/* Port */.I.TYPE_STRING, {
+            const switchPort = new core_port.Port(this, name, core_port.Port.TYPE_STRING, {
                 "display": "switch",
                 "hidePort": true,
                 "type": "string",
@@ -11775,7 +11820,7 @@ class Op extends eventtarget/* default */.A
     {
         // old
         const p = this.addInPort(
-            new core_port/* Port */.I(this, name, core_port/* Port */.I.TYPE_VALUE, { "increment": "integer" })
+            new core_port.Port(this, name, core_port.Port.TYPE_VALUE, { "increment": "integer" })
         );
         if (v !== undefined)
         {
@@ -11795,7 +11840,7 @@ class Op extends eventtarget/* default */.A
     inFile(name, filter, v)
     {
         const p = this.addInPort(
-            new core_port/* Port */.I(this, name, core_port/* Port */.I.TYPE_VALUE, {
+            new core_port.Port(this, name, core_port.Port.TYPE_VALUE, {
                 "display": "file",
                 "type": "string",
                 "filter": filter
@@ -11819,7 +11864,7 @@ class Op extends eventtarget/* default */.A
     inUrl(name, filter, v)
     {
         const p = this.addInPort(
-            new core_port/* Port */.I(this, name, core_port/* Port */.I.TYPE_STRING, {
+            new core_port.Port(this, name, core_port.Port.TYPE_STRING, {
                 "display": "file",
                 "type": "string",
                 "filter": filter
@@ -11841,7 +11886,7 @@ class Op extends eventtarget/* default */.A
     inTexture(name, v)
     {
         const p = this.addInPort(
-            new core_port/* Port */.I(this, name, core_port/* Port */.I.TYPE_OBJECT, {
+            new core_port.Port(this, name, core_port.Port.TYPE_OBJECT, {
                 "display": "texture",
                 "objType": "texture",
                 "preview": true
@@ -11861,7 +11906,7 @@ class Op extends eventtarget/* default */.A
      */
     inObject(name, v, objType)
     {
-        const p = this.addInPort(new core_port/* Port */.I(this, name, core_port/* Port */.I.TYPE_OBJECT, { "objType": objType }));
+        const p = this.addInPort(new core_port.Port(this, name, core_port.Port.TYPE_OBJECT, { "objType": objType }));
         p.ignoreValueSerialize = true;
 
         if (v !== undefined) p.set(v);
@@ -11875,7 +11920,7 @@ class Op extends eventtarget/* default */.A
     inGradient(name, v)
     {
         const p = this.addInPort(
-            new core_port/* Port */.I(this, name, core_port/* Port */.I.TYPE_VALUE, {
+            new core_port.Port(this, name, core_port.Port.TYPE_VALUE, {
                 "display": "gradient"
                 // "hidePort": true
             })
@@ -11891,7 +11936,7 @@ class Op extends eventtarget/* default */.A
     getPortVisibleIndex(p)
     {
         let ports = this.portsIn;
-        if (p.direction == constants/* CONSTANTS */.a.PORT_DIR_OUT)ports = this.portsOut;
+        if (p.direction == constants.CONSTANTS.PORT_DIR_OUT)ports = this.portsOut;
 
         let index = 0;
         for (let i = 0; i < ports.length; i++)
@@ -11915,7 +11960,7 @@ class Op extends eventtarget/* default */.A
         // @ts-ignore
         if (!_stride && CABLES.isNumeric(v))stride = v;
 
-        const p = this.addInPort(new core_port/* Port */.I(this, name, core_port/* Port */.I.TYPE_ARRAY, { "stride": stride }));
+        const p = this.addInPort(new core_port.Port(this, name, core_port.Port.TYPE_ARRAY, { "stride": stride }));
 
         if (v !== undefined && (Array.isArray(v) || v == null)) p.set(v);
 
@@ -11948,7 +11993,7 @@ class Op extends eventtarget/* default */.A
             uiattribs.max = max;
         }
 
-        const p = this.addInPort(new core_port/* Port */.I(this, name, core_port/* Port */.I.TYPE_VALUE, uiattribs));
+        const p = this.addInPort(new core_port.Port(this, name, core_port.Port.TYPE_VALUE, uiattribs));
         if (v !== undefined)
         {
             p.set(v);
@@ -11974,7 +12019,7 @@ class Op extends eventtarget/* default */.A
     outTrigger(name, v)
     {
         // old
-        const p = this.addOutPort(new core_port/* Port */.I(this, name, core_port/* Port */.I.TYPE_FUNCTION));
+        const p = this.addOutPort(new core_port.Port(this, name, core_port.Port.TYPE_FUNCTION));
         if (v !== undefined) p.set(v);
         return p;
     }
@@ -11995,7 +12040,7 @@ class Op extends eventtarget/* default */.A
      */
     outNumber(name, v)
     {
-        const p = this.addOutPort(new core_port/* Port */.I(this, name, core_port/* Port */.I.TYPE_VALUE));
+        const p = this.addOutPort(new core_port.Port(this, name, core_port.Port.TYPE_VALUE));
         if (v !== undefined) p.set(v);
         return p;
     }
@@ -12019,7 +12064,7 @@ class Op extends eventtarget/* default */.A
     {
         // old: use outBoolNum
         const p = this.addOutPort(
-            new core_port/* Port */.I(this, name, core_port/* Port */.I.TYPE_VALUE, {
+            new core_port.Port(this, name, core_port.Port.TYPE_VALUE, {
                 "display": "bool"
             })
         );
@@ -12036,7 +12081,7 @@ class Op extends eventtarget/* default */.A
     outBoolNum(name, v)
     {
         const p = this.addOutPort(
-            new core_port/* Port */.I(this, name, core_port/* Port */.I.TYPE_VALUE, {
+            new core_port.Port(this, name, core_port.Port.TYPE_VALUE, {
                 "display": "boolnum"
             })
         );
@@ -12059,7 +12104,7 @@ class Op extends eventtarget/* default */.A
     outValueString(name, v)
     {
         const p = this.addOutPort(
-            new core_port/* Port */.I(this, name, core_port/* Port */.I.TYPE_VALUE, {
+            new core_port.Port(this, name, core_port.Port.TYPE_VALUE, {
                 "type": "string"
             })
         );
@@ -12076,7 +12121,7 @@ class Op extends eventtarget/* default */.A
     outString(name, v)
     {
         const p = this.addOutPort(
-            new core_port/* Port */.I(this, name, core_port/* Port */.I.TYPE_STRING, {
+            new core_port.Port(this, name, core_port.Port.TYPE_STRING, {
                 "type": "string"
             })
         );
@@ -12094,7 +12139,7 @@ class Op extends eventtarget/* default */.A
      */
     outObject(name, v, objType)
     {
-        const p = this.addOutPort(new core_port/* Port */.I(this, name, core_port/* Port */.I.TYPE_OBJECT, { "objType": objType || null }));
+        const p = this.addOutPort(new core_port.Port(this, name, core_port.Port.TYPE_OBJECT, { "objType": objType || null }));
         p.set(v || null);
         p.ignoreValueSerialize = true;
         return p;
@@ -12110,7 +12155,7 @@ class Op extends eventtarget/* default */.A
     outArray(name, v, stride)
     {
         if (!stride && CABLES.isNumeric(v))stride = v;
-        const p = this.addOutPort(new core_port/* Port */.I(this, name, core_port/* Port */.I.TYPE_ARRAY, { "stride": stride }));
+        const p = this.addOutPort(new core_port.Port(this, name, core_port.Port.TYPE_ARRAY, { "stride": stride }));
         if (v !== undefined && (Array.isArray(v) || v == null)) p.set(v);
 
         p.ignoreValueSerialize = true;
@@ -12126,13 +12171,13 @@ class Op extends eventtarget/* default */.A
     outTexture(name, v)
     {
         const p = this.addOutPort(
-            new core_port/* Port */.I(this, name, core_port/* Port */.I.TYPE_OBJECT, {
+            new core_port.Port(this, name, core_port.Port.TYPE_OBJECT, {
                 "preview": true,
                 "objType": "texture",
                 "display": "texture"
             })
         );
-        if (v !== undefined) p.setRef(v || cgl/* CGL */.Rq.Texture.getEmptyTexture(this.patch.cgl));
+        if (v !== undefined) p.setRef(v || cgl.CGL.Texture.getEmptyTexture(this.patch.cgl));
 
         p.ignoreValueSerialize = true;
         return p;
@@ -12147,7 +12192,7 @@ class Op extends eventtarget/* default */.A
      */
     inDynamic(name, filter, options, v)
     {
-        const p = new core_port/* Port */.I(this, name, core_port/* Port */.I.TYPE_DYNAMIC, options);
+        const p = new core_port.Port(this, name, core_port.Port.TYPE_DYNAMIC, options);
 
         p.shouldLink = (p1, p2) =>
         {
@@ -12666,7 +12711,7 @@ class Op extends eventtarget/* default */.A
         if (this.patch.isEditorMode()) return gui.patchView.isCurrentOp(this);
     }
 
-    checkGraphicsApi(api = cgl_state/* CglContext */.G.API_WEBGL)
+    checkGraphicsApi(api = cgl_state.CglContext.API_WEBGL)
     {
         if (this.patch.isEditorMode())
             if (this.patch.cg && this.patch.cg.gApi != api)
@@ -12689,7 +12734,7 @@ class Op extends eventtarget/* default */.A
  * @param patch
  */
 
-class LoadingStatus extends eventtarget/* default */.A
+class LoadingStatus extends eventtarget["default"]
 {
 
     /**
@@ -12698,7 +12743,7 @@ class LoadingStatus extends eventtarget/* default */.A
     constructor(patch)
     {
         super();
-        this._log = new logger/* default */.A("LoadingStatus");
+        this._log = new logger["default"]("LoadingStatus");
         this._loadingAssets = {};
         this._cbFinished = [];
         this._assetTasks = [];
@@ -12903,7 +12948,7 @@ class LoadingStatus extends eventtarget/* default */.A
 }
 
 // EXTERNAL MODULE: ./src/core/timer.js
-var timer = __webpack_require__(920);
+var timer = __webpack_require__("./src/core/timer.js");
 ;// CONCATENATED MODULE: ./src/core/core_profiler.js
 
 
@@ -12956,10 +13001,10 @@ class Profiler
                 {
                     this.items[this.currentId].timeUsed += performance.now() - this.currentStart;
 
-                    if (!this.items[this.currentId].peakTime || (0,timer/* now */.tB)() - this.items[this.currentId].peakTime > 5000)
+                    if (!this.items[this.currentId].peakTime || (0,timer.now)() - this.items[this.currentId].peakTime > 5000)
                     {
                         this.items[this.currentId].peak = 0;
-                        this.items[this.currentId].peakTime = (0,timer/* now */.tB)();
+                        this.items[this.currentId].peakTime = (0,timer.now)();
                     }
                     this.items[this.currentId].peak = Math.max(this.items[this.currentId].peak, performance.now() - this.currentStart);
                 }
@@ -13006,7 +13051,7 @@ class Profiler
 ;// CONCATENATED MODULE: ./src/core/core_variable.js
 
 
-class PatchVariable extends eventtarget/* default */.A
+class PatchVariable extends eventtarget["default"]
 {
 
     /**
@@ -13141,7 +13186,7 @@ class PatchVariable extends eventtarget/* default */.A
  *     glslPrecision:'highp'
  * });
  */
-class Patch extends eventtarget/* default */.A
+class Patch extends eventtarget["default"]
 {
     static EVENT_OP_DELETED = "onOpDelete";
     static EVENT_OP_ADDED = "onOpAdd";
@@ -13162,7 +13207,7 @@ class Patch extends eventtarget/* default */.A
     {
         super();
 
-        this._log = new logger/* default */.A("core_patch", { "onError": cfg.onError });
+        this._log = new logger["default"]("core_patch", { "onError": cfg.onError });
 
         /** @type {Array<Op>} */
         this.ops = [];
@@ -13183,8 +13228,8 @@ class Patch extends eventtarget/* default */.A
 
         };
 
-        this.timer = new timer/* Timer */.M4();
-        this.freeTimer = new timer/* Timer */.M4();
+        this.timer = new timer.Timer();
+        this.freeTimer = new timer.Timer();
         this.animFrameOps = [];
         this.animFrameCallbacks = [];
         this.gui = false;
@@ -13231,7 +13276,7 @@ class Patch extends eventtarget/* default */.A
         this.vars = {};
         if (cfg && cfg.vars) this.vars = cfg.vars; // vars is old!
 
-        this.cgl = new cgl/* CGL */.Rq.Context(this);
+        this.cgl = new cgl.CGL.Context(this);
         this.cgp = null;
 
         this._subpatchOpCache = {};
@@ -13438,7 +13483,7 @@ class Patch extends eventtarget/* default */.A
         this.emitEvent("patchClearStart");
         this.cgl.TextureEffectMesh = null;
         this.animFrameOps.length = 0;
-        this.timer = new timer/* Timer */.M4();
+        this.timer = new timer.Timer();
         while (this.ops.length > 0) this.deleteOp(this.ops[0].id);
 
         this._opIdCache = {};
@@ -14024,7 +14069,7 @@ class Patch extends eventtarget/* default */.A
                             const port = op.getPort(objPort.name);
 
                             if (port && (port.uiAttribs.display == "bool" || port.uiAttribs.type == "bool") && !isNaN(objPort.value)) objPort.value = objPort.value == true ? 1 : 0;
-                            if (port && objPort.value !== undefined && port.type != core_port/* Port */.I.TYPE_TEXTURE) port.set(objPort.value);
+                            if (port && objPort.value !== undefined && port.type != core_port.Port.TYPE_TEXTURE) port.set(objPort.value);
 
                             if (port)
                             {
@@ -14065,7 +14110,7 @@ class Patch extends eventtarget/* default */.A
                                     op.preservedPortTitles[port2.name] = port2.uiAttribs.title;
                                 }
 
-                                if (port2.type != core_port/* Port */.I.TYPE_TEXTURE && objPort.hasOwnProperty("value"))
+                                if (port2.type != core_port.Port.TYPE_TEXTURE && objPort.hasOwnProperty("value"))
                                     port2.set(obj.ops[iop].portsOut[ipo].value);
 
                                 if (objPort.expose) port2.setUiAttribs({ "expose": true });
@@ -14382,11 +14427,11 @@ class Patch extends eventtarget/* default */.A
 
         const vars = [];
         let tStr = "";
-        if (t == core_port/* Port */.I.TYPE_STRING) tStr = "string";
-        else if (t == core_port/* Port */.I.TYPE_VALUE) tStr = "number";
-        else if (t == core_port/* Port */.I.TYPE_ARRAY) tStr = "array";
-        else if (t == core_port/* Port */.I.TYPE_OBJECT) tStr = "object";
-        else if (t == core_port/* Port */.I.TYPE_DYNAMIC) tStr = "dynamic";
+        if (t == core_port.Port.TYPE_STRING) tStr = "string";
+        else if (t == core_port.Port.TYPE_VALUE) tStr = "number";
+        else if (t == core_port.Port.TYPE_ARRAY) tStr = "array";
+        else if (t == core_port.Port.TYPE_OBJECT) tStr = "object";
+        else if (t == core_port.Port.TYPE_DYNAMIC) tStr = "dynamic";
         else
         {
             console.log("unknown port type", t);
@@ -14862,7 +14907,7 @@ const Variable = function ()
 
 
 // EXTERNAL MODULE: ./src/core/anim_key.js
-var anim_key = __webpack_require__(963);
+var anim_key = __webpack_require__("./src/core/anim_key.js");
 ;// CONCATENATED MODULE: ./src/core/index.js
 
 
@@ -14885,25 +14930,25 @@ var anim_key = __webpack_require__(963);
 CABLES = CABLES || {};
 CABLES = {
     ...CABLES,
-    ...constants/* CONSTANTS */.a.PORT,
-    ...constants/* CONSTANTS */.a.PACO,
-    ...constants/* CONSTANTS */.a.ANIM,
-    ...constants/* CONSTANTS */.a.OP
+    ...constants.CONSTANTS.PORT,
+    ...constants.CONSTANTS.PACO,
+    ...constants.CONSTANTS.ANIM,
+    ...constants.CONSTANTS.OP
 };
 
 CABLES.EMBED = EMBED;
 CABLES.Link = Link;
-CABLES.Port = core_port/* Port */.I;
+CABLES.Port = core_port.Port;
 CABLES.Op = Op;
 CABLES.Profiler = Profiler;
 CABLES.Patch = Patch;
-CABLES.Timer = timer/* Timer */.M4;
+CABLES.Timer = timer.Timer;
 CABLES.Variable = Variable;
 CABLES.LoadingStatus = LoadingStatus;
-CABLES.now = timer/* now */.tB;
-CABLES.internalNow = timer/* internalNow */.uw;
-CABLES.Anim = anim/* Anim */.k;
-CABLES.AnimKey = anim_key/* AnimKey */.rA;
+CABLES.now = timer.now;
+CABLES.internalNow = timer.internalNow;
+CABLES.Anim = anim.Anim;
+CABLES.AnimKey = anim_key.AnimKey;
 
 CABLES.shortId = utils.shortId;
 CABLES.uuid = utils.uuid;
@@ -14930,12 +14975,12 @@ CABLES.uniqueArray = utils.uniqueArray;
 /** @type {Array<Op>} */
 CABLES.OPS = [];
 CABLES.utils = utils;
-CABLES.CONSTANTS = constants/* CONSTANTS */.a;
+CABLES.CONSTANTS = constants.CONSTANTS;
 
 CABLES.GLMatrix = esm_namespaceObject;
 CABLES.SHARED = {};
-CABLES.SHARED.Events = eventtarget/* default */.A;
-CABLES.SHARED.Logger = logger/* default */.A;
+CABLES.SHARED.Events = eventtarget["default"];
+CABLES.SHARED.Logger = logger["default"];
 
 /* harmony default export */ const core = (CABLES);
 
@@ -14945,16 +14990,19 @@ if (!(function () { return !this; }())) console.warn("not in strict mode: index 
 
 /***/ }),
 
-/***/ 920:
+/***/ "./src/core/timer.js":
+/*!***************************!*\
+  !*** ./src/core/timer.js ***!
+  \***************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   M4: () => (/* binding */ Timer),
-/* harmony export */   tB: () => (/* binding */ now),
-/* harmony export */   uw: () => (/* binding */ internalNow)
+/* harmony export */   Timer: () => (/* binding */ Timer),
+/* harmony export */   internalNow: () => (/* binding */ internalNow),
+/* harmony export */   now: () => (/* binding */ now)
 /* harmony export */ });
-/* harmony import */ var cables_shared_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(125);
+/* harmony import */ var cables_shared_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! cables-shared-client */ "../shared/client/src/eventtarget.js");
 
 
 /**
@@ -14984,7 +15032,7 @@ const now = function ()
  * @hideconstructor
  * @class
  */
-class Timer extends cables_shared_client__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A
+class Timer extends cables_shared_client__WEBPACK_IMPORTED_MODULE_0__["default"]
 {
     static EVENT_PLAY_PAUSE = "playPause";
     static EVENT_TIME_CHANGED = "timeChanged";
@@ -15164,7 +15212,10 @@ class Timer extends cables_shared_client__WEBPACK_IMPORTED_MODULE_0__/* ["defaul
 
 /***/ }),
 
-/***/ 562:
+/***/ "./src/core/utils.js":
+/*!***************************************!*\
+  !*** ./src/core/utils.js + 1 modules ***!
+  \***************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -15200,7 +15251,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 // EXTERNAL MODULE: ./src/core/constants.js
-var constants = __webpack_require__(440);
+var constants = __webpack_require__("./src/core/constants.js");
 ;// CONCATENATED MODULE: ./src/core/extendjs.js
 /**
  * extend javascript functionality
@@ -15319,10 +15370,10 @@ const getShortOpName = function (fullname)
 {
     let name = fullname.split(".")[fullname.split(".").length - 1];
 
-    if (name.includes(constants/* CONSTANTS */.a.OP.OP_VERSION_PREFIX))
+    if (name.includes(constants.CONSTANTS.OP.OP_VERSION_PREFIX))
     {
-        const n = name.split(constants/* CONSTANTS */.a.OP.OP_VERSION_PREFIX)[1];
-        name = name.substring(0, name.length - (constants/* CONSTANTS */.a.OP.OP_VERSION_PREFIX + n).length);
+        const n = name.split(constants.CONSTANTS.OP.OP_VERSION_PREFIX)[1];
+        name = name.substring(0, name.length - (constants.CONSTANTS.OP.OP_VERSION_PREFIX + n).length);
     }
     return name;
 };
@@ -15819,16 +15870,19 @@ const escapeHTML = function(string)
 
 /***/ }),
 
-/***/ 982:
+/***/ "./src/corelibs/cg/cg_boundingbox.js":
+/*!*******************************************!*\
+  !*** ./src/corelibs/cg/cg_boundingbox.js ***!
+  \*******************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   I: () => (/* binding */ BoundingBox)
+/* harmony export */   BoundingBox: () => (/* binding */ BoundingBox)
 /* harmony export */ });
-/* harmony import */ var gl_matrix__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(329);
-/* harmony import */ var gl_matrix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(684);
-/* harmony import */ var cables__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(562);
+/* harmony import */ var gl_matrix__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gl-matrix */ "./node_modules/gl-matrix/esm/vec3.js");
+/* harmony import */ var gl_matrix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gl-matrix */ "./node_modules/gl-matrix/esm/mat4.js");
+/* harmony import */ var cables__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! cables */ "./src/core/utils.js");
 
 
 
@@ -16080,14 +16134,17 @@ class BoundingBox
 
 /***/ }),
 
-/***/ 223:
+/***/ "./src/corelibs/cg/cg_canvas.js":
+/*!**************************************!*\
+  !*** ./src/corelibs/cg/cg_canvas.js ***!
+  \**************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   f: () => (/* binding */ CgCanvas)
+/* harmony export */   CgCanvas: () => (/* binding */ CgCanvas)
 /* harmony export */ });
-/* harmony import */ var cables_shared_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(849);
+/* harmony import */ var cables_shared_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! cables-shared-client */ "../shared/client/src/logger.js");
 
 
 class CgCanvas
@@ -16101,7 +16158,7 @@ class CgCanvas
      */
     constructor(options)
     {
-        this._log = new cables_shared_client__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A("CgCanvas");
+        this._log = new cables_shared_client__WEBPACK_IMPORTED_MODULE_0__["default"]("CgCanvas");
         if (!options)
         {
             this._log.error("CgCanvas no options");
@@ -16179,21 +16236,24 @@ class CgCanvas
 
 /***/ }),
 
-/***/ 628:
+/***/ "./src/corelibs/cg/cg_context.js":
+/*!***************************************!*\
+  !*** ./src/corelibs/cg/cg_context.js ***!
+  \***************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (/* binding */ CgContext)
+/* harmony export */   CgContext: () => (/* binding */ CgContext)
 /* harmony export */ });
-/* harmony import */ var cables_shared_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(125);
-/* harmony import */ var cables_shared_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(849);
-/* harmony import */ var gl_matrix__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(329);
-/* harmony import */ var gl_matrix__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(684);
-/* harmony import */ var _cg_canvas_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(223);
-/* harmony import */ var _cg_matrixstack_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(868);
-/* harmony import */ var _cgl_cgl_profiledata_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(460);
-/* harmony import */ var _cg_fpscounter_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(294);
+/* harmony import */ var cables_shared_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! cables-shared-client */ "../shared/client/src/eventtarget.js");
+/* harmony import */ var cables_shared_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! cables-shared-client */ "../shared/client/src/logger.js");
+/* harmony import */ var gl_matrix__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! gl-matrix */ "./node_modules/gl-matrix/esm/vec3.js");
+/* harmony import */ var gl_matrix__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! gl-matrix */ "./node_modules/gl-matrix/esm/mat4.js");
+/* harmony import */ var _cg_canvas_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./cg_canvas.js */ "./src/corelibs/cg/cg_canvas.js");
+/* harmony import */ var _cg_matrixstack_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./cg_matrixstack.js */ "./src/corelibs/cg/cg_matrixstack.js");
+/* harmony import */ var _cgl_cgl_profiledata_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../cgl/cgl_profiledata.js */ "./src/corelibs/cgl/cgl_profiledata.js");
+/* harmony import */ var _cg_fpscounter_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./cg_fpscounter.js */ "./src/corelibs/cg/cg_fpscounter.js");
 
 
 
@@ -16202,7 +16262,7 @@ class CgCanvas
 
 
 
-class CgContext extends cables_shared_client__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A
+class CgContext extends cables_shared_client__WEBPACK_IMPORTED_MODULE_0__["default"]
 {
 
     static API_UNKNOWN = 0;
@@ -16221,11 +16281,11 @@ class CgContext extends cables_shared_client__WEBPACK_IMPORTED_MODULE_0__/* ["de
     {
         super();
 
-        this._log = new cables_shared_client__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A("cg_context", { "onError": _patch.config.onError });
+        this._log = new cables_shared_client__WEBPACK_IMPORTED_MODULE_1__["default"]("cg_context", { "onError": _patch.config.onError });
 
         /** @type {object} */
         this.tempData = this.frameStore = this.frameStore || {};
-        this.fpsCounter = new _cg_fpscounter_js__WEBPACK_IMPORTED_MODULE_2__/* .FpsCounter */ .K();
+        this.fpsCounter = new _cg_fpscounter_js__WEBPACK_IMPORTED_MODULE_2__.FpsCounter();
         this._identView = gl_matrix__WEBPACK_IMPORTED_MODULE_3__.create();
         this._ident = gl_matrix__WEBPACK_IMPORTED_MODULE_3__.create();
         gl_matrix__WEBPACK_IMPORTED_MODULE_3__.set(this._identView, 0, 0, -2);
@@ -16246,7 +16306,7 @@ class CgContext extends cables_shared_client__WEBPACK_IMPORTED_MODULE_0__/* ["de
         this.DEPTH_COMPARE_FUNC_GREATEREQUAL = 6;
         this.DEPTH_COMPARE_FUNC_ALWAYS = 7;
 
-        this.profileData = new _cgl_cgl_profiledata_js__WEBPACK_IMPORTED_MODULE_4__/* .ProfileData */ .E(this);
+        this.profileData = new _cgl_cgl_profiledata_js__WEBPACK_IMPORTED_MODULE_4__.ProfileData(this);
 
         /**
          * Current projection matrix
@@ -16273,9 +16333,9 @@ class CgContext extends cables_shared_client__WEBPACK_IMPORTED_MODULE_0__/* ["de
         this.vMatrix = gl_matrix__WEBPACK_IMPORTED_MODULE_5__.create();
         this._textureslots = [];
 
-        this._pMatrixStack = new _cg_matrixstack_js__WEBPACK_IMPORTED_MODULE_6__/* .MatrixStack */ .u();
-        this._mMatrixStack = new _cg_matrixstack_js__WEBPACK_IMPORTED_MODULE_6__/* .MatrixStack */ .u();
-        this._vMatrixStack = new _cg_matrixstack_js__WEBPACK_IMPORTED_MODULE_6__/* .MatrixStack */ .u();
+        this._pMatrixStack = new _cg_matrixstack_js__WEBPACK_IMPORTED_MODULE_6__.MatrixStack();
+        this._mMatrixStack = new _cg_matrixstack_js__WEBPACK_IMPORTED_MODULE_6__.MatrixStack();
+        this._vMatrixStack = new _cg_matrixstack_js__WEBPACK_IMPORTED_MODULE_6__.MatrixStack();
 
         this.canvasScale = 1;
 
@@ -16338,7 +16398,7 @@ class CgContext extends cables_shared_client__WEBPACK_IMPORTED_MODULE_0__/* ["de
         if (this.cgCanvas && canvEle == this.cgCanvas.canvasEle) return;
         if (typeof canvEle === "string") canvEle = document.getElementById(canvEle);
 
-        this.cgCanvas = new _cg_canvas_js__WEBPACK_IMPORTED_MODULE_7__/* .CgCanvas */ .f({ "canvasEle": canvEle, "cg": this });
+        this.cgCanvas = new _cg_canvas_js__WEBPACK_IMPORTED_MODULE_7__.CgCanvas({ "canvasEle": canvEle, "cg": this });
 
         canvEle.parentElement.classList.add("cablesContainer");
         if (this._setCanvas) this._setCanvas(canvEle);
@@ -16669,19 +16729,22 @@ class CgContext extends cables_shared_client__WEBPACK_IMPORTED_MODULE_0__/* ["de
 
 /***/ }),
 
-/***/ 294:
+/***/ "./src/corelibs/cg/cg_fpscounter.js":
+/*!******************************************!*\
+  !*** ./src/corelibs/cg/cg_fpscounter.js ***!
+  \******************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   K: () => (/* binding */ FpsCounter)
+/* harmony export */   FpsCounter: () => (/* binding */ FpsCounter)
 /* harmony export */ });
-/* harmony import */ var cables_shared_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(125);
-/* harmony import */ var cables__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(920);
+/* harmony import */ var cables_shared_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! cables-shared-client */ "../shared/client/src/eventtarget.js");
+/* harmony import */ var cables__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! cables */ "./src/core/timer.js");
 
 
 
-class FpsCounter extends cables_shared_client__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A
+class FpsCounter extends cables_shared_client__WEBPACK_IMPORTED_MODULE_0__["default"]
 {
     constructor()
     {
@@ -16703,7 +16766,7 @@ class FpsCounter extends cables_shared_client__WEBPACK_IMPORTED_MODULE_0__/* ["d
 
     startFrame()
     {
-        this._timeStartFrame = (0,cables__WEBPACK_IMPORTED_MODULE_1__/* .now */ .tB)();
+        this._timeStartFrame = (0,cables__WEBPACK_IMPORTED_MODULE_1__.now)();
     }
 
     endFrame()
@@ -16711,10 +16774,10 @@ class FpsCounter extends cables_shared_client__WEBPACK_IMPORTED_MODULE_0__/* ["d
         this._frameCount++;
         this._fpsCounter++;
 
-        const timeFrame = (0,cables__WEBPACK_IMPORTED_MODULE_1__/* .now */ .tB)() - this._timeStartFrame;
+        const timeFrame = (0,cables__WEBPACK_IMPORTED_MODULE_1__.now)() - this._timeStartFrame;
         this._msCounter += timeFrame;
 
-        if ((0,cables__WEBPACK_IMPORTED_MODULE_1__/* .now */ .tB)() - this._timeStartSecond > 1000) this.endSecond();
+        if ((0,cables__WEBPACK_IMPORTED_MODULE_1__.now)() - this._timeStartSecond > 1000) this.endSecond();
     }
 
     endSecond()
@@ -16728,25 +16791,28 @@ class FpsCounter extends cables_shared_client__WEBPACK_IMPORTED_MODULE_0__/* ["d
         // reset
         this._fpsCounter = 0;
         this._msCounter = 0;
-        this._timeStartSecond = (0,cables__WEBPACK_IMPORTED_MODULE_1__/* .now */ .tB)();
+        this._timeStartSecond = (0,cables__WEBPACK_IMPORTED_MODULE_1__.now)();
     }
 }
 
 
 /***/ }),
 
-/***/ 331:
+/***/ "./src/corelibs/cg/cg_geom.js":
+/*!************************************!*\
+  !*** ./src/corelibs/cg/cg_geom.js ***!
+  \************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   V: () => (/* binding */ Geometry)
+/* harmony export */   Geometry: () => (/* binding */ Geometry)
 /* harmony export */ });
-/* harmony import */ var cables_shared_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(849);
-/* harmony import */ var gl_matrix__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(329);
-/* harmony import */ var gl_matrix__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(842);
-/* harmony import */ var cables__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(562);
-/* harmony import */ var _cg_boundingbox_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(982);
+/* harmony import */ var cables_shared_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! cables-shared-client */ "../shared/client/src/logger.js");
+/* harmony import */ var gl_matrix__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gl-matrix */ "./node_modules/gl-matrix/esm/vec3.js");
+/* harmony import */ var gl_matrix__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! gl-matrix */ "./node_modules/gl-matrix/esm/vec2.js");
+/* harmony import */ var cables__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! cables */ "./src/core/utils.js");
+/* harmony import */ var _cg_boundingbox_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./cg_boundingbox.js */ "./src/corelibs/cg/cg_boundingbox.js");
 
 
 
@@ -16799,7 +16865,7 @@ class Geometry
     constructor(name)
     {
         this.name = name || "unknown";
-        this._log = new cables_shared_client__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A("cgl_geometry");
+        this._log = new cables_shared_client__WEBPACK_IMPORTED_MODULE_0__["default"]("cgl_geometry");
 
         this.faceVertCount = 3;
         this.glPrimitive = null;
@@ -17492,7 +17558,7 @@ class Geometry
 
     getBounds()
     {
-        return new _cg_boundingbox_js__WEBPACK_IMPORTED_MODULE_4__/* .BoundingBox */ .I(this);
+        return new _cg_boundingbox_js__WEBPACK_IMPORTED_MODULE_4__.BoundingBox(this);
     }
 
     /**
@@ -17659,14 +17725,17 @@ Geometry.buildFromFaces = function (arr, name, optimize)
 
 /***/ }),
 
-/***/ 868:
+/***/ "./src/corelibs/cg/cg_matrixstack.js":
+/*!*******************************************!*\
+  !*** ./src/corelibs/cg/cg_matrixstack.js ***!
+  \*******************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   u: () => (/* binding */ MatrixStack)
+/* harmony export */   MatrixStack: () => (/* binding */ MatrixStack)
 /* harmony export */ });
-/* harmony import */ var gl_matrix__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(684);
+/* harmony import */ var gl_matrix__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! gl-matrix */ "./node_modules/gl-matrix/esm/mat4.js");
 
 
 class MatrixStack
@@ -17716,12 +17785,15 @@ class MatrixStack
 
 /***/ }),
 
-/***/ 434:
+/***/ "./src/corelibs/cg/cg_mesh.js":
+/*!************************************!*\
+  !*** ./src/corelibs/cg/cg_mesh.js ***!
+  \************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   w: () => (/* binding */ CgMesh)
+/* harmony export */   CgMesh: () => (/* binding */ CgMesh)
 /* harmony export */ });
 class CgMesh
 {
@@ -17736,15 +17808,18 @@ class CgMesh
 
 /***/ }),
 
-/***/ 694:
+/***/ "./src/corelibs/cg/cg_shader.js":
+/*!**************************************!*\
+  !*** ./src/corelibs/cg/cg_shader.js ***!
+  \**************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   U: () => (/* binding */ CgShader)
+/* harmony export */   CgShader: () => (/* binding */ CgShader)
 /* harmony export */ });
-/* harmony import */ var cables_shared_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(125);
-/* harmony import */ var cables__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(562);
+/* harmony import */ var cables_shared_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! cables-shared-client */ "../shared/client/src/eventtarget.js");
+/* harmony import */ var cables__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! cables */ "./src/core/utils.js");
 
 
 
@@ -17765,7 +17840,7 @@ class CgMesh
  * @property {String} srcHeadVert
   */
 
-class CgShader extends cables_shared_client__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A
+class CgShader extends cables_shared_client__WEBPACK_IMPORTED_MODULE_0__["default"]
 {
     id = cables__WEBPACK_IMPORTED_MODULE_1__.simpleId();
     _isValid = true;
@@ -18059,14 +18134,17 @@ class CgShader extends cables_shared_client__WEBPACK_IMPORTED_MODULE_0__/* ["def
 
 /***/ }),
 
-/***/ 356:
+/***/ "./src/corelibs/cg/cg_texture.js":
+/*!***************************************!*\
+  !*** ./src/corelibs/cg/cg_texture.js ***!
+  \***************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   U: () => (/* binding */ CgTexture)
+/* harmony export */   CgTexture: () => (/* binding */ CgTexture)
 /* harmony export */ });
-/* harmony import */ var cables__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(562);
+/* harmony import */ var cables__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! cables */ "./src/core/utils.js");
 
 
 const DEFAULT_TEXTURE_SIZE = 8;
@@ -18252,15 +18330,18 @@ CgTexture.PIXELFORMATS = [
 
 /***/ }),
 
-/***/ 475:
+/***/ "./src/corelibs/cg/cg_uniform.js":
+/*!***************************************!*\
+  !*** ./src/corelibs/cg/cg_uniform.js ***!
+  \***************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   v: () => (/* binding */ CgUniform)
+/* harmony export */   CgUniform: () => (/* binding */ CgUniform)
 /* harmony export */ });
-/* harmony import */ var cables_shared_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(849);
-/* harmony import */ var cables__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(50);
+/* harmony import */ var cables_shared_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! cables-shared-client */ "../shared/client/src/logger.js");
+/* harmony import */ var cables__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! cables */ "./src/core/core_port.js");
 
 
 
@@ -18280,7 +18361,7 @@ class CgUniform
      */
     constructor(__shader, __type, __name, _value, _port2, _port3, _port4, _structUniformName, _structName, _propertyName)
     {
-        this._log = new cables_shared_client__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A("cg_uniform");
+        this._log = new cables_shared_client__WEBPACK_IMPORTED_MODULE_0__["default"]("cg_uniform");
         this._type = __type;
         this._name = __name;
 
@@ -18398,14 +18479,14 @@ class CgUniform
             this._log.error("Unknown uniform type " + __type, __name, typeof this._shader);
         }
 
-        if (typeof _value == "object" && _value instanceof cables__WEBPACK_IMPORTED_MODULE_1__/* .Port */ .I)
+        if (typeof _value == "object" && _value instanceof cables__WEBPACK_IMPORTED_MODULE_1__.Port)
         {
             this._port = _value;
             this._value = this._port.get();
 
             if (_port2 && _port3 && _port4)
             {
-                if (!(_port2 instanceof cables__WEBPACK_IMPORTED_MODULE_1__/* .Port */ .I) || !(_port3 instanceof cables__WEBPACK_IMPORTED_MODULE_1__/* .Port */ .I) || !(_port4 instanceof cables__WEBPACK_IMPORTED_MODULE_1__/* .Port */ .I))
+                if (!(_port2 instanceof cables__WEBPACK_IMPORTED_MODULE_1__.Port) || !(_port3 instanceof cables__WEBPACK_IMPORTED_MODULE_1__.Port) || !(_port4 instanceof cables__WEBPACK_IMPORTED_MODULE_1__.Port))
                 {
                     this._log.error("[cgl_uniform] mixed port/value parameter for vec4 ", this._name);
                 }
@@ -18425,7 +18506,7 @@ class CgUniform
             }
             else if (_port2 && _port3)
             {
-                if (!(_port2 instanceof cables__WEBPACK_IMPORTED_MODULE_1__/* .Port */ .I) || !(_port3 instanceof cables__WEBPACK_IMPORTED_MODULE_1__/* .Port */ .I))
+                if (!(_port2 instanceof cables__WEBPACK_IMPORTED_MODULE_1__.Port) || !(_port3 instanceof cables__WEBPACK_IMPORTED_MODULE_1__.Port))
                 {
                     this._log.error("[cgl_uniform] mixed port/value parameter for vec4 ", this._name);
                 }
@@ -18442,7 +18523,7 @@ class CgUniform
             }
             else if (_port2)
             {
-                if (!(_port2 instanceof cables__WEBPACK_IMPORTED_MODULE_1__/* .Port */ .I))
+                if (!(_port2 instanceof cables__WEBPACK_IMPORTED_MODULE_1__.Port))
                 {
                     this._log.error("[cgl_uniform] mixed port/value parameter for vec4 ", this._name);
                 }
@@ -18546,25 +18627,28 @@ class CgUniform
 
 /***/ }),
 
-/***/ 748:
+/***/ "./src/corelibs/cg/index.js":
+/*!**********************************!*\
+  !*** ./src/corelibs/cg/index.js ***!
+  \**********************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 /* unused harmony export CG */
-/* harmony import */ var gl_matrix__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(823);
-/* harmony import */ var gl_matrix__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(522);
-/* harmony import */ var gl_matrix__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(964);
-/* harmony import */ var gl_matrix__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(409);
-/* harmony import */ var gl_matrix__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(684);
-/* harmony import */ var gl_matrix__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(221);
-/* harmony import */ var gl_matrix__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(991);
-/* harmony import */ var gl_matrix__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(842);
-/* harmony import */ var gl_matrix__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(329);
-/* harmony import */ var gl_matrix__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(796);
-/* harmony import */ var _cg_boundingbox_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(982);
-/* harmony import */ var _cg_canvas_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(223);
-/* harmony import */ var _cg_geom_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(331);
-/* harmony import */ var _cg_fpscounter_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(294);
+/* harmony import */ var gl_matrix__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! gl-matrix */ "./node_modules/gl-matrix/esm/common.js");
+/* harmony import */ var gl_matrix__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! gl-matrix */ "./node_modules/gl-matrix/esm/mat2.js");
+/* harmony import */ var gl_matrix__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! gl-matrix */ "./node_modules/gl-matrix/esm/mat2d.js");
+/* harmony import */ var gl_matrix__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! gl-matrix */ "./node_modules/gl-matrix/esm/mat3.js");
+/* harmony import */ var gl_matrix__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! gl-matrix */ "./node_modules/gl-matrix/esm/mat4.js");
+/* harmony import */ var gl_matrix__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! gl-matrix */ "./node_modules/gl-matrix/esm/quat.js");
+/* harmony import */ var gl_matrix__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! gl-matrix */ "./node_modules/gl-matrix/esm/quat2.js");
+/* harmony import */ var gl_matrix__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! gl-matrix */ "./node_modules/gl-matrix/esm/vec2.js");
+/* harmony import */ var gl_matrix__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! gl-matrix */ "./node_modules/gl-matrix/esm/vec3.js");
+/* harmony import */ var gl_matrix__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! gl-matrix */ "./node_modules/gl-matrix/esm/vec4.js");
+/* harmony import */ var _cg_boundingbox_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./cg_boundingbox.js */ "./src/corelibs/cg/cg_boundingbox.js");
+/* harmony import */ var _cg_canvas_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./cg_canvas.js */ "./src/corelibs/cg/cg_canvas.js");
+/* harmony import */ var _cg_geom_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./cg_geom.js */ "./src/corelibs/cg/cg_geom.js");
+/* harmony import */ var _cg_fpscounter_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./cg_fpscounter.js */ "./src/corelibs/cg/cg_fpscounter.js");
 
 
 
@@ -18593,11 +18677,11 @@ const CG = {
     "CULL_FRONT": 2,
     "CULL_BOTH": 3,
 
-    "Geometry": _cg_geom_js__WEBPACK_IMPORTED_MODULE_0__/* .Geometry */ .V,
-    "BoundingBox": _cg_boundingbox_js__WEBPACK_IMPORTED_MODULE_1__/* .BoundingBox */ .I,
-    "FpsCounter": _cg_fpscounter_js__WEBPACK_IMPORTED_MODULE_2__/* .FpsCounter */ .K,
+    "Geometry": _cg_geom_js__WEBPACK_IMPORTED_MODULE_0__.Geometry,
+    "BoundingBox": _cg_boundingbox_js__WEBPACK_IMPORTED_MODULE_1__.BoundingBox,
+    "FpsCounter": _cg_fpscounter_js__WEBPACK_IMPORTED_MODULE_2__.FpsCounter,
 
-    "CgCanvas": _cg_canvas_js__WEBPACK_IMPORTED_MODULE_3__/* .CgCanvas */ .f
+    "CgCanvas": _cg_canvas_js__WEBPACK_IMPORTED_MODULE_3__.CgCanvas
 };
 
 window.CABLES = window.CABLES || {};
@@ -18621,19 +18705,22 @@ window.vec4 = gl_matrix__WEBPACK_IMPORTED_MODULE_13__;
 
 /***/ }),
 
-/***/ 264:
+/***/ "./src/corelibs/cgl/cgl_mesh.js":
+/*!**************************************!*\
+  !*** ./src/corelibs/cgl/cgl_mesh.js ***!
+  \**************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   C: () => (/* binding */ MESH),
-/* harmony export */   e: () => (/* binding */ Mesh)
+/* harmony export */   MESH: () => (/* binding */ MESH),
+/* harmony export */   Mesh: () => (/* binding */ Mesh)
 /* harmony export */ });
-/* harmony import */ var cables_shared_client__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(849);
-/* harmony import */ var cables__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(562);
-/* harmony import */ var _cgl_shader_uniform_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(923);
-/* harmony import */ var _constants_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(997);
-/* harmony import */ var _cg_cg_mesh_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(434);
+/* harmony import */ var cables_shared_client__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! cables-shared-client */ "../shared/client/src/logger.js");
+/* harmony import */ var cables__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! cables */ "./src/core/utils.js");
+/* harmony import */ var _cgl_shader_uniform_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./cgl_shader_uniform.js */ "./src/corelibs/cgl/cgl_shader_uniform.js");
+/* harmony import */ var _constants_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./constants.js */ "./src/corelibs/cgl/constants.js");
+/* harmony import */ var _cg_cg_mesh_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../cg/cg_mesh.js */ "./src/corelibs/cg/cg_mesh.js");
 
 
 
@@ -18676,7 +18763,7 @@ MESH.lastMesh = null;
  * }
  *
  */
-class Mesh extends _cg_cg_mesh_js__WEBPACK_IMPORTED_MODULE_0__/* .CgMesh */ .w
+class Mesh extends _cg_cg_mesh_js__WEBPACK_IMPORTED_MODULE_0__.CgMesh
 {
 
     /** @type {CglContext} */
@@ -18700,7 +18787,7 @@ class Mesh extends _cg_cg_mesh_js__WEBPACK_IMPORTED_MODULE_0__/* .CgMesh */ .w
 
         let options = _options || {};
         if (cables__WEBPACK_IMPORTED_MODULE_1__.isNumeric(options))options = { "glPrimitive": _options }; // old constructor fallback...
-        this._log = new cables_shared_client__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A("cgl_mesh");
+        this._log = new cables_shared_client__WEBPACK_IMPORTED_MODULE_2__["default"]("cgl_mesh");
         this._bufVertexAttrib = null;
         this.#bufVerticesIndizes = this.#cgl.gl.createBuffer();
         this._indexType = this.#cgl.gl.UNSIGNED_SHORT;
@@ -18762,7 +18849,7 @@ class Mesh extends _cg_cg_mesh_js__WEBPACK_IMPORTED_MODULE_0__/* .CgMesh */ .w
      */
     updateVertices(geom)
     {
-        this.setAttribute(_constants_js__WEBPACK_IMPORTED_MODULE_3__/* .CONSTANTS */ .a.SHADER.SHADERVAR_VERTEX_POSITION, geom.vertices, 3);
+        this.setAttribute(_constants_js__WEBPACK_IMPORTED_MODULE_3__.CONSTANTS.SHADER.SHADERVAR_VERTEX_POSITION, geom.vertices, 3);
         this._numVerts = geom.vertices.length / 3;
     }
 
@@ -18786,7 +18873,7 @@ class Mesh extends _cg_cg_mesh_js__WEBPACK_IMPORTED_MODULE_0__/* .CgMesh */ .w
                         "name": name,
                         "stride": stride,
                         "offset": offset,
-                        "instanced": attrName == _constants_js__WEBPACK_IMPORTED_MODULE_3__/* .CONSTANTS */ .a.SHADER.SHADERVAR_INSTANCE_MMATRIX,
+                        "instanced": attrName == _constants_js__WEBPACK_IMPORTED_MODULE_3__.CONSTANTS.SHADER.SHADERVAR_INSTANCE_MMATRIX,
                     }
                 );
             }
@@ -18934,7 +19021,7 @@ class Mesh extends _cg_cg_mesh_js__WEBPACK_IMPORTED_MODULE_0__/* .CgMesh */ .w
             if (options.instanced) instanced = options.instanced;
         }
 
-        if (name == _constants_js__WEBPACK_IMPORTED_MODULE_3__/* .CONSTANTS */ .a.SHADER.SHADERVAR_INSTANCE_MMATRIX) instanced = true;
+        if (name == _constants_js__WEBPACK_IMPORTED_MODULE_3__.CONSTANTS.SHADER.SHADERVAR_INSTANCE_MMATRIX) instanced = true;
 
         for (i = 0; i < this._attributes.length; i++)
         {
@@ -18978,7 +19065,7 @@ class Mesh extends _cg_cg_mesh_js__WEBPACK_IMPORTED_MODULE_0__/* .CgMesh */ .w
 
         this._bufferArray(array, attr);
 
-        if (name == _constants_js__WEBPACK_IMPORTED_MODULE_3__/* .CONSTANTS */ .a.SHADER.SHADERVAR_VERTEX_POSITION) this._bufVertexAttrib = attr;
+        if (name == _constants_js__WEBPACK_IMPORTED_MODULE_3__.CONSTANTS.SHADER.SHADERVAR_VERTEX_POSITION) this._bufVertexAttrib = attr;
         this._attributes.push(attr);
         this._attribLocs = {};
 
@@ -19001,12 +19088,12 @@ class Mesh extends _cg_cg_mesh_js__WEBPACK_IMPORTED_MODULE_0__/* .CgMesh */ .w
     {
         if (geom.texCoords && geom.texCoords.length > 0)
         {
-            this.setAttribute(_constants_js__WEBPACK_IMPORTED_MODULE_3__/* .CONSTANTS */ .a.SHADER.SHADERVAR_VERTEX_TEXCOORD, geom.texCoords, 2);
+            this.setAttribute(_constants_js__WEBPACK_IMPORTED_MODULE_3__.CONSTANTS.SHADER.SHADERVAR_VERTEX_TEXCOORD, geom.texCoords, 2);
         }
         else
         {
             const tcBuff = new Float32Array(Math.round((geom.vertices.length / 3) * 2));
-            this.setAttribute(_constants_js__WEBPACK_IMPORTED_MODULE_3__/* .CONSTANTS */ .a.SHADER.SHADERVAR_VERTEX_TEXCOORD, tcBuff, 2);
+            this.setAttribute(_constants_js__WEBPACK_IMPORTED_MODULE_3__.CONSTANTS.SHADER.SHADERVAR_VERTEX_TEXCOORD, tcBuff, 2);
         }
     }
 
@@ -19021,12 +19108,12 @@ class Mesh extends _cg_cg_mesh_js__WEBPACK_IMPORTED_MODULE_0__/* .CgMesh */ .w
     {
         if (geom.vertexNormals && geom.vertexNormals.length > 0)
         {
-            this.setAttribute(_constants_js__WEBPACK_IMPORTED_MODULE_3__/* .CONSTANTS */ .a.SHADER.SHADERVAR_VERTEX_NORMAL, geom.vertexNormals, 3);
+            this.setAttribute(_constants_js__WEBPACK_IMPORTED_MODULE_3__.CONSTANTS.SHADER.SHADERVAR_VERTEX_NORMAL, geom.vertexNormals, 3);
         }
         else
         {
             const tcBuff = new Float32Array(Math.round((geom.vertices.length)));
-            this.setAttribute(_constants_js__WEBPACK_IMPORTED_MODULE_3__/* .CONSTANTS */ .a.SHADER.SHADERVAR_VERTEX_NORMAL, tcBuff, 3);
+            this.setAttribute(_constants_js__WEBPACK_IMPORTED_MODULE_3__.CONSTANTS.SHADER.SHADERVAR_VERTEX_NORMAL, tcBuff, 3);
         }
     }
 
@@ -19044,9 +19131,9 @@ class Mesh extends _cg_cg_mesh_js__WEBPACK_IMPORTED_MODULE_0__/* .CgMesh */ .w
                 for (let i = 0; i < this._numVerts; i++) this._verticesNumbers[i] = i;
             }
 
-            this.setAttribute(_constants_js__WEBPACK_IMPORTED_MODULE_3__/* .CONSTANTS */ .a.SHADER.SHADERVAR_VERTEX_NUMBER, this._verticesNumbers, 1, (_attr, _geom, shader) =>
+            this.setAttribute(_constants_js__WEBPACK_IMPORTED_MODULE_3__.CONSTANTS.SHADER.SHADERVAR_VERTEX_NUMBER, this._verticesNumbers, 1, (_attr, _geom, shader) =>
             {
-                if (!shader.uniformNumVertices) shader.uniformNumVertices = new _cgl_shader_uniform_js__WEBPACK_IMPORTED_MODULE_4__/* .Uniform */ .n(shader, "f", "numVertices", this._numVerts);
+                if (!shader.uniformNumVertices) shader.uniformNumVertices = new _cgl_shader_uniform_js__WEBPACK_IMPORTED_MODULE_4__.Uniform(shader, "f", "numVertices", this._numVerts);
                 shader.uniformNumVertices.setValue(this._numVerts);
             });
         }
@@ -19139,9 +19226,9 @@ class Mesh extends _cg_cg_mesh_js__WEBPACK_IMPORTED_MODULE_0__/* .CgMesh */ .w
         const geomAttribs = this.#geom.getAttributes();
 
         const attribAssoc = {
-            "texCoords": _constants_js__WEBPACK_IMPORTED_MODULE_3__/* .CONSTANTS */ .a.SHADER.SHADERVAR_VERTEX_TEXCOORD,
-            "vertexNormals": _constants_js__WEBPACK_IMPORTED_MODULE_3__/* .CONSTANTS */ .a.SHADER.SHADERVAR_VERTEX_NORMAL,
-            "vertexColors": _constants_js__WEBPACK_IMPORTED_MODULE_3__/* .CONSTANTS */ .a.SHADER.SHADERVAR_VERTEX_COLOR,
+            "texCoords": _constants_js__WEBPACK_IMPORTED_MODULE_3__.CONSTANTS.SHADER.SHADERVAR_VERTEX_TEXCOORD,
+            "vertexNormals": _constants_js__WEBPACK_IMPORTED_MODULE_3__.CONSTANTS.SHADER.SHADERVAR_VERTEX_NORMAL,
+            "vertexColors": _constants_js__WEBPACK_IMPORTED_MODULE_3__.CONSTANTS.SHADER.SHADERVAR_VERTEX_COLOR,
             "tangents": "attrTangent",
             "biTangents": "attrBiTangent",
         };
@@ -19568,7 +19655,7 @@ class Mesh extends _cg_cg_mesh_js__WEBPACK_IMPORTED_MODULE_0__/* .CgMesh */ .w
             this._numInstances = n;
             const indexArr = new Float32Array(n);
             for (let i = 0; i < n; i++) indexArr[i] = i;
-            this.setAttribute(_constants_js__WEBPACK_IMPORTED_MODULE_3__/* .CONSTANTS */ .a.SHADER.SHADERVAR_INSTANCE_INDEX, indexArr, 1, { "instanced": true });
+            this.setAttribute(_constants_js__WEBPACK_IMPORTED_MODULE_3__.CONSTANTS.SHADER.SHADERVAR_INSTANCE_INDEX, indexArr, 1, { "instanced": true });
         }
     }
 
@@ -19603,12 +19690,15 @@ class Mesh extends _cg_cg_mesh_js__WEBPACK_IMPORTED_MODULE_0__/* .CgMesh */ .w
 
 /***/ }),
 
-/***/ 460:
+/***/ "./src/corelibs/cgl/cgl_profiledata.js":
+/*!*********************************************!*\
+  !*** ./src/corelibs/cgl/cgl_profiledata.js ***!
+  \*********************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   E: () => (/* binding */ ProfileData)
+/* harmony export */   ProfileData: () => (/* binding */ ProfileData)
 /* harmony export */ });
 class ProfileData
 {
@@ -19717,22 +19807,25 @@ class ProfileData
 
 /***/ }),
 
-/***/ 24:
+/***/ "./src/corelibs/cgl/cgl_shader.js":
+/*!****************************************!*\
+  !*** ./src/corelibs/cgl/cgl_shader.js ***!
+  \****************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   M: () => (/* binding */ CglShader)
+/* harmony export */   Shader: () => (/* binding */ CglShader)
 /* harmony export */ });
-/* harmony import */ var cables_shared_client__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(849);
-/* harmony import */ var gl_matrix__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(684);
-/* harmony import */ var cables__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(920);
-/* harmony import */ var _cgl_shader_lib_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(960);
-/* harmony import */ var _cgl_mesh_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(264);
-/* harmony import */ var _constants_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
-/* harmony import */ var _cg_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(694);
-/* harmony import */ var _cgl_texture_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(70);
-/* harmony import */ var _cgl_shader_uniform_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(923);
+/* harmony import */ var cables_shared_client__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! cables-shared-client */ "../shared/client/src/logger.js");
+/* harmony import */ var gl_matrix__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! gl-matrix */ "./node_modules/gl-matrix/esm/mat4.js");
+/* harmony import */ var cables__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! cables */ "./src/core/timer.js");
+/* harmony import */ var _cgl_shader_lib_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./cgl_shader_lib.js */ "./src/corelibs/cgl/cgl_shader_lib.js");
+/* harmony import */ var _cgl_mesh_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./cgl_mesh.js */ "./src/corelibs/cgl/cgl_mesh.js");
+/* harmony import */ var _constants_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./constants.js */ "./src/corelibs/cgl/constants.js");
+/* harmony import */ var _cg_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../cg/index.js */ "./src/corelibs/cg/cg_shader.js");
+/* harmony import */ var _cgl_texture_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./cgl_texture.js */ "./src/corelibs/cgl/cgl_texture.js");
+/* harmony import */ var _cgl_shader_uniform_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./cgl_shader_uniform.js */ "./src/corelibs/cgl/cgl_shader_uniform.js");
 
 
 
@@ -19844,7 +19937,7 @@ function getDefaultFragmentShader(r, g, b)
  * var shader=new CGL.Shader(cgl,'MinimalMaterial');
  * shader.setSource(attachments.shader_vert,attachments.shader_frag);
  */
-class CglShader extends _cg_index_js__WEBPACK_IMPORTED_MODULE_1__/* .CgShader */ .U
+class CglShader extends _cg_index_js__WEBPACK_IMPORTED_MODULE_1__.CgShader
 {
 
     /** @type {Uniform[]} */
@@ -19860,7 +19953,7 @@ class CglShader extends _cg_index_js__WEBPACK_IMPORTED_MODULE_1__/* .CgShader */
         super();
         if (!_cgl) throw new Error("shader constructed without cgl " + _name);
 
-        this._log = new cables_shared_client__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A("cgl_shader");
+        this._log = new cables_shared_client__WEBPACK_IMPORTED_MODULE_2__["default"]("cgl_shader");
         this._cgl = _cgl;
 
         if (!_name) this._log.stack("no shader name given");
@@ -20032,11 +20125,11 @@ class CglShader extends _cg_index_js__WEBPACK_IMPORTED_MODULE_1__/* .CgShader */
 
     _addLibs(src)
     {
-        for (const id in _cgl_shader_lib_js__WEBPACK_IMPORTED_MODULE_4__/* .ShaderLibMods */ .y)
+        for (const id in _cgl_shader_lib_js__WEBPACK_IMPORTED_MODULE_4__.ShaderLibMods)
         {
             if (src.includes(id))
             {
-                const lib = new _cgl_shader_lib_js__WEBPACK_IMPORTED_MODULE_4__/* .ShaderLibMods */ .y[id]();
+                const lib = new _cgl_shader_lib_js__WEBPACK_IMPORTED_MODULE_4__.ShaderLibMods[id]();
                 src = src.replace("{{" + id + "}}", lib.srcHeadFrag);
                 this._libs.push(lib);
                 if (lib.initUniforms)lib.initUniforms(this);
@@ -20523,12 +20616,12 @@ class CglShader extends _cg_index_js__WEBPACK_IMPORTED_MODULE_1__/* .CgShader */
         this.finalShaderFrag = fs;
         this.finalShaderVert = vs;
 
-        _cgl_mesh_js__WEBPACK_IMPORTED_MODULE_5__/* .MESH */ .C.lastMesh = null;
-        _cgl_mesh_js__WEBPACK_IMPORTED_MODULE_5__/* .MESH */ .C.lastShader = null;
+        _cgl_mesh_js__WEBPACK_IMPORTED_MODULE_5__.MESH.lastMesh = null;
+        _cgl_mesh_js__WEBPACK_IMPORTED_MODULE_5__.MESH.lastShader = null;
 
         this._countMissingUniforms = 0;
         this._needsRecompile = false;
-        this.lastCompile = (0,cables__WEBPACK_IMPORTED_MODULE_6__/* .now */ .tB)();
+        this.lastCompile = (0,cables__WEBPACK_IMPORTED_MODULE_6__.now)();
 
         this._cgl.profileData.shaderCompileTime += performance.now() - startTime;
     }
@@ -20537,7 +20630,7 @@ class CglShader extends _cg_index_js__WEBPACK_IMPORTED_MODULE_1__/* .CgShader */
     {
         if (!this._isValid || this._cgl.aborted) return;
 
-        _cgl_mesh_js__WEBPACK_IMPORTED_MODULE_5__/* .MESH */ .C.lastShader = this;
+        _cgl_mesh_js__WEBPACK_IMPORTED_MODULE_5__.MESH.lastShader = this;
 
         if (!this._program || this.needsRecompile()) this.compile();
         if (!this._isValid) return;
@@ -20548,17 +20641,17 @@ class CglShader extends _cg_index_js__WEBPACK_IMPORTED_MODULE_1__/* .CgShader */
             // if (this._countMissingUniforms == 10)this._log.log("stopping getlocation of missing uniforms...", this._name);
             if (this._countMissingUniforms < 10)
             {
-                this._projMatrixUniform = this._cgl.gl.getUniformLocation(this._program, _constants_js__WEBPACK_IMPORTED_MODULE_0__/* .CONSTANTS */ .a.SHADER.SHADERVAR_UNI_PROJMAT);
-                this._attrVertexPos = this._cgl.glGetAttribLocation(this._program, _constants_js__WEBPACK_IMPORTED_MODULE_0__/* .CONSTANTS */ .a.SHADER.SHADERVAR_VERTEX_POSITION);
+                this._projMatrixUniform = this._cgl.gl.getUniformLocation(this._program, _constants_js__WEBPACK_IMPORTED_MODULE_0__.CONSTANTS.SHADER.SHADERVAR_UNI_PROJMAT);
+                this._attrVertexPos = this._cgl.glGetAttribLocation(this._program, _constants_js__WEBPACK_IMPORTED_MODULE_0__.CONSTANTS.SHADER.SHADERVAR_VERTEX_POSITION);
                 this._mvMatrixUniform = this._cgl.gl.getUniformLocation(this._program, "mvMatrix");
-                this._vMatrixUniform = this._cgl.gl.getUniformLocation(this._program, _constants_js__WEBPACK_IMPORTED_MODULE_0__/* .CONSTANTS */ .a.SHADER.SHADERVAR_UNI_VIEWMAT);
-                this._mMatrixUniform = this._cgl.gl.getUniformLocation(this._program, _constants_js__WEBPACK_IMPORTED_MODULE_0__/* .CONSTANTS */ .a.SHADER.SHADERVAR_UNI_MODELMAT);
-                this._camPosUniform = this._cgl.gl.getUniformLocation(this._program, _constants_js__WEBPACK_IMPORTED_MODULE_0__/* .CONSTANTS */ .a.SHADER.SHADERVAR_UNI_VIEWPOS);
-                this._normalMatrixUniform = this._cgl.gl.getUniformLocation(this._program, _constants_js__WEBPACK_IMPORTED_MODULE_0__/* .CONSTANTS */ .a.SHADER.SHADERVAR_UNI_NORMALMAT);
-                this._inverseViewMatrixUniform = this._cgl.gl.getUniformLocation(this._program, _constants_js__WEBPACK_IMPORTED_MODULE_0__/* .CONSTANTS */ .a.SHADER.SHADERVAR_UNI_INVVIEWMAT);
-                this._inverseProjMatrixUniform = this._cgl.gl.getUniformLocation(this._program, _constants_js__WEBPACK_IMPORTED_MODULE_0__/* .CONSTANTS */ .a.SHADER.SHADERVAR_UNI_INVPROJMAT);
-                this._materialIdUniform = this._cgl.gl.getUniformLocation(this._program, _constants_js__WEBPACK_IMPORTED_MODULE_0__/* .CONSTANTS */ .a.SHADER.SHADERVAR_UNI_MATERIALID);
-                this._objectIdUniform = this._cgl.gl.getUniformLocation(this._program, _constants_js__WEBPACK_IMPORTED_MODULE_0__/* .CONSTANTS */ .a.SHADER.SHADERVAR_UNI_OBJECTID);
+                this._vMatrixUniform = this._cgl.gl.getUniformLocation(this._program, _constants_js__WEBPACK_IMPORTED_MODULE_0__.CONSTANTS.SHADER.SHADERVAR_UNI_VIEWMAT);
+                this._mMatrixUniform = this._cgl.gl.getUniformLocation(this._program, _constants_js__WEBPACK_IMPORTED_MODULE_0__.CONSTANTS.SHADER.SHADERVAR_UNI_MODELMAT);
+                this._camPosUniform = this._cgl.gl.getUniformLocation(this._program, _constants_js__WEBPACK_IMPORTED_MODULE_0__.CONSTANTS.SHADER.SHADERVAR_UNI_VIEWPOS);
+                this._normalMatrixUniform = this._cgl.gl.getUniformLocation(this._program, _constants_js__WEBPACK_IMPORTED_MODULE_0__.CONSTANTS.SHADER.SHADERVAR_UNI_NORMALMAT);
+                this._inverseViewMatrixUniform = this._cgl.gl.getUniformLocation(this._program, _constants_js__WEBPACK_IMPORTED_MODULE_0__.CONSTANTS.SHADER.SHADERVAR_UNI_INVVIEWMAT);
+                this._inverseProjMatrixUniform = this._cgl.gl.getUniformLocation(this._program, _constants_js__WEBPACK_IMPORTED_MODULE_0__.CONSTANTS.SHADER.SHADERVAR_UNI_INVPROJMAT);
+                this._materialIdUniform = this._cgl.gl.getUniformLocation(this._program, _constants_js__WEBPACK_IMPORTED_MODULE_0__.CONSTANTS.SHADER.SHADERVAR_UNI_MATERIALID);
+                this._objectIdUniform = this._cgl.gl.getUniformLocation(this._program, _constants_js__WEBPACK_IMPORTED_MODULE_0__.CONSTANTS.SHADER.SHADERVAR_UNI_OBJECTID);
 
                 for (let i = 0; i < this._uniforms.length; i++) this._uniforms[i].needsUpdate = true;
             }
@@ -20702,7 +20795,7 @@ class CglShader extends _cg_index_js__WEBPACK_IMPORTED_MODULE_1__/* .CgShader */
      */
     addUniformFrag(type, name, valueOrPort, p2, p3, p4)
     {
-        const uni = new _cgl_shader_uniform_js__WEBPACK_IMPORTED_MODULE_7__/* .Uniform */ .n(this, type, name, valueOrPort, p2, p3, p4);
+        const uni = new _cgl_shader_uniform_js__WEBPACK_IMPORTED_MODULE_7__.Uniform(this, type, name, valueOrPort, p2, p3, p4);
         uni.shaderType = "frag";
         return uni;
     }
@@ -20719,7 +20812,7 @@ class CglShader extends _cg_index_js__WEBPACK_IMPORTED_MODULE_1__/* .CgShader */
      */
     addUniformVert(type, name, valueOrPort, p2, p3, p4)
     {
-        const uni = new _cgl_shader_uniform_js__WEBPACK_IMPORTED_MODULE_7__/* .Uniform */ .n(this, type, name, valueOrPort, p2, p3, p4);
+        const uni = new _cgl_shader_uniform_js__WEBPACK_IMPORTED_MODULE_7__.Uniform(this, type, name, valueOrPort, p2, p3, p4);
         uni.shaderType = "vert";
         return uni;
     }
@@ -20736,7 +20829,7 @@ class CglShader extends _cg_index_js__WEBPACK_IMPORTED_MODULE_1__/* .CgShader */
      */
     addUniformBoth(type, name, valueOrPort, p2, p3, p4)
     {
-        const uni = new _cgl_shader_uniform_js__WEBPACK_IMPORTED_MODULE_7__/* .Uniform */ .n(this, type, name, valueOrPort, p2, p3, p4);
+        const uni = new _cgl_shader_uniform_js__WEBPACK_IMPORTED_MODULE_7__.Uniform(this, type, name, valueOrPort, p2, p3, p4);
         uni.shaderType = "both";
         return uni;
     }
@@ -20767,7 +20860,7 @@ class CglShader extends _cg_index_js__WEBPACK_IMPORTED_MODULE_1__/* .CgShader */
             const member = members[i];
             if (!this.hasUniform(uniformName + "." + member.name))
             {
-                const uni = new _cgl_shader_uniform_js__WEBPACK_IMPORTED_MODULE_7__/* .Uniform */ .n(this, member.type, uniformName + "." + member.name, member.v1, member.v2, member.v3, member.v4, uniformName, structName, member.name);
+                const uni = new _cgl_shader_uniform_js__WEBPACK_IMPORTED_MODULE_7__.Uniform(this, member.type, uniformName + "." + member.name, member.v1, member.v2, member.v3, member.v4, uniformName, structName, member.name);
                 uni.shaderType = "frag";
                 uniforms[uniformName + "." + member.name] = uni;
             }
@@ -20801,7 +20894,7 @@ class CglShader extends _cg_index_js__WEBPACK_IMPORTED_MODULE_1__/* .CgShader */
             const member = members[i];
             if (!this.hasUniform(uniformName + "." + member.name))
             {
-                const uni = new _cgl_shader_uniform_js__WEBPACK_IMPORTED_MODULE_7__/* .Uniform */ .n(this, member.type, uniformName + "." + member.name, member.v1, member.v2, member.v3, member.v4, uniformName, structName, member.name);
+                const uni = new _cgl_shader_uniform_js__WEBPACK_IMPORTED_MODULE_7__.Uniform(this, member.type, uniformName + "." + member.name, member.v1, member.v2, member.v3, member.v4, uniformName, structName, member.name);
                 uni.shaderType = "vert";
                 uniforms[uniformName + "." + member.name] = uni;
             }
@@ -20838,7 +20931,7 @@ class CglShader extends _cg_index_js__WEBPACK_IMPORTED_MODULE_1__/* .CgShader */
                 this._log.error("Adding an integer struct member to both shaders can potentially error. Please use different structs for each shader. Error occured in struct:", structName, " with member:", member.name, " of type:", member.type, ".");
             if (!this.hasUniform(uniformName + "." + member.name))
             {
-                const uni = new _cgl_shader_uniform_js__WEBPACK_IMPORTED_MODULE_7__/* .Uniform */ .n(this, member.type, uniformName + "." + member.name, member.v1, member.v2, member.v3, member.v4, uniformName, structName, member.name);
+                const uni = new _cgl_shader_uniform_js__WEBPACK_IMPORTED_MODULE_7__.Uniform(this, member.type, uniformName + "." + member.name, member.v1, member.v2, member.v3, member.v4, uniformName, structName, member.name);
                 uni.shaderType = "both";
                 uniforms[uniformName + "." + member.name] = uni;
             }
@@ -21027,7 +21120,7 @@ class CglShader extends _cg_index_js__WEBPACK_IMPORTED_MODULE_1__/* .CgShader */
      */
     setUniformTexture(uni, tex)
     {
-        tex = tex || _cgl_texture_js__WEBPACK_IMPORTED_MODULE_8__/* .Texture */ .g.getTempTexture(this._cgl);
+        tex = tex || _cgl_texture_js__WEBPACK_IMPORTED_MODULE_8__.Texture.getTempTexture(this._cgl);
         for (let i = 0; i < this._textureStackUni.length; i++)
             if (this._textureStackUni[i] == uni)
             {
@@ -21194,16 +21287,19 @@ CglShader.createShader = function (cgl, str, type, cglShader)
 
 /***/ }),
 
-/***/ 960:
+/***/ "./src/corelibs/cgl/cgl_shader_lib.js":
+/*!********************************************!*\
+  !*** ./src/corelibs/cgl/cgl_shader_lib.js ***!
+  \********************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   y: () => (/* binding */ ShaderLibMods)
+/* harmony export */   ShaderLibMods: () => (/* binding */ ShaderLibMods)
 /* harmony export */ });
-/* harmony import */ var _cgl_shader_uniform_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(923);
-/* harmony import */ var _cgl_textureeffect_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(771);
-/* harmony import */ var _cgl_texture_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(70);
+/* harmony import */ var _cgl_shader_uniform_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./cgl_shader_uniform.js */ "./src/corelibs/cgl/cgl_shader_uniform.js");
+/* harmony import */ var _cgl_textureeffect_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./cgl_textureeffect.js */ "./src/corelibs/cgl/cgl_textureeffect.js");
+/* harmony import */ var _cgl_texture_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./cgl_texture.js */ "./src/corelibs/cgl/cgl_texture.js");
 
 
 
@@ -21213,13 +21309,13 @@ const ShaderLibMods = {
     "CGL.BLENDMODES": function ()
     {
         this.name = "blendmodes";
-        this.srcHeadFrag = _cgl_textureeffect_js__WEBPACK_IMPORTED_MODULE_0__/* .TextureEffect */ .p.getBlendCode();
+        this.srcHeadFrag = _cgl_textureeffect_js__WEBPACK_IMPORTED_MODULE_0__.TextureEffect.getBlendCode();
     },
 
     "CGL.BLENDMODES3": function ()
     {
         this.name = "blendmodes3";
-        this.srcHeadFrag = _cgl_textureeffect_js__WEBPACK_IMPORTED_MODULE_0__/* .TextureEffect */ .p.getBlendCode(3);
+        this.srcHeadFrag = _cgl_textureeffect_js__WEBPACK_IMPORTED_MODULE_0__.TextureEffect.getBlendCode(3);
     },
 
     "CGL.LUMINANCE": function ()
@@ -21279,13 +21375,13 @@ const ShaderLibMods = {
 
         this.initUniforms = function (shader)
         {
-            return [new _cgl_shader_uniform_js__WEBPACK_IMPORTED_MODULE_1__/* .Uniform */ .n(shader, "t", "CGLRNDTEX", 7)];
+            return [new _cgl_shader_uniform_js__WEBPACK_IMPORTED_MODULE_1__.Uniform(shader, "t", "CGLRNDTEX", 7)];
         };
 
         this.onBind = function (cgl, shader)
         {
-            _cgl_texture_js__WEBPACK_IMPORTED_MODULE_2__/* .Texture */ .g.getRandomTexture(cgl);
-            cgl.setTexture(7, _cgl_texture_js__WEBPACK_IMPORTED_MODULE_2__/* .Texture */ .g.getRandomTexture(cgl).tex);
+            _cgl_texture_js__WEBPACK_IMPORTED_MODULE_2__.Texture.getRandomTexture(cgl);
+            cgl.setTexture(7, _cgl_texture_js__WEBPACK_IMPORTED_MODULE_2__.Texture.getRandomTexture(cgl).tex);
         };
     }
 
@@ -21294,14 +21390,17 @@ const ShaderLibMods = {
 
 /***/ }),
 
-/***/ 923:
+/***/ "./src/corelibs/cgl/cgl_shader_uniform.js":
+/*!************************************************!*\
+  !*** ./src/corelibs/cgl/cgl_shader_uniform.js ***!
+  \************************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   n: () => (/* binding */ Uniform)
+/* harmony export */   Uniform: () => (/* binding */ Uniform)
 /* harmony export */ });
-/* harmony import */ var _cg_cg_uniform_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(475);
+/* harmony import */ var _cg_cg_uniform_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../cg/cg_uniform.js */ "./src/corelibs/cg/cg_uniform.js");
 
 
 
@@ -21343,7 +21442,7 @@ const ShaderLibMods = {
 
 // export const Uniform(__shader, __type, __name, _value, _port2, _port3, _port4, _structUniformName, _structName, _propertyName)
 
-class Uniform extends _cg_cg_uniform_js__WEBPACK_IMPORTED_MODULE_0__/* .CgUniform */ .v
+class Uniform extends _cg_cg_uniform_js__WEBPACK_IMPORTED_MODULE_0__.CgUniform
 {
     constructor(__shader, __type, __name, _value, _port2, _port3, _port4, _structUniformName, _structName, _propertyName)
     {
@@ -21824,15 +21923,18 @@ Uniform.glslTypeString = (t) =>
 
 /***/ }),
 
-/***/ 273:
+/***/ "./src/corelibs/cgl/cgl_simplerect.js":
+/*!********************************************!*\
+  !*** ./src/corelibs/cgl/cgl_simplerect.js ***!
+  \********************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   S: () => (/* binding */ MESHES)
+/* harmony export */   MESHES: () => (/* binding */ MESHES)
 /* harmony export */ });
-/* harmony import */ var _cg_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(331);
-/* harmony import */ var _cgl_mesh_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(264);
+/* harmony import */ var _cg_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../cg/index.js */ "./src/corelibs/cg/cg_geom.js");
+/* harmony import */ var _cgl_mesh_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./cgl_mesh.js */ "./src/corelibs/cgl/cgl_mesh.js");
 
 
 
@@ -21840,7 +21942,7 @@ const MESHES = {};
 
 MESHES.getSimpleRect = function (cgl, name, size = 1.0)
 {
-    const geom = new _cg_index_js__WEBPACK_IMPORTED_MODULE_0__/* .Geometry */ .V(name);
+    const geom = new _cg_index_js__WEBPACK_IMPORTED_MODULE_0__.Geometry(name);
 
     geom.vertices = [1.0 * size, 1.0 * size, 0.0, -1.0 * size, 1.0 * size, 0.0, 1.0 * size, -1.0 * size, 0.0, -1.0 * size, -1.0 * size, 0.0];
     geom.texCoords = [1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0];
@@ -21852,7 +21954,7 @@ MESHES.getSimpleRect = function (cgl, name, size = 1.0)
 
 MESHES.getSimpleCube = function (cgl, name)
 {
-    const geom = new _cg_index_js__WEBPACK_IMPORTED_MODULE_0__/* .Geometry */ .V(name);
+    const geom = new _cg_index_js__WEBPACK_IMPORTED_MODULE_0__.Geometry(name);
     geom.vertices = [-1, -1, 1, 1, -1, 1, 1, 1, 1, -1, 1, 1, -1, -1, -1, 1, -1, -1, 1, 1, -1, -1, 1, -1, -1, 1, -1, 1, 1, -1, 1, 1, 1, -1, 1, 1, -1, -1, -1, 1, -1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, 1, -1, 1, 1, 1, 1, 1, 1, -1, -1, -1, -1, -1, -1, 1, -1, 1, 1, -1, 1, -1];
     geom.setTexCoords([0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0,]);
     geom.verticesIndices = [0, 1, 2, 0, 2, 3, 4, 5, 6, 4, 6, 7, 8, 9, 10, 8, 10, 11, 12, 13, 14, 12, 14, 15, 16, 17, 18, 16, 18, 19, 20, 21, 22, 20, 22, 23];
@@ -21860,7 +21962,7 @@ MESHES.getSimpleCube = function (cgl, name)
     geom.tangents = new Float32Array([0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1]);
     geom.biTangents = new Float32Array([-1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1]);
 
-    return new _cgl_mesh_js__WEBPACK_IMPORTED_MODULE_1__/* .Mesh */ .e(cgl, geom);
+    return new _cgl_mesh_js__WEBPACK_IMPORTED_MODULE_1__.Mesh(cgl, geom);
 };
 
 
@@ -21868,21 +21970,24 @@ MESHES.getSimpleCube = function (cgl, name)
 
 /***/ }),
 
-/***/ 308:
+/***/ "./src/corelibs/cgl/cgl_state.js":
+/*!***************************************!*\
+  !*** ./src/corelibs/cgl/cgl_state.js ***!
+  \***************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   G: () => (/* binding */ CglContext)
+/* harmony export */   CglContext: () => (/* binding */ CglContext)
 /* harmony export */ });
 /* unused harmony export BLENDS */
-/* harmony import */ var cables_shared_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(849);
-/* harmony import */ var cables__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(562);
-/* harmony import */ var _constants_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(997);
-/* harmony import */ var _cgl_shader_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(24);
-/* harmony import */ var _cg_cg_context_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(628);
-/* harmony import */ var _cgl_mesh_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(264);
-/* harmony import */ var _cgl_texture_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(70);
+/* harmony import */ var cables_shared_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! cables-shared-client */ "../shared/client/src/logger.js");
+/* harmony import */ var cables__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! cables */ "./src/core/utils.js");
+/* harmony import */ var _constants_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./constants.js */ "./src/corelibs/cgl/constants.js");
+/* harmony import */ var _cgl_shader_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./cgl_shader.js */ "./src/corelibs/cgl/cgl_shader.js");
+/* harmony import */ var _cg_cg_context_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../cg/cg_context.js */ "./src/corelibs/cg/cg_context.js");
+/* harmony import */ var _cgl_mesh_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./cgl_mesh.js */ "./src/corelibs/cgl/cgl_mesh.js");
+/* harmony import */ var _cgl_texture_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./cgl_texture.js */ "./src/corelibs/cgl/cgl_texture.js");
 
 
 
@@ -21908,7 +22013,7 @@ const BLENDS = {
  * @hideconstructor
  */
 // const Context(_patch)
-class CglContext extends _cg_cg_context_js__WEBPACK_IMPORTED_MODULE_0__/* .CgContext */ .A
+class CglContext extends _cg_cg_context_js__WEBPACK_IMPORTED_MODULE_0__.CgContext
 {
 
     /**
@@ -21918,7 +22023,7 @@ class CglContext extends _cg_cg_context_js__WEBPACK_IMPORTED_MODULE_0__/* .CgCon
     {
         super(_patch);
 
-        this.gApi = _cg_cg_context_js__WEBPACK_IMPORTED_MODULE_0__/* .CgContext */ .A.API_WEBGL;
+        this.gApi = _cg_cg_context_js__WEBPACK_IMPORTED_MODULE_0__.CgContext.API_WEBGL;
         this.aborted = false;
 
         /** @deprecated */
@@ -21926,7 +22031,7 @@ class CglContext extends _cg_cg_context_js__WEBPACK_IMPORTED_MODULE_0__/* .CgCon
         /** @deprecated */
         this.popMvMatrix = this.popmMatrix = this.popModelMatrix;// deprecated and wrong... still used??
 
-        this._log = new cables_shared_client__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A("cgl_context", { "onError": _patch.config.onError });
+        this._log = new cables_shared_client__WEBPACK_IMPORTED_MODULE_1__["default"]("cgl_context", { "onError": _patch.config.onError });
 
         this.glVersion = 0;
         this.glUseHalfFloatTex = false;
@@ -21965,9 +22070,9 @@ class CglContext extends _cg_cg_context_js__WEBPACK_IMPORTED_MODULE_0__/* .CgCon
         this._stackDepthTest = [];
         this._stackStencil = [];
 
-        this._simpleShader = new _cgl_shader_js__WEBPACK_IMPORTED_MODULE_2__/* .Shader */ .M(this, "simpleshader");
+        this._simpleShader = new _cgl_shader_js__WEBPACK_IMPORTED_MODULE_2__.Shader(this, "simpleshader");
         this._simpleShader.setModules(["MODULE_VERTEX_POSITION", "MODULE_COLOR", "MODULE_BEGIN_FRAG", "MODULE_VERTEX_MODELVIEW"]);
-        this._simpleShader.setSource(_cgl_shader_js__WEBPACK_IMPORTED_MODULE_2__/* .Shader */ .M.getDefaultVertexShader(), _cgl_shader_js__WEBPACK_IMPORTED_MODULE_2__/* .Shader */ .M.getDefaultFragmentShader());
+        this._simpleShader.setSource(_cgl_shader_js__WEBPACK_IMPORTED_MODULE_2__.Shader.getDefaultVertexShader(), _cgl_shader_js__WEBPACK_IMPORTED_MODULE_2__.Shader.getDefaultFragmentShader());
 
         this._currentShader = this._simpleShader;
 
@@ -22273,7 +22378,7 @@ class CglContext extends _cg_cg_context_js__WEBPACK_IMPORTED_MODULE_0__/* .CgCon
         {
             this._oldCanvasWidth = this.canvasWidth;
             this._oldCanvasHeight = this.canvasHeight;
-            this.emitEvent(_cg_cg_context_js__WEBPACK_IMPORTED_MODULE_0__/* .CgContext */ .A.EVENT_RESIZE);
+            this.emitEvent(_cg_cg_context_js__WEBPACK_IMPORTED_MODULE_0__.CgContext.EVENT_RESIZE);
         }
 
         if (this._cursor != this._currentCursor)
@@ -22474,7 +22579,7 @@ class CglContext extends _cg_cg_context_js__WEBPACK_IMPORTED_MODULE_0__/* .CgCon
 
         this._startMatrixStacks(identTranslate, identTranslateView);
 
-        cgl.pushBlendMode(_constants_js__WEBPACK_IMPORTED_MODULE_3__/* .CONSTANTS */ .a.BLEND_MODES.BLEND_NORMAL, false);
+        cgl.pushBlendMode(_constants_js__WEBPACK_IMPORTED_MODULE_3__.CONSTANTS.BLEND_MODES.BLEND_NORMAL, false);
 
         for (let i = 0; i < this._textureslots.length; i++) this._textureslots[i] = null;
 
@@ -22555,7 +22660,7 @@ class CglContext extends _cg_cg_context_js__WEBPACK_IMPORTED_MODULE_0__/* .CgCon
     {
         this.checkFrameStarted("cgl setTexture");
 
-        if (t === null) t = _cgl_texture_js__WEBPACK_IMPORTED_MODULE_5__/* .Texture */ .g.getEmptyTexture(this).tex;
+        if (t === null) t = _cgl_texture_js__WEBPACK_IMPORTED_MODULE_5__.Texture.getEmptyTexture(this).tex;
 
         if (this._textureslots[slot] != t)
         {
@@ -22892,7 +22997,7 @@ class CglContext extends _cg_cg_context_js__WEBPACK_IMPORTED_MODULE_0__/* .CgCon
 
         const n = this._stackBlendMode.length - 1;
 
-        this.pushBlend(this._stackBlendMode[n] !== _constants_js__WEBPACK_IMPORTED_MODULE_3__/* .CONSTANTS */ .a.BLEND_MODES.BLEND_NONE);
+        this.pushBlend(this._stackBlendMode[n] !== _constants_js__WEBPACK_IMPORTED_MODULE_3__.CONSTANTS.BLEND_MODES.BLEND_NONE);
         this._setBlendMode(this._stackBlendMode[n], this._stackBlendModePremul[n]);
     }
 
@@ -22973,11 +23078,11 @@ class CglContext extends _cg_cg_context_js__WEBPACK_IMPORTED_MODULE_0__/* .CgCon
     {
         const gl = this.gl;
 
-        if (blendMode == _constants_js__WEBPACK_IMPORTED_MODULE_3__/* .CONSTANTS */ .a.BLEND_MODES.BLEND_NONE)
+        if (blendMode == _constants_js__WEBPACK_IMPORTED_MODULE_3__.CONSTANTS.BLEND_MODES.BLEND_NONE)
         {
             // this.gl.disable(this.gl.BLEND);
         }
-        else if (blendMode == _constants_js__WEBPACK_IMPORTED_MODULE_3__/* .CONSTANTS */ .a.BLEND_MODES.BLEND_ADD)
+        else if (blendMode == _constants_js__WEBPACK_IMPORTED_MODULE_3__.CONSTANTS.BLEND_MODES.BLEND_ADD)
         {
             if (premul)
             {
@@ -22990,7 +23095,7 @@ class CglContext extends _cg_cg_context_js__WEBPACK_IMPORTED_MODULE_0__/* .CgCon
                 gl.blendFunc(gl.SRC_ALPHA, gl.ONE);
             }
         }
-        else if (blendMode == _constants_js__WEBPACK_IMPORTED_MODULE_3__/* .CONSTANTS */ .a.BLEND_MODES.BLEND_SUB)
+        else if (blendMode == _constants_js__WEBPACK_IMPORTED_MODULE_3__.CONSTANTS.BLEND_MODES.BLEND_SUB)
         {
             if (premul)
             {
@@ -23003,7 +23108,7 @@ class CglContext extends _cg_cg_context_js__WEBPACK_IMPORTED_MODULE_0__/* .CgCon
                 gl.blendFunc(gl.ZERO, gl.ONE_MINUS_SRC_COLOR);
             }
         }
-        else if (blendMode == _constants_js__WEBPACK_IMPORTED_MODULE_3__/* .CONSTANTS */ .a.BLEND_MODES.BLEND_MUL)
+        else if (blendMode == _constants_js__WEBPACK_IMPORTED_MODULE_3__.CONSTANTS.BLEND_MODES.BLEND_MUL)
         {
             if (premul)
             {
@@ -23016,7 +23121,7 @@ class CglContext extends _cg_cg_context_js__WEBPACK_IMPORTED_MODULE_0__/* .CgCon
                 gl.blendFunc(gl.ZERO, gl.SRC_COLOR);
             }
         }
-        else if (blendMode == _constants_js__WEBPACK_IMPORTED_MODULE_3__/* .CONSTANTS */ .a.BLEND_MODES.BLEND_NORMAL)
+        else if (blendMode == _constants_js__WEBPACK_IMPORTED_MODULE_3__.CONSTANTS.BLEND_MODES.BLEND_NORMAL)
         {
             if (premul)
             {
@@ -23042,7 +23147,7 @@ class CglContext extends _cg_cg_context_js__WEBPACK_IMPORTED_MODULE_0__/* .CgCon
     createMesh(geom, options)
     {
         if (cables__WEBPACK_IMPORTED_MODULE_4__.isNumeric(options))options = { "glPrimitive": options }; // old constructor fallback...
-        return new _cgl_mesh_js__WEBPACK_IMPORTED_MODULE_6__/* .Mesh */ .e(this, geom, options);
+        return new _cgl_mesh_js__WEBPACK_IMPORTED_MODULE_6__.Mesh(this, geom, options);
     }
 
     /**
@@ -23084,8 +23189,8 @@ class CglContext extends _cg_cg_context_js__WEBPACK_IMPORTED_MODULE_0__/* .CgCon
     {
         if (this.errorShader) return this.errorShader;
 
-        this.errorShader = new _cgl_shader_js__WEBPACK_IMPORTED_MODULE_2__/* .Shader */ .M(this, "errormaterial");
-        this.errorShader.setSource(_cgl_shader_js__WEBPACK_IMPORTED_MODULE_2__/* .Shader */ .M.getDefaultVertexShader(), _cgl_shader_js__WEBPACK_IMPORTED_MODULE_2__/* .Shader */ .M.getErrorFragmentShader());
+        this.errorShader = new _cgl_shader_js__WEBPACK_IMPORTED_MODULE_2__.Shader(this, "errormaterial");
+        this.errorShader.setSource(_cgl_shader_js__WEBPACK_IMPORTED_MODULE_2__.Shader.getDefaultVertexShader(), _cgl_shader_js__WEBPACK_IMPORTED_MODULE_2__.Shader.getErrorFragmentShader());
         return this.errorShader;
     }
 
@@ -23094,16 +23199,19 @@ class CglContext extends _cg_cg_context_js__WEBPACK_IMPORTED_MODULE_0__/* .CgCon
 
 /***/ }),
 
-/***/ 70:
+/***/ "./src/corelibs/cgl/cgl_texture.js":
+/*!*****************************************!*\
+  !*** ./src/corelibs/cgl/cgl_texture.js ***!
+  \*****************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   g: () => (/* binding */ Texture)
+/* harmony export */   Texture: () => (/* binding */ Texture)
 /* harmony export */ });
-/* harmony import */ var cables_shared_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(849);
-/* harmony import */ var cables__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(562);
-/* harmony import */ var _cg_cg_texture_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(356);
+/* harmony import */ var cables_shared_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! cables-shared-client */ "../shared/client/src/logger.js");
+/* harmony import */ var cables__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! cables */ "./src/core/utils.js");
+/* harmony import */ var _cg_cg_texture_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../cg/cg_texture.js */ "./src/corelibs/cg/cg_texture.js");
 
 
 
@@ -23111,7 +23219,7 @@ class CglContext extends _cg_cg_context_js__WEBPACK_IMPORTED_MODULE_0__/* .CgCon
 
 const DEFAULT_TEXTURE_SIZE = 8;
 
-const log = new cables_shared_client__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A("cgl_texture");
+const log = new cables_shared_client__WEBPACK_IMPORTED_MODULE_0__["default"]("cgl_texture");
 
 /**
  * A Texture
@@ -23130,7 +23238,7 @@ const log = new cables_shared_client__WEBPACK_IMPORTED_MODULE_0__/* ["default"] 
  * const tex=new CGL.Texture(cgl);
  * tex.initFromData(data,size,size,CGL.Texture.FILTER_NEAREST,CGL.Texture.WRAP_REPEAT);
  */
-class Texture extends _cg_cg_texture_js__WEBPACK_IMPORTED_MODULE_1__/* .CgTexture */ .U
+class Texture extends _cg_cg_texture_js__WEBPACK_IMPORTED_MODULE_1__.CgTexture
 {
 
     /**
@@ -23142,7 +23250,7 @@ class Texture extends _cg_cg_texture_js__WEBPACK_IMPORTED_MODULE_1__/* .CgTextur
         if (!__cgl) throw new Error("no cgl");
 
         this._cgl = __cgl;
-        this._log = new cables_shared_client__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A("tex");
+        this._log = new cables_shared_client__WEBPACK_IMPORTED_MODULE_0__["default"]("tex");
         this.tex = this._cgl.gl.createTexture();
         this.loading = false;
         this.flip = true;
@@ -24171,16 +24279,19 @@ Texture.isPixelFormatHalfFloat =
 
 /***/ }),
 
-/***/ 771:
+/***/ "./src/corelibs/cgl/cgl_textureeffect.js":
+/*!***********************************************!*\
+  !*** ./src/corelibs/cgl/cgl_textureeffect.js ***!
+  \***********************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   p: () => (/* binding */ TextureEffect)
+/* harmony export */   TextureEffect: () => (/* binding */ TextureEffect)
 /* harmony export */ });
-/* harmony import */ var cables_shared_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(849);
-/* harmony import */ var _cgl_texture_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(70);
-/* harmony import */ var _cgl_simplerect_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(273);
+/* harmony import */ var cables_shared_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! cables-shared-client */ "../shared/client/src/logger.js");
+/* harmony import */ var _cgl_texture_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./cgl_texture.js */ "./src/corelibs/cgl/cgl_texture.js");
+/* harmony import */ var _cgl_simplerect_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./cgl_simplerect.js */ "./src/corelibs/cgl/cgl_simplerect.js");
 
 
 
@@ -24190,7 +24301,7 @@ class TextureEffect
     constructor(cgl, options)
     {
         this._cgl = cgl;
-        this._log = new cables_shared_client__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A("cgl_TextureEffect");
+        this._log = new cables_shared_client__WEBPACK_IMPORTED_MODULE_0__["default"]("cgl_TextureEffect");
 
         if (!cgl.TextureEffectMesh) this.createMesh();
 
@@ -24231,7 +24342,7 @@ class TextureEffect
     {
         if (tex === null)
         {
-            this._textureSource = new _cgl_texture_js__WEBPACK_IMPORTED_MODULE_1__/* .Texture */ .g(this._cgl);
+            this._textureSource = new _cgl_texture_js__WEBPACK_IMPORTED_MODULE_1__.Texture(this._cgl);
             this._textureSource.setSize(16, 16);
         }
         else
@@ -24373,7 +24484,7 @@ class TextureEffect
 
         this._cgl.profileData.profileTextureEffect++;
 
-        if (this._textureTarget.filter == _cgl_texture_js__WEBPACK_IMPORTED_MODULE_1__/* .Texture */ .g.FILTER_MIPMAP)
+        if (this._textureTarget.filter == _cgl_texture_js__WEBPACK_IMPORTED_MODULE_1__.Texture.FILTER_MIPMAP)
         {
             if (!this.switched)
             {
@@ -24417,7 +24528,7 @@ class TextureEffect
 
     createMesh()
     {
-        this._cgl.TextureEffectMesh = _cgl_simplerect_js__WEBPACK_IMPORTED_MODULE_2__/* .MESHES */ .S.getSimpleRect(this._cgl, "texEffectRect");
+        this._cgl.TextureEffectMesh = _cgl_simplerect_js__WEBPACK_IMPORTED_MODULE_2__.MESHES.getSimpleRect(this._cgl, "texEffectRect");
     }
 
     // ---------------------------------------------------------------------------------
@@ -24705,12 +24816,15 @@ TextureEffect.setupBlending = function (op, shader, blendPort, amountPort, alpha
 
 /***/ }),
 
-/***/ 997:
+/***/ "./src/corelibs/cgl/constants.js":
+/*!***************************************!*\
+  !*** ./src/corelibs/cgl/constants.js ***!
+  \***************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   a: () => (/* binding */ CONSTANTS),
+/* harmony export */   CONSTANTS: () => (/* binding */ CONSTANTS),
 /* harmony export */   nl: () => (/* binding */ nl)
 /* harmony export */ });
 const SHADER = {
@@ -24762,24 +24876,27 @@ const nl = "\n";// newline
 
 /***/ }),
 
-/***/ 772:
+/***/ "./src/corelibs/cgl/index.js":
+/*!***********************************************!*\
+  !*** ./src/corelibs/cgl/index.js + 4 modules ***!
+  \***********************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  Rq: () => (/* binding */ cgl_CGL)
+  CGL: () => (/* binding */ cgl_CGL)
 });
 
 // UNUSED EXPORTS: Framebuffer2, Geometry, Mesh, Shader, Texture, Uniform
 
 // EXTERNAL MODULE: ./src/core/anim.js
-var anim = __webpack_require__(344);
+var anim = __webpack_require__("./src/core/anim.js");
 // EXTERNAL MODULE: ../shared/client/src/logger.js
-var logger = __webpack_require__(849);
+var logger = __webpack_require__("../shared/client/src/logger.js");
 // EXTERNAL MODULE: ./src/corelibs/cgl/cgl_texture.js
-var cgl_texture = __webpack_require__(70);
+var cgl_texture = __webpack_require__("./src/corelibs/cgl/cgl_texture.js");
 ;// CONCATENATED MODULE: ./src/corelibs/cgl/cgl_framebuffer2.js
 
 
@@ -24796,7 +24913,7 @@ class Framebuffer2
      */
     constructor(cgl, w, h, options)
     {
-        this._log = new logger/* default */.A("cgl_framebuffer2");
+        this._log = new logger["default"]("cgl_framebuffer2");
         if (cgl.glVersion == 1) this._log.error("framebuffer2 used on webgl1");
         this.Framebuffer2DrawTargetsDefault = null;
         this.Framebuffer2BlittingFramebuffer = null;
@@ -24845,8 +24962,8 @@ class Framebuffer2
             else this._options.multisamplingSamples = Math.min(this._cgl.maxSamples, this._options.multisamplingSamples);
         }
 
-        if (!this._options.hasOwnProperty("filter")) this._options.filter = cgl_texture/* Texture */.g.FILTER_LINEAR;
-        if (!this._options.hasOwnProperty("wrap")) this._options.wrap = cgl_texture/* Texture */.g.WRAP_REPEAT;
+        if (!this._options.hasOwnProperty("filter")) this._options.filter = cgl_texture.Texture.FILTER_LINEAR;
+        if (!this._options.hasOwnProperty("wrap")) this._options.wrap = cgl_texture.Texture.WRAP_REPEAT;
 
         this._numRenderBuffers = this._options.numRenderBuffers;
         this._colorTextures = [];
@@ -24856,13 +24973,13 @@ class Framebuffer2
 
         if (!options.pixelFormat)
         {
-            if (options.isFloatingPointTexture) this._options.pixelFormat = cgl_texture/* Texture */.g.PFORMATSTR_RGBA32F;
-            else this._options.pixelFormat = cgl_texture/* Texture */.g.PFORMATSTR_RGBA8UB;
+            if (options.isFloatingPointTexture) this._options.pixelFormat = cgl_texture.Texture.PFORMATSTR_RGBA32F;
+            else this._options.pixelFormat = cgl_texture.Texture.PFORMATSTR_RGBA8UB;
         }
 
         for (let i = 0; i < this._numRenderBuffers; i++)
         {
-            this._colorTextures[i] = new cgl_texture/* Texture */.g(cgl, {
+            this._colorTextures[i] = new cgl_texture.Texture(cgl, {
                 "name": "fb2 " + this.name + " " + i,
                 "isFloatingPointTexture": this._options.isFloatingPointTexture,
                 "anisotropic": this._options.anisotropic || 0,
@@ -24872,14 +24989,14 @@ class Framebuffer2
             });
         }
 
-        let fil = cgl_texture/* Texture */.g.FILTER_NEAREST;
-        if (this._options.shadowMap) fil = cgl_texture/* Texture */.g.FILTER_LINEAR;
+        let fil = cgl_texture.Texture.FILTER_NEAREST;
+        if (this._options.shadowMap) fil = cgl_texture.Texture.FILTER_LINEAR;
 
         const defaultTexSize = 512;
 
         if (this._options.depth)
         {
-            this._textureDepth = new cgl_texture/* Texture */.g(cgl,
+            this._textureDepth = new cgl_texture.Texture(cgl,
                 {
                     "name": "fb2 depth " + this.name,
                     "isDepthTexture": true,
@@ -25003,7 +25120,7 @@ class Framebuffer2
             this._cgl.gl.bindFramebuffer(this._cgl.gl.FRAMEBUFFER, this._frameBuffer);
             this._cgl.gl.bindRenderbuffer(this._cgl.gl.RENDERBUFFER, renderBuffer);
 
-            const info = cgl_texture/* Texture */.g.setUpGlPixelFormat(this._cgl, this._options.pixelFormat);
+            const info = cgl_texture.Texture.setUpGlPixelFormat(this._cgl, this._options.pixelFormat);
             let internFormat = info.glInternalFormat;
 
             // if (this._options.isFloatingPointTexture)
@@ -25012,7 +25129,7 @@ class Framebuffer2
             {
                 if (!this._cgl.enableExtension("OES_texture_float_linear"))
                 {
-                    this._options.filter = cgl_texture/* Texture */.g.FILTER_NEAREST;
+                    this._options.filter = cgl_texture.Texture.FILTER_NEAREST;
                     this.setFilter(this._options.filter);
                 }
             }
@@ -25021,7 +25138,7 @@ class Framebuffer2
                 if (!this._cgl.enableExtension("OES_texture_float_linear"))
                 {
                     this._log.warn("no linear pixelformat,using nearest");
-                    this._options.filter = cgl_texture/* Texture */.g.FILTER_NEAREST;
+                    this._options.filter = cgl_texture.Texture.FILTER_NEAREST;
                     this.setFilter(this._options.filter);
                 }
             }
@@ -25239,7 +25356,7 @@ class Framebuffer2
         this._cgl.popModelMatrix();
         this._cgl.popViewPort();
 
-        if (this._colorTextures[0].filter == cgl_texture/* Texture */.g.FILTER_MIPMAP)
+        if (this._colorTextures[0].filter == cgl_texture.Texture.FILTER_MIPMAP)
         {
             for (let i = 0; i < this._numRenderBuffers; i++)
             {
@@ -25277,11 +25394,11 @@ const WireCube = function (cgl) // deprecated...
 };
 
 // EXTERNAL MODULE: ./src/corelibs/cgl/cgl_mesh.js
-var cgl_mesh = __webpack_require__(264);
+var cgl_mesh = __webpack_require__("./src/corelibs/cgl/cgl_mesh.js");
 // EXTERNAL MODULE: ./src/corelibs/cgl/cgl_shader_uniform.js
-var cgl_shader_uniform = __webpack_require__(923);
+var cgl_shader_uniform = __webpack_require__("./src/corelibs/cgl/cgl_shader_uniform.js");
 // EXTERNAL MODULE: ./src/corelibs/cgl/cgl_shader_lib.js
-var cgl_shader_lib = __webpack_require__(960);
+var cgl_shader_lib = __webpack_require__("./src/corelibs/cgl/cgl_shader_lib.js");
 ;// CONCATENATED MODULE: ./src/corelibs/cgl/cgl_unicolorshader.js
 
 
@@ -25318,9 +25435,9 @@ class UniColorShader
 }
 
 // EXTERNAL MODULE: ./src/corelibs/cgl/cgl_shader.js
-var cgl_shader = __webpack_require__(24);
+var cgl_shader = __webpack_require__("./src/corelibs/cgl/cgl_shader.js");
 // EXTERNAL MODULE: ./src/corelibs/cgl/cgl_simplerect.js
-var cgl_simplerect = __webpack_require__(273);
+var cgl_simplerect = __webpack_require__("./src/corelibs/cgl/cgl_simplerect.js");
 ;// CONCATENATED MODULE: ./src/corelibs/cgl/cgl_utils.js
 /**
  * @namespace CGL
@@ -25382,19 +25499,19 @@ const getWheelSpeed = getWheelDelta_;
 const getWheelDelta = getWheelDelta_;
 
 // EXTERNAL MODULE: ./src/corelibs/cgl/cgl_textureeffect.js
-var cgl_textureeffect = __webpack_require__(771);
+var cgl_textureeffect = __webpack_require__("./src/corelibs/cgl/cgl_textureeffect.js");
 // EXTERNAL MODULE: ./src/corelibs/cgl/constants.js
-var constants = __webpack_require__(997);
+var constants = __webpack_require__("./src/corelibs/cgl/constants.js");
 // EXTERNAL MODULE: ./src/corelibs/cgl/cgl_profiledata.js
-var cgl_profiledata = __webpack_require__(460);
+var cgl_profiledata = __webpack_require__("./src/corelibs/cgl/cgl_profiledata.js");
 // EXTERNAL MODULE: ./src/corelibs/cg/cg_geom.js
-var cg_geom = __webpack_require__(331);
+var cg_geom = __webpack_require__("./src/corelibs/cg/cg_geom.js");
 // EXTERNAL MODULE: ./src/corelibs/cg/cg_boundingbox.js
-var cg_boundingbox = __webpack_require__(982);
+var cg_boundingbox = __webpack_require__("./src/corelibs/cg/cg_boundingbox.js");
 // EXTERNAL MODULE: ./src/corelibs/cg/cg_matrixstack.js
-var cg_matrixstack = __webpack_require__(868);
+var cg_matrixstack = __webpack_require__("./src/corelibs/cg/cg_matrixstack.js");
 // EXTERNAL MODULE: ./src/corelibs/cgl/cgl_state.js
-var cgl_state = __webpack_require__(308);
+var cgl_state = __webpack_require__("./src/corelibs/cgl/cgl_state.js");
 ;// CONCATENATED MODULE: ./src/corelibs/cgl/index.js
 
 
@@ -25415,30 +25532,30 @@ var cgl_state = __webpack_require__(308);
 
 const cgl_CGL = {
     "Framebuffer2": Framebuffer2,
-    "Geometry": cg_geom/* Geometry */.V,
-    "BoundingBox": cg_boundingbox/* BoundingBox */.I,
+    "Geometry": cg_geom.Geometry,
+    "BoundingBox": cg_boundingbox.BoundingBox,
     "Marker": Marker,
     "WirePoint": WirePoint,
     "WireCube": WireCube,
-    "MatrixStack": cg_matrixstack/* MatrixStack */.u,
-    "Mesh": cgl_mesh/* Mesh */.e,
-    "MESH": cgl_mesh/* MESH */.C,
-    "ShaderLibMods": cgl_shader_lib/* ShaderLibMods */.y,
-    "Shader": cgl_shader/* Shader */.M,
-    "Uniform": cgl_shader_uniform/* Uniform */.n,
-    "MESHES": cgl_simplerect/* MESHES */.S,
+    "MatrixStack": cg_matrixstack.MatrixStack,
+    "Mesh": cgl_mesh.Mesh,
+    "MESH": cgl_mesh.MESH,
+    "ShaderLibMods": cgl_shader_lib.ShaderLibMods,
+    "Shader": cgl_shader.Shader,
+    "Uniform": cgl_shader_uniform.Uniform,
+    "MESHES": cgl_simplerect.MESHES,
     "getWheelSpeed": getWheelSpeed,
     "getWheelDelta": getWheelDelta,
-    "Context": cgl_state/* CglContext */.G,
-    "Texture": cgl_texture/* Texture */.g,
-    "TextureEffect": cgl_textureeffect/* TextureEffect */.p,
+    "Context": cgl_state.CglContext,
+    "Texture": cgl_texture.Texture,
+    "TextureEffect": cgl_textureeffect.TextureEffect,
     "onLoadingAssetsFinished": onLoadingAssetsFinished,
-    "ProfileData": cgl_profiledata/* ProfileData */.E,
+    "ProfileData": cgl_profiledata.ProfileData,
     "UniColorShader": UniColorShader,
-    ...constants/* CONSTANTS */.a.BLEND_MODES,
-    ...constants/* CONSTANTS */.a.SHADER,
-    ...constants/* CONSTANTS */.a.MATH,
-    ...constants/* CONSTANTS */.a.BLEND_MODES,
+    ...constants.CONSTANTS.BLEND_MODES,
+    ...constants.CONSTANTS.SHADER,
+    ...constants.CONSTANTS.MATH,
+    ...constants.CONSTANTS.BLEND_MODES,
 };
 
 window.CABLES = window.CABLES || {};
@@ -25453,12 +25570,12 @@ window.CGL = window.CGL || cgl_CGL;
  * @param {Anim} animz
  * @param {Anim} animw
  */
-anim/* Anim */.k.slerpQuaternion = function (time, q, animx, animy, animz, animw)
+anim.Anim.slerpQuaternion = function (time, q, animx, animy, animz, animw)
 {
-    if (!anim/* Anim */.k.slerpQuaternion.q1)
+    if (!anim.Anim.slerpQuaternion.q1)
     {
-        anim/* Anim */.k.slerpQuaternion.q1 = quat.create();
-        anim/* Anim */.k.slerpQuaternion.q2 = quat.create();
+        anim.Anim.slerpQuaternion.q1 = quat.create();
+        anim.Anim.slerpQuaternion.q2 = quat.create();
     }
 
     const i1 = animx.getKeyIndex(time);
@@ -25475,11 +25592,11 @@ anim/* Anim */.k.slerpQuaternion = function (time, q, animx, animy, animz, animw
         const key2Time = animx.keys[i2].time;
         const perc = (time - key1Time) / (key2Time - key1Time);
 
-        quat.set(anim/* Anim */.k.slerpQuaternion.q1, animx.keys[i1].value, animy.keys[i1].value, animz.keys[i1].value, animw.keys[i1].value);
+        quat.set(anim.Anim.slerpQuaternion.q1, animx.keys[i1].value, animy.keys[i1].value, animz.keys[i1].value, animw.keys[i1].value);
 
-        quat.set(anim/* Anim */.k.slerpQuaternion.q2, animx.keys[i2].value, animy.keys[i2].value, animz.keys[i2].value, animw.keys[i2].value);
+        quat.set(anim.Anim.slerpQuaternion.q2, animx.keys[i2].value, animy.keys[i2].value, animz.keys[i2].value, animw.keys[i2].value);
 
-        quat.slerp(q, anim/* Anim */.k.slerpQuaternion.q1, anim/* Anim */.k.slerpQuaternion.q2, perc);
+        quat.slerp(q, anim.Anim.slerpQuaternion.q1, anim.Anim.slerpQuaternion.q2, perc);
     }
     return q;
 };
@@ -25489,7 +25606,10 @@ anim/* Anim */.k.slerpQuaternion = function (time, q, animx, animy, animz, animw
 
 /***/ }),
 
-/***/ 626:
+/***/ "./src/corelibs/cgp/index.js":
+/*!************************************************!*\
+  !*** ./src/corelibs/cgp/index.js + 18 modules ***!
+  \************************************************/
 /***/ ((__unused_webpack___webpack_module__, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -25497,23 +25617,23 @@ anim/* Anim */.k.slerpQuaternion = function (time, q, animx, animy, animz, animw
 // UNUSED EXPORTS: CGP
 
 // EXTERNAL MODULE: ../shared/client/src/logger.js
-var logger = __webpack_require__(849);
+var logger = __webpack_require__("../shared/client/src/logger.js");
 // EXTERNAL MODULE: ./src/corelibs/cg/cg_context.js
-var cg_context = __webpack_require__(628);
+var cg_context = __webpack_require__("./src/corelibs/cg/cg_context.js");
 // EXTERNAL MODULE: ./src/corelibs/cg/cg_texture.js
-var cg_texture = __webpack_require__(356);
+var cg_texture = __webpack_require__("./src/corelibs/cg/cg_texture.js");
 // EXTERNAL MODULE: ./node_modules/gl-matrix/esm/mat4.js
-var mat4 = __webpack_require__(684);
+var mat4 = __webpack_require__("./node_modules/gl-matrix/esm/mat4.js");
 // EXTERNAL MODULE: ./src/core/timer.js
-var timer = __webpack_require__(920);
+var timer = __webpack_require__("./src/core/timer.js");
 // EXTERNAL MODULE: ./src/corelibs/cg/cg_uniform.js
-var cg_uniform = __webpack_require__(475);
+var cg_uniform = __webpack_require__("./src/corelibs/cg/cg_uniform.js");
 ;// CONCATENATED MODULE: ./src/corelibs/cgp/cgp_uniform.js
 
 
 
 
-class CgpUniform extends cg_uniform/* CgUniform */.v
+class CgpUniform extends cg_uniform.CgUniform
 {
 
     /** @type {CgpContext} */
@@ -25787,7 +25907,7 @@ function preproc(str, vars)
 }
 
 // EXTERNAL MODULE: ./src/corelibs/cg/cg_shader.js
-var cg_shader = __webpack_require__(694);
+var cg_shader = __webpack_require__("./src/corelibs/cg/cg_shader.js");
 ;// CONCATENATED MODULE: ./src/corelibs/cgp/binding/bindgroup.js
 
 
@@ -26067,9 +26187,9 @@ class BindGroup
 }
 
 // EXTERNAL MODULE: ./src/core/utils.js + 1 modules
-var utils = __webpack_require__(562);
+var utils = __webpack_require__("./src/core/utils.js");
 // EXTERNAL MODULE: ./src/corelibs/cgl/constants.js
-var constants = __webpack_require__(997);
+var constants = __webpack_require__("./src/corelibs/cgl/constants.js");
 ;// CONCATENATED MODULE: ./src/corelibs/cgp/binding/binding.js
 
 
@@ -26084,7 +26204,7 @@ class Binding
     bindNum = 0;
     stage = GPUShaderStage.VERTEX | GPUShaderStage.FRAGMENT;
     define = "";
-    log = new logger/* default */.A("binding");
+    log = new logger["default"]("binding");
     needsRebuildBindgroup = false;
 
     /** @type {CgpContext} */
@@ -26190,7 +26310,7 @@ class Binding
 }
 
 // EXTERNAL MODULE: ../shared/client/src/eventtarget.js + 2 modules
-var eventtarget = __webpack_require__(125);
+var eventtarget = __webpack_require__("../shared/client/src/eventtarget.js");
 ;// CONCATENATED MODULE: ./src/corelibs/cgp/cgp_gpubuffer.js
 
 
@@ -26201,7 +26321,7 @@ var eventtarget = __webpack_require__(125);
  * @property {GPUBufferDescriptor} [buffCfg]
 */
 
-class CgpGguBuffer extends eventtarget/* default */.A
+class CgpGguBuffer extends eventtarget["default"]
 {
     #name = "unknown";
 
@@ -26234,7 +26354,7 @@ class CgpGguBuffer extends eventtarget/* default */.A
     constructor(cgp, name, data = null, options = {})
     {
         super();
-        this.#log = new logger/* default */.A("cgpGpubuffer");
+        this.#log = new logger["default"]("cgpGpubuffer");
         if (!cgp.supported) return;
 
         this.#name = name;
@@ -26777,7 +26897,7 @@ class BindingTexture extends Binding
  * @property {String} [entryPoint]
  */
 
-class CgpShader extends cg_shader/* CgShader */.U
+class CgpShader extends cg_shader.CgShader
 {
 
     #lastCompileReason = "first";
@@ -26805,7 +26925,7 @@ class CgpShader extends cg_shader/* CgShader */.U
     {
         super();
         if (!_cgp) throw new Error("shader constructed without cgp " + _name);
-        this._log = new logger/* default */.A("cgp_shader");
+        this._log = new logger["default"]("cgp_shader");
         this._cgp = _cgp;
         this._name = _name;
         this.options = options;
@@ -27118,7 +27238,7 @@ class CgpShader extends cg_shader/* CgShader */.U
 
         this.#lastCompileReason = this._compileReason;
 
-        this.lastCompile = (0,timer/* now */.tB)();
+        this.lastCompile = (0,timer.now)();
         // console.log("#lastCompileReason", this.#lastCompileReason);
 
         this.emitEvent("compiled", this._compileReason);
@@ -27351,9 +27471,9 @@ class CgpShader extends cg_shader/* CgShader */.U
 
 
 
-class Texture extends cg_texture/* CgTexture */.U
+class Texture extends cg_texture.CgTexture
 {
-    #log = new logger/* default */.A("cgp_texture");
+    #log = new logger["default"]("cgp_texture");
 
     /** @type {CgpContext} */
     #cgp = null;
@@ -27565,7 +27685,7 @@ class Pipeline
     static TYPE_RENDER = 0;
     static TYPE_COMPUTE = 1;
 
-    #log = new logger/* default */.A("pipeline");
+    #log = new logger["default"]("pipeline");
     name = "";
 
     /** @type {CgpContext} */
@@ -27981,16 +28101,16 @@ class RenderPipeline extends Pipeline
 }
 
 // EXTERNAL MODULE: ./src/corelibs/cg/cg_mesh.js
-var cg_mesh = __webpack_require__(434);
+var cg_mesh = __webpack_require__("./src/corelibs/cg/cg_mesh.js");
 ;// CONCATENATED MODULE: ./src/corelibs/cgp/cgp_mesh.js
 
 
 
 
 
-class CgpMesh extends cg_mesh/* CgMesh */.w
+class CgpMesh extends cg_mesh.CgMesh
 {
-    #log = new logger/* default */.A("cgl_mesh");
+    #log = new logger["default"]("cgl_mesh");
     needsPipelineUpdate = false;
 
     /**
@@ -28221,7 +28341,7 @@ fn myFSMain(v: MyVSOutput) -> @location(0) vec4<f32>
  * @namespace external:CGP
  * @hideconstructor
  */
-class CgpContext extends cg_context/* CgContext */.A
+class CgpContext extends cg_context.CgContext
 {
 
     branchProfiler = null;
@@ -28236,8 +28356,8 @@ class CgpContext extends cg_context/* CgContext */.A
 
         this.lastErrorMsg = "";
 
-        this._log = new logger/* default */.A("WebGpuContext");
-        this.gApi = cg_context/* CgContext */.A.API_WEBGPU;
+        this._log = new logger["default"]("WebGpuContext");
+        this.gApi = cg_context.CgContext.API_WEBGPU;
         this._viewport = [0, 0, 256, 256];
         this._shaderStack = [];
         this._simpleShader = null;
@@ -28736,7 +28856,7 @@ class CgpContext extends cg_context/* CgContext */.A
         if (this._emptyTexture) return this._emptyTexture;
         const size = 8;
         this._emptyTexture = new Texture(this, {});
-        this._emptyTexture.initFromData(cg_texture/* CgTexture */.U.getDefaultTextureData("empty", size), size, size);
+        this._emptyTexture.initFromData(cg_texture.CgTexture.getDefaultTextureData("empty", size), size, size);
         return this._emptyTexture;
     }
 
@@ -28745,7 +28865,7 @@ class CgpContext extends cg_context/* CgContext */.A
         // if (this._errorTexture) return this._errorTexture;
         const size = 256;
         this._errorTexture = new Texture(this, {});
-        this._errorTexture.initFromData(cg_texture/* CgTexture */.U.getDefaultTextureData("stripes", size, { "r": 1, "g": 0, "b": 0 }), size, size);
+        this._errorTexture.initFromData(cg_texture.CgTexture.getDefaultTextureData("stripes", size, { "r": 1, "g": 0, "b": 0 }), size, size);
         return this._errorTexture;
     }
 
@@ -28754,7 +28874,7 @@ class CgpContext extends cg_context/* CgContext */.A
         if (this._defaultTexture) return this._defaultTexture;
         const size = 256;
         this._defaultTexture = new Texture(this, {});
-        this._defaultTexture.initFromData(cg_texture/* CgTexture */.U.getDefaultTextureData("stripes", size), size, size);
+        this._defaultTexture.initFromData(cg_texture.CgTexture.getDefaultTextureData("stripes", size), size, size);
         return this._defaultTexture;
     }
 
@@ -28780,7 +28900,7 @@ class CgpContext extends cg_context/* CgContext */.A
 }
 
 // EXTERNAL MODULE: ./src/corelibs/cgl/cgl_simplerect.js
-var cgl_simplerect = __webpack_require__(273);
+var cgl_simplerect = __webpack_require__("./src/corelibs/cgl/cgl_simplerect.js");
 ;// CONCATENATED MODULE: ./src/corelibs/cgp/cgp_canvasattachment.js
 
 
@@ -29728,7 +29848,7 @@ const CGP = {
     "Mesh": CgpMesh,
     "Texture": Texture,
     "Uniform": CgpUniform,
-    "MESHES": cgl_simplerect/* MESHES */.S,
+    "MESHES": cgl_simplerect.MESHES,
     "GPUBuffer": CgpGguBuffer
 };
 
@@ -29751,12 +29871,15 @@ window.CGP.BindingSampler = BindingSampler;
 
 /***/ }),
 
-/***/ 564:
+/***/ "./src/corelibs/webaudio/webaudio.js":
+/*!*******************************************!*\
+  !*** ./src/corelibs/webaudio/webaudio.js ***!
+  \*******************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 /* unused harmony exports WebAudio, WEBAUDIO */
-/* harmony import */ var cables__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(440);
+/* harmony import */ var cables__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! cables */ "./src/core/constants.js");
 /** @namespace WEBAUDIO */
 
 
@@ -29970,7 +30093,7 @@ class WebAudio
         // var port = op.inObject(portName);
         const port = op.inDynamic(
             portName,
-            [cables__WEBPACK_IMPORTED_MODULE_0__/* .CONSTANTS */ .a.OP.OP_PORT_TYPE_VALUE, cables__WEBPACK_IMPORTED_MODULE_0__/* .CONSTANTS */ .a.OP.OP_PORT_TYPE_OBJECT],
+            [cables__WEBPACK_IMPORTED_MODULE_0__.CONSTANTS.OP.OP_PORT_TYPE_VALUE, cables__WEBPACK_IMPORTED_MODULE_0__.CONSTANTS.OP.OP_PORT_TYPE_OBJECT],
             options,
             defaultValue,
         );
@@ -30211,14 +30334,17 @@ window.CABLES.WEBAUDIO = WEBAUDIO;
 
 /***/ }),
 
-/***/ 125:
+/***/ "../shared/client/src/eventtarget.js":
+/*!*******************************************************!*\
+  !*** ../shared/client/src/eventtarget.js + 2 modules ***!
+  \*******************************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  A: () => (/* binding */ Events)
+  "default": () => (/* binding */ Events)
 });
 
 ;// CONCATENATED MODULE: ../shared/client/src/eventlistener.js
@@ -30310,7 +30436,7 @@ class Helper
 /* harmony default export */ const helper = (new Helper());
 
 // EXTERNAL MODULE: ../shared/client/src/logger.js
-var logger = __webpack_require__(849);
+var logger = __webpack_require__("../shared/client/src/logger.js");
 ;// CONCATENATED MODULE: ../shared/client/src/eventtarget.js
 
 
@@ -30321,7 +30447,7 @@ var logger = __webpack_require__(849);
  */
 class Events
 {
-    #eventLog = new logger/* default */.A("eventtarget");
+    #eventLog = new logger["default"]("eventtarget");
 
     /** @type {Object<string,EventListener>} */
     #listeners = {};
@@ -30533,12 +30659,15 @@ class Events
 
 /***/ }),
 
-/***/ 849:
+/***/ "../shared/client/src/logger.js":
+/*!**************************************!*\
+  !*** ../shared/client/src/logger.js ***!
+  \**************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   A: () => (/* binding */ Logger)
+/* harmony export */   "default": () => (/* binding */ Logger)
 /* harmony export */ });
 /* eslint-disable no-console */
 class Logger
@@ -30704,12 +30833,12 @@ class Logger
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	__webpack_require__(748);
+/******/ 	__webpack_require__("./src/corelibs/cg/index.js");
 /******/ 	// This entry module is referenced by other modules so it can't be inlined
-/******/ 	__webpack_require__(772);
-/******/ 	__webpack_require__(626);
-/******/ 	__webpack_require__(564);
-/******/ 	var __webpack_exports__ = __webpack_require__(606);
+/******/ 	__webpack_require__("./src/corelibs/cgl/index.js");
+/******/ 	__webpack_require__("./src/corelibs/cgp/index.js");
+/******/ 	__webpack_require__("./src/corelibs/webaudio/webaudio.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/core/index.js");
 /******/ 	var __webpack_export_target__ = (CABLES = typeof CABLES === "undefined" ? {} : CABLES);
 /******/ 	for(var i in __webpack_exports__) __webpack_export_target__[i] = __webpack_exports__[i];
 /******/ 	if(__webpack_exports__.__esModule) Object.defineProperty(__webpack_export_target__, "__esModule", { value: true });
@@ -30718,6 +30847,4 @@ class Logger
 ;
 
 
-var CABLES = CABLES || {}; CABLES.build = {"timestamp":1751991309701,"created":"2025-07-08T16:15:09.701Z","git":{"branch":"master","commit":"5ac55484344fd962b81b053230809aa18281d23f","date":"1751875203","message":"sidebar colorpicker opacity cables-gl/cables/issues/7458"}};
-//# sourceMappingURL=cables.js.map
-if(!CABLES.exportedPatches)CABLES.exportedPatches={};CABLES.exportedPatches["K3cVbR"]={_id:"6878a9e6de1bb45d02a51ef8",ops:[{id:"awv2nrfy7",uiAttribs:{},portsIn:[{name:"Max Pixel Density (DPR)",value:2},{name:"FPS Limit",value:0},{name:"Reduce FPS unfocussed",value:0},{name:"Transparent",value:0},{name:"Active",value:1},{name:"Focus canvas",value:1}],portsOut:[{name:"trigger",links:[{portIn:"exe",portOut:"trigger",objIn:"kv5zvaag6",objOut:"awv2nrfy7"}]},{name:"width",value:877.5},{name:"height",value:738},{name:"Pixel Density",value:1.5}],objName:"Ops.Gl.MainLoop_v2"},{id:"3m7gxs2jt",uiAttribs:{},portsOut:[{name:"trigger 0",links:[{portIn:"Exec",portOut:"trigger 0",objIn:"d23f4n9gm",objOut:"3m7gxs2jt"}]},{name:"trigger 1",links:[{portIn:"Execute",portOut:"trigger 1",objIn:"rxmv3bxb2",objOut:"3m7gxs2jt"}]},{name:"trigger 7",links:[{portIn:"exe",portOut:"trigger 7",objIn:"lv4uvzpq7",objOut:"3m7gxs2jt"}]},{name:"trigger 12",links:[{portIn:"Update",portOut:"trigger 12",objIn:"t9a1p8e4p",objOut:"3m7gxs2jt"}]},{name:"trigger 14",links:[{portIn:"Trigger",portOut:"trigger 14",objIn:"kdvbm256s",objOut:"3m7gxs2jt"}]}],objName:"Ops.Trigger.Sequence"},{id:"a6c3o3uni",uiAttribs:{},portsIn:[{name:"Variable",value:"CurrentPositionsDisplay"}],objName:"Ops.Vars.VarSetArray_v2"},{id:"3kiisqinz",uiAttribs:{},portsIn:[{name:"Variable",value:"CurrentPositionsDisplay"}],objName:"Ops.Vars.VarSetArray_v2"},{id:"snzo52cgu",uiAttribs:{},portsIn:[{name:"Variable",value:"CurrentPositionsDisplay"}],portsOut:[{name:"Value",links:[{portIn:"Positions",portOut:"Value",objIn:"rxmv3bxb2",objOut:"snzo52cgu"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"qbuhybg7z",uiAttribs:{},portsIn:[{name:"Deviation",value:.4}],portsOut:[{name:"Array",links:[{portIn:"Array3x",portOut:"Array",objIn:"9js227nf7",objOut:"qbuhybg7z"}]}],objName:"Ops.Math.GaussianRandomArray"},{id:"524i93zs0",uiAttribs:{},portsIn:[{name:"Variable",value:"graphSize"}],portsOut:[{name:"Value",links:[{portIn:"Graph Size",portOut:"Value",objIn:"rxmv3bxb2",objOut:"524i93zs0"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"lvm6co1dg",uiAttribs:{},portsIn:[{name:"Variable",value:"categoriesCount"}],portsOut:[{name:"Value",links:[{portIn:"number 0",portOut:"Value",objIn:"gip87nvis",objOut:"lvm6co1dg"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"gip87nvis",uiAttribs:{},portsIn:[{name:"number 1",value:3},{name:"math mode index",value:2},{name:"math mode",value:"*"}],portsOut:[{name:"result",links:[{portIn:"Num",portOut:"result",objIn:"qbuhybg7z",objOut:"gip87nvis"}]}],objName:"Ops.Math.Math"},{id:"ladd3g5qt",uiAttribs:{},portsIn:[{name:"Variable",value:"AdjMatrix"}],portsOut:[{name:"Value",links:[{portIn:"Adjacency Matrix",portOut:"Value",objIn:"rxmv3bxb2",objOut:"ladd3g5qt"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"8ftj79yt0",uiAttribs:{},portsIn:[{name:"Variable",value:"NodeWeights"}],objName:"Ops.Vars.VarSetArray_v2"},{id:"nbiyghueb",uiAttribs:{},portsIn:[{name:"Scale",value:.71},{name:"Limit",value:200},{name:"Rotation Type index",value:0},{name:"Rotation Type",value:"Euler"},{name:"Billboarding index",value:0},{name:"Billboarding",value:"Off"},{name:"Material blend mode index",value:2},{name:"Material blend mode",value:"Normal"},{name:"TexCoords",value:0}],portsOut:[{name:"Num",value:10}],objName:"Ops.Gl.MeshInstancer_v4"},{id:"7fu8a21ui",uiAttribs:{},portsIn:[{name:"Variable",value:"CurrentPositionsDisplay"}],portsOut:[{name:"Value",links:[{portIn:"NodePositions2D",portOut:"Value",objIn:"ka05enc3h",objOut:"7fu8a21ui"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"t8q2gskaj",uiAttribs:{},portsIn:[{name:"Variable",value:"AdjMatrixCategories"}],portsOut:[{name:"Value",links:[{portIn:"EdgeWeightMatrix",portOut:"Value",objIn:"ka05enc3h",objOut:"t8q2gskaj"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"mt2uswvvi",uiAttribs:{},portsIn:[{name:"Variable",value:"graphSize"}],portsOut:[{name:"Value",links:[{portIn:"GraphSize",portOut:"Value",objIn:"ka05enc3h",objOut:"mt2uswvvi"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"gn7feu7qz",uiAttribs:{},portsIn:[{name:"Render Mesh",value:0},{name:"Width",value:1.27},{name:"Length",value:.15},{name:"Height",value:-.035},{name:"Center",value:1},{name:"Mapping index",value:0},{name:"Mapping",value:"Side"},{name:"Bias",value:0},{name:"Flip X",value:1},{name:"Top",value:1},{name:"Bottom",value:1},{name:"Left",value:1},{name:"Right",value:1},{name:"Front",value:1},{name:"Back",value:1}],portsOut:[{name:"Next",links:[{portIn:"exe",portOut:"Next",objIn:"nbiyghueb",objOut:"gn7feu7qz"}]},{name:"geometry",links:[{portIn:"geom",portOut:"geometry",objIn:"nbiyghueb",objOut:"gn7feu7qz"}]}],objName:"Ops.Graphics.Meshes.Cube_v2"},{id:"139x03shh",uiAttribs:{},portsIn:[{name:"Variable",value:"graphSize"}],portsOut:[{name:"Value",links:[{portIn:"number 0",portOut:"Value",objIn:"dj6ga7slm",objOut:"139x03shh"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"dj6ga7slm",uiAttribs:{},portsIn:[{name:"number 1",value:2},{name:"math mode index",value:2},{name:"math mode",value:"*"}],portsOut:[{name:"result",links:[{portIn:"ArraySize (optional)",portOut:"result",objIn:"8rmh7lsqx",objOut:"dj6ga7slm"}]}],objName:"Ops.Math.Math"},{id:"6srweioi5",uiAttribs:{},portsIn:[{name:"Value",value:.3},{name:"Variable",value:"temp"}],objName:"Ops.Vars.VarSetNumber_v2"},{id:"ws2pkqf2j",uiAttribs:{},portsIn:[{name:"Value",value:15},{name:"Variable",value:"smoothFactor"}],objName:"Ops.Vars.VarSetNumber_v2"},{id:"smkmfm055",uiAttribs:{},portsIn:[{name:"Value",value:.01},{name:"Variable",value:"cooldown"}],objName:"Ops.Vars.VarSetNumber_v2"},{id:"e87z7oznr",uiAttribs:{},portsIn:[{name:"Variable",value:"temp"}],portsOut:[{name:"Value",links:[{portIn:"Initial Temperature",portOut:"Value",objIn:"rxmv3bxb2",objOut:"e87z7oznr"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"brkod0ze6",uiAttribs:{},portsIn:[{name:"Variable",value:"cooldown"}],portsOut:[{name:"Value",links:[{portIn:"Cooldown",portOut:"Value",objIn:"rxmv3bxb2",objOut:"brkod0ze6"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"0md0czj88",uiAttribs:{},portsIn:[{name:"Variable",value:"smoothFactor"}],portsOut:[{name:"Value",links:[{portIn:"WindowSize",portOut:"Value",objIn:"8rmh7lsqx",objOut:"0md0czj88"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"x95g6oa7g",uiAttribs:{},portsIn:[{name:"Variable",value:"CurrentPositionsDisplay"}],portsOut:[{name:"Value",links:[{portIn:"CurrentNodePositions2D",portOut:"Value",objIn:"kdvbm256s",objOut:"x95g6oa7g"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"v9l4uypad",uiAttribs:{},portsIn:[{name:"Variable",value:"graphSize"}],portsOut:[{name:"Value",links:[{portIn:"GraphSize",portOut:"Value",objIn:"kdvbm256s",objOut:"v9l4uypad"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"lv4uvzpq7",uiAttribs:{},portsOut:[{name:"trigger 0",links:[{portIn:"Execute",portOut:"trigger 0",objIn:"7yhj3vccl",objOut:"lv4uvzpq7"}]},{name:"trigger 4",links:[{portIn:"Execute",portOut:"trigger 4",objIn:"zs3t12v3z",objOut:"lv4uvzpq7"}]},{name:"trigger 10",links:[{portIn:"Execute",portOut:"trigger 10",objIn:"1fafcqmpe",objOut:"lv4uvzpq7"}]},{name:"trigger 15",links:[{portIn:"Execute",portOut:"trigger 15",objIn:"gl5et0xu6",objOut:"lv4uvzpq7"}]}],objName:"Ops.Trigger.Sequence"},{id:"tufoscoc8",uiAttribs:{},portsIn:[{name:"Variable",value:"DraggedNodeIndex"}],objName:"Ops.Vars.VarSetNumber_v2"},{id:"a4z4yvl4c",uiAttribs:{},portsIn:[{name:"Named Trigger",value:"Update Positions"}],portsOut:[{name:"Triggered",links:[{portIn:"Reset",portOut:"Triggered",objIn:"rxmv3bxb2",objOut:"a4z4yvl4c"}]}],objName:"Ops.Trigger.TriggerReceive"},{id:"2ylsbjh7x",uiAttribs:{},portsIn:[{name:"Value",value:.8},{name:"Variable",value:"density"}],objName:"Ops.Vars.VarSetNumber_v2"},{id:"6lx1xzhl8",uiAttribs:{},portsIn:[{name:"Variable",value:"density"}],portsOut:[{name:"Value",links:[{portIn:"Density",portOut:"Value",objIn:"rxmv3bxb2",objOut:"6lx1xzhl8"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"lhmyjz8ye",uiAttribs:{},portsIn:[{name:"Variable",value:"DraggedNodeIndex"}],portsOut:[{name:"Value",links:[{portIn:"NodeSelectedIndex",portOut:"Value",objIn:"8qrfx0717",objOut:"lhmyjz8ye"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"e3s61omvz",uiAttribs:{},portsIn:[{name:"r",value:0},{name:"g",value:.37846623549118535},{name:"b",value:.7044444529215494},{name:"a",value:.534}],portsOut:[{name:"outr",value:0},{name:"outg",value:.37846623549118535},{name:"outb",value:.7044444529215494},{name:"outa",value:.534},{name:"Hex",value:"0061B4"},{name:"Array",links:[{portIn:"ColorUnselected",portOut:"Array",objIn:"8qrfx0717",objOut:"e3s61omvz"}]}],objName:"Ops.Color.ColorValue"},{id:"mj92624hd",uiAttribs:{},portsIn:[{name:"r",value:0},{name:"g",value:.5372549019607842},{name:"b",value:1},{name:"a",value:1}],portsOut:[{name:"outr",value:0},{name:"outg",value:.5372549019607842},{name:"outb",value:1},{name:"outa",value:1},{name:"Hex",value:"0089FF"},{name:"Array",links:[{portIn:"ColorSelected",portOut:"Array",objIn:"8qrfx0717",objOut:"mj92624hd"}]}],objName:"Ops.Color.ColorValue"},{id:"pl2quwm3l",uiAttribs:{},portsIn:[{name:"Variable",value:"AdjMatrixCategories"}],portsOut:[{name:"Value",links:[{portIn:"Adjacency Matrix",portOut:"Value",objIn:"8qrfx0717",objOut:"pl2quwm3l"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"1flj5xn7u",uiAttribs:{},portsIn:[{name:"Variable",value:"edgesCount"}],portsOut:[{name:"Value",links:[{portIn:"Edges Count",portOut:"Value",objIn:"8qrfx0717",objOut:"1flj5xn7u"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"ybunmz313",uiAttribs:{},portsIn:[{name:"Variable",value:"graphSize"}],portsOut:[{name:"Value",links:[{portIn:"GraphSize",portOut:"Value",objIn:"8qrfx0717",objOut:"ybunmz313"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"tkx6l35ec",uiAttribs:{},portsIn:[{name:"Variable",value:"aspectRatio"}],portsOut:[{name:"Value",links:[{portIn:"Aspect Ratio",portOut:"Value",objIn:"rxmv3bxb2",objOut:"tkx6l35ec"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"d4q8iskmo",uiAttribs:{},portsIn:[{name:"Num Triplets",value:10},{name:"X",value:0},{name:"Y",value:0},{name:"Z",value:0}],portsOut:[{name:"Array",links:[{portIn:"Array 1",portOut:"Array",objIn:"f2xmig0y0",objOut:"d4q8iskmo"}]},{name:"Total points",value:10},{name:"Array length",value:30}],objName:"Ops.Array.Array3"},{id:"f2xmig0y0",uiAttribs:{},portsIn:[{name:"Array 2",value:0},{name:"Array 3",value:0},{name:"Array 4",value:0},{name:"Array 5",value:0},{name:"Array 6",value:0},{name:"Array 7",value:0}],portsOut:[{name:"Result",links:[{portIn:"Colors",portOut:"Result",objIn:"nbiyghueb",objOut:"f2xmig0y0"}]},{name:"Array length",value:70}],objName:"Ops.Array.ArrayMerge_v3"},{id:"jfvkzxva9",uiAttribs:{},portsIn:[{name:"Coordinates index",value:0},{name:"Coordinates",value:"-1 to 1"},{name:"Area index",value:0},{name:"Area",value:"Canvas"},{name:"flip y",value:1},{name:"right click prevent default",value:1},{name:"Touch support",value:1},{name:"Passive Events",value:0},{name:"Active",value:1}],portsOut:[{name:"x",links:[{portIn:"number1",portOut:"x",objIn:"8kys9je6p",objOut:"jfvkzxva9"}]},{name:"y",links:[{portIn:"Value",portOut:"y",objIn:"mh20x6zwq",objOut:"jfvkzxva9"}]},{name:"click",links:[{portIn:"Trigger",portOut:"click",objIn:"h1opqdd79",objOut:"jfvkzxva9"}]},{name:"Button is down",links:[{portIn:"Value",portOut:"Button is down",objIn:"q64kolyxa",objOut:"jfvkzxva9"}]},{name:"Mouse is hovering",value:0},{name:"Movement X",value:-50.666666666666664},{name:"Movement Y",value:11.333333333333334}],objName:"Ops.Devices.Mouse.Mouse_v3"},{id:"6cqwydu98",uiAttribs:{},portsIn:[{name:"Disable Scaling",value:1},{name:"Disable Scroll",value:1},{name:"HDPI Coordinates",value:0},{name:"Active",value:1},{name:"Area index",value:0},{name:"Area",value:"Canvas"},{name:"Normalize Coordinates",value:1},{name:"Flip Y",value:1}],portsOut:[{name:"Touched",links:[{portIn:"Value",portOut:"Touched",objIn:"17qny2xtp",objOut:"6cqwydu98"}]},{name:"Fingers",value:0},{name:"Finger 1 X",links:[{portIn:"number1",portOut:"Finger 1 X",objIn:"qq8fycn4o",objOut:"6cqwydu98"}]},{name:"Finger 1 Y",links:[{portIn:"Value",portOut:"Finger 1 Y",objIn:"kvjvxwxl9",objOut:"6cqwydu98"}]},{name:"Finger 1 Force",value:0},{name:"Finger 2 X",value:0},{name:"Finger 2 Y",value:0},{name:"Finger 2 Force",value:0},{name:"Touch End",links:[{portIn:"Trigger",portOut:"Touch End",objIn:"8eocsu02k",objOut:"6cqwydu98"}]}],objName:"Ops.Devices.TouchScreen"},{id:"8eocsu02k",uiAttribs:{},portsIn:[{name:"Named Trigger",value:"Update Positions"}],objName:"Ops.Trigger.TriggerSend"},{id:"ppu9ma66v",uiAttribs:{},portsIn:[{name:"Variable",value:"aspectRatio"}],portsOut:[{name:"Value",links:[{portIn:"number2",portOut:"Value",objIn:"qq8fycn4o",objOut:"ppu9ma66v"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"h1opqdd79",uiAttribs:{},portsIn:[{name:"Named Trigger",value:"Update Positions"}],objName:"Ops.Trigger.TriggerSend"},{id:"1qv9wv8i9",uiAttribs:{},portsIn:[{name:"Variable",value:"aspectRatio"}],portsOut:[{name:"Value",links:[{portIn:"number2",portOut:"Value",objIn:"8kys9je6p",objOut:"1qv9wv8i9"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"mh20x6zwq",uiAttribs:{},portsIn:[{name:"Variable",value:"User Y"}],objName:"Ops.Vars.VarSetNumber_v2"},{id:"kepr5lsm2",uiAttribs:{},portsIn:[{name:"Variable",value:"User X"}],objName:"Ops.Vars.VarSetNumber_v2"},{id:"kvjvxwxl9",uiAttribs:{},portsIn:[{name:"Variable",value:"User Y"}],objName:"Ops.Vars.VarSetNumber_v2"},{id:"npvrcj5ny",uiAttribs:{},portsIn:[{name:"Variable",value:"User X"}],objName:"Ops.Vars.VarSetNumber_v2"},{id:"17qny2xtp",uiAttribs:{},portsIn:[{name:"Variable",value:"PointerIsDown"}],objName:"Ops.Vars.VarSetNumber_v2"},{id:"q64kolyxa",uiAttribs:{},portsIn:[{name:"Variable",value:"PointerIsDown"}],objName:"Ops.Vars.VarSetNumber_v2"},{id:"y07e28mit",uiAttribs:{},portsIn:[{name:"Variable",value:"PointerIsDown"}],portsOut:[{name:"Value",links:[{portIn:"Mouse Button Down",portOut:"Value",objIn:"kdvbm256s",objOut:"y07e28mit"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"wvuudrjes",uiAttribs:{},portsIn:[{name:"Variable",value:"User X"}],portsOut:[{name:"Value",links:[{portIn:"Mouse X",portOut:"Value",objIn:"kdvbm256s",objOut:"wvuudrjes"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"hb6e2sd9o",uiAttribs:{},portsIn:[{name:"Variable",value:"User Y"}],portsOut:[{name:"Value",links:[{portIn:"Mouse Y",portOut:"Value",objIn:"kdvbm256s",objOut:"hb6e2sd9o"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"0zddkspzm",uiAttribs:{},portsIn:[{name:"Named Trigger",value:"Update Positions"}],objName:"Ops.Trigger.TriggerSend"},{id:"t0hd38qb0",uiAttribs:{},portsIn:[{name:"Variable",value:"graphSize"}],portsOut:[{name:"Value",links:[{portIn:"Value",portOut:"Value",objIn:"b407d7x69",objOut:"t0hd38qb0"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"b407d7x69",uiAttribs:{},portsOut:[{name:"Next",links:[{portIn:"Trigger",portOut:"Next",objIn:"0zddkspzm",objOut:"b407d7x69"}]},{name:"Number",value:12}],objName:"Ops.Number.TriggerOnChangeNumber"},{id:"zdwm194wn",uiAttribs:{},portsIn:[{name:"Variable",value:"aspectRatio"}],portsOut:[{name:"Value",links:[{portIn:"Value",portOut:"Value",objIn:"smvn3ad5x",objOut:"zdwm194wn"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"smvn3ad5x",uiAttribs:{},portsOut:[{name:"Next",links:[{portIn:"Trigger",portOut:"Next",objIn:"0zddkspzm",objOut:"smvn3ad5x"}]},{name:"Number",value:1.1897018970189701}],objName:"Ops.Number.TriggerOnChangeNumber"},{id:"b3meyfn42",uiAttribs:{},portsIn:[{name:"Variable",value:"density"}],portsOut:[{name:"Value",links:[{portIn:"Value",portOut:"Value",objIn:"q8fjthpnh",objOut:"b3meyfn42"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"q8fjthpnh",uiAttribs:{},portsOut:[{name:"Next",links:[{portIn:"Trigger",portOut:"Next",objIn:"0zddkspzm",objOut:"q8fjthpnh"}]},{name:"Number",value:.8}],objName:"Ops.Number.TriggerOnChangeNumber"},{id:"6snakpdj9",uiAttribs:{},portsIn:[{name:"Variable",value:"edgesCount"}],objName:"Ops.Vars.VarSetNumber_v2"},{id:"5sxt0zr7g",uiAttribs:{},portsIn:[{name:"Variable",value:"AdjMatrix"}],objName:"Ops.Vars.VarSetArray_v2"},{id:"sjwqmr23l",uiAttribs:{},portsIn:[{name:"Named Trigger",value:"Init Simulation"}],objName:"Ops.Trigger.TriggerSend"},{id:"d23f4n9gm",uiAttribs:{},portsOut:[{name:"Next",links:[{portIn:"Trigger",portOut:"Next",objIn:"sjwqmr23l",objOut:"d23f4n9gm"}]},{name:"Was Triggered",value:1}],objName:"Ops.Trigger.TriggerOnce"},{id:"9hvwltqxe",uiAttribs:{},portsIn:[{name:"Named Trigger",value:"Init Simulation"}],portsOut:[{name:"Triggered",links:[{portIn:"exe",portOut:"Triggered",objIn:"z0j4kpp6z",objOut:"9hvwltqxe"}]}],objName:"Ops.Trigger.TriggerReceive"},{id:"sgwbr2ne2",uiAttribs:{},portsIn:[{name:"Variable",value:"CategoriesText"}],objName:"Ops.Vars.VarSetArray_v2"},{id:"9otfrouru",uiAttribs:{},portsIn:[{name:"Variable",value:"categoriesCount"}],objName:"Ops.Vars.VarSetNumber_v2"},{id:"2ecxdu6wc",uiAttribs:{},portsOut:[{name:"length",links:[{portIn:"Value",portOut:"length",objIn:"9otfrouru",objOut:"2ecxdu6wc"}]}],objName:"Ops.Array.ArrayLength_v2"},{id:"t9a1p8e4p",uiAttribs:{},portsIn:[{name:"CSS Cursors index",value:1},{name:"CSS Cursors",value:"crosshair"},{name:"Set Parent Element",value:1}],objName:"Ops.Html.Cursor_v2"},{id:"qlvasxm35",uiAttribs:{},portsIn:[{name:"bounds",value:1},{name:"Axis index",value:1},{name:"Axis",value:"Y"},{name:"frustum near",value:-100},{name:"frustum far",value:100}],portsOut:[{name:"trigger",links:[{portIn:"Exec",portOut:"trigger",objIn:"ch1xoodjk",objOut:"qlvasxm35"}]},{name:"Ratio",value:1.1897018970189701},{name:"Width",value:2.3794037940379402},{name:"Height",value:2}],objName:"Ops.Gl.Orthogonal_v2"},{id:"8hdqidhkr",uiAttribs:{},portsOut:[{name:"result",links:[{portIn:"Value",portOut:"result",objIn:"ynej1ec0t",objOut:"8hdqidhkr"}]}],objName:"Ops.Math.Divide"},{id:"ynej1ec0t",uiAttribs:{},portsIn:[{name:"Variable",value:"aspectRatio"}],objName:"Ops.Vars.VarSetNumber_v2"},{id:"ch1xoodjk",uiAttribs:{},portsOut:[{name:"Next",links:[{portIn:"exe",portOut:"Next",objIn:"3m7gxs2jt",objOut:"ch1xoodjk"}]},{name:"X",value:0},{name:"Y",value:0},{name:"Width",links:[{portIn:"number1",portOut:"Width",objIn:"8hdqidhkr",objOut:"ch1xoodjk"}]},{name:"Height",links:[{portIn:"number2",portOut:"Height",objIn:"8hdqidhkr",objOut:"ch1xoodjk"}]}],objName:"Ops.Gl.ViewPortSize"},{id:"8kys9je6p",uiAttribs:{},portsOut:[{name:"result",links:[{portIn:"Value",portOut:"result",objIn:"kepr5lsm2",objOut:"8kys9je6p"}]}],objName:"Ops.Math.Multiply"},{id:"qq8fycn4o",uiAttribs:{},portsOut:[{name:"result",links:[{portIn:"Value",portOut:"result",objIn:"npvrcj5ny",objOut:"qq8fycn4o"}]}],objName:"Ops.Math.Multiply"},{id:"ramr5pzna",uiAttribs:{},portsIn:[{name:"Text",value:"Init Simulation"},{name:"Grey Out",value:0},{name:"Visible",value:1}],portsOut:[{name:"Pressed Trigger",links:[{portIn:"Trigger",portOut:"Pressed Trigger",objIn:"1c62wj331",objOut:"ramr5pzna"}]}],objName:"Ops.Sidebar.Button_v2"},{id:"yc2z4pq3x",uiAttribs:{},portsIn:[{name:"Visible",value:0},{name:"Opacity",value:1},{name:"Default Minimized",value:0},{name:"Minimized Opacity",value:.5},{name:"Show undo button",value:0},{name:"Show Minimize",value:0},{name:"Title",value:""},{name:"Side",value:0},{name:"Default CSS",value:1}],portsOut:[{name:"childs",title:"Children",links:[{portIn:"link",portOut:"childs",objIn:"ramr5pzna",objOut:"yc2z4pq3x"},{portIn:"link",portOut:"childs",objIn:"xlek8kb9q",objOut:"yc2z4pq3x"}]},{name:"Opfened",value:false,title:"Opened"}],objName:"Ops.Sidebar.Sidebar"},{id:"1c62wj331",uiAttribs:{},portsIn:[{name:"Named Trigger",value:0}],portsOut:[{name:"Next",links:[{portIn:"Trigger",portOut:"Next",objIn:"tlcj96g0r",objOut:"1c62wj331"}]}],objName:"Ops.Trigger.TriggerSend"},{id:"2016kwwp0",uiAttribs:{},portsIn:[{name:"Title",value:""}],objName:"Ops.Ui.Area"},{id:"vbiut7x01",uiAttribs:{},portsIn:[{name:"Title",value:"init"}],objName:"Ops.Ui.Area"},{id:"zbcxo6ca0",uiAttribs:{},portsIn:[{name:"Blendmode index",value:0},{name:"Blendmode",value:"None"},{name:"Premultiplied",value:0}],portsOut:[{name:"Next",links:[{portIn:"Render",portOut:"Next",objIn:"gn7feu7qz",objOut:"zbcxo6ca0"}]}],objName:"Ops.Gl.BlendMode"},{id:"tkx262839",uiAttribs:{},portsIn:[{name:"Variable",value:"NodeWeights"}],portsOut:[{name:"Value",links:[{portIn:"In",portOut:"Value",objIn:"7wad8329x",objOut:"tkx262839"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"3pd7eddli",uiAttribs:{},portsIn:[{name:"Variable",value:"NodeWeights"}],portsOut:[{name:"Value",links:[{portIn:"Node Text Sizes 2D",portOut:"Value",objIn:"rxmv3bxb2",objOut:"3pd7eddli"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"z0j4kpp6z",uiAttribs:{},portsOut:[{name:"trigger 0",links:[{portIn:"Execute",portOut:"trigger 0",objIn:"8ootlpi9y",objOut:"z0j4kpp6z"}]},{name:"trigger 1",links:[{portIn:"Execute",portOut:"trigger 1",objIn:"irm99eac0",objOut:"z0j4kpp6z"}]},{name:"trigger 2",links:[{portIn:"Execute",portOut:"trigger 2",objIn:"6ih4jshgb",objOut:"z0j4kpp6z"}]},{name:"trigger 4",links:[{portIn:"Generate",portOut:"trigger 4",objIn:"e56lnwp86",objOut:"z0j4kpp6z"}]},{name:"trigger 8",links:[{portIn:"Execute",portOut:"trigger 8",objIn:"mvtsiu32q",objOut:"z0j4kpp6z"}]},{name:"trigger 15",links:[{portIn:"exe",portOut:"trigger 15",objIn:"nlmd4dbv5",objOut:"z0j4kpp6z"}]}],objName:"Ops.Trigger.Sequence"},{id:"nlmd4dbv5",uiAttribs:{},portsOut:[{name:"trigger 15",links:[{portIn:"exe",portOut:"trigger 15",objIn:"cgh85vu8y",objOut:"nlmd4dbv5"}]}],objName:"Ops.Trigger.Sequence"},{id:"cgh85vu8y",uiAttribs:{},portsOut:[{name:"trigger 0",links:[{portIn:"Trigger",portOut:"trigger 0",objIn:"mfbkljv58",objOut:"cgh85vu8y"}]},{name:"trigger 5",links:[{portIn:"Trigger",portOut:"trigger 5",objIn:"vav8lym63",objOut:"cgh85vu8y"}]},{name:"trigger 10",links:[{portIn:"Trigger",portOut:"trigger 10",objIn:"rdp4vz7om",objOut:"cgh85vu8y"}]},{name:"trigger 15",links:[{portIn:"exe",portOut:"trigger 15",objIn:"zr4u5x2vf",objOut:"cgh85vu8y"}]}],objName:"Ops.Trigger.Sequence"},{id:"ljv6kxiu2",uiAttribs:{},portsIn:[{name:"Variable",value:"NodesMask"}],objName:"Ops.Vars.VarSetArray_v2"},{id:"qfiebj6nf",uiAttribs:{},portsIn:[{name:"Variable",value:"categoriesCount"}],portsOut:[{name:"Value",links:[{portIn:"CategoriesCount",portOut:"Value",objIn:"6ih4jshgb",objOut:"qfiebj6nf"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"2k4qmzr6j",uiAttribs:{},portsIn:[{name:"Variable",value:"graphSize"}],portsOut:[{name:"Value",links:[{portIn:"Graph Size",portOut:"Value",objIn:"6ih4jshgb",objOut:"2k4qmzr6j"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"1ualtsxko",uiAttribs:{},portsIn:[{name:"Value",value:6},{name:"Variable",value:"contentSize"}],objName:"Ops.Vars.VarSetNumber_v2"},{id:"m8e3kex1b",uiAttribs:{},portsIn:[{name:"Variable",value:"categoriesCount"}],portsOut:[{name:"Value",links:[{portIn:"number1",portOut:"Value",objIn:"wwsay5ag3",objOut:"m8e3kex1b"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"3tqxxdz6p",uiAttribs:{},portsIn:[{name:"Variable",value:"contentSize"}],portsOut:[{name:"Value",links:[{portIn:"number2",portOut:"Value",objIn:"wwsay5ag3",objOut:"3tqxxdz6p"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"xr3bikul8",uiAttribs:{},portsIn:[{name:"Variable",value:"graphSize"}],objName:"Ops.Vars.VarSetNumber_v2"},{id:"wwsay5ag3",uiAttribs:{},portsOut:[{name:"result",links:[{portIn:"Value",portOut:"result",objIn:"xr3bikul8",objOut:"wwsay5ag3"}]}],objName:"Ops.Math.Sum"},{id:"1gllte5tq",uiAttribs:{},portsIn:[{name:"Variable",value:"categoriesCount"}],portsOut:[{name:"Value",links:[{portIn:"Categories Count",portOut:"Value",objIn:"irm99eac0",objOut:"1gllte5tq"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"a6pihias4",uiAttribs:{},portsIn:[{name:"Variable",value:"contentSize"}],portsOut:[{name:"Value",links:[{portIn:"Content Count",portOut:"Value",objIn:"irm99eac0",objOut:"a6pihias4"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"qttpzwcks",uiAttribs:{},portsIn:[{name:"Variable",value:"NodesSelection"}],objName:"Ops.Vars.VarSetArray_v2"},{id:"lxdsyuvit",uiAttribs:{},portsIn:[{name:"Variable",value:"NodesMask"}],objName:"Ops.Vars.VarGetArray_v2"},{id:"epkfwne13",uiAttribs:{},portsIn:[{name:"Variable",value:"NodesMask"}],portsOut:[{name:"Value",links:[{portIn:"Nodes Mask",portOut:"Value",objIn:"rxmv3bxb2",objOut:"epkfwne13"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"ak3m6a3fd",uiAttribs:{},portsIn:[{name:"Variable",value:"NodesSelection"}],portsOut:[{name:"Value",links:[{portIn:"Nodes Selected",portOut:"Value",objIn:"rxmv3bxb2",objOut:"ak3m6a3fd"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"7rgatthln",uiAttribs:{},portsIn:[{name:"Array 2",value:0},{name:"Array 3",value:0},{name:"Array 4",value:0},{name:"Array 5",value:0},{name:"Array 6",value:0},{name:"Array 7",value:0}],portsOut:[{name:"Result",links:[{portIn:"Array3x",portOut:"Result",objIn:"x9v3z6ypf",objOut:"7rgatthln"}]},{name:"Array length",value:36}],objName:"Ops.Array.ArrayMerge_v3"},{id:"lnv22l0qt",uiAttribs:{},portsIn:[{name:"Variable",value:"contentSize"}],portsOut:[{name:"Value",links:[{portIn:"number 0",portOut:"Value",objIn:"dez7nbhi7",objOut:"lnv22l0qt"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"dez7nbhi7",uiAttribs:{},portsIn:[{name:"number 1",value:3},{name:"math mode index",value:2},{name:"math mode",value:"*"}],portsOut:[{name:"result",links:[{portIn:"Num",portOut:"result",objIn:"vzas28rfy",objOut:"dez7nbhi7"}]}],objName:"Ops.Math.Math"},{id:"e56lnwp86",uiAttribs:{},portsIn:[{name:"min",value:0},{name:"max",value:1e3},{name:"Integer",value:1},{name:"No consecutive duplicates",value:0}],portsOut:[{name:"next",links:[{portIn:"Generate",portOut:"next",objIn:"n6vkuh43c",objOut:"e56lnwp86"}]},{name:"result",links:[{portIn:"Random Seed",portOut:"result",objIn:"qbuhybg7z",objOut:"e56lnwp86"}]}],objName:"Ops.Math.TriggerRandomNumber_v2"},{id:"vzas28rfy",uiAttribs:{},portsIn:[{name:"Deviation",value:.3}],portsOut:[{name:"Array",links:[{portIn:"Array3x",portOut:"Array",objIn:"gp22bwum3",objOut:"vzas28rfy"}]}],objName:"Ops.Math.GaussianRandomArray"},{id:"n6vkuh43c",uiAttribs:{},portsIn:[{name:"min",value:0},{name:"max",value:1e3},{name:"Integer",value:1},{name:"No consecutive duplicates",value:0}],portsOut:[{name:"result",links:[{portIn:"Random Seed",portOut:"result",objIn:"vzas28rfy",objOut:"n6vkuh43c"}]}],objName:"Ops.Math.TriggerRandomNumber_v2"},{id:"gp22bwum3",uiAttribs:{},portsIn:[{name:"Add X",value:.5},{name:"Add Y",value:0},{name:"Add Z",value:0}],portsOut:[{name:"Result",links:[{portIn:"Array 1",portOut:"Result",objIn:"7rgatthln",objOut:"gp22bwum3"}]}],objName:"Ops.Array.Array3Sum"},{id:"x9v3z6ypf",uiAttribs:{},portsOut:[{name:"Array2x",links:[{portIn:"Value",portOut:"Array2x",objIn:"a6c3o3uni",objOut:"x9v3z6ypf"}]}],objName:"Ops.Array.Array3To2"},{id:"9js227nf7",uiAttribs:{},portsIn:[{name:"Add X",value:-.5},{name:"Add Y",value:0},{name:"Add Z",value:0}],portsOut:[{name:"Result",links:[{portIn:"Array 0",portOut:"Result",objIn:"7rgatthln",objOut:"9js227nf7"}]}],objName:"Ops.Array.Array3Sum"},{id:"irm99eac0",uiAttribs:{},portsOut:[{name:"Result",links:[{portIn:"Value",portOut:"Result",objIn:"5sxt0zr7g",objOut:"irm99eac0"}]},{name:"Edges Count",links:[{portIn:"Value",portOut:"Edges Count",objIn:"6snakpdj9",objOut:"irm99eac0"}]}],objName:"Ops.Patch.PK3cVbR.AdjMatrix"},{id:"tmzum1f50",uiAttribs:{},portsIn:[{name:"Variable",value:"categoriesCount"}],portsOut:[{name:"Value",links:[{portIn:"Categories Count",portOut:"Value",objIn:"ka05enc3h",objOut:"tmzum1f50"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"0mp9k87vk",uiAttribs:{},portsIn:[{name:"Variable",value:"NodesMask"}],objName:"Ops.Vars.VarGetArray_v2"},{id:"1dfdqyszg",uiAttribs:{},portsIn:[{name:"Variable",value:"NodesSelection"}],objName:"Ops.Vars.VarGetArray_v2"},{id:"9zrtr18jp",uiAttribs:{},portsIn:[{name:"Scale",value:1},{name:"Limit",value:200},{name:"Rotation Type index",value:0},{name:"Rotation Type",value:"Euler"},{name:"Billboarding index",value:0},{name:"Billboarding",value:"Off"},{name:"Material blend mode index",value:2},{name:"Material blend mode",value:"Normal"},{name:"TexCoords",value:0}],portsOut:[{name:"Num",value:9}],objName:"Ops.Gl.MeshInstancer_v4"},{id:"djhfwzbfv",uiAttribs:{},portsIn:[{name:"Variable",value:"CurrentPositionsDisplay"}],portsOut:[{name:"Value",links:[{portIn:"NodePositions2D",portOut:"Value",objIn:"zgwp1jqu9",objOut:"djhfwzbfv"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"b3edjqb54",uiAttribs:{},portsIn:[{name:"Variable",value:"AdjMatrixContent"}],portsOut:[{name:"Value",links:[{portIn:"EdgeWeightMatrix",portOut:"Value",objIn:"zgwp1jqu9",objOut:"b3edjqb54"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"p8g6069n6",uiAttribs:{},portsIn:[{name:"Variable",value:"graphSize"}],portsOut:[{name:"Value",links:[{portIn:"GraphSize",portOut:"Value",objIn:"zgwp1jqu9",objOut:"p8g6069n6"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"vj9vc3l8j",uiAttribs:{},portsIn:[{name:"Variable",value:"DraggedNodeIndex"}],portsOut:[{name:"Value",links:[{portIn:"NodeSelectedIndex",portOut:"Value",objIn:"exsbzqvgw",objOut:"vj9vc3l8j"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"4i29al1s8",uiAttribs:{},portsIn:[{name:"r",value:.17},{name:"g",value:0},{name:"b",value:.11580248232241032},{name:"a",value:1}],portsOut:[{name:"outr",value:.17},{name:"outg",value:0},{name:"outb",value:.11580248232241032},{name:"outa",value:1},{name:"Hex",value:"2B001E"},{name:"Array",links:[{portIn:"ColorUnselected",portOut:"Array",objIn:"exsbzqvgw",objOut:"4i29al1s8"}]}],objName:"Ops.Color.ColorValue"},{id:"isyrqud4m",uiAttribs:{},portsIn:[{name:"Variable",value:"AdjMatrixContent"}],portsOut:[{name:"Value",links:[{portIn:"Adjacency Matrix",portOut:"Value",objIn:"exsbzqvgw",objOut:"isyrqud4m"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"idf9un174",uiAttribs:{},portsIn:[{name:"Variable",value:"edgesCount"}],portsOut:[{name:"Value",links:[{portIn:"Edges Count",portOut:"Value",objIn:"exsbzqvgw",objOut:"idf9un174"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"zb62n4ew0",uiAttribs:{},portsIn:[{name:"Variable",value:"graphSize"}],portsOut:[{name:"Value",links:[{portIn:"GraphSize",portOut:"Value",objIn:"exsbzqvgw",objOut:"zb62n4ew0"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"6r9o6ztq9",uiAttribs:{},portsIn:[{name:"Array 2",value:0},{name:"Array 3",value:0},{name:"Array 4",value:0},{name:"Array 5",value:0},{name:"Array 6",value:0},{name:"Array 7",value:0}],portsOut:[{name:"Result",links:[{portIn:"Colors",portOut:"Result",objIn:"9zrtr18jp",objOut:"6r9o6ztq9"}]},{name:"Array length",value:66}],objName:"Ops.Array.ArrayMerge_v3"},{id:"hmbwqr8bc",uiAttribs:{},portsIn:[{name:"Variable",value:"categoriesCount"}],portsOut:[{name:"Value",links:[{portIn:"Categories Count",portOut:"Value",objIn:"zgwp1jqu9",objOut:"hmbwqr8bc"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"w85sz5a4d",uiAttribs:{},portsIn:[{name:"Variable",value:"NodesMask"}],portsOut:[{name:"Value",links:[{portIn:"Nodes Mask",portOut:"Value",objIn:"exsbzqvgw",objOut:"w85sz5a4d"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"0s0av3vwh",uiAttribs:{},portsIn:[{name:"Variable",value:"NodesSelection"}],objName:"Ops.Vars.VarGetArray_v2"},{id:"3yez9tcg8",uiAttribs:{},portsIn:[{name:"Num Triplets",value:10},{name:"X",value:0},{name:"Y",value:0},{name:"Z",value:0}],portsOut:[{name:"Array",links:[{portIn:"Array 1",portOut:"Array",objIn:"6r9o6ztq9",objOut:"3yez9tcg8"}]},{name:"Total points",value:10},{name:"Array length",value:30}],objName:"Ops.Array.Array3"},{id:"4z0ngsnnc",uiAttribs:{},portsIn:[{name:"Variable",value:"AdjMatrix"}],portsOut:[{name:"Value",links:[{portIn:"Matrix",portOut:"Value",objIn:"mfbkljv58",objOut:"4z0ngsnnc"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"hkd1thj6p",uiAttribs:{},portsIn:[{name:"Mode select index",value:0},{name:"Mode select",value:"Number"},{name:"Default Value",value:1},{name:"Reverse",value:0}],portsOut:[{name:"Array",links:[{portIn:"Array 0",portOut:"Array",objIn:"731o3mv5o",objOut:"hkd1thj6p"}]},{name:"Array length out",value:6}],objName:"Ops.Array.Array_v3"},{id:"6gqa4emo7",uiAttribs:{},portsIn:[{name:"Variable",value:"categoriesCount"}],portsOut:[{name:"Value",links:[{portIn:"Array length",portOut:"Value",objIn:"hkd1thj6p",objOut:"6gqa4emo7"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"731o3mv5o",uiAttribs:{},portsIn:[{name:"Array 2",value:0},{name:"Array 3",value:0},{name:"Array 4",value:0},{name:"Array 5",value:0},{name:"Array 6",value:0},{name:"Array 7",value:0}],portsOut:[{name:"Result",links:[{portIn:"Mask",portOut:"Result",objIn:"mfbkljv58",objOut:"731o3mv5o"}]},{name:"Array length",value:12}],objName:"Ops.Array.ArrayMerge_v3"},{id:"zwa6hjiyi",uiAttribs:{},portsIn:[{name:"Mode select index",value:0},{name:"Mode select",value:"Number"},{name:"Default Value",value:0},{name:"Reverse",value:0}],portsOut:[{name:"Array",links:[{portIn:"Array 1",portOut:"Array",objIn:"731o3mv5o",objOut:"zwa6hjiyi"}]},{name:"Array length out",value:6}],objName:"Ops.Array.Array_v3"},{id:"geee672lr",uiAttribs:{},portsIn:[{name:"Variable",value:"contentSize"}],portsOut:[{name:"Value",links:[{portIn:"Array length",portOut:"Value",objIn:"zwa6hjiyi",objOut:"geee672lr"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"nztr3wgnh",uiAttribs:{},portsIn:[{name:"Variable",value:"AdjMatrixCategories"}],objName:"Ops.Vars.VarSetArray_v2"},{id:"9k8fep011",uiAttribs:{},portsIn:[{name:"Variable",value:"AdjMatrix"}],portsOut:[{name:"Value",links:[{portIn:"Matrix",portOut:"Value",objIn:"vav8lym63",objOut:"9k8fep011"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"67p5wj5cy",uiAttribs:{},portsIn:[{name:"Mode select index",value:0},{name:"Mode select",value:"Number"},{name:"Default Value",value:0},{name:"Reverse",value:0}],portsOut:[{name:"Array",links:[{portIn:"Array 0",portOut:"Array",objIn:"om8oi1w8l",objOut:"67p5wj5cy"}]},{name:"Array length out",value:6}],objName:"Ops.Array.Array_v3"},{id:"b2t886fj0",uiAttribs:{},portsIn:[{name:"Variable",value:"categoriesCount"}],portsOut:[{name:"Value",links:[{portIn:"Array length",portOut:"Value",objIn:"67p5wj5cy",objOut:"b2t886fj0"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"om8oi1w8l",uiAttribs:{},portsIn:[{name:"Array 2",value:0},{name:"Array 3",value:0},{name:"Array 4",value:0},{name:"Array 5",value:0},{name:"Array 6",value:0},{name:"Array 7",value:0}],portsOut:[{name:"Result",links:[{portIn:"Mask",portOut:"Result",objIn:"vav8lym63",objOut:"om8oi1w8l"}]},{name:"Array length",value:12}],objName:"Ops.Array.ArrayMerge_v3"},{id:"0smr6x88v",uiAttribs:{},portsIn:[{name:"Mode select index",value:0},{name:"Mode select",value:"Number"},{name:"Default Value",value:1},{name:"Reverse",value:0}],portsOut:[{name:"Array",links:[{portIn:"Array 1",portOut:"Array",objIn:"om8oi1w8l",objOut:"0smr6x88v"}]},{name:"Array length out",value:6}],objName:"Ops.Array.Array_v3"},{id:"271csa81j",uiAttribs:{},portsIn:[{name:"Variable",value:"contentSize"}],portsOut:[{name:"Value",links:[{portIn:"Array length",portOut:"Value",objIn:"0smr6x88v",objOut:"271csa81j"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"ddh8mlt4f",uiAttribs:{},portsIn:[{name:"Variable",value:"AdjMatrixContent"}],objName:"Ops.Vars.VarSetArray_v2"},{id:"2nb7osjec",uiAttribs:{},portsIn:[{name:"Variable",value:"AdjMatrix"}],portsOut:[{name:"Value",links:[{portIn:"Matrix",portOut:"Value",objIn:"rdp4vz7om",objOut:"2nb7osjec"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"ijtz29pga",uiAttribs:{},portsIn:[{name:"Variable",value:"AdjMatrixMasked"}],objName:"Ops.Vars.VarSetArray_v2"},{id:"8oqq9eb35",uiAttribs:{},portsIn:[{name:"Variable",value:"NodesMask"}],portsOut:[{name:"Value",links:[{portIn:"Mask",portOut:"Value",objIn:"rdp4vz7om",objOut:"8oqq9eb35"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"ka05enc3h",uiAttribs:{},portsIn:[{name:"MinThickness",value:.2},{name:"MaxThickness",value:1.5},{name:"DefaultEdgeZ",value:0},{name:"NormalizeWeights",value:1}],portsOut:[{name:"Next",links:[{portIn:"Render",portOut:"Next",objIn:"zbcxo6ca0",objOut:"ka05enc3h"}]},{name:"EdgeTranslations",links:[{portIn:"positions",portOut:"EdgeTranslations",objIn:"nbiyghueb",objOut:"ka05enc3h"}]},{name:"EdgeRotations",links:[{portIn:"Rotations",portOut:"EdgeRotations",objIn:"nbiyghueb",objOut:"ka05enc3h"}]},{name:"EdgeScales",links:[{portIn:"Scale Array",portOut:"EdgeScales",objIn:"nbiyghueb",objOut:"ka05enc3h"}]},{name:"EdgeInstanceCount",links:[{portIn:"Limit Instances",portOut:"EdgeInstanceCount",objIn:"nbiyghueb",objOut:"ka05enc3h"}]}],objName:"Ops.Patch.PK3cVbR.DrawVariableWidthEdgesCategories"},{id:"axqu4nxrs",uiAttribs:{},portsIn:[{name:"Draw",value:0,title:"Render mesh"},{name:"segments",value:1},{name:"stacks",value:40},{name:"length",value:.85},{name:"outer radius",value:0},{name:"inner radius",value:0},{name:"UV mode index",value:0},{name:"UV mode",value:"simple"},{name:"Flip Mapping",value:0},{name:"Caps",value:0},{name:"Flat Normals",value:0}],portsOut:[{name:"next",links:[{portIn:"render",portOut:"next",objIn:"00rqhsr4s",objOut:"axqu4nxrs"}]},{name:"geometry",links:[{portIn:"Geometry",portOut:"geometry",objIn:"xqo3fbwxm",objOut:"axqu4nxrs"}]}],objName:"Ops.Gl.Meshes.Cylinder_v2"},{id:"00rqhsr4s",uiAttribs:{},portsIn:[{name:"PointSize",value:2.35},{name:"Size in Pixels",value:0},{name:"Random Size",value:0},{name:"Round",value:1},{name:"Round Antialias",value:0},{name:"Scale by Distance",value:0},{name:"r",value:0},{name:"g",value:0},{name:"b",value:0},{name:"a",value:1},{name:"Vertex Colors",value:0},{name:"Colorize Texture",value:0},{name:"Mask Channel index",value:0},{name:"Mask Channel",value:"R"},{name:"Colorize Randomize",value:0},{name:"Point Size Channel index",value:0},{name:"Point Size Channel",value:"R"},{name:"Texture Point Size Mul",value:1},{name:"Map Size 0 index",value:0},{name:"Map Size 0",value:"Black"},{name:"Flip Texture",value:0},{name:"Atlas Cross Fade",value:0},{name:"Atlas Repeat X ",value:1},{name:"Min Point Size",value:0}],portsOut:[{name:"trigger",links:[{portIn:"Render",portOut:"trigger",objIn:"81amiqv0b",objOut:"00rqhsr4s"}]}],objName:"Ops.Gl.Shader.PointMaterial_v6"},{id:"xqo3fbwxm",uiAttribs:{},portsIn:[{name:"Translate X",value:0},{name:"Translate Y",value:0},{name:"Translate Z",value:0},{name:"Scale X",value:1},{name:"Scale Y",value:1},{name:"Scale Z",value:1},{name:"Rotation X",value:90},{name:"Rotation Y",value:0},{name:"Rotation Z",value:90}],portsOut:[{name:"Result",links:[{portIn:"geom",portOut:"Result",objIn:"9zrtr18jp",objOut:"xqo3fbwxm"}]}],objName:"Ops.Graphics.Geometry.TransformGeometry"},{id:"2jlyzy3kn",uiAttribs:{},portsIn:[{name:"Variable",value:"contentSize"}],portsOut:[{name:"Value",links:[{portIn:"GraphSize",portOut:"Value",objIn:"jw2rk8me8",objOut:"2jlyzy3kn"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"njh4dl4df",uiAttribs:{},portsIn:[{name:"Variable",value:"DraggedNodeIndex"}],portsOut:[{name:"Value",links:[{portIn:"number1",portOut:"Value",objIn:"lwotm1d3u",objOut:"njh4dl4df"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"ffw6jnzwu",uiAttribs:{},portsIn:[{name:"innerRadius",value:0},{name:"segments",value:40},{name:"percent",value:1},{name:"steps",value:0},{name:"invertSteps",value:0},{name:"mapping index",value:0},{name:"mapping",value:"flat"},{name:"Spline",value:0},{name:"Draw",value:1,title:"Render mesh"}],objName:"Ops.Graphics.Meshes.Circle_v3"},{id:"lat3h1h55",uiAttribs:{},portsIn:[{name:"Mode select index",value:0},{name:"Mode select",value:"Number"},{name:"Default Value",value:1.5},{name:"Reverse",value:0}],portsOut:[{name:"Array",links:[{portIn:"Array 1",portOut:"Array",objIn:"x3gwvvpa6",objOut:"lat3h1h55"}]},{name:"Array length out",value:18}],objName:"Ops.Array.Array_v3"},{id:"svar6j6u2",uiAttribs:{},portsIn:[{name:"Variable",value:"contentSize"}],portsOut:[{name:"Value",links:[{portIn:"number1",portOut:"Value",objIn:"6ndcmn42v",objOut:"svar6j6u2"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"6ndcmn42v",uiAttribs:{},portsIn:[{name:"number2",value:3}],portsOut:[{name:"result",links:[{portIn:"Array length",portOut:"result",objIn:"lat3h1h55",objOut:"6ndcmn42v"}]}],objName:"Ops.Math.Multiply"},{id:"x3gwvvpa6",uiAttribs:{},portsIn:[{name:"Array 2",value:0},{name:"Array 3",value:0},{name:"Array 4",value:0},{name:"Array 5",value:0},{name:"Array 6",value:0},{name:"Array 7",value:0}],portsOut:[{name:"Result",links:[{portIn:"Text Aspect Ratio",portOut:"Result",objIn:"kdvbm256s",objOut:"x3gwvvpa6"}]},{name:"Array length",value:24}],objName:"Ops.Array.ArrayMerge_v3"},{id:"lwotm1d3u",uiAttribs:{},portsOut:[{name:"result",links:[{portIn:"NodeSelectedIndex",portOut:"result",objIn:"jw2rk8me8",objOut:"lwotm1d3u"}]}],objName:"Ops.Math.Subtract"},{id:"fi731uko4",uiAttribs:{},portsIn:[{name:"Variable",value:"categoriesCount"}],portsOut:[{name:"Value",links:[{portIn:"number2",portOut:"Value",objIn:"lwotm1d3u",objOut:"fi731uko4"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"imtq53pb1",uiAttribs:{},portsIn:[{name:"Variable",value:"categoriesCount"}],portsOut:[{name:"Value",links:[{portIn:"Categories Count",portOut:"Value",objIn:"rxmv3bxb2",objOut:"imtq53pb1"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"75l601os9",uiAttribs:{},portsIn:[{name:"Title",value:"screen handling"}],objName:"Ops.Ui.Area"},{id:"ktceeammf",uiAttribs:{},portsIn:[{name:"Variable",value:"CurrentPositionsCategoriesDisplay"}],objName:"Ops.Vars.VarSetArray_v2"},{id:"cldws2own",uiAttribs:{},portsIn:[{name:"Variable",value:"CurrentPositionsContentDisplay"}],objName:"Ops.Vars.VarSetArray_v2"},{id:"67m0bfjme",uiAttribs:{},portsIn:[{name:"Begin Index",value:0},{name:"Circular",value:0}],portsOut:[{name:"Output Array",links:[{portIn:"Value",portOut:"Output Array",objIn:"ktceeammf",objOut:"67m0bfjme"}]},{name:"Array length",value:12}],objName:"Ops.Array.ArrayChunk"},{id:"kcpaefy7s",uiAttribs:{},portsIn:[{name:"Variable",value:"categoriesCount"}],portsOut:[{name:"Value",links:[{portIn:"number1",portOut:"Value",objIn:"t7sxxc4ew",objOut:"kcpaefy7s"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"t7sxxc4ew",uiAttribs:{},portsIn:[{name:"number2",value:2}],portsOut:[{name:"result",links:[{portIn:"Chunk Size",portOut:"result",objIn:"67m0bfjme",objOut:"t7sxxc4ew"}]}],objName:"Ops.Math.Multiply"},{id:"nrlue0ot5",uiAttribs:{},portsIn:[{name:"Variable",value:"aspectRatio"}],portsOut:[{name:"Value",links:[{portIn:"Screen Aspect Ratio",portOut:"Value",objIn:"1drvrxoez",objOut:"nrlue0ot5"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"8987u117v",uiAttribs:{},portsIn:[{name:"Variable",value:"categoriesBounds"}],objName:"Ops.Vars.VarSetObject_v2"},{id:"o79586343",uiAttribs:{},portsIn:[{name:"Variable",value:"contentBounds"}],objName:"Ops.Vars.VarSetObject_v2"},{id:"mxr5ums7u",uiAttribs:{},portsIn:[{name:"Variable",value:"sizeCoeff"}],objName:"Ops.Vars.VarSetNumber_v2"},{id:"l3dlg5fr5",uiAttribs:{},portsIn:[{name:"Variable",value:"categoriesBounds"}],portsOut:[{name:"Value",links:[{portIn:"Categories Bounds",portOut:"Value",objIn:"rxmv3bxb2",objOut:"l3dlg5fr5"}]}],objName:"Ops.Vars.VarGetObject_v2"},{id:"24wldohew",uiAttribs:{},portsIn:[{name:"Variable",value:"contentBounds"}],portsOut:[{name:"Value",links:[{portIn:"Content Bounds",portOut:"Value",objIn:"rxmv3bxb2",objOut:"24wldohew"}]}],objName:"Ops.Vars.VarGetObject_v2"},{id:"otut1ijxr",uiAttribs:{},portsIn:[{name:"Variable",value:"NodesMask"}],portsOut:[{name:"Value",links:[{portIn:"Nodes Mask",portOut:"Value",objIn:"jw2rk8me8",objOut:"otut1ijxr"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"uubzzgk1v",uiAttribs:{},portsIn:[{name:"Variable",value:"categoriesCount"}],portsOut:[{name:"Value",links:[{portIn:"Categories Count",portOut:"Value",objIn:"8qm4icrp4",objOut:"uubzzgk1v"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"1i5zhblz9",uiAttribs:{},portsIn:[{name:"Variable",value:"graphSize"}],portsOut:[{name:"Value",links:[{portIn:"Graph Size",portOut:"Value",objIn:"8qm4icrp4",objOut:"1i5zhblz9"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"vh1xlmdwf",uiAttribs:{},portsIn:[{name:"Variable",value:"NodesMask"}],portsOut:[{name:"Value",links:[{portIn:"Nodes Mask",portOut:"Value",objIn:"8qm4icrp4",objOut:"vh1xlmdwf"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"8qm4icrp4",uiAttribs:{},portsOut:[{name:"Content Masked Positions",links:[{portIn:"Value",portOut:"Content Masked Positions",objIn:"cldws2own",objOut:"8qm4icrp4"}]},{name:"Global Masked Positions",links:[{portIn:"Value",portOut:"Global Masked Positions",objIn:"9hva7vx6m",objOut:"8qm4icrp4"}]}],objName:"Ops.Patch.PK3cVbR.ExtractContentNodesPositions"},{id:"9hva7vx6m",uiAttribs:{},portsIn:[{name:"Variable",value:"CurrentMaskedPositions"}],objName:"Ops.Vars.VarSetArray_v2"},{id:"b6dkzapn3",uiAttribs:{},portsIn:[{name:"Variable",value:"NodesMask"}],portsOut:[{name:"Value",links:[{portIn:"Nodes Mask",portOut:"Value",objIn:"zgwp1jqu9",objOut:"b6dkzapn3"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"vhjjkz24l",uiAttribs:{},portsIn:[{name:"Variable",value:"NodesMask"}],objName:"Ops.Vars.VarGetArray_v2"},{id:"mfbkljv58",uiAttribs:{},portsIn:[{name:"Type index",value:0},{name:"Type",value:"Intersection"},{name:"Main Nodes",value:0}],portsOut:[{name:"SubMatrix",links:[{portIn:"Value",portOut:"SubMatrix",objIn:"nztr3wgnh",objOut:"mfbkljv58"}]}],objName:"Ops.Patch.PK3cVbR.SubMatrix"},{id:"vav8lym63",uiAttribs:{},portsIn:[{name:"Type index",value:1},{name:"Type",value:"Union"},{name:"Main Nodes",value:0}],portsOut:[{name:"SubMatrix",links:[{portIn:"Value",portOut:"SubMatrix",objIn:"ddh8mlt4f",objOut:"vav8lym63"}]}],objName:"Ops.Patch.PK3cVbR.SubMatrix"},{id:"rdp4vz7om",uiAttribs:{},portsIn:[{name:"Type index",value:1},{name:"Type",value:"Union"},{name:"Main Nodes",value:0}],portsOut:[{name:"SubMatrix",links:[{portIn:"Value",portOut:"SubMatrix",objIn:"ijtz29pga",objOut:"rdp4vz7om"}]}],objName:"Ops.Patch.PK3cVbR.SubMatrix"},{id:"zgwp1jqu9",uiAttribs:{},portsIn:[{name:"MinThickness",value:.2},{name:"MaxThickness",value:1.5},{name:"DefaultEdgeZ",value:0},{name:"NormalizeWeights",value:1}],portsOut:[{name:"Next",links:[{portIn:"render",portOut:"Next",objIn:"axqu4nxrs",objOut:"zgwp1jqu9"}]},{name:"EdgeTranslations",links:[{portIn:"positions",portOut:"EdgeTranslations",objIn:"9zrtr18jp",objOut:"zgwp1jqu9"}]},{name:"EdgeRotations",links:[{portIn:"Rotations",portOut:"EdgeRotations",objIn:"9zrtr18jp",objOut:"zgwp1jqu9"}]},{name:"EdgeScales",links:[{portIn:"Scale Array",portOut:"EdgeScales",objIn:"9zrtr18jp",objOut:"zgwp1jqu9"}]},{name:"EdgeInstanceCount",links:[{portIn:"Limit Instances",portOut:"EdgeInstanceCount",objIn:"9zrtr18jp",objOut:"zgwp1jqu9"}]}],objName:"Ops.Patch.PK3cVbR.DrawVariableWidthEdgesContent"},{id:"dvv4j5ini",uiAttribs:{},portsIn:[{name:"Variable",value:"contentSize"}],portsOut:[{name:"Value",links:[{portIn:"Value",portOut:"Value",objIn:"aoykb7cnq",objOut:"dvv4j5ini"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"xlek8kb9q",uiAttribs:{},portsIn:[{name:"Text",value:"ContentSize"},{name:"Min",value:0},{name:"Max",value:8},{name:"Step",value:1},{name:"Suffix",value:""},{name:"Grey Out",value:0},{name:"Visible",value:1},{name:"Input",value:6},{name:"Default",value:6}],portsOut:[{name:"Result",links:[{portIn:"Value",portOut:"Result",objIn:"7588qz01w",objOut:"xlek8kb9q"}]}],objName:"Ops.Sidebar.Slider_v3"},{id:"7588qz01w",uiAttribs:{},portsIn:[{name:"Variable",value:"contentSize"}],objName:"Ops.Vars.VarSetNumber_v2"},{id:"tlcj96g0r",uiAttribs:{},portsIn:[{name:"Named Trigger",value:0}],objName:"Ops.Trigger.TriggerSend"},{id:"aoykb7cnq",uiAttribs:{},portsOut:[{name:"Next",links:[{portIn:"Execute",portOut:"Next",objIn:"6ih4jshgb",objOut:"aoykb7cnq"}]},{name:"Number",links:[{portIn:"Content Elements Count",portOut:"Number",objIn:"6ih4jshgb",objOut:"aoykb7cnq"}]}],objName:"Ops.Number.TriggerOnChangeNumber_v2"},{id:"tjm9s5oqw",uiAttribs:{},portsIn:[{name:"Limit Instances",value:0},{name:"Limit",value:100},{name:"Scale Array",value:0},{name:"Rotations",value:0},{name:"Rotation Type index",value:0},{name:"Rotation Type",value:"Euler"},{name:"Billboarding index",value:0},{name:"Billboarding",value:"Off"},{name:"Material blend mode index",value:2},{name:"Material blend mode",value:"Normal"},{name:"TexCoords",value:0}],portsOut:[{name:"Trigger Out",links:[{portIn:"exe",portOut:"Trigger Out",objIn:"97ss5uwde",objOut:"tjm9s5oqw"}]},{name:"Num",value:6}],objName:"Ops.Gl.MeshInstancer_v4"},{id:"5zp0jllzt",uiAttribs:{},portsIn:[{name:"Variable",value:"CurrentPositionsContentDisplay"}],portsOut:[{name:"Value",links:[{portIn:"Array2x",portOut:"Value",objIn:"1c98xd3u8",objOut:"5zp0jllzt"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"1c98xd3u8",uiAttribs:{},portsOut:[{name:"Array3x",links:[{portIn:"Array3x",portOut:"Array3x",objIn:"m9mwble29",objOut:"1c98xd3u8"}]},{name:"Total points",value:6},{name:"Array length",value:18}],objName:"Ops.Array.Array2To3"},{id:"m9mwble29",uiAttribs:{},portsIn:[{name:"Add X",value:0},{name:"Add Y",value:0},{name:"Add Z",value:1}],portsOut:[{name:"Result",links:[{portIn:"positions",portOut:"Result",objIn:"tjm9s5oqw",objOut:"m9mwble29"},{portIn:"Node Positions",portOut:"Result",objIn:"1yrl4hw6h",objOut:"m9mwble29"}]}],objName:"Ops.Array.Array3Sum"},{id:"1z8x9josk",uiAttribs:{},portsIn:[{name:"radius",value:.12},{name:"innerRadius",value:0},{name:"segments",value:40},{name:"percent",value:1},{name:"steps",value:0},{name:"invertSteps",value:0},{name:"mapping index",value:0},{name:"mapping",value:"flat"},{name:"Spline",value:0},{name:"Draw",value:0,title:"Render mesh"}],portsOut:[{name:"trigger",links:[{portIn:"exe",portOut:"trigger",objIn:"tjm9s5oqw",objOut:"1z8x9josk"}]},{name:"geometry",links:[{portIn:"geom",portOut:"geometry",objIn:"tjm9s5oqw",objOut:"1z8x9josk"}]}],objName:"Ops.Graphics.Meshes.Circle_v3"},{id:"6gp1gxh24",uiAttribs:{},portsIn:[{name:"Value",value:.2},{name:"Variable",value:"margin"}],objName:"Ops.Vars.VarSetNumber_v2"},{id:"s2y8izhp1",uiAttribs:{},portsIn:[{name:"Variable",value:"margin"}],portsOut:[{name:"Value",links:[{portIn:"Margin",portOut:"Value",objIn:"rxmv3bxb2",objOut:"s2y8izhp1"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"mc2ragbxq",uiAttribs:{},portsOut:[{name:"trigger 3",links:[{portIn:"Render",portOut:"trigger 3",objIn:"3fsdrjk54",objOut:"mc2ragbxq"}]},{name:"trigger 15",links:[{portIn:"Render",portOut:"trigger 15",objIn:"rj9hni4dt",objOut:"mc2ragbxq"}]}],objName:"Ops.Trigger.Sequence"},{id:"u6omf1dvu",uiAttribs:{},portsIn:[{name:"Variable",value:"CurrentPositionsDisplay"}],objName:"Ops.Vars.VarSetArray_v2"},{id:"7w7n6nghi",uiAttribs:{},portsIn:[{name:"Variable",value:"CurrentPositionsForComputation"}],objName:"Ops.Vars.VarSetArray_v2"},{id:"97ss5uwde",uiAttribs:{},portsOut:[{name:"trigger",links:[{portIn:"render",portOut:"trigger",objIn:"xevszkl7u",objOut:"97ss5uwde"}]},{name:"index",links:[{portIn:"number1",portOut:"index",objIn:"5jj9q3n9i",objOut:"97ss5uwde"},{portIn:"number1",portOut:"index",objIn:"lcrw6tjo1",objOut:"97ss5uwde"}]},{name:"value",links:[{portIn:"texture",portOut:"value",objIn:"xevszkl7u",objOut:"97ss5uwde"}]}],objName:"Ops.Array.ArrayIteratorTextures"},{id:"tgvwzl4gi",uiAttribs:{},portsIn:[{name:"Variable",value:"DebugCurrentBoundForces"}],objName:"Ops.Vars.VarSetArray_v2"},{id:"zmjxcrogu",uiAttribs:{},portsIn:[{name:"Variable",value:"DebugCurrentGraphForces"}],objName:"Ops.Vars.VarSetArray_v2"},{id:"tmh7tu5fy",uiAttribs:{},portsIn:[{name:"Variable",value:"DebugCurrentTemp"}],objName:"Ops.Vars.VarSetNumber_v2"},{id:"gqnvybker",uiAttribs:{},portsIn:[{name:"Variable",value:"DebugCurrentGraphForces"}],objName:"Ops.Vars.VarGetArray_v2"},{id:"6wcmckdxn",uiAttribs:{},portsIn:[{name:"Variable",value:"DebugCurrentTemp"}],portsOut:[{name:"Value",links:[{portIn:"Number",portOut:"Value",objIn:"mjgjfok2t",objOut:"6wcmckdxn"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"mjgjfok2t",uiAttribs:{},portsIn:[{name:"Decimal Places",value:4}],portsOut:[{name:"Result",links:[{portIn:"String B",portOut:"Result",objIn:"4p1z4cof1",objOut:"mjgjfok2t"}]}],objName:"Ops.String.NumberToString_v2"},{id:"hdb316mow",uiAttribs:{},portsIn:[{name:"value",value:"DisplacementMagnitude"}],portsOut:[{name:"String",links:[{portIn:"String A",portOut:"String",objIn:"4p1z4cof1",objOut:"hdb316mow"}]}],objName:"Ops.String.String_v2"},{id:"703i4udx2",uiAttribs:{},portsIn:[{name:"Variable",value:"LastDraggedNodeIndex"}],portsOut:[{name:"Value",links:[{portIn:"Number",portOut:"Value",objIn:"rzgubix7w",objOut:"703i4udx2"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"rzgubix7w",uiAttribs:{},portsIn:[{name:"Decimal Places",value:4}],portsOut:[{name:"Result",links:[{portIn:"String B",portOut:"Result",objIn:"8i5kn5azv",objOut:"rzgubix7w"}]}],objName:"Ops.String.NumberToString_v2"},{id:"b2uvkckw2",uiAttribs:{},portsIn:[{name:"Position index",value:2},{name:"Position",value:"Relative"},{name:"Interactive index",value:2},{name:"Interactive",value:"No Pointer Events"},{name:"Set Size",value:0},{name:"Width",value:100},{name:"Height",value:100},{name:"Size  Units index",value:0},{name:"Size  Units",value:"px"},{name:"Overflow index",value:1},{name:"Overflow",value:"Hidden"},{name:"Inline Style",value:""},{name:"CSS Class",value:""},{name:"Disable CSS Props",value:""},{name:"Display index",value:1},{name:"Display",value:"Block"},{name:"Tag Name",value:"div"},{name:"Opacity",value:1},{name:"Propagate Click-Events",value:1}],portsOut:[{name:"Hovering",value:0}],objName:"Ops.Html.Elements.Element_v2"},{id:"cdfzfu2wj",uiAttribs:{},portsIn:[{name:"value",value:"DraggedNodeIndex"}],portsOut:[{name:"String",links:[{portIn:"String A",portOut:"String",objIn:"8i5kn5azv",objOut:"cdfzfu2wj"}]}],objName:"Ops.String.String_v2"},{id:"4yl699x0c",uiAttribs:{},portsIn:[{name:"Text",value:""},{name:"Position index",value:2},{name:"Position",value:"Relative"},{name:"Interactive index",value:2},{name:"Interactive",value:"No Pointer Events"},{name:"Set Size",value:0},{name:"Width",value:100},{name:"Height",value:100},{name:"Size  Units index",value:0},{name:"Size  Units",value:"px"},{name:"Overflow index",value:1},{name:"Overflow",value:"Hidden"},{name:"Inline Style",value:""},{name:"CSS Class",value:""},{name:"Disable CSS Props",value:""},{name:"Display index",value:1},{name:"Display",value:"Block"},{name:"Tag Name",value:"div"},{name:"Opacity",value:1},{name:"Propagate Click-Events",value:1}],portsOut:[{name:"Hovering",value:0}],objName:"Ops.Html.Elements.Element_v2"},{id:"613wzz076",uiAttribs:{},portsIn:[{name:"value",value:"Position"}],portsOut:[{name:"String",links:[{portIn:"String A",portOut:"String",objIn:"7fuq61pcl",objOut:"613wzz076"}]}],objName:"Ops.String.String_v2"},{id:"5caxii2ne",uiAttribs:{},portsIn:[{name:"Variable",value:"LastDraggedNodeIndex"}],portsOut:[{name:"Value",links:[{portIn:"number1",portOut:"Value",objIn:"644osifrs",objOut:"5caxii2ne"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"76xgtj8ih",uiAttribs:{},portsIn:[{name:"Variable",value:"CurrentPositionsDisplay"}],objName:"Ops.Vars.VarGetArray_v2"},{id:"e60mf42rj",uiAttribs:{},portsIn:[{name:"Seperator",value:","},{name:"New Line",value:0}],portsOut:[{name:"Result",links:[{portIn:"String B",portOut:"Result",objIn:"7fuq61pcl",objOut:"e60mf42rj"}]}],objName:"Ops.Array.ArrayToString_v3"},{id:"vg4cr45g4",uiAttribs:{},portsIn:[{name:"Input Array",value:0},{name:"Chunk Size",value:2},{name:"Circular",value:0}],portsOut:[{name:"Output Array",links:[{portIn:"Array",portOut:"Output Array",objIn:"e60mf42rj",objOut:"vg4cr45g4"}]},{name:"Array length",value:2}],objName:"Ops.Array.ArrayChunk"},{id:"644osifrs",uiAttribs:{},portsIn:[{name:"number2",value:2}],portsOut:[{name:"result",links:[{portIn:"Begin Index",portOut:"result",objIn:"vg4cr45g4",objOut:"644osifrs"}]}],objName:"Ops.Math.Multiply"},{id:"9no5bhlxi",uiAttribs:{},portsIn:[{name:"Text",value:""},{name:"Position index",value:2},{name:"Position",value:"Relative"},{name:"Interactive index",value:2},{name:"Interactive",value:"No Pointer Events"},{name:"Set Size",value:0},{name:"Width",value:100},{name:"Height",value:100},{name:"Size  Units index",value:0},{name:"Size  Units",value:"px"},{name:"Overflow index",value:1},{name:"Overflow",value:"Hidden"},{name:"Inline Style",value:""},{name:"CSS Class",value:""},{name:"Disable CSS Props",value:""},{name:"Display index",value:1},{name:"Display",value:"Block"},{name:"Tag Name",value:"div"},{name:"Opacity",value:1},{name:"Propagate Click-Events",value:1}],portsOut:[{name:"Hovering",value:0}],objName:"Ops.Html.Elements.Element_v2"},{id:"n5b18vy74",uiAttribs:{},portsIn:[{name:"value",value:"GraphForces"}],portsOut:[{name:"String",links:[{portIn:"String A",portOut:"String",objIn:"crwhvgm2q",objOut:"n5b18vy74"}]}],objName:"Ops.String.String_v2"},{id:"j9hi6kqmd",uiAttribs:{},portsIn:[{name:"Variable",value:"LastDraggedNodeIndex"}],portsOut:[{name:"Value",links:[{portIn:"number1",portOut:"Value",objIn:"ybc5gg26g",objOut:"j9hi6kqmd"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"wbtermhv7",uiAttribs:{},portsIn:[{name:"Seperator",value:","},{name:"New Line",value:0}],portsOut:[{name:"Result",links:[{portIn:"String B",portOut:"Result",objIn:"crwhvgm2q",objOut:"wbtermhv7"}]}],objName:"Ops.Array.ArrayToString_v3"},{id:"txqajpzqk",uiAttribs:{},portsIn:[{name:"Input Array",value:0},{name:"Chunk Size",value:2},{name:"Circular",value:0}],portsOut:[{name:"Output Array",links:[{portIn:"Array",portOut:"Output Array",objIn:"wbtermhv7",objOut:"txqajpzqk"}]},{name:"Array length",value:2}],objName:"Ops.Array.ArrayChunk"},{id:"ybc5gg26g",uiAttribs:{},portsIn:[{name:"number2",value:2}],portsOut:[{name:"result",links:[{portIn:"Begin Index",portOut:"result",objIn:"txqajpzqk",objOut:"ybc5gg26g"}]}],objName:"Ops.Math.Multiply"},{id:"4o5b6t9i7",uiAttribs:{},portsIn:[{name:"Text",value:""},{name:"Position index",value:2},{name:"Position",value:"Relative"},{name:"Interactive index",value:2},{name:"Interactive",value:"No Pointer Events"},{name:"Set Size",value:0},{name:"Width",value:100},{name:"Height",value:100},{name:"Size  Units index",value:0},{name:"Size  Units",value:"px"},{name:"Overflow index",value:1},{name:"Overflow",value:"Hidden"},{name:"Inline Style",value:""},{name:"CSS Class",value:""},{name:"Disable CSS Props",value:""},{name:"Display index",value:1},{name:"Display",value:"Block"},{name:"Tag Name",value:"div"},{name:"Opacity",value:1},{name:"Propagate Click-Events",value:1}],portsOut:[{name:"Hovering",value:0}],objName:"Ops.Html.Elements.Element_v2"},{id:"h8x1cgxpy",uiAttribs:{},portsIn:[{name:"value",value:"BoundForces"}],portsOut:[{name:"String",links:[{portIn:"String A",portOut:"String",objIn:"2qzwcrohs",objOut:"h8x1cgxpy"}]}],objName:"Ops.String.String_v2"},{id:"m1kz4kgb6",uiAttribs:{},portsIn:[{name:"Variable",value:"LastDraggedNodeIndex"}],portsOut:[{name:"Value",links:[{portIn:"number1",portOut:"Value",objIn:"qmhe6jdz7",objOut:"m1kz4kgb6"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"k07ke8tq1",uiAttribs:{},portsIn:[{name:"Variable",value:"DebugCurrentBoundForces"}],objName:"Ops.Vars.VarGetArray_v2"},{id:"bjyd7rxjb",uiAttribs:{},portsIn:[{name:"Seperator",value:","},{name:"New Line",value:0}],portsOut:[{name:"Result",links:[{portIn:"String B",portOut:"Result",objIn:"2qzwcrohs",objOut:"bjyd7rxjb"}]}],objName:"Ops.Array.ArrayToString_v3"},{id:"3x757zgvo",uiAttribs:{},portsIn:[{name:"Input Array",value:0},{name:"Chunk Size",value:2},{name:"Circular",value:0}],portsOut:[{name:"Output Array",links:[{portIn:"Array",portOut:"Output Array",objIn:"bjyd7rxjb",objOut:"3x757zgvo"}]},{name:"Array length",value:2}],objName:"Ops.Array.ArrayChunk"},{id:"qmhe6jdz7",uiAttribs:{},portsIn:[{name:"number2",value:2}],portsOut:[{name:"result",links:[{portIn:"Begin Index",portOut:"result",objIn:"3x757zgvo",objOut:"qmhe6jdz7"}]}],objName:"Ops.Math.Multiply"},{id:"zhzmlhede",uiAttribs:{},portsIn:[{name:"Variable",value:"DraggedNodeIndex"}],portsOut:[{name:"Value",links:[{portIn:"Value",portOut:"Value",objIn:"1pcvb5ert",objOut:"zhzmlhede"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"1pcvb5ert",uiAttribs:{},portsOut:[{name:"Next",links:[{portIn:"Exe",portOut:"Next",objIn:"so7jptx1s",objOut:"1pcvb5ert"}]},{name:"Number",links:[{portIn:"number1",portOut:"Number",objIn:"uc5wmyhq9",objOut:"1pcvb5ert"},{portIn:"Value",portOut:"Number",objIn:"cohifb7wh",objOut:"1pcvb5ert"}]}],objName:"Ops.Number.TriggerOnChangeNumber_v2"},{id:"cohifb7wh",uiAttribs:{},portsIn:[{name:"Variable",value:"LastDraggedNodeIndex"}],objName:"Ops.Vars.VarTriggerNumber"},{id:"uc5wmyhq9",uiAttribs:{},portsIn:[{name:"number2",value:-1}],portsOut:[{name:"result",links:[{portIn:"Boolean",portOut:"result",objIn:"so7jptx1s",objOut:"uc5wmyhq9"}]}],objName:"Ops.Math.Compare.Equals"},{id:"so7jptx1s",uiAttribs:{},portsOut:[{name:"then",links:[{portIn:"Trigger",portOut:"then",objIn:"cohifb7wh",objOut:"so7jptx1s"}]}],objName:"Ops.Boolean.IfFalseThen"},{id:"8rmh7lsqx",uiAttribs:{},portsOut:[{name:"AveragedArray",links:[{portIn:"Value",portOut:"AveragedArray",objIn:"3kiisqinz",objOut:"8rmh7lsqx"},{portIn:"Input Array",portOut:"AveragedArray",objIn:"67m0bfjme",objOut:"8rmh7lsqx"},{portIn:"Current Positions",portOut:"AveragedArray",objIn:"8qm4icrp4",objOut:"8rmh7lsqx"}]}],objName:"Ops.Patch.PK3cVbR.ArrayMovingAverage"},{id:"1drvrxoez",uiAttribs:{},portsIn:[{name:"Visual Margin",value:.2}],portsOut:[{name:"Categories Bounds",links:[{portIn:"Value",portOut:"Categories Bounds",objIn:"8987u117v",objOut:"1drvrxoez"}]},{name:"Content Bounds",links:[{portIn:"Value",portOut:"Content Bounds",objIn:"o79586343",objOut:"1drvrxoez"}]},{name:"Size Coefficient",links:[{portIn:"Value",portOut:"Size Coefficient",objIn:"mxr5ums7u",objOut:"1drvrxoez"}]}],objName:"Ops.Patch.PK3cVbR.ScreenOrientationAndSizeConstants"},{id:"cpn18h7r1",uiAttribs:{},portsIn:[{name:"Title",value:"content edges"}],objName:"Ops.Ui.Area"},{id:"iu3ntjdde",uiAttribs:{},portsIn:[{name:"Title",value:"category edges"}],objName:"Ops.Ui.Area"},{id:"u3ivlcjmv",uiAttribs:{},portsIn:[{name:"Title",value:"category nodes & text"}],objName:"Ops.Ui.Area"},{id:"1x4rtayt9",uiAttribs:{},portsIn:[{name:"Title",value:"content nodes & texture & text"}],objName:"Ops.Ui.Area"},{id:"tggjow0tz",uiAttribs:{},portsIn:[{name:"Title",value:"cursor"}],objName:"Ops.Ui.Area"},{id:"8un7xto7w",uiAttribs:{},portsIn:[{name:"Title",value:"mouse handling"}],objName:"Ops.Ui.Area"},{id:"qqg5kav3d",uiAttribs:{},portsIn:[{name:"number2",value:1.25}],portsOut:[{name:"result",links:[{portIn:"Scale",portOut:"result",objIn:"tjm9s5oqw",objOut:"qqg5kav3d"}]}],objName:"Ops.Math.Multiply"},{id:"mb6m9q0oo",uiAttribs:{},portsIn:[{name:"Variable",value:"sizeCoeff"}],portsOut:[{name:"Value",links:[{portIn:"NodeVisualRadius",portOut:"Value",objIn:"kdvbm256s",objOut:"mb6m9q0oo"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"z5v9kp4ez",uiAttribs:{},portsIn:[{name:"file",value:"assets/6873a74dde1bb45d029d76b1_RobotoCondensed-VariableFont_wght.ttf",display:"file"},{name:"family",value:"Roboto"},{name:"Active",value:1}],portsOut:[{name:"Loaded",value:1},{name:"Loaded Trigger",links:[{portIn:"exe",portOut:"Loaded Trigger",objIn:"8smu0p4yq",objOut:"z5v9kp4ez"}]}],objName:"Ops.Html.FontFile_v2"},{id:"8smu0p4yq",uiAttribs:{},portsOut:[{name:"timesTriggered",value:1}],objName:"Ops.Trigger.TriggerCounter"},{id:"8rwwdj2nc",uiAttribs:{},portsIn:[{name:"scale",value:1},{name:"rotX",value:0},{name:"rotY",value:0},{name:"rotZ",value:0}],portsOut:[{name:"trigger",links:[{portIn:"render",portOut:"trigger",objIn:"ffw6jnzwu",objOut:"8rwwdj2nc"}]}],objName:"Ops.Graphics.Transform"},{id:"uax1y41jy",uiAttribs:{},portsIn:[{name:"index",value:0},{name:"Value Invalid Index",value:0}],portsOut:[{name:"value",links:[{portIn:"posX",portOut:"value",objIn:"8rwwdj2nc",objOut:"uax1y41jy"}]},{name:"Valid Index",value:1}],objName:"Ops.Array.ArrayGetNumber"},{id:"ityv2at7s",uiAttribs:{},portsIn:[{name:"index",value:1},{name:"Value Invalid Index",value:0}],portsOut:[{name:"value",links:[{portIn:"posY",portOut:"value",objIn:"8rwwdj2nc",objOut:"ityv2at7s"}]},{name:"Valid Index",value:1}],objName:"Ops.Array.ArrayGetNumber"},{id:"5jj9q3n9i",uiAttribs:{},portsIn:[{name:"number2",value:3}],portsOut:[{name:"result",links:[{portIn:"Begin Index",portOut:"result",objIn:"ukmzrwmeo",objOut:"5jj9q3n9i"}]}],objName:"Ops.Math.Multiply"},{id:"041giue06",uiAttribs:{},portsIn:[{name:"index",value:2},{name:"Value Invalid Index",value:0}],portsOut:[{name:"value",links:[{portIn:"posZ",portOut:"value",objIn:"8rwwdj2nc",objOut:"041giue06"}]},{name:"Valid Index",value:1}],objName:"Ops.Array.ArrayGetNumber"},{id:"sgim75b7g",uiAttribs:{},portsIn:[{name:"Variable",value:"DraggedNodeIndex"}],portsOut:[{name:"Value",links:[{portIn:"DraggedNodesIndex",portOut:"Value",objIn:"kdvbm256s",objOut:"sgim75b7g"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"3jimqpf5r",uiAttribs:{},portsIn:[{name:"Variable",value:"NodesSelection"}],objName:"Ops.Vars.VarSetArray_v2"},{id:"f692d8kl4",uiAttribs:{},portsIn:[{name:"Variable",value:"NodesSelection"}],portsOut:[{name:"Value",links:[{portIn:"CurrentSelectedNodesArray",portOut:"Value",objIn:"kdvbm256s",objOut:"f692d8kl4"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"kdvbm256s",uiAttribs:{},portsIn:[{name:"EnableDrag",value:1}],portsOut:[{name:"UpdatedNodePositions2D",links:[{portIn:"Value",portOut:"UpdatedNodePositions2D",objIn:"u6omf1dvu",objOut:"kdvbm256s"}]},{name:"DraggedNodeIndex",links:[{portIn:"Value",portOut:"DraggedNodeIndex",objIn:"tufoscoc8",objOut:"kdvbm256s"}]},{name:"NewSelectedNodes",links:[{portIn:"Value",portOut:"NewSelectedNodes",objIn:"3jimqpf5r",objOut:"kdvbm256s"}]},{name:"IsDragging",value:false}],objName:"Ops.Patch.PK3cVbR.NodeDragger"},{id:"slub6m1r7",uiAttribs:{},portsIn:[{name:"Variable",value:"NodesSelection"}],objName:"Ops.Vars.VarGetArray_v2"},{id:"1k056dyn3",uiAttribs:{},portsIn:[{name:"Text",value:"Element"},{name:"Position index",value:2},{name:"Position",value:"Relative"},{name:"Interactive index",value:2},{name:"Interactive",value:"No Pointer Events"},{name:"Set Size",value:0},{name:"Width",value:100},{name:"Height",value:100},{name:"Size  Units index",value:0},{name:"Size  Units",value:"px"},{name:"Overflow index",value:1},{name:"Overflow",value:"Hidden"},{name:"Inline Style",value:""},{name:"CSS Class",value:""},{name:"Disable CSS Props",value:""},{name:"Display index",value:1},{name:"Display",value:"Block"},{name:"Tag Name",value:"div"},{name:"Opacity",value:1},{name:"Propagate Click-Events",value:1}],portsOut:[{name:"Hovering",value:0}],objName:"Ops.Html.Elements.Element_v2"},{id:"ivp8ewi62",uiAttribs:{},portsIn:[{name:"value",value:"NodesSelection"}],portsOut:[{name:"String",links:[{portIn:"String A",portOut:"String",objIn:"qzrrc8wj3",objOut:"ivp8ewi62"}]}],objName:"Ops.String.String_v2"},{id:"nkyaysi1b",uiAttribs:{},portsIn:[{name:"Array",value:0},{name:"Seperator",value:","},{name:"New Line",value:0}],portsOut:[{name:"Result",links:[{portIn:"String B",portOut:"Result",objIn:"qzrrc8wj3",objOut:"nkyaysi1b"}]}],objName:"Ops.Array.ArrayToString_v3"},{id:"vmjsdyio0",uiAttribs:{},portsIn:[{name:"Variable",value:"NodesSelection"}],portsOut:[{name:"Value",links:[{portIn:"Current Selected Nodes",portOut:"Value",objIn:"8qrfx0717",objOut:"vmjsdyio0"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"vpaff8g8p",uiAttribs:{},portsIn:[{name:"Variable",value:"NodesSelection"}],portsOut:[{name:"Value",links:[{portIn:"Input Array",portOut:"Value",objIn:"7ca90km7u",objOut:"vpaff8g8p"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"039zm0f47",uiAttribs:{},portsIn:[{name:"r",value:.9733333587646484},{name:"g",value:0},{name:"b",value:1},{name:"a",value:1}],portsOut:[{name:"outr",value:.9733333587646484},{name:"outg",value:0},{name:"outb",value:1},{name:"outa",value:1},{name:"Hex",value:"F800FF"},{name:"Array",links:[{portIn:"ColorDragged",portOut:"Array",objIn:"8qrfx0717",objOut:"039zm0f47"}]}],objName:"Ops.Color.ColorValue"},{id:"8qrfx0717",uiAttribs:{},portsIn:[{name:"Nodes Mask",value:0}],portsOut:[{name:"ColorsArray",links:[{portIn:"Array 0",portOut:"ColorsArray",objIn:"f2xmig0y0",objOut:"8qrfx0717"}]}],objName:"Ops.Patch.PK3cVbR.EdgesColor"},{id:"exsbzqvgw",uiAttribs:{},portsOut:[{name:"ColorsArray",links:[{portIn:"Array 0",portOut:"ColorsArray",objIn:"6r9o6ztq9",objOut:"exsbzqvgw"}]}],objName:"Ops.Patch.PK3cVbR.EdgesColor"},{id:"i0opinh38",uiAttribs:{},portsIn:[{name:"Variable",value:"NodesSelection"}],portsOut:[{name:"Value",links:[{portIn:"Current Selected Nodes",portOut:"Value",objIn:"exsbzqvgw",objOut:"i0opinh38"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"gbibxe8s8",uiAttribs:{},portsIn:[{name:"r",value:1},{name:"g",value:0},{name:"b",value:1},{name:"a",value:1}],portsOut:[{name:"outr",value:1},{name:"outg",value:0},{name:"outb",value:1},{name:"outa",value:1},{name:"Hex",value:"FF00FF"},{name:"Array",links:[{portIn:"ColorDragged",portOut:"Array",objIn:"exsbzqvgw",objOut:"gbibxe8s8"}]}],objName:"Ops.Color.ColorValue"},{id:"ytmy7xbc2",uiAttribs:{},portsIn:[{name:"r",value:1},{name:"g",value:.6460937559604645},{name:"b",value:.9208367612016828},{name:"a",value:1}],portsOut:[{name:"outr",value:1},{name:"outg",value:.6460937559604645},{name:"outb",value:.9208367612016828},{name:"outa",value:1},{name:"Hex",value:"FFA5EB"},{name:"Array",links:[{portIn:"ColorUnselected",portOut:"Array",objIn:"jw2rk8me8",objOut:"ytmy7xbc2"}]}],objName:"Ops.Color.ColorValue"},{id:"sfrjekwzo",uiAttribs:{},portsIn:[{name:"r",value:.9733333587646484},{name:"g",value:0},{name:"b",value:.38},{name:"a",value:1}],portsOut:[{name:"outr",value:.9733333587646484},{name:"outg",value:0},{name:"outb",value:.38},{name:"outa",value:1},{name:"Hex",value:"F80061"},{name:"Array",links:[{portIn:"ColorDragged",portOut:"Array",objIn:"jw2rk8me8",objOut:"sfrjekwzo"}]}],objName:"Ops.Color.ColorValue"},{id:"81amiqv0b",uiAttribs:{},portsIn:[{name:"Blendmode index",value:2},{name:"Blendmode",value:"Add"},{name:"Premultiplied",value:0}],portsOut:[{name:"Next",links:[{portIn:"exe",portOut:"Next",objIn:"9zrtr18jp",objOut:"81amiqv0b"}]}],objName:"Ops.Gl.BlendMode"},{id:"43ilbygtf",uiAttribs:{},portsIn:[{name:"r",value:0},{name:"g",value:.27},{name:"b",value:1},{name:"a",value:1}],portsOut:[{name:"outr",value:0},{name:"outg",value:.27},{name:"outb",value:1},{name:"outa",value:1},{name:"Hex",value:"0045FF"},{name:"Array",links:[{portIn:"ColorSelected",portOut:"Array",objIn:"exsbzqvgw",objOut:"43ilbygtf"}]}],objName:"Ops.Color.ColorValue"},{id:"jw2rk8me8",uiAttribs:{},portsOut:[{name:"ColorsArray",links:[{portIn:"Colors",portOut:"ColorsArray",objIn:"tjm9s5oqw",objOut:"jw2rk8me8"},{portIn:"Input Array",portOut:"ColorsArray",objIn:"t0o4oxyvp",objOut:"jw2rk8me8"}]}],objName:"Ops.Patch.PK3cVbR.NodesColor"},{id:"7ca90km7u",uiAttribs:{},portsIn:[{name:"Circular",value:0}],portsOut:[{name:"Output Array",links:[{portIn:"Current Selected Nodes",portOut:"Output Array",objIn:"jw2rk8me8",objOut:"7ca90km7u"}]},{name:"Array length",value:6}],objName:"Ops.Array.ArrayChunk"},{id:"ccg9ra8e8",uiAttribs:{},portsIn:[{name:"Variable",value:"categoriesCount"}],portsOut:[{name:"Value",links:[{portIn:"Begin Index",portOut:"Value",objIn:"7ca90km7u",objOut:"ccg9ra8e8"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"j16h3eiis",uiAttribs:{},portsIn:[{name:"Variable",value:"contentSize"}],portsOut:[{name:"Value",links:[{portIn:"Chunk Size",portOut:"Value",objIn:"7ca90km7u",objOut:"j16h3eiis"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"xd62s8n0e",uiAttribs:{},portsIn:[{name:"r",value:.271},{name:"g",value:.234},{name:"b",value:1},{name:"a",value:1}],portsOut:[{name:"outr",value:.271},{name:"outg",value:.234},{name:"outb",value:1},{name:"outa",value:1},{name:"Hex",value:"453CFF"},{name:"Array",links:[{portIn:"ColorSelected",portOut:"Array",objIn:"jw2rk8me8",objOut:"xd62s8n0e"}]}],objName:"Ops.Color.ColorValue"},{id:"8ivm3gsj8",uiAttribs:{},portsIn:[{name:"Blendmode index",value:2},{name:"Blendmode",value:"Add"},{name:"Premultiplied",value:0}],portsOut:[{name:"Next",links:[{portIn:"render",portOut:"Next",objIn:"1z8x9josk",objOut:"8ivm3gsj8"}]}],objName:"Ops.Gl.BlendMode"},{id:"4jtcmyljn",uiAttribs:{},portsIn:[{name:"Blendmode index",value:0},{name:"Blendmode",value:"None"},{name:"Premultiplied",value:0}],portsOut:[{name:"Next",links:[{portIn:"render",portOut:"Next",objIn:"8rwwdj2nc",objOut:"4jtcmyljn"}]}],objName:"Ops.Gl.BlendMode"},{id:"rxmv3bxb2",uiAttribs:{},portsIn:[{name:"Center Graph in Bounds",value:1}],portsOut:[{name:"Trigger",links:[{portIn:"Trigger",portOut:"Trigger",objIn:"8rmh7lsqx",objOut:"rxmv3bxb2"}]},{name:"Next Positions",links:[{portIn:"Value",portOut:"Next Positions",objIn:"7w7n6nghi",objOut:"rxmv3bxb2"},{portIn:"Array",portOut:"Next Positions",objIn:"8rmh7lsqx",objOut:"rxmv3bxb2"}]},{name:"Debug - Current Graph Forces",links:[{portIn:"Value",portOut:"Debug - Current Graph Forces",objIn:"zmjxcrogu",objOut:"rxmv3bxb2"}]},{name:"Debug - Current Forces From Bounds",links:[{portIn:"Value",portOut:"Debug - Current Forces From Bounds",objIn:"tgvwzl4gi",objOut:"rxmv3bxb2"}]},{name:"Debug - Current Temperature",links:[{portIn:"Value",portOut:"Debug - Current Temperature",objIn:"tmh7tu5fy",objOut:"rxmv3bxb2"}]}],objName:"Ops.Patch.PK3cVbR.FruchtermanReingoldComputation"},{id:"8ootlpi9y",uiAttribs:{},portsOut:[{name:"Category Names",links:[{portIn:"Value",portOut:"Category Names",objIn:"sgwbr2ne2",objOut:"8ootlpi9y"},{portIn:"array",portOut:"Category Names",objIn:"2ecxdu6wc",objOut:"8ootlpi9y"}]},{name:"Node Weights",links:[{portIn:"Value",portOut:"Node Weights",objIn:"8ftj79yt0",objOut:"8ootlpi9y"}]}],objName:"Ops.Patch.PK3cVbR.NodeNames"},{id:"uyya2dl9p",uiAttribs:{},portsIn:[{name:"Variable",value:"CurrentPositionsContentDisplay"}],portsOut:[{name:"Value",links:[{portIn:"Array2x",portOut:"Value",objIn:"sdry00uh2",objOut:"uyya2dl9p"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"sdry00uh2",uiAttribs:{},portsOut:[{name:"Array3x",links:[{portIn:"Array3x",portOut:"Array3x",objIn:"u7edneezi",objOut:"sdry00uh2"}]},{name:"Total points",value:6},{name:"Array length",value:18}],objName:"Ops.Array.Array2To3"},{id:"u7edneezi",uiAttribs:{},portsIn:[{name:"Add X",value:0},{name:"Add Y",value:0},{name:"Add Z",value:1}],portsOut:[{name:"Result",links:[{portIn:"Input Array",portOut:"Result",objIn:"ukmzrwmeo",objOut:"u7edneezi"}]}],objName:"Ops.Array.Array3Sum"},{id:"ukmzrwmeo",uiAttribs:{},portsIn:[{name:"Chunk Size",value:3},{name:"Circular",value:0}],portsOut:[{name:"Output Array",links:[{portIn:"array",portOut:"Output Array",objIn:"041giue06",objOut:"ukmzrwmeo"},{portIn:"array",portOut:"Output Array",objIn:"ityv2at7s",objOut:"ukmzrwmeo"},{portIn:"array",portOut:"Output Array",objIn:"uax1y41jy",objOut:"ukmzrwmeo"}]},{name:"Array length",value:3}],objName:"Ops.Array.ArrayChunk"},{id:"7usz3aq1g",uiAttribs:{},portsIn:[{name:"Variable",value:"sizeCoeff"}],portsOut:[{name:"Value",links:[{portIn:"number1",portOut:"Value",objIn:"c2zbx3dnw",objOut:"7usz3aq1g"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"c2zbx3dnw",uiAttribs:{},portsIn:[{name:"number2",value:.13}],portsOut:[{name:"result",links:[{portIn:"radius",portOut:"result",objIn:"ffw6jnzwu",objOut:"c2zbx3dnw"}]}],objName:"Ops.Math.Multiply"},{id:"utlz9trde",uiAttribs:{},portsIn:[{name:"Variable",value:"sizeCoeff"}],portsOut:[{name:"Value",links:[{portIn:"number1",portOut:"Value",objIn:"qqg5kav3d",objOut:"utlz9trde"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"t0o4oxyvp",uiAttribs:{},portsIn:[{name:"Chunk Size",value:4},{name:"Circular",value:0}],portsOut:[{name:"Output Array",links:[{portIn:"array",portOut:"Output Array",objIn:"ijk8f9gxv",objOut:"t0o4oxyvp"},{portIn:"array",portOut:"Output Array",objIn:"9jr0e24cx",objOut:"t0o4oxyvp"},{portIn:"array",portOut:"Output Array",objIn:"wajhdpf4v",objOut:"t0o4oxyvp"},{portIn:"array",portOut:"Output Array",objIn:"qy4bgc99i",objOut:"t0o4oxyvp"}]},{name:"Array length",value:4}],objName:"Ops.Array.ArrayChunk"},{id:"lcrw6tjo1",uiAttribs:{},portsIn:[{name:"number2",value:4}],portsOut:[{name:"result",links:[{portIn:"Begin Index",portOut:"result",objIn:"t0o4oxyvp",objOut:"lcrw6tjo1"}]}],objName:"Ops.Math.Multiply"},{id:"ijk8f9gxv",uiAttribs:{},portsIn:[{name:"index",value:0},{name:"Value Invalid Index",value:0}],portsOut:[{name:"value",value:1},{name:"Valid Index",value:1}],objName:"Ops.Array.ArrayGetNumber"},{id:"9jr0e24cx",uiAttribs:{},portsIn:[{name:"index",value:1},{name:"Value Invalid Index",value:0}],portsOut:[{name:"value",value:.6460937559604645},{name:"Valid Index",value:1}],objName:"Ops.Array.ArrayGetNumber"},{id:"wajhdpf4v",uiAttribs:{},portsIn:[{name:"index",value:2},{name:"Value Invalid Index",value:0}],portsOut:[{name:"value",value:.9208367612016828},{name:"Valid Index",value:1}],objName:"Ops.Array.ArrayGetNumber"},{id:"qy4bgc99i",uiAttribs:{},portsIn:[{name:"index",value:3},{name:"Value Invalid Index",value:0}],portsOut:[{name:"value",value:1},{name:"Valid Index",value:1}],objName:"Ops.Array.ArrayGetNumber"},{id:"jevz7wpag",uiAttribs:{},portsIn:[{name:"Format",value:"$a: $b"},{name:"String C",value:""},{name:"String D",value:""},{name:"String E",value:""},{name:"String F",value:""}],portsOut:[{name:"Result",links:[{portIn:"Text",portOut:"Result",objIn:"udvboevi4",objOut:"jevz7wpag"}]}],objName:"Ops.String.StringCompose_v3"},{id:"unthjethf",uiAttribs:{},portsIn:[{name:"value",value:"FPS"}],portsOut:[{name:"String",links:[{portIn:"String A",portOut:"String",objIn:"jevz7wpag",objOut:"unthjethf"}]}],objName:"Ops.String.String_v2"},{id:"udvboevi4",uiAttribs:{},portsIn:[{name:"Position index",value:2},{name:"Position",value:"Relative"},{name:"Interactive index",value:2},{name:"Interactive",value:"No Pointer Events"},{name:"Set Size",value:0},{name:"Width",value:100},{name:"Height",value:100},{name:"Size  Units index",value:0},{name:"Size  Units",value:"px"},{name:"Overflow index",value:1},{name:"Overflow",value:"Hidden"},{name:"Inline Style",value:""},{name:"CSS Class",value:""},{name:"Disable CSS Props",value:""},{name:"Display index",value:1},{name:"Display",value:"Block"},{name:"Tag Name",value:"div"},{name:"Opacity",value:1},{name:"Propagate Click-Events",value:1}],portsOut:[{name:"Hovering",value:0}],objName:"Ops.Html.Elements.Element_v2"},{id:"zsar7d543",uiAttribs:{},portsIn:[{name:"Decimal Places",value:4}],portsOut:[{name:"Result",links:[{portIn:"String B",portOut:"Result",objIn:"jevz7wpag",objOut:"zsar7d543"}]}],objName:"Ops.String.NumberToString_v2"},{id:"b9ct5y4r4",uiAttribs:{},portsOut:[{name:"FPS",links:[{portIn:"Number",portOut:"FPS",objIn:"zsar7d543",objOut:"b9ct5y4r4"}]},{name:"MS",value:1.58}],objName:"Ops.Cables.FPS_v2"},{id:"4p1z4cof1",uiAttribs:{},portsIn:[{name:"Format",value:"$a: $b"},{name:"String C",value:""},{name:"String D",value:""},{name:"String E",value:""},{name:"String F",value:""}],portsOut:[{name:"Result",links:[{portIn:"Text",portOut:"Result",objIn:"ppuubg8w0",objOut:"4p1z4cof1"}]}],objName:"Ops.String.StringCompose_v3"},{id:"8i5kn5azv",uiAttribs:{},portsIn:[{name:"Format",value:"$a: $b"},{name:"String C",value:""},{name:"String D",value:""},{name:"String E",value:""},{name:"String F",value:""}],portsOut:[{name:"Result",links:[{portIn:"Text",portOut:"Result",objIn:"b2uvkckw2",objOut:"8i5kn5azv"}]}],objName:"Ops.String.StringCompose_v3"},{id:"7fuq61pcl",uiAttribs:{},portsIn:[{name:"Format",value:"$a: $b"},{name:"String C",value:""},{name:"String D",value:""},{name:"String E",value:""},{name:"String F",value:""}],portsOut:[{name:"Result",value:"Position: "}],objName:"Ops.String.StringCompose_v3"},{id:"crwhvgm2q",uiAttribs:{},portsIn:[{name:"Format",value:"$a: $b"},{name:"String C",value:""},{name:"String D",value:""},{name:"String E",value:""},{name:"String F",value:""}],portsOut:[{name:"Result",value:"GraphForces: "}],objName:"Ops.String.StringCompose_v3"},{id:"2qzwcrohs",uiAttribs:{},portsIn:[{name:"Format",value:"$a: $b"},{name:"String C",value:""},{name:"String D",value:""},{name:"String E",value:""},{name:"String F",value:""}],portsOut:[{name:"Result",value:"BoundForces: "}],objName:"Ops.String.StringCompose_v3"},{id:"qzrrc8wj3",uiAttribs:{},portsIn:[{name:"Format",value:"$a: $b"},{name:"String C",value:""},{name:"String D",value:""},{name:"String E",value:""},{name:"String F",value:""}],portsOut:[{name:"Result",value:"NodesSelection: "}],objName:"Ops.String.StringCompose_v3"},{id:"ppuubg8w0",uiAttribs:{},portsIn:[{name:"Position index",value:2},{name:"Position",value:"Relative"},{name:"Interactive index",value:2},{name:"Interactive",value:"No Pointer Events"},{name:"Set Size",value:0},{name:"Width",value:101.83},{name:"Height",value:129.07},{name:"Size  Units index",value:0},{name:"Size  Units",value:"px"},{name:"Overflow index",value:0},{name:"Overflow",value:"Visible"},{name:"Inline Style",value:""},{name:"CSS Class",value:""},{name:"Disable CSS Props",value:""},{name:"Display index",value:2},{name:"Display",value:"Inline"},{name:"Tag Name",value:"div"},{name:"Opacity",value:1},{name:"Propagate Click-Events",value:1}],portsOut:[{name:"Hovering",value:0}],objName:"Ops.Html.Elements.Element_v2"},{id:"6ih4jshgb",uiAttribs:{},portsOut:[{name:"Nodes Mask",links:[{portIn:"Value",portOut:"Nodes Mask",objIn:"ljv6kxiu2",objOut:"6ih4jshgb"}]},{name:"Nodes Selected",links:[{portIn:"Value",portOut:"Nodes Selected",objIn:"qttpzwcks",objOut:"6ih4jshgb"}]}],objName:"Ops.Patch.PK3cVbR.NodesMask"},{id:"ipbbkuqvh",uiAttribs:{},portsOut:[{name:"trigger 0",links:[{portIn:"render",portOut:"trigger 0",objIn:"qlvasxm35",objOut:"ipbbkuqvh"}]}],objName:"Ops.Trigger.Sequence"},{id:"v7ew80nny",uiAttribs:{},portsIn:[{name:"value",value:" chimeres.webp, brule_harold.webp, chimeres3.webp, georges.webp, music.webp, la_premiere_seconde.webp"}],portsOut:[{name:"String",value:" chimeres.webp, brule_harold.webp, chimeres3.webp, georges.webp, music.webp, la_premiere_seconde.webp"}],objName:"Ops.String.String_v2"},{id:"im86aloz8",uiAttribs:{},portsIn:[{name:"Value"},{name:"Variable",value:"ContentPicturesTextures"}],objName:"Ops.Vars.VarSetArray_v2"},{id:"3rnashdgx",uiAttribs:{},portsIn:[{name:"separator",value:","},{name:"Numbers",value:0},{name:"Trim",value:1},{name:"Split Lines",value:0}],portsOut:[{name:"length",value:0}],objName:"Ops.Array.StringToArray_v2"},{id:"b6xeeevtg",uiAttribs:{},portsIn:[{name:"value",value:"/assets/"}],portsOut:[{name:"String",value:"/assets/"}],objName:"Ops.String.String_v2"},{id:"rjvnw28tf",uiAttribs:{},portsIn:[{name:"urls",value:0},{name:"filter index",value:1},{name:"filter",value:"linear"},{name:"wrap index",value:0},{name:"wrap",value:"repeat"},{name:"Flip",value:0},{name:"unpackPreMultipliedAlpha",value:0},{name:"Caching",value:0},{name:"Asset in patch",value:0}],portsOut:[{name:"width",value:1536},{name:"height",value:1024},{name:"loading",value:0},{name:"Aspect Ratio",value:1.5}],objName:"Ops.Gl.TextureArrayLoaderFromArray_v2"},{id:"qboowdsyw",uiAttribs:{},portsIn:[{name:"String",value:""},{name:"Search For",value:" "},{name:"Replace",value:"bar"},{name:"Replace What index",value:0},{name:"Replace What",value:"All"}],portsOut:[{name:"Result",links:[{portIn:"String",portOut:"Result",objIn:"b49f4z5ps",objOut:"qboowdsyw"}]}],objName:"Ops.String.StringReplace"},{id:"b49f4z5ps",uiAttribs:{},portsOut:[{name:"Result",links:[{portIn:"text",portOut:"Result",objIn:"3rnashdgx",objOut:"b49f4z5ps"}]}],objName:"Ops.String.StringTrim_v2"},{id:"g004hqmo2",uiAttribs:{},portsOut:[{name:"Next",links:[{portIn:"exe",portOut:"Next",objIn:"z0j4kpp6z",objOut:"g004hqmo2"}]}],objName:"Ops.Trigger.TriggerButton"},{id:"7wad8329x",uiAttribs:{},portsIn:[{name:"Value",value:10}],portsOut:[{name:"Result",links:[{portIn:"Array 0",portOut:"Result",objIn:"x3gwvvpa6",objOut:"7wad8329x"}]}],objName:"Ops.Array.ArrayMultiply"},{id:"5z6wrzhqr",uiAttribs:{},portsIn:[{name:"Variable",value:"CategoriesText"}],portsOut:[{name:"Value",links:[{portIn:"nxezakedh",portOut:"Value",objIn:"nfhmnm8x4",objOut:"5z6wrzhqr"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"ih1fdd597",uiAttribs:{},portsIn:[{name:"value",value:"Courier"}],portsOut:[{name:"String",links:[{portIn:"ypqxgfqsy",portOut:"String",objIn:"nfhmnm8x4",objOut:"ih1fdd597"}]}],objName:"Ops.String.String_v2"},{id:"7t4mzhd2d",uiAttribs:{},portsIn:[{name:"value",value:"bold"}],portsOut:[{name:"String",links:[{portIn:"zhebovez1",portOut:"String",objIn:"nfhmnm8x4",objOut:"7t4mzhd2d"}]}],objName:"Ops.String.String_v2"},{id:"uvsq1efh0",uiAttribs:{},portsIn:[{name:"Variable",value:"CategoriesTextTexture"}],objName:"Ops.Vars.VarSetTexture_v2"},{id:"malm2sghh",uiAttribs:{},portsIn:[{name:"Variable",value:"CategoriesTextUVCoordinates"}],objName:"Ops.Vars.VarSetArray_v2"},{id:"fu3kl8mhz",uiAttribs:{},portsIn:[{name:"Variable",value:"CategoriesTextAspectRatioArray"}],objName:"Ops.Vars.VarSetArray_v2"},{id:"z7kk27k48",uiAttribs:{},portsIn:[{name:"Variable",value:"ContentNames"}],portsOut:[{name:"Value",links:[{portIn:"nxezakedh",portOut:"Value",objIn:"ny5h3ccqb",objOut:"z7kk27k48"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"16kpd4xzv",uiAttribs:{},portsIn:[{name:"value",value:"Courier"}],portsOut:[{name:"String",links:[{portIn:"ypqxgfqsy",portOut:"String",objIn:"ny5h3ccqb",objOut:"16kpd4xzv"}]}],objName:"Ops.String.String_v2"},{id:"0lg41h3f8",uiAttribs:{},portsIn:[{name:"value",value:"bold"}],portsOut:[{name:"String",links:[{portIn:"zhebovez1",portOut:"String",objIn:"ny5h3ccqb",objOut:"0lg41h3f8"}]}],objName:"Ops.String.String_v2"},{id:"72x1c8lim",uiAttribs:{},portsIn:[{name:"Variable",value:"ContentTextTexture"}],objName:"Ops.Vars.VarSetTexture_v2"},{id:"j642zmq99",uiAttribs:{},portsIn:[{name:"Variable",value:"ContentTextUVCoordinates"}],objName:"Ops.Vars.VarSetArray_v2"},{id:"shwszpk50",uiAttribs:{},portsIn:[{name:"Variable",value:"ContentTextAspectRatioArray"}],objName:"Ops.Vars.VarSetArray_v2"},{id:"1fafcqmpe",uiAttribs:{},portsIn:[{name:"Pass Through",value:1}],portsOut:[{name:"Trigger out",links:[{portIn:"exe",portOut:"Trigger out",objIn:"auqjvubrh",objOut:"1fafcqmpe"}]}],objName:"Ops.Trigger.GateTrigger"},{id:"zs3t12v3z",uiAttribs:{},portsIn:[{name:"Pass Through",value:1}],portsOut:[{name:"Trigger out",links:[{portIn:"Trigger",portOut:"Trigger out",objIn:"zgwp1jqu9",objOut:"zs3t12v3z"}]}],objName:"Ops.Trigger.GateTrigger"},{id:"7yhj3vccl",uiAttribs:{},portsIn:[{name:"Pass Through",value:1}],portsOut:[{name:"Trigger out",links:[{portIn:"Trigger",portOut:"Trigger out",objIn:"ka05enc3h",objOut:"7yhj3vccl"}]}],objName:"Ops.Trigger.GateTrigger"},{id:"gl5et0xu6",uiAttribs:{},portsIn:[{name:"Pass Through",value:1}],portsOut:[{name:"Trigger out",links:[{portIn:"exe",portOut:"Trigger out",objIn:"33oqt4n8l",objOut:"gl5et0xu6"}]}],objName:"Ops.Trigger.GateTrigger"},{id:"x9dfu18gr",uiAttribs:{},portsIn:[{name:"Mode select index",value:0},{name:"Mode select",value:"Number"},{name:"Default Value",value:2},{name:"Reverse",value:0}],portsOut:[{name:"Array",links:[{portIn:"Array 3",portOut:"Array",objIn:"5ewbrhgfp",objOut:"x9dfu18gr"}]},{name:"Array length out",value:6}],objName:"Ops.Array.Array_v3"},{id:"5ewbrhgfp",uiAttribs:{},portsOut:[{name:"Array out",links:[{portIn:"positions",portOut:"Array out",objIn:"a2hijyetn",objOut:"5ewbrhgfp"},{portIn:"Node Positions",portOut:"Array out",objIn:"ea06zd8jy",objOut:"5ewbrhgfp"}]},{name:"Num Points",value:6},{name:"Array length",value:18}],objName:"Ops.Array.ArrayPack3"},{id:"8su6ujzkz",uiAttribs:{},portsOut:[{name:"Array 1 out",links:[{portIn:"Array 1",portOut:"Array 1 out",objIn:"5ewbrhgfp",objOut:"8su6ujzkz"}]},{name:"Array 2 out",links:[{portIn:"Array 2",portOut:"Array 2 out",objIn:"5ewbrhgfp",objOut:"8su6ujzkz"}]},{name:"Array lengths",links:[{portIn:"Array length",portOut:"Array lengths",objIn:"x9dfu18gr",objOut:"8su6ujzkz"}]}],objName:"Ops.Array.ArrayUnpack2"},{id:"iqsbqzj5p",uiAttribs:{},portsIn:[{name:"Variable",value:"CurrentPositionsCategoriesDisplay"}],portsOut:[{name:"Value",links:[{portIn:"Array in xyz",portOut:"Value",objIn:"8su6ujzkz",objOut:"iqsbqzj5p"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"33oqt4n8l",uiAttribs:{},portsOut:[{name:"trigger 1",links:[{portIn:"Trigger in",portOut:"trigger 1",objIn:"5ewbrhgfp",objOut:"33oqt4n8l"}]},{name:"trigger 7",links:[{portIn:"Render",portOut:"trigger 7",objIn:"4e4ui4deu",objOut:"33oqt4n8l"}]},{name:"trigger 15",links:[{portIn:"render",portOut:"trigger 15",objIn:"e7vwrqvix",objOut:"33oqt4n8l"}]}],objName:"Ops.Trigger.Sequence"},{id:"a2hijyetn",uiAttribs:{},portsIn:[{name:"Limit Instances",value:0},{name:"Limit",value:100},{name:"Rotation Type index",value:0},{name:"Rotation Type",value:"Euler"},{name:"Billboarding index",value:0},{name:"Billboarding",value:"Off"},{name:"Material blend mode index",value:0},{name:"Material blend mode",value:"Multiply"},{name:"TexCoords",value:0}],portsOut:[{name:"Num",value:6}],objName:"Ops.Gl.MeshInstancer_v4"},{id:"n7dk43gce",uiAttribs:{},portsIn:[{name:"Render Mesh",value:0},{name:"Width",value:1},{name:"Length",value:1},{name:"Height",value:1},{name:"Center",value:1},{name:"Mapping index",value:0},{name:"Mapping",value:"Side"},{name:"Bias",value:0},{name:"Flip X",value:1},{name:"Top",value:1},{name:"Bottom",value:1},{name:"Left",value:1},{name:"Right",value:1},{name:"Front",value:1},{name:"Back",value:1}],portsOut:[{name:"Next",links:[{portIn:"render",portOut:"Next",objIn:"dzhj3a9nj",objOut:"n7dk43gce"}]},{name:"geometry",links:[{portIn:"geom",portOut:"geometry",objIn:"a2hijyetn",objOut:"n7dk43gce"}]}],objName:"Ops.Graphics.Meshes.Cube_v2"},{id:"5t1gxmpcw",uiAttribs:{},portsIn:[{name:"Variable",value:"sizeCoeff"}],portsOut:[{name:"Value",links:[{portIn:"number1",portOut:"Value",objIn:"cdgr8y2gh",objOut:"5t1gxmpcw"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"cdgr8y2gh",uiAttribs:{},portsIn:[{name:"number2",value:.27}],portsOut:[{name:"result",links:[{portIn:"Scale",portOut:"result",objIn:"a2hijyetn",objOut:"cdgr8y2gh"}]}],objName:"Ops.Math.Multiply"},{id:"dzhj3a9nj",uiAttribs:{},portsIn:[{name:"posX",value:0},{name:"posY",value:0},{name:"posZ",value:-1},{name:"scale",value:1},{name:"rotX",value:0},{name:"rotY",value:0},{name:"rotZ",value:0}],portsOut:[{name:"trigger",links:[{portIn:"Trigger in",portOut:"trigger",objIn:"ftghshhb1",objOut:"dzhj3a9nj"}]}],objName:"Ops.Graphics.Transform"},{id:"17vj17my1",uiAttribs:{},portsIn:[{name:"Variable",value:"NodeWeights"}],portsOut:[{name:"Value",links:[{portIn:"Array 1",portOut:"Value",objIn:"ftghshhb1",objOut:"17vj17my1"},{portIn:"Array 2",portOut:"Value",objIn:"ftghshhb1",objOut:"17vj17my1"},{portIn:"Array 3",portOut:"Value",objIn:"ftghshhb1",objOut:"17vj17my1"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"ftghshhb1",uiAttribs:{},portsOut:[{name:"Trigger out",links:[{portIn:"exe",portOut:"Trigger out",objIn:"a2hijyetn",objOut:"ftghshhb1"}]},{name:"Array out",links:[{portIn:"Scale Array",portOut:"Array out",objIn:"a2hijyetn",objOut:"ftghshhb1"},{portIn:"In",portOut:"Array out",objIn:"tcob70z2j",objOut:"ftghshhb1"}]},{name:"Num Points",value:6},{name:"Array length",value:18}],objName:"Ops.Array.ArrayPack3"},{id:"4e4ui4deu",uiAttribs:{},portsIn:[{name:"r",value:1},{name:"g",value:1},{name:"b",value:1},{name:"Opacity",value:1},{name:"AO Intensity",value:1},{name:"Normal Map Intensity",value:1},{name:"Repeat X",value:1},{name:"Repeat Y",value:1},{name:"Offset X",value:0},{name:"Offset Y",value:0},{name:"Double Sided",value:0},{name:"Screen Space Normals",value:0},{name:"Calc normal tangents",value:1},{name:"Opacity TexCoords Transform",value:0},{name:"Discard Transparent Pixels",value:0},{name:"Alpha Mask Source index",value:0},{name:"Alpha Mask Source",value:"Luminance"}],portsOut:[{name:"Next",links:[{portIn:"Render",portOut:"Next",objIn:"n7dk43gce",objOut:"4e4ui4deu"}]}],objName:"Ops.Gl.Shader.MatCapMaterial_v3"},{id:"xevszkl7u",uiAttribs:{},portsIn:[{name:"r",value:.40156651870931626},{name:"g",value:.9333089326006436},{name:"b",value:.7625992647839797},{name:"a",value:1},{name:"colorizeTexture",value:0},{name:"Vertex Colors",value:0},{name:"Alpha Mask Source index",value:0},{name:"Alpha Mask Source",value:"Luminance"},{name:"Opacity TexCoords Transform",value:0},{name:"Discard Transparent Pixels",value:0},{name:"diffuseRepeatX",value:1},{name:"diffuseRepeatY",value:1},{name:"Tex Offset X",value:0},{name:"Tex Offset Y",value:0},{name:"Crop TexCoords",value:0},{name:"billboard",value:0}],portsOut:[{name:"trigger",links:[{portIn:"Render",portOut:"trigger",objIn:"4jtcmyljn",objOut:"xevszkl7u"}]}],objName:"Ops.Gl.Shader.BasicMaterial_v3"},{id:"auqjvubrh",uiAttribs:{},portsOut:[{name:"trigger 0",links:[{portIn:"Render",portOut:"trigger 0",objIn:"8ivm3gsj8",objOut:"auqjvubrh"}]},{name:"trigger 3",links:[{portIn:"render",portOut:"trigger 3",objIn:"tc0j36mg0",objOut:"auqjvubrh"}]}],objName:"Ops.Trigger.Sequence"},{id:"0oo95bmx6",uiAttribs:{},portsIn:[{name:"Variable",value:"categoriesCount"}],portsOut:[{name:"Value",links:[{portIn:"GraphSize",portOut:"Value",objIn:"qx27l1bx2",objOut:"0oo95bmx6"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"3i08k3m1e",uiAttribs:{},portsIn:[{name:"r",value:.212},{name:"g",value:.5365555318196615},{name:"b",value:.5365555318196615},{name:"a",value:.504}],portsOut:[{name:"outr",value:.212},{name:"outg",value:.5365555318196615},{name:"outb",value:.5365555318196615},{name:"outa",value:.504},{name:"Hex",value:"368989"},{name:"Array",links:[{portIn:"ColorUnselected",portOut:"Array",objIn:"qx27l1bx2",objOut:"3i08k3m1e"}]}],objName:"Ops.Color.ColorValue"},{id:"hakih4g3w",uiAttribs:{},portsIn:[{name:"r",value:1},{name:"g",value:.207},{name:"b",value:.469},{name:"a",value:1}],portsOut:[{name:"outr",value:1},{name:"outg",value:.207},{name:"outb",value:.469},{name:"outa",value:1},{name:"Hex",value:"FF3578"},{name:"Array",links:[{portIn:"ColorDragged",portOut:"Array",objIn:"qx27l1bx2",objOut:"hakih4g3w"}]}],objName:"Ops.Color.ColorValue"},{id:"kaljfff21",uiAttribs:{},portsIn:[{name:"Variable",value:"DraggedNodeIndex"}],portsOut:[{name:"Value",links:[{portIn:"NodeSelectedIndex",portOut:"Value",objIn:"qx27l1bx2",objOut:"kaljfff21"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"u0h5zu6st",uiAttribs:{},portsIn:[{name:"Variable",value:"NodesSelection"}],portsOut:[{name:"Value",links:[{portIn:"Current Selected Nodes",portOut:"Value",objIn:"qx27l1bx2",objOut:"u0h5zu6st"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"fbgrzoepf",uiAttribs:{},portsIn:[{name:"r",value:0},{name:"g",value:0},{name:"b",value:1},{name:"a",value:1}],portsOut:[{name:"outr",value:0},{name:"outg",value:0},{name:"outb",value:1},{name:"outa",value:1},{name:"Hex",value:"0000FF"},{name:"Array",links:[{portIn:"ColorSelected",portOut:"Array",objIn:"qx27l1bx2",objOut:"fbgrzoepf"}]}],objName:"Ops.Color.ColorValue"},{id:"qx27l1bx2",uiAttribs:{},portsIn:[{name:"Nodes Mask",value:0}],portsOut:[{name:"ColorsArray",links:[{portIn:"Colors",portOut:"ColorsArray",objIn:"a2hijyetn",objOut:"qx27l1bx2"}]}],objName:"Ops.Patch.PK3cVbR.NodesColor"},{id:"tcob70z2j",uiAttribs:{},portsOut:[{name:"Result",links:[{portIn:"Rotations",portOut:"Result",objIn:"a2hijyetn",objOut:"tcob70z2j"}]}],objName:"Ops.Array.ArrayMultiply"},{id:"lwym7s81f",uiAttribs:{},portsIn:[{name:"Speed",value:1},{name:"Play",value:1},{name:"Sync to timeline",value:0}],portsOut:[{name:"Time",links:[{portIn:"number1",portOut:"Time",objIn:"hx2npds17",objOut:"lwym7s81f"}]}],objName:"Ops.Anim.Timer_v2"},{id:"hx2npds17",uiAttribs:{},portsIn:[{name:"number2",value:30}],portsOut:[{name:"result",links:[{portIn:"Value",portOut:"result",objIn:"tcob70z2j",objOut:"hx2npds17"}]}],objName:"Ops.Math.Multiply"},{id:"nfhmnm8x4",uiAttribs:{},storage:{blueprintVer:2,subPatchVer:2},portsIn:[{name:"nxezakedh",title:"Array of Strings"},{name:"ypqxgfqsy",title:"Font"},{name:"zhebovez1",title:"Weight"},{name:"patchId",value:"bp2sub_nfhmnm8x4"}],portsOut:[{name:"498yuliuq",title:"Text UV Texture",links:[{portIn:"Value",portOut:"498yuliuq",objIn:"uvsq1efh0",objOut:"nfhmnm8x4"}]},{name:"fgi23titp",title:"Text UV Coordinates",links:[{portIn:"Value",portOut:"fgi23titp",objIn:"malm2sghh",objOut:"nfhmnm8x4"}]},{name:"ddpq7kosf",title:"Text Width",links:[{portIn:"Value",portOut:"ddpq7kosf",objIn:"fu3kl8mhz",objOut:"nfhmnm8x4"}]}],objName:"Ops.Patch.PK3cVbR.TextToUVTexture"},{id:"ny5h3ccqb",uiAttribs:{},storage:{blueprintVer:2,subPatchVer:2},portsIn:[{name:"nxezakedh",title:"Array of Strings"},{name:"ypqxgfqsy",title:"Font"},{name:"zhebovez1",title:"Weight"},{name:"patchId",value:"bp2sub_ny5h3ccqb"}],portsOut:[{name:"498yuliuq",title:"Text UV Texture",links:[{portIn:"Value",portOut:"498yuliuq",objIn:"72x1c8lim",objOut:"ny5h3ccqb"}]},{name:"fgi23titp",title:"Text UV Coordinates",links:[{portIn:"Value",portOut:"fgi23titp",objIn:"j642zmq99",objOut:"ny5h3ccqb"}]},{name:"ddpq7kosf",title:"Text Width",links:[{portIn:"Value",portOut:"ddpq7kosf",objIn:"shwszpk50",objOut:"ny5h3ccqb"}]}],objName:"Ops.Patch.PK3cVbR.TextToUVTexture"},{id:"eomrhfj8r",uiAttribs:{},portsIn:[{name:"Variable",value:"ContentNames"}],objName:"Ops.Vars.VarSetArray_v2"},{id:"mvtsiu32q",uiAttribs:{},portsOut:[{name:"Category Names",links:[{portIn:"Value",portOut:"Category Names",objIn:"eomrhfj8r",objOut:"mvtsiu32q"}]}],objName:"Ops.Patch.PK3cVbR.ContentNames"},{id:"nc6byuggf",uiAttribs:{},storage:{blueprintVer:2,subPatchVer:2},portsIn:[{name:"52xsh7xlg",title:"value"},{name:"patchId",value:"bp2sub_nc6byuggf"}],portsOut:[{name:"shvso569u",title:"TextureArray",links:[{portIn:"array",portOut:"shvso569u",objIn:"97ss5uwde",objOut:"nc6byuggf"}]}],objName:"Ops.User.monotom.TextureLoaderFromArray"},{id:"6yjn6uufe",uiAttribs:{},portsIn:[{name:"value",value:" chimeres.webp, brule_harold.webp, chimeres3.webp, georges.webp, music.webp, la_premiere_seconde.webp"}],portsOut:[{name:"String",links:[{portIn:"52xsh7xlg",portOut:"String",objIn:"nc6byuggf",objOut:"6yjn6uufe"}]}],objName:"Ops.String.String_v2"},{id:"v5xryz5pc",uiAttribs:{},portsIn:[{name:"Variable",value:"CategoriesTextStringLengths"}],objName:"Ops.Vars.VarSetArray_v2"},{id:"cm00aug1o",uiAttribs:{},portsIn:[{name:"Variable",value:"CategoriesTextCenterPositions"}],objName:"Ops.Vars.VarSetArray_v2"},{id:"hed1z0tu8",uiAttribs:{},portsIn:[{name:"Variable",value:"CategoriesText"}],portsOut:[{name:"Value",links:[{portIn:"Array",portOut:"Value",objIn:"f596ektxv",objOut:"hed1z0tu8"},{portIn:"o2yrl5cd3",portOut:"Value",objIn:"innc0mc3p",objOut:"hed1z0tu8"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"0bv3b9ydf",uiAttribs:{},portsIn:[{name:"Variable",value:"CategoriesTextOriginalLetterPositions"}],objName:"Ops.Vars.VarSetArray_v2"},{id:"f596ektxv",uiAttribs:{},portsIn:[{name:"Seperator",value:""},{name:"New Line",value:0}],portsOut:[{name:"Result",links:[{portIn:"Text",portOut:"Result",objIn:"3fsdrjk54",objOut:"f596ektxv"}]}],objName:"Ops.Array.ArrayToString_v3"},{id:"innc0mc3p",uiAttribs:{},storage:{blueprintVer:2,subPatchVer:2},portsIn:[{name:"m2a4h2k9j",title:"Execute"},{name:"o2yrl5cd3",title:"String Array"},{name:"htuulk2ys",title:"Text Original Positions"},{name:"patchId",value:"bp2sub_innc0mc3p"}],portsOut:[{name:"2d3uvd89n",title:"String Lengths Array",links:[{portIn:"Value",portOut:"2d3uvd89n",objIn:"v5xryz5pc",objOut:"innc0mc3p"}]},{name:"stl2nof01",title:"Char Positions",links:[{portIn:"Value",portOut:"stl2nof01",objIn:"0bv3b9ydf",objOut:"innc0mc3p"}]},{name:"jk8q9heos",title:"Word Center Positions",links:[{portIn:"Value",portOut:"jk8q9heos",objIn:"cm00aug1o",objOut:"innc0mc3p"}]}],objName:"Ops.Patch.PK3cVbR.ComputeTextMeshParameters"},{id:"r5o4faaok",uiAttribs:{},portsIn:[{name:"Variable",value:"ContentTextStringLengths"}],objName:"Ops.Vars.VarSetArray_v2"},{id:"l2aetf9re",uiAttribs:{},portsIn:[{name:"Variable",value:"ContentTextCenterPositions"}],objName:"Ops.Vars.VarSetArray_v2"},{id:"0n232icvs",uiAttribs:{},portsIn:[{name:"Variable",value:"ContentNames"}],portsOut:[{name:"Value",links:[{portIn:"Array",portOut:"Value",objIn:"sct1yeo2o",objOut:"0n232icvs"},{portIn:"o2yrl5cd3",portOut:"Value",objIn:"m2uj9hyso",objOut:"0n232icvs"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"fwm048mgz",uiAttribs:{},portsIn:[{name:"Variable",value:"ContentTextOriginalLetterPositions"}],objName:"Ops.Vars.VarSetArray_v2"},{id:"rj9hni4dt",uiAttribs:{},portsIn:[{name:"Font",value:"wsregular"},{name:"Scale",value:.25},{name:"Letter Spacing",value:0},{name:"Line Height",value:1},{name:"Align index",value:0},{name:"Align",value:"Left"},{name:"Vertical Align index",value:2},{name:"Vertical Align",value:"Middle"},{name:"r",value:1},{name:"g",value:1},{name:"b",value:1},{name:"a",value:1},{name:"SDF",value:1},{name:"Smoothing",value:.3},{name:"Border",value:0},{name:"Border Width",value:.5},{name:"Smoothness",value:.25},{name:"Border r",value:1},{name:"Border g",value:1},{name:"Border b",value:1},{name:"Shadow",value:0},{name:"Positions",value:0},{name:"Scalings",value:0},{name:"Rotations",value:0},{name:"Colors",value:0}],portsOut:[{name:"Next",links:[{portIn:"m2a4h2k9j",portOut:"Next",objIn:"m2uj9hyso",objOut:"rj9hni4dt"}]},{name:"Positions Original",links:[{portIn:"htuulk2ys",portOut:"Positions Original",objIn:"m2uj9hyso",objOut:"rj9hni4dt"}]},{name:"Num Lines",value:1},{name:"Width",value:7.262402343749998},{name:"Height",value:.35424024470899473},{name:"Start Y",value:.13525586970899475},{name:"Num Chars",value:52}],objName:"Ops.Gl.TextMeshMSDF_v2"},{id:"sct1yeo2o",uiAttribs:{},portsIn:[{name:"Seperator",value:""},{name:"New Line",value:0}],portsOut:[{name:"Result",links:[{portIn:"Text",portOut:"Result",objIn:"rj9hni4dt",objOut:"sct1yeo2o"}]}],objName:"Ops.Array.ArrayToString_v3"},{id:"m2uj9hyso",uiAttribs:{},storage:{blueprintVer:2,subPatchVer:2},portsIn:[{name:"m2a4h2k9j",title:"Execute"},{name:"o2yrl5cd3",title:"String Array"},{name:"htuulk2ys",title:"Text Original Positions"},{name:"patchId",value:"bp2sub_m2uj9hyso"}],portsOut:[{name:"2d3uvd89n",title:"String Lengths Array",links:[{portIn:"Value",portOut:"2d3uvd89n",objIn:"r5o4faaok",objOut:"m2uj9hyso"}]},{name:"stl2nof01",title:"Char Positions",links:[{portIn:"Value",portOut:"stl2nof01",objIn:"fwm048mgz",objOut:"m2uj9hyso"}]},{name:"jk8q9heos",title:"Word Center Positions",links:[{portIn:"Value",portOut:"jk8q9heos",objIn:"l2aetf9re",objOut:"m2uj9hyso"}]}],objName:"Ops.Patch.PK3cVbR.ComputeTextMeshParameters"},{id:"az7g5yon9",uiAttribs:{},portsIn:[{name:"Font Name",value:"wsregular"},{name:"Font Data",value:"assets/lib_fonts_msdf_worksans-regular_int.json",display:"file"},{name:"Font Image",value:"assets/lib_fonts_msdf_worksans-regular_int.png",display:"file"},{name:"Font Image 1",value:0,display:"file"},{name:"Font Image 2",value:0,display:"file"},{name:"Font Image 3",value:0,display:"file"}],portsOut:[{name:"Loaded",links:[{portIn:"boolean",portOut:"Loaded",objIn:"h7cr56rjp",objOut:"az7g5yon9"}]},{name:"Total Chars",value:189},{name:"Chars",value:" ýŒ(){}þjŠŽÔÛÿ[]|ÂÆÊÎÒÓÙÚWÀÁÇÈÉÌÍÕÝÃÑQœÖÜ$@ŸÄËÏÅåg/%w§mæš¶àáèéòóùúžßâêìíôûbdflîðhkãçõipqyØñµäëöü¢ï&03689?CGOS£€©®¿!25JU¡#147;ABDEFHIKLMNPRTVXYZ¥ÐÞt±ø<>_:aceos÷^nru+vxz¬=*ªº~×³²¹«»¯°-’,\"'`.·"}],objName:"Ops.Gl.FontMSDF_v2"},{id:"3fsdrjk54",uiAttribs:{},portsIn:[{name:"Font",value:"wsregular"},{name:"Scale",value:.25},{name:"Letter Spacing",value:0},{name:"Line Height",value:1},{name:"Align index",value:1},{name:"Align",value:"Center"},{name:"Vertical Align index",value:2},{name:"Vertical Align",value:"Middle"},{name:"r",value:1},{name:"g",value:1},{name:"b",value:1},{name:"a",value:1},{name:"SDF",value:1},{name:"Smoothing",value:.3},{name:"Border",value:0},{name:"Border Width",value:.5},{name:"Smoothness",value:.25},{name:"Border r",value:1},{name:"Border g",value:1},{name:"Border b",value:1},{name:"Shadow",value:0},{name:"Positions",value:0},{name:"Scalings",value:0},{name:"Rotations",value:0},{name:"Colors",value:0}],portsOut:[{name:"Next",links:[{portIn:"m2a4h2k9j",portOut:"Next",objIn:"innc0mc3p",objOut:"3fsdrjk54"}]},{name:"Positions Original",links:[{portIn:"htuulk2ys",portOut:"Positions Original",objIn:"innc0mc3p",objOut:"3fsdrjk54"}]},{name:"Num Lines",value:1},{name:"Width",value:6.90283203125},{name:"Height",value:.3522578228339947},{name:"Start Y",value:.1322822368964947},{name:"Num Chars",value:49}],objName:"Ops.Gl.TextMeshMSDF_v2"},{id:"h7cr56rjp",uiAttribs:{},portsOut:[{name:"then",links:[{portIn:"exe",portOut:"then",objIn:"mc2ragbxq",objOut:"h7cr56rjp"}]},{name:"else",links:[{portIn:"exe",portOut:"else",objIn:"vfen86jze",objOut:"h7cr56rjp"}]}],objName:"Ops.Boolean.IfTrueThen_v2"},{id:"zr4u5x2vf",uiAttribs:{},portsOut:[{name:"trigger 0",links:[{portIn:"exe",portOut:"trigger 0",objIn:"h7cr56rjp",objOut:"zr4u5x2vf"}]}],objName:"Ops.Trigger.Sequence"},{id:"vfen86jze",uiAttribs:{},portsIn:[{name:"delay",value:.1}],portsOut:[{name:"next",links:[{portIn:"exe 14",portOut:"next",objIn:"zr4u5x2vf",objOut:"vfen86jze"}]},{name:"Delaying",value:false}],objName:"Ops.Trigger.DelayedTrigger"},{id:"986do4yo9",uiAttribs:{},portsIn:[{name:"Font",value:"wsregular"},{name:"Letter Spacing",value:0},{name:"Line Height",value:0},{name:"Align index",value:0},{name:"Align",value:"Left"},{name:"Vertical Align index",value:2},{name:"Vertical Align",value:"Middle"},{name:"r",value:1},{name:"g",value:1},{name:"b",value:1},{name:"a",value:1},{name:"SDF",value:1},{name:"Smoothing",value:1},{name:"Border",value:0},{name:"Border Width",value:.5},{name:"Smoothness",value:.25},{name:"Border r",value:1},{name:"Border g",value:1},{name:"Border b",value:1},{name:"Shadow",value:0},{name:"Scalings",value:0},{name:"Rotations",value:0},{name:"Colors",value:0}],portsOut:[{name:"Num Lines",value:1},{name:"Width",value:3.589472656250001},{name:"Height",value:.18317406787367727},{name:"Start Y",value:.06878676318617725},{name:"Num Chars",value:49}],objName:"Ops.Gl.TextMeshMSDF_v2"},{id:"dj08rchm5",uiAttribs:{},portsIn:[{name:"Seperator",value:""},{name:"New Line",value:0}],portsOut:[{name:"Result",links:[{portIn:"Text",portOut:"Result",objIn:"986do4yo9",objOut:"dj08rchm5"}]}],objName:"Ops.Array.ArrayToString_v3"},{id:"rxaikhqa0",uiAttribs:{},portsIn:[{name:"Variable",value:"CategoriesText"}],portsOut:[{name:"Value",links:[{portIn:"Array",portOut:"Value",objIn:"dj08rchm5",objOut:"rxaikhqa0"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"uhybibnd5",uiAttribs:{},portsIn:[{name:"Variable",value:"CategoriesTextStringLengths"}],portsOut:[{name:"Value",links:[{portIn:"String Lengths",portOut:"Value",objIn:"ea06zd8jy",objOut:"uhybibnd5"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"e7vwrqvix",uiAttribs:{},portsIn:[{name:"posX",value:0},{name:"posY",value:0},{name:"posZ",value:2},{name:"scale",value:.78},{name:"rotX",value:0},{name:"rotY",value:0},{name:"rotZ",value:0}],portsOut:[{name:"trigger",links:[{portIn:"Trigger",portOut:"trigger",objIn:"ea06zd8jy",objOut:"e7vwrqvix"}]}],objName:"Ops.Graphics.Transform"},{id:"j4gfktq1p",uiAttribs:{},portsIn:[{name:"Variable",value:"CategoriesTextOriginalLetterPositions"}],portsOut:[{name:"Value",links:[{portIn:"Text Original Positions",portOut:"Value",objIn:"ea06zd8jy",objOut:"j4gfktq1p"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"jet49ig0j",uiAttribs:{},portsIn:[{name:"Variable",value:"CategoriesTextCenterPositions"}],portsOut:[{name:"Value",links:[{portIn:"Text Center Positions",portOut:"Value",objIn:"ea06zd8jy",objOut:"jet49ig0j"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"ykuscaojk",uiAttribs:{},portsIn:[{name:"value",value:.13}],portsOut:[{name:"result",links:[{portIn:"number1",portOut:"result",objIn:"wxa73t72t",objOut:"ykuscaojk"}]}],objName:"Ops.Number.Number"},{id:"wxa73t72t",uiAttribs:{},portsOut:[{name:"result",links:[{portIn:"Scale",portOut:"result",objIn:"986do4yo9",objOut:"wxa73t72t"},{portIn:"number1",portOut:"result",objIn:"yjuvblpkx",objOut:"wxa73t72t"}]}],objName:"Ops.Math.Multiply"},{id:"s7be9ytee",uiAttribs:{},portsIn:[{name:"Variable",value:"sizeCoeff"}],portsOut:[{name:"Value",links:[{portIn:"number2",portOut:"Value",objIn:"wxa73t72t",objOut:"s7be9ytee"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"kv5zvaag6",uiAttribs:{},portsIn:[{name:"Active",value:1},{name:"Visible",value:1},{name:"Measure GPU",value:1},{name:"Position index",value:0},{name:"Position",value:"top"},{name:"Open",value:0},{name:"Smooth Graph",value:1},{name:"Scale",value:3},{name:"Size",value:128}],portsOut:[{name:"childs",links:[{portIn:"exe",portOut:"childs",objIn:"ipbbkuqvh",objOut:"kv5zvaag6"}]},{name:"FPS",value:60}],objName:"Ops.Gl.Performance"},{id:"yt6n9gy2z",uiAttribs:{},portsIn:[{name:"Font",value:"wsregular"},{name:"Letter Spacing",value:1},{name:"Line Height",value:0},{name:"Align index",value:1},{name:"Align",value:"Center"},{name:"Vertical Align index",value:2},{name:"Vertical Align",value:"Middle"},{name:"r",value:1},{name:"g",value:1},{name:"b",value:1},{name:"a",value:1},{name:"SDF",value:1},{name:"Smoothing",value:1},{name:"Border",value:0},{name:"Border Width",value:.5},{name:"Smoothness",value:.25},{name:"Border r",value:1},{name:"Border g",value:1},{name:"Border b",value:1},{name:"Shadow",value:0},{name:"Scalings",value:0},{name:"Rotations",value:0},{name:"Colors",value:0}],portsOut:[{name:"Num Lines",value:1},{name:"Width",value:4.862976562499999},{name:"Height",value:.08501765873015873},{name:"Start Y",value:.032461408730158736},{name:"Num Chars",value:52}],objName:"Ops.Gl.TextMeshMSDF_v2"},{id:"197o18o98",uiAttribs:{},portsIn:[{name:"Seperator",value:""},{name:"New Line",value:0}],portsOut:[{name:"Result",links:[{portIn:"Text",portOut:"Result",objIn:"yt6n9gy2z",objOut:"197o18o98"}]}],objName:"Ops.Array.ArrayToString_v3"},{id:"qtvxuthv4",uiAttribs:{},portsIn:[{name:"Variable",value:"ContentNames"}],portsOut:[{name:"Value",links:[{portIn:"Array",portOut:"Value",objIn:"197o18o98",objOut:"qtvxuthv4"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"hoadyqf7o",uiAttribs:{},portsIn:[{name:"Variable",value:"ContentTextStringLengths"}],portsOut:[{name:"Value",links:[{portIn:"String Lengths",portOut:"Value",objIn:"1yrl4hw6h",objOut:"hoadyqf7o"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"tc0j36mg0",uiAttribs:{},portsIn:[{name:"posX",value:.07},{name:"posY",value:-.17},{name:"posZ",value:2},{name:"scale",value:1},{name:"rotX",value:0},{name:"rotY",value:0},{name:"rotZ",value:0}],portsOut:[{name:"trigger",links:[{portIn:"Trigger",portOut:"trigger",objIn:"1yrl4hw6h",objOut:"tc0j36mg0"}]}],objName:"Ops.Graphics.Transform"},{id:"rtennu0f1",uiAttribs:{},portsIn:[{name:"Variable",value:"ContentTextOriginalLetterPositions"}],portsOut:[{name:"Value",links:[{portIn:"Text Original Positions",portOut:"Value",objIn:"1yrl4hw6h",objOut:"rtennu0f1"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"i10x9atvj",uiAttribs:{},portsIn:[{name:"Variable",value:"ContentTextCenterPositions"}],portsOut:[{name:"Value",links:[{portIn:"Text Center Positions",portOut:"Value",objIn:"1yrl4hw6h",objOut:"i10x9atvj"}]}],objName:"Ops.Vars.VarGetArray_v2"},{id:"cc9r2oyye",uiAttribs:{},portsIn:[{name:"value",value:.06}],portsOut:[{name:"result",links:[{portIn:"number1",portOut:"result",objIn:"21tkgfmh1",objOut:"cc9r2oyye"}]}],objName:"Ops.Number.Number"},{id:"21tkgfmh1",uiAttribs:{},portsOut:[{name:"result",links:[{portIn:"Scale",portOut:"result",objIn:"yt6n9gy2z",objOut:"21tkgfmh1"},{portIn:"number1",portOut:"result",objIn:"jtw0j4f1e",objOut:"21tkgfmh1"}]}],objName:"Ops.Math.Multiply"},{id:"ofi353xys",uiAttribs:{},portsIn:[{name:"Variable",value:"sizeCoeff"}],portsOut:[{name:"Value",links:[{portIn:"number2",portOut:"Value",objIn:"21tkgfmh1",objOut:"ofi353xys"}]}],objName:"Ops.Vars.VarGetNumber_v2"},{id:"ea06zd8jy",uiAttribs:{},portsOut:[{name:"Next",links:[{portIn:"Render",portOut:"Next",objIn:"986do4yo9",objOut:"ea06zd8jy"}]},{name:"Updated Text Positions",links:[{portIn:"Positions",portOut:"Updated Text Positions",objIn:"986do4yo9",objOut:"ea06zd8jy"}]}],objName:"Ops.Patch.PK3cVbR.TransformCategoryLettersPositions"},{id:"1yrl4hw6h",uiAttribs:{},portsOut:[{name:"Next",links:[{portIn:"Render",portOut:"Next",objIn:"yt6n9gy2z",objOut:"1yrl4hw6h"}]},{name:"Updated Text Positions",links:[{portIn:"Positions",portOut:"Updated Text Positions",objIn:"yt6n9gy2z",objOut:"1yrl4hw6h"}]}],objName:"Ops.Patch.PK3cVbR.TransformCategoryLettersPositions"},{id:"yjuvblpkx",uiAttribs:{},portsIn:[{name:"number2",value:1.29}],portsOut:[{name:"result",links:[{portIn:"Scale",portOut:"result",objIn:"ea06zd8jy",objOut:"yjuvblpkx"}]}],objName:"Ops.Math.Divide"},{id:"jtw0j4f1e",uiAttribs:{},portsIn:[{name:"number2",value:1}],portsOut:[{name:"result",links:[{portIn:"Scale",portOut:"result",objIn:"1yrl4hw6h",objOut:"jtw0j4f1e"}]}],objName:"Ops.Math.Divide"}],export:{time:"2025-07-17 13:51",service:"html",exportNumber:1}};if(!CABLES.exportedPatch){CABLES.exportedPatch=CABLES.exportedPatches["K3cVbR"]}"use strict";var CABLES=CABLES||{};CABLES.OPS=CABLES.OPS||{};var Ops=Ops||{};Ops.Gl=Ops.Gl||{};Ops.Ui=Ops.Ui||{};Ops.Anim=Ops.Anim||{};Ops.Data=Ops.Data||{};Ops.Html=Ops.Html||{};Ops.Math=Ops.Math||{};Ops.User=Ops.User||{};Ops.Vars=Ops.Vars||{};Ops.Array=Ops.Array||{};Ops.Color=Ops.Color||{};Ops.Patch=Ops.Patch||{};Ops.Cables=Ops.Cables||{};Ops.Number=Ops.Number||{};Ops.String=Ops.String||{};Ops.Boolean=Ops.Boolean||{};Ops.Devices=Ops.Devices||{};Ops.Sidebar=Ops.Sidebar||{};Ops.Trigger=Ops.Trigger||{};Ops.Graphics=Ops.Graphics||{};Ops.Gl.Meshes=Ops.Gl.Meshes||{};Ops.Gl.Shader=Ops.Gl.Shader||{};Ops.Gl.Textures=Ops.Gl.Textures||{};Ops.Data.Compose=Ops.Data.Compose||{};Ops.Math.Compare=Ops.Math.Compare||{};Ops.User.monotom=Ops.User.monotom||{};Ops.Devices.Mouse=Ops.Devices.Mouse||{};Ops.Html.Elements=Ops.Html.Elements||{};Ops.Patch.PK3cVbR=Ops.Patch.PK3cVbR||{};Ops.Graphics.Meshes=Ops.Graphics.Meshes||{};Ops.Graphics.Geometry=Ops.Graphics.Geometry||{};Ops.Data.Compose.Array=Ops.Data.Compose.Array||{};Ops.Patch.PK3cVbR.TextToUVTexture=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const n=e.attachments={inc_gen_ports_js:'const port_zgplxnbc1=op.inTrigger("zgplxnbc1");\nport_zgplxnbc1.setUiAttribs({title:"Execute",});\nport_zgplxnbc1.setUiAttribs({"values":[""]});\n\nconst port_nxezakedh=op.inArray("nxezakedh");\nport_nxezakedh.setUiAttribs({title:"Array of Strings",});\nport_nxezakedh.setUiAttribs({"values":[""]});\n\nconst port_ypqxgfqsy=op.inString("ypqxgfqsy","Courier");\nport_ypqxgfqsy.setUiAttribs({title:"Font",});\nport_ypqxgfqsy.setUiAttribs({"values":[""]});\n\nconst port_zhebovez1=op.inString("zhebovez1","normal");\nport_zhebovez1.setUiAttribs({title:"Weight",});\nport_zhebovez1.setUiAttribs({"values":[""]});\n\nconst port_498yuliuq=op.outObject("498yuliuq");\nport_498yuliuq.setUiAttribs({title:"Text UV Texture",display:"texture",objType:"texture",objType:"texture"});\nport_498yuliuq.setUiAttribs({"values":[""]});\n\nconst port_fgi23titp=op.outArray("fgi23titp");\nport_fgi23titp.setUiAttribs({title:"Text UV Coordinates",});\nport_fgi23titp.setUiAttribs({"values":[""]});\n\nconst port_ddpq7kosf=op.outArray("ddpq7kosf");\nport_ddpq7kosf.setUiAttribs({title:"Text Width",});\nport_ddpq7kosf.setUiAttribs({"values":[""]});\n\nop.initInnerPorts=function(addedOps)\n{\n  for(let i=0;i<addedOps.length;i++)\n  {\n    if(addedOps[i].innerInput)\n    {\nconst innerOut_zgplxnbc1 = addedOps[i].outTrigger("innerOut_zgplxnbc1");\ninnerOut_zgplxnbc1.setUiAttribs({title:"Execute"});\nport_zgplxnbc1.onTriggered = () => { innerOut_zgplxnbc1.trigger(); };\n\nconst innerOut_nxezakedh = addedOps[i].outArray("innerOut_nxezakedh");\ninnerOut_nxezakedh.setUiAttribs({title:"Array of Strings"});\nport_nxezakedh.on("change", (a,v) => { innerOut_nxezakedh.setRef(a); });\n\nconst innerOut_ypqxgfqsy = addedOps[i].outString("innerOut_ypqxgfqsy");\ninnerOut_ypqxgfqsy.set(port_ypqxgfqsy.get() );\ninnerOut_ypqxgfqsy.setUiAttribs({title:"Font"});\nport_ypqxgfqsy.on("change", (a,v) => { innerOut_ypqxgfqsy.set(a); });\n\nconst innerOut_zhebovez1 = addedOps[i].outString("innerOut_zhebovez1");\ninnerOut_zhebovez1.set(port_zhebovez1.get() );\ninnerOut_zhebovez1.setUiAttribs({title:"Weight"});\nport_zhebovez1.on("change", (a,v) => { innerOut_zhebovez1.set(a); });\n\n    }\nif(addedOps[i].innerOutput)\n{\nconst innerIn_498yuliuq = addedOps[i].inObject("innerIn_498yuliuq");\ninnerIn_498yuliuq.setUiAttribs({title:"Text UV Texture"});\ninnerIn_498yuliuq.on("change", (a,v) => { port_498yuliuq.setRef(a); });\n\nconst innerIn_fgi23titp = addedOps[i].inArray("innerIn_fgi23titp");\ninnerIn_fgi23titp.setUiAttribs({title:"Text UV Coordinates"});\ninnerIn_fgi23titp.on("change", (a,v) => { port_fgi23titp.setRef(a); });\n\nconst innerIn_ddpq7kosf = addedOps[i].inArray("innerIn_ddpq7kosf");\ninnerIn_ddpq7kosf.setUiAttribs({title:"Text Width"});\ninnerIn_ddpq7kosf.on("change", (a,v) => { port_ddpq7kosf.setRef(a); });\n\n}\n}\n};\n',subpatch_json:'{"ops":[{"id":"sp0-0","uiAttribs":{"subPatch":"8k6721ec7"},"storage":{"blueprintVer":2},"portsOut":[{"name":"trigger 0","links":[{"portIn":"Exe","portOut":"trigger 0","objIn":"sp0-1","objOut":"sp0-0"}]},{"name":"trigger 1","links":[{"portIn":"Render","portOut":"trigger 1","objIn":"sp0-3","objOut":"sp0-0"}]},{"name":"trigger 15","links":[{"portIn":"Execute","portOut":"trigger 15","objIn":"sp0-9","objOut":"sp0-0"}]}],"objName":"Ops.Trigger.Sequence"},{"id":"sp0-1","uiAttribs":{"subPatch":"8k6721ec7"},"storage":{"blueprintVer":2},"portsOut":[{"name":"Trigger","links":[{"portIn":"Render","portOut":"Trigger","objIn":"sp0-2","objOut":"sp0-1"}]},{"name":"Index","value":5},{"name":"Value","links":[{"portIn":"text","portOut":"Value","objIn":"sp0-2","objOut":"sp0-1"}]}],"objName":"Ops.Array.ArrayIteratorStrings"},{"id":"sp0-2","uiAttribs":{"subPatch":"8k6721ec7"},"storage":{"blueprintVer":2},"portsIn":[{"name":"Draw Mesh","value":0},{"name":"Scale Mesh","value":7.15},{"name":"Size index","value":0},{"name":"Size","value":"Auto"},{"name":"Width","value":1311},{"name":"Height","value":1433},{"name":"Auto Height","value":0},{"name":"Auto Line Breaks","value":1},{"name":"fontSize","value":50},{"name":"align index","value":1},{"name":"align","value":"center"},{"name":"Vertical align index","value":0},{"name":"Vertical align","value":"Top"},{"name":"Letter Spacing","value":1.1},{"name":"Line Height Add","value":0},{"name":"Padding Y Top","value":0},{"name":"Padding Y Bottom","value":0},{"name":"Padding X","value":0},{"name":"filter index","value":2},{"name":"filter","value":"mipmap"},{"name":"Wrap index","value":2},{"name":"Wrap","value":"clamp to edge"},{"name":"Anisotropic index","value":0},{"name":"Anisotropic","value":"0"},{"name":"Reuse Texture","value":1},{"name":"Show Debug","value":0},{"name":"Redraw On Font Load","value":1},{"name":"r","value":0.6763671934604645},{"name":"g","value":0.9827395507295931},{"name":"b","value":1},{"name":"Opacity","value":1},{"name":"background R","value":0},{"name":"background G","value":0},{"name":"background B","value":0},{"name":"background A","value":1}],"portsOut":[{"name":"Next","links":[{"portIn":"Update","portOut":"Next","objIn":"sp0-5","objOut":"sp0-2"}]},{"name":"Ratio","value":0.464},{"name":"Aspect","links":[{"portIn":"Number","portOut":"Aspect","objIn":"sp0-6","objOut":"sp0-2"}]},{"name":"Num Lines","value":1}],"objName":"Ops.Gl.Textures.TextTexture_v6"},{"id":"sp0-3","uiAttribs":{"subPatch":"8k6721ec7"},"storage":{"blueprintVer":2},"portsIn":[{"name":"Draw Mesh","value":0},{"name":"Scale Mesh","value":0.74},{"name":"Size index","value":0},{"name":"Size","value":"Auto"},{"name":"Width","value":527},{"name":"Height","value":335},{"name":"Auto Height","value":0},{"name":"Auto Line Breaks","value":1},{"name":"fontSize","value":100},{"name":"align index","value":0},{"name":"align","value":"left"},{"name":"Vertical align index","value":0},{"name":"Vertical align","value":"Top"},{"name":"Letter Spacing","value":1},{"name":"Line Height Add","value":0},{"name":"Padding Y Top","value":0},{"name":"Padding Y Bottom","value":0},{"name":"Padding X","value":0},{"name":"filter index","value":2},{"name":"filter","value":"mipmap"},{"name":"Wrap index","value":2},{"name":"Wrap","value":"clamp to edge"},{"name":"Anisotropic index","value":3},{"name":"Anisotropic","value":"4"},{"name":"Reuse Texture","value":1},{"name":"Show Debug","value":0},{"name":"Redraw On Font Load","value":1},{"name":"r","value":1},{"name":"g","value":1},{"name":"b","value":1},{"name":"Opacity","value":1},{"name":"background R","value":0},{"name":"background G","value":0},{"name":"background B","value":0},{"name":"background A","value":0}],"portsOut":[{"name":"Ratio","value":0.9375},{"name":"texture","links":[{"portIn":"innerIn_498yuliuq","portOut":"texture","objIn":"sp0-8","objOut":"sp0-3"}]},{"name":"Aspect","value":1.0666666666666667},{"name":"Num Lines","value":6}],"objName":"Ops.Gl.Textures.TextTexture_v6"},{"id":"sp0-4","uiAttribs":{"subPatch":"8k6721ec7"},"storage":{"blueprintVer":2},"portsIn":[{"name":"Seperator","value":""},{"name":"New Line","value":1}],"portsOut":[{"name":"Result","links":[{"portIn":"text","portOut":"Result","objIn":"sp0-3","objOut":"sp0-4"}]}],"objName":"Ops.Array.ArrayToString_v3"},{"id":"sp0-5","uiAttribs":{"subPatch":"8k6721ec7"},"storage":{"blueprintVer":2},"portsIn":[{"name":"Active","value":1},{"name":"Clear","value":0}],"portsOut":[{"name":"Next","links":[{"portIn":"Update","portOut":"Next","objIn":"sp0-6","objOut":"sp0-5"}]},{"name":"Result","links":[{"portIn":"innerIn_ddpq7kosf","portOut":"Result","objIn":"sp0-8","objOut":"sp0-5"},{"portIn":"Text Ratios","portOut":"Result","objIn":"sp0-9","objOut":"sp0-5"}]}],"objName":"Ops.Data.Compose.Array.CompArray"},{"id":"sp0-6","uiAttribs":{"subPatch":"8k6721ec7"},"storage":{"blueprintVer":2},"objName":"Ops.Data.Compose.Array.CompArrayPushNumber"},{"id":"sp0-7","uiAttribs":{"subPatch":"8k6721ec7"},"storage":{"blueprintVer":2},"portsOut":[{"name":"innerOut_zgplxnbc1","title":"Execute","links":[{"portIn":"exe","portOut":"innerOut_zgplxnbc1","objIn":"sp0-0","objOut":"sp0-7"}]},{"name":"innerOut_nxezakedh","title":"Array of Strings","links":[{"portIn":"Array","portOut":"innerOut_nxezakedh","objIn":"sp0-1","objOut":"sp0-7"},{"portIn":"Array","portOut":"innerOut_nxezakedh","objIn":"sp0-4","objOut":"sp0-7"}]},{"name":"innerOut_ypqxgfqsy","title":"Font","links":[{"portIn":"font","portOut":"innerOut_ypqxgfqsy","objIn":"sp0-2","objOut":"sp0-7"},{"portIn":"font","portOut":"innerOut_ypqxgfqsy","objIn":"sp0-3","objOut":"sp0-7"}]},{"name":"innerOut_zhebovez1","title":"Weight","links":[{"portIn":"weight","portOut":"innerOut_zhebovez1","objIn":"sp0-2","objOut":"sp0-7"},{"portIn":"weight","portOut":"innerOut_zhebovez1","objIn":"sp0-3","objOut":"sp0-7"}]}],"objName":"Ops.Ui.SubPatchInput"},{"id":"sp0-8","uiAttribs":{"subPatch":"8k6721ec7"},"storage":{"blueprintVer":2},"portsIn":[{"name":"innerIn_498yuliuq","title":"Text UV Texture"},{"name":"innerIn_fgi23titp","title":"Text UV Coordinates"},{"name":"innerIn_ddpq7kosf","title":"Text Width"}],"objName":"Ops.Ui.SubPatchOutput"},{"id":"sp0-9","uiAttribs":{"subPatch":"8k6721ec7"},"storage":{"blueprintVer":2},"portsOut":[{"name":"UV Coordinates","links":[{"portIn":"innerIn_fgi23titp","portOut":"UV Coordinates","objIn":"sp0-8","objOut":"sp0-9"}]}],"objName":"Ops.Patch.PK3cVbR.TextUVCoordinates2"}]}'};const u=e.inTrigger("zgplxnbc1");u.setUiAttribs({title:"Execute"});u.setUiAttribs({values:[""]});const p=e.inArray("nxezakedh");p.setUiAttribs({title:"Array of Strings"});p.setUiAttribs({values:[""]});const c=e.inString("ypqxgfqsy","Courier");c.setUiAttribs({title:"Font"});c.setUiAttribs({values:[""]});const d=e.inString("zhebovez1","normal");d.setUiAttribs({title:"Weight"});d.setUiAttribs({values:[""]});const m=e.outObject("498yuliuq");m.setUiAttribs({title:"Text UV Texture",display:"texture",objType:"texture",objType:"texture"});m.setUiAttribs({values:[""]});const g=e.outArray("fgi23titp");g.setUiAttribs({title:"Text UV Coordinates"});g.setUiAttribs({values:[""]});const b=e.outArray("ddpq7kosf");b.setUiAttribs({title:"Text Width"});b.setUiAttribs({values:[""]});e.initInnerPorts=function(t){for(let e=0;e<t.length;e++){if(t[e].innerInput){const n=t[e].outTrigger("innerOut_zgplxnbc1");n.setUiAttribs({title:"Execute"});u.onTriggered=()=>{n.trigger()};const r=t[e].outArray("innerOut_nxezakedh");r.setUiAttribs({title:"Array of Strings"});p.on("change",(e,t)=>{r.setRef(e)});const a=t[e].outString("innerOut_ypqxgfqsy");a.set(c.get());a.setUiAttribs({title:"Font"});c.on("change",(e,t)=>{a.set(e)});const o=t[e].outString("innerOut_zhebovez1");o.set(d.get());o.setUiAttribs({title:"Weight"});d.on("change",(e,t)=>{o.set(e)})}if(t[e].innerOutput){const i=t[e].inObject("innerIn_498yuliuq");i.setUiAttribs({title:"Text UV Texture"});i.on("change",(e,t)=>{m.setRef(e)});const s=t[e].inArray("innerIn_fgi23titp");s.setUiAttribs({title:"Text UV Coordinates"});s.on("change",(e,t)=>{g.setRef(e)});const l=t[e].inArray("innerIn_ddpq7kosf");l.setUiAttribs({title:"Text Width"});l.on("change",(e,t)=>{b.setRef(e)})}}};const r="bp2sub_"+e.id;new CABLES.SubPatchOp(e,{subId:r});t();function t(){if(!n||!n.subpatch_json)return;const t=JSON.parse(n.subpatch_json);CABLES.Patch.replaceOpIds(t,{parentSubPatchId:r,prefixHash:r,oldIdAsRef:true,doNotUnlinkLostLinks:true});for(let e=0;e<t.ops.length;e++){t.ops[e].uiAttribs.blueprintSubpatch2=true}e.loadDependencies(t,()=>{e.patch.deSerialize(t,{opsCreated:e.initInnerPorts});if(CABLES.UI)gui.savedState.setSaved("blueprintloaded",r);e.patch.emitEvent("subpatchExpose",r);e.setStorage({blueprintVer:2});e.patch.emitEvent("subpatchExpose",r)})}}};CABLES.OPS["830823de-7d45-479a-aa6a-ea6b9aec4519"]={f:Ops.Patch.PK3cVbR.TextToUVTexture,objName:"Ops.Patch.PK3cVbR.TextToUVTexture"};Ops.User.monotom.TextureLoaderFromArray=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const n=e.attachments={inc_gen_ports_js:'const port_52xsh7xlg=op.inString("52xsh7xlg"," chimeres.webp, brule_harold.webp, chimeres3.webp, georges.webp, music.webp, madame_rose.webp, mahdoton_paluu.webp, la_premiere_seconde.webp");\nport_52xsh7xlg.setUiAttribs({title:"value",});\n\nconst port_shvso569u=op.outArray("shvso569u");\nport_shvso569u.setUiAttribs({title:"TextureArray",});\n\nop.initInnerPorts=function(addedOps)\n{\n  for(let i=0;i<addedOps.length;i++)\n  {\n    if(addedOps[i].innerInput)\n    {\nconst innerOut_52xsh7xlg = addedOps[i].outString("innerOut_52xsh7xlg");\ninnerOut_52xsh7xlg.set(port_52xsh7xlg.get() );\ninnerOut_52xsh7xlg.setUiAttribs({title:"value"});\nport_52xsh7xlg.on("change", (a,v) => { innerOut_52xsh7xlg.set(a); });\n\n    }\nif(addedOps[i].innerOutput)\n{\nconst innerIn_shvso569u = addedOps[i].inArray("innerIn_shvso569u");\ninnerIn_shvso569u.setUiAttribs({title:"TextureArray"});\ninnerIn_shvso569u.on("change", (a,v) => { port_shvso569u.setRef(a); });\n\n}\n}\n};\n',subpatch_json:'{"ops":[{"id":"sp1-0","uiAttribs":{"subPatch":"ykb7mdgql"},"storage":{},"portsIn":[{"name":"separator","value":","},{"name":"Numbers","value":0},{"name":"Trim","value":0},{"name":"Split Lines","value":0}],"portsOut":[{"name":"array","links":[{"portIn":"urls","portOut":"array","objIn":"sp1-2","objOut":"sp1-0"}]},{"name":"length","value":6}],"objName":"Ops.Array.StringToArray_v2"},{"id":"sp1-1","uiAttribs":{"subPatch":"ykb7mdgql"},"storage":{},"portsIn":[{"name":"value","value":"/assets/"}],"portsOut":[{"name":"String","links":[{"portIn":"String A","portOut":"String","objIn":"sp1-8","objOut":"sp1-1"},{"portIn":"Replace","portOut":"String","objIn":"sp1-3","objOut":"sp1-1"}]}],"objName":"Ops.String.String_v2"},{"id":"sp1-2","uiAttribs":{"subPatch":"ykb7mdgql"},"storage":{},"portsIn":[{"name":"filter index","value":1},{"name":"filter","value":"linear"},{"name":"wrap index","value":0},{"name":"wrap","value":"repeat"},{"name":"Flip","value":0},{"name":"unpackPreMultipliedAlpha","value":0},{"name":"Caching","value":0},{"name":"Asset in patch","value":0}],"portsOut":[{"name":"TextureArray","links":[{"portIn":"innerIn_shvso569u","portOut":"TextureArray","objIn":"sp1-6","objOut":"sp1-2"}]},{"name":"width","value":1536},{"name":"height","value":1024},{"name":"loading","value":0},{"name":"Aspect Ratio","value":1.5}],"objName":"Ops.Gl.TextureArrayLoaderFromArray_v2"},{"id":"sp1-3","uiAttribs":{"subPatch":"ykb7mdgql"},"storage":{},"portsIn":[{"name":"Search For","value":" "},{"name":"Replace What index","value":0},{"name":"Replace What","value":"All"}],"portsOut":[{"name":"Result","links":[{"portIn":"String","portOut":"Result","objIn":"sp1-4","objOut":"sp1-3"}]}],"objName":"Ops.String.StringReplace"},{"id":"sp1-4","uiAttribs":{"subPatch":"ykb7mdgql"},"storage":{},"portsOut":[{"name":"Result","links":[{"portIn":"text","portOut":"Result","objIn":"sp1-0","objOut":"sp1-4"}]}],"objName":"Ops.String.StringTrim_v2"},{"id":"sp1-5","uiAttribs":{"subPatch":"ykb7mdgql"},"storage":{},"portsOut":[{"name":"innerOut_52xsh7xlg","title":"value","links":[{"portIn":"String","portOut":"innerOut_52xsh7xlg","objIn":"sp1-3","objOut":"sp1-5"}]}],"objName":"Ops.Ui.SubPatchInput"},{"id":"sp1-6","uiAttribs":{"subPatch":"ykb7mdgql"},"storage":{},"portsIn":[{"name":"innerIn_shvso569u","title":"TextureArray"}],"objName":"Ops.Ui.SubPatchOutput"},{"id":"sp1-7","uiAttribs":{"subPatch":"ykb7mdgql"},"storage":{},"portsIn":[{"name":"value","value":"6870eaa3de1bb45d0299c6a9/"}],"portsOut":[{"name":"String","links":[{"portIn":"String B","portOut":"String","objIn":"sp1-8","objOut":"sp1-7"}]}],"objName":"Ops.String.String_v2"},{"id":"sp1-8","uiAttribs":{"subPatch":"ykb7mdgql"},"storage":{},"portsIn":[{"name":"Format","value":"$a$b"},{"name":"String C","value":""},{"name":"String D","value":""},{"name":"String E","value":""},{"name":"String F","value":""}],"portsOut":[{"name":"Result","value":"/assets/6870eaa3de1bb45d0299c6a9/"}],"objName":"Ops.String.StringCompose_v3"}]}'};const a=e.inString("52xsh7xlg"," chimeres.webp, brule_harold.webp, chimeres3.webp, georges.webp, music.webp, madame_rose.webp, mahdoton_paluu.webp, la_premiere_seconde.webp");a.setUiAttribs({title:"value"});const o=e.outArray("shvso569u");o.setUiAttribs({title:"TextureArray"});e.initInnerPorts=function(t){for(let e=0;e<t.length;e++){if(t[e].innerInput){const n=t[e].outString("innerOut_52xsh7xlg");n.set(a.get());n.setUiAttribs({title:"value"});a.on("change",(e,t)=>{n.set(e)})}if(t[e].innerOutput){const r=t[e].inArray("innerIn_shvso569u");r.setUiAttribs({title:"TextureArray"});r.on("change",(e,t)=>{o.setRef(e)})}}};const r="bp2sub_"+e.id;new CABLES.SubPatchOp(e,{subId:r});t();function t(){if(!n||!n.subpatch_json)return;const t=JSON.parse(n.subpatch_json);CABLES.Patch.replaceOpIds(t,{parentSubPatchId:r,prefixHash:r,oldIdAsRef:true,doNotUnlinkLostLinks:true});for(let e=0;e<t.ops.length;e++){t.ops[e].uiAttribs.blueprintSubpatch2=true}e.loadDependencies(t,()=>{e.patch.deSerialize(t,{opsCreated:e.initInnerPorts});if(CABLES.UI)gui.savedState.setSaved("blueprintloaded",r);e.patch.emitEvent("subpatchExpose",r);e.setStorage({blueprintVer:2});e.patch.emitEvent("subpatchExpose",r)})}}};CABLES.OPS["85c8e37b-2956-4fcd-9346-a6a7266eb3ea"]={f:Ops.User.monotom.TextureLoaderFromArray,objName:"Ops.User.monotom.TextureLoaderFromArray"};Ops.Patch.PK3cVbR.ComputeTextMeshParameters=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const n=e.attachments={inc_gen_ports_js:'const port_m2a4h2k9j=op.inTrigger("m2a4h2k9j");\nport_m2a4h2k9j.setUiAttribs({title:"Execute",});\nport_m2a4h2k9j.setUiAttribs({"values":[""]});\n\nconst port_o2yrl5cd3=op.inArray("o2yrl5cd3");\nport_o2yrl5cd3.setUiAttribs({title:"String Array",});\nport_o2yrl5cd3.setUiAttribs({"values":[""]});\n\nconst port_htuulk2ys=op.inArray("htuulk2ys");\nport_htuulk2ys.setUiAttribs({title:"Text Original Positions",});\nport_htuulk2ys.setUiAttribs({"values":[""]});\n\nconst port_2d3uvd89n=op.outArray("2d3uvd89n");\nport_2d3uvd89n.setUiAttribs({title:"String Lengths Array",});\nport_2d3uvd89n.setUiAttribs({"values":[""]});\n\nconst port_stl2nof01=op.outArray("stl2nof01");\nport_stl2nof01.setUiAttribs({title:"Char Positions",});\nport_stl2nof01.setUiAttribs({"values":[""]});\n\nconst port_jk8q9heos=op.outArray("jk8q9heos");\nport_jk8q9heos.setUiAttribs({title:"Word Center Positions",});\nport_jk8q9heos.setUiAttribs({"values":[""]});\n\nop.initInnerPorts=function(addedOps)\n{\n  for(let i=0;i<addedOps.length;i++)\n  {\n    if(addedOps[i].innerInput)\n    {\nconst innerOut_m2a4h2k9j = addedOps[i].outTrigger("innerOut_m2a4h2k9j");\ninnerOut_m2a4h2k9j.setUiAttribs({title:"Execute"});\nport_m2a4h2k9j.onTriggered = () => { innerOut_m2a4h2k9j.trigger(); };\n\nconst innerOut_o2yrl5cd3 = addedOps[i].outArray("innerOut_o2yrl5cd3");\ninnerOut_o2yrl5cd3.setUiAttribs({title:"String Array"});\nport_o2yrl5cd3.on("change", (a,v) => { innerOut_o2yrl5cd3.setRef(a); });\n\nconst innerOut_htuulk2ys = addedOps[i].outArray("innerOut_htuulk2ys");\ninnerOut_htuulk2ys.setUiAttribs({title:"Text Original Positions"});\nport_htuulk2ys.on("change", (a,v) => { innerOut_htuulk2ys.setRef(a); });\n\n    }\nif(addedOps[i].innerOutput)\n{\nconst innerIn_2d3uvd89n = addedOps[i].inArray("innerIn_2d3uvd89n");\ninnerIn_2d3uvd89n.setUiAttribs({title:"String Lengths Array"});\ninnerIn_2d3uvd89n.on("change", (a,v) => { port_2d3uvd89n.setRef(a); });\n\nconst innerIn_stl2nof01 = addedOps[i].inArray("innerIn_stl2nof01");\ninnerIn_stl2nof01.setUiAttribs({title:"Char Positions"});\ninnerIn_stl2nof01.on("change", (a,v) => { port_stl2nof01.setRef(a); });\n\nconst innerIn_jk8q9heos = addedOps[i].inArray("innerIn_jk8q9heos");\ninnerIn_jk8q9heos.setUiAttribs({title:"Word Center Positions"});\ninnerIn_jk8q9heos.on("change", (a,v) => { port_jk8q9heos.setRef(a); });\n\n}\n}\n};\n',subpatch_json:'{"ops":[{"id":"sp2-0","uiAttribs":{"subPatch":"xx5z0t5nu"},"storage":{},"portsOut":[{"name":"Trigger","links":[{"portIn":"Update","portOut":"Trigger","objIn":"sp2-1","objOut":"sp2-0"}]},{"name":"Index","value":5},{"name":"Value","links":[{"portIn":"String","portOut":"Value","objIn":"sp2-3","objOut":"sp2-0"}]}],"objName":"Ops.Array.ArrayIteratorStrings"},{"id":"sp2-1","uiAttribs":{"subPatch":"xx5z0t5nu"},"storage":{},"portsIn":[{"name":"Active","value":1},{"name":"Clear","value":0}],"portsOut":[{"name":"Next","links":[{"portIn":"Update","portOut":"Next","objIn":"sp2-2","objOut":"sp2-1"}]},{"name":"Result","links":[{"portIn":"String Lengths","portOut":"Result","objIn":"sp2-5","objOut":"sp2-1"},{"portIn":"innerIn_2d3uvd89n","portOut":"Result","objIn":"sp2-7","objOut":"sp2-1"}]}],"objName":"Ops.Data.Compose.Array.CompArray"},{"id":"sp2-2","uiAttribs":{"subPatch":"xx5z0t5nu"},"storage":{},"objName":"Ops.Data.Compose.Array.CompArrayPushNumber"},{"id":"sp2-3","uiAttribs":{"subPatch":"xx5z0t5nu"},"storage":{},"portsOut":[{"name":"Result","links":[{"portIn":"Number","portOut":"Result","objIn":"sp2-2","objOut":"sp2-3"}]}],"objName":"Ops.String.StringLength_v2"},{"id":"sp2-4","uiAttribs":{"subPatch":"xx5z0t5nu"},"storage":{},"portsOut":[{"name":"trigger 0","links":[{"portIn":"Reset","portOut":"trigger 0","objIn":"sp2-1","objOut":"sp2-4"}]},{"name":"trigger 1","links":[{"portIn":"Exe","portOut":"trigger 1","objIn":"sp2-0","objOut":"sp2-4"}]}],"objName":"Ops.Trigger.Sequence"},{"id":"sp2-5","uiAttribs":{"subPatch":"xx5z0t5nu"},"storage":{},"portsOut":[{"name":"Centered Positions","links":[{"portIn":"innerIn_jk8q9heos","portOut":"Centered Positions","objIn":"sp2-7","objOut":"sp2-5"}]}],"objName":"Ops.Patch.PK3cVbR.ComputeWordCenterPosition"},{"id":"sp2-6","uiAttribs":{"subPatch":"xx5z0t5nu"},"storage":{},"portsOut":[{"name":"innerOut_m2a4h2k9j","title":"Execute","links":[{"portIn":"exe","portOut":"innerOut_m2a4h2k9j","objIn":"sp2-4","objOut":"sp2-6"}]},{"name":"innerOut_o2yrl5cd3","title":"String Array","links":[{"portIn":"Array","portOut":"innerOut_o2yrl5cd3","objIn":"sp2-0","objOut":"sp2-6"}]},{"name":"innerOut_htuulk2ys","title":"Text Original Positions","links":[{"portIn":"Text Original Positions","portOut":"innerOut_htuulk2ys","objIn":"sp2-5","objOut":"sp2-6"},{"portIn":"innerIn_stl2nof01","portOut":"innerOut_htuulk2ys","objIn":"sp2-7","objOut":"sp2-6"}]}],"objName":"Ops.Ui.SubPatchInput"},{"id":"sp2-7","uiAttribs":{"subPatch":"xx5z0t5nu"},"storage":{},"portsIn":[{"name":"innerIn_2d3uvd89n","title":"String Lengths Array"},{"name":"innerIn_stl2nof01","title":"Char Positions"},{"name":"innerIn_jk8q9heos","title":"Word Center Positions"}],"objName":"Ops.Ui.SubPatchOutput"}]}'};const l=e.inTrigger("m2a4h2k9j");l.setUiAttribs({title:"Execute"});l.setUiAttribs({values:[""]});const u=e.inArray("o2yrl5cd3");u.setUiAttribs({title:"String Array"});u.setUiAttribs({values:[""]});const p=e.inArray("htuulk2ys");p.setUiAttribs({title:"Text Original Positions"});p.setUiAttribs({values:[""]});const c=e.outArray("2d3uvd89n");c.setUiAttribs({title:"String Lengths Array"});c.setUiAttribs({values:[""]});const d=e.outArray("stl2nof01");d.setUiAttribs({title:"Char Positions"});d.setUiAttribs({values:[""]});const m=e.outArray("jk8q9heos");m.setUiAttribs({title:"Word Center Positions"});m.setUiAttribs({values:[""]});e.initInnerPorts=function(t){for(let e=0;e<t.length;e++){if(t[e].innerInput){const n=t[e].outTrigger("innerOut_m2a4h2k9j");n.setUiAttribs({title:"Execute"});l.onTriggered=()=>{n.trigger()};const r=t[e].outArray("innerOut_o2yrl5cd3");r.setUiAttribs({title:"String Array"});u.on("change",(e,t)=>{r.setRef(e)});const a=t[e].outArray("innerOut_htuulk2ys");a.setUiAttribs({title:"Text Original Positions"});p.on("change",(e,t)=>{a.setRef(e)})}if(t[e].innerOutput){const o=t[e].inArray("innerIn_2d3uvd89n");o.setUiAttribs({title:"String Lengths Array"});o.on("change",(e,t)=>{c.setRef(e)});const i=t[e].inArray("innerIn_stl2nof01");i.setUiAttribs({title:"Char Positions"});i.on("change",(e,t)=>{d.setRef(e)});const s=t[e].inArray("innerIn_jk8q9heos");s.setUiAttribs({title:"Word Center Positions"});s.on("change",(e,t)=>{m.setRef(e)})}}};const r="bp2sub_"+e.id;new CABLES.SubPatchOp(e,{subId:r});t();function t(){if(!n||!n.subpatch_json)return;const t=JSON.parse(n.subpatch_json);CABLES.Patch.replaceOpIds(t,{parentSubPatchId:r,prefixHash:r,oldIdAsRef:true,doNotUnlinkLostLinks:true});for(let e=0;e<t.ops.length;e++){t.ops[e].uiAttribs.blueprintSubpatch2=true}e.loadDependencies(t,()=>{e.patch.deSerialize(t,{opsCreated:e.initInnerPorts});if(CABLES.UI)gui.savedState.setSaved("blueprintloaded",r);e.patch.emitEvent("subpatchExpose",r);e.setStorage({blueprintVer:2});e.patch.emitEvent("subpatchExpose",r)})}}};CABLES.OPS["c9d58e95-7534-4fba-bc3e-eac5dd382cda"]={f:Ops.Patch.PK3cVbR.ComputeTextMeshParameters,objName:"Ops.Patch.PK3cVbR.ComputeTextMeshParameters"};Ops.Trigger.Sequence=class extends CABLES.Op{constructor(){super(...arguments);const o=this;const e=o.attachments={};const t=o.inTrigger("exe"),n=o.inTriggerButton("Clean up connections");o.setUiAttrib({resizable:true,resizableY:false,stretchPorts:true});const r=[],i=[],a=16;let s=null,l=[];t.onTriggered=c;n.onTriggered=d;n.setUiAttribs({hideParam:true,hidePort:true});for(let t=0;t<a;t++){const m=o.outTrigger("trigger "+t);i.push(m);m.onLinkChanged=p;if(t<a-1){let e=o.inTrigger("exe "+t);e.onTriggered=c;r.push(e)}}u();function u(){l.length=0;for(let e=0;e<i.length;e++)if(i[e].links.length>0)l.push(i[e])}function p(){u();clearTimeout(s);s=setTimeout(()=>{let t=false;for(let e=0;e<i.length;e++)if(i[e].links.length>1)t=true;n.setUiAttribs({hideParam:!t});if(o.isCurrentUiOp())o.refreshParams()},60)}function c(){for(let e=0;e<l.length;e++)l[e].trigger()}function d(){let r=0;for(let n=0;n<i.length;n++){let t=[];if(i[n].links.length>1)for(let e=1;e<i[n].links.length;e++){while(i[r].links.length>0)r++;t.push(i[n].links[e]);const a=i[n].links[e].getOtherPort(i[n]);o.patch.link(o,"trigger "+r,a.op,a.name);r++}for(let e=0;e<t.length;e++)t[e].remove()}p();u()}}};CABLES.OPS["a466bc1f-06e9-4595-8849-bffb9fe22f99"]={f:Ops.Trigger.Sequence,objName:"Ops.Trigger.Sequence"};Ops.Array.ArrayIteratorStrings=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inTrigger("Exe"),r=e.inArray("Array"),a=e.outTrigger("Trigger"),o=e.outNumber("Index"),i=e.outString("Value");n.onTriggered=function(){if(!r.get())return;for(let t=0;t<r.get().length;t++){o.set(t);let e=null;if(r.get()[t]){e=String(r.get()[t])}i.set(e);a.trigger()}}}};CABLES.OPS["0f8ee026-e094-484d-8403-547c92293be9"]={f:Ops.Array.ArrayIteratorStrings,objName:"Ops.Array.ArrayIteratorStrings"};Ops.Gl.Textures.TextTexture_v6=class extends CABLES.Op{constructor(){super(...arguments);const h=this;const o=h.attachments={text_frag:"{{MODULES_HEAD}}\n\nUNI sampler2D tex;\nUNI float a;\nUNI vec4 color;\nIN vec2 texCoord;\n\nvoid main()\n{\n\n    vec4 col=texture(tex,vec2(texCoord.x,(1.0-texCoord.y)));\n\n    {{MODULE_COLOR}}\n\n    outColor=col;\n}\n",text_vert:"{{MODULES_HEAD}}\n\nIN vec3 vPosition;\nUNI mat4 projMatrix;\nUNI mat4 modelMatrix;\nUNI mat4 viewMatrix;\nUNI float aspect;\nOUT vec2 texCoord;\nIN vec2 attrTexCoord;\n\nvoid main()\n{\n    vec4 pos=vec4(vPosition,  1.0);\n\n    pos.x*=aspect;\n\n    texCoord=vec2(attrTexCoord.x,1.0-attrTexCoord.y);;\n\n    mat4 mMatrix=modelMatrix;\n\n    {{MODULE_VERTEX_POSITION}}\n    mat4 modelViewMatrix=viewMatrix*mMatrix;\n\n    gl_Position = projMatrix * modelViewMatrix * pos;\n}\n"};const e=h.inTriggerButton("Render"),W=h.inString("text","cables"),t=h.inValueBool("Draw Mesh",true),n=h.inValueFloat("Scale Mesh",.5),f=h.inSwitch("Size",["Auto","Manual"],"Auto"),v=h.inInt("Width",512),O=h.inInt("Height",512),A=h.inBool("Auto Height",true),x=h.inBool("Auto Line Breaks",true),I=h.inString("font","Arial"),y=h.inString("weight","normal"),S=h.inValueFloat("fontSize",300),j=h.inSwitch("align",["left","center","right"],"center"),C=h.inSwitch("Vertical align",["Top","Middle","Bottom"],"Top"),_=h.inFloat("Letter Spacing",0),N=h.inFloat("Line Height Add",0),Y=h.inInt("Padding Y Top",3),Z=h.inInt("Padding Y Bottom",3),K=h.inInt("Padding X",0),T=h.inSwitch("filter",["nearest","linear","mipmap"],"linear"),V=h.inValueSelect("Wrap",["repeat","mirrored repeat","clamp to edge"],"clamp to edge"),E=h.inSwitch("Anisotropic",[0,1,2,4,8,16],0),L=h.inValueBool("Reuse Texture",true),J=h.inBool("Show Debug",false),i=h.inBool("Redraw On Font Load",true),M=h.inValueSlider("r",1),k=h.inValueSlider("g",1),P=h.inValueSlider("b",1),w=h.inFloatSlider("Opacity",1),D=h.inValueSlider("background R",0),Q=h.inValueSlider("background G",0),$=h.inValueSlider("background B",0),ee=h.inValueSlider("background A",1),s=h.inTriggerButton("Force Redraw"),l=h.outTrigger("Next"),te=h.outNumber("Ratio"),z=h.outTexture("texture"),u=h.outObject("Canvas",null,"element"),p=h.outNumber("Aspect",1),ne=h.outNumber("Num Lines");const U=" ";M.setUiAttribs({colorPick:true});D.setUiAttribs({colorPick:true});h.toWorkPortsNeedToBeLinked(e);h.setPortGroup("Text Color",[M,k,P,w]);h.setPortGroup("Background",[D,Q,$,ee]);h.setPortGroup("Font",[I,y,S,j,C,_,N]);h.setPortGroup("Texture",[V,T,E,L,J]);h.setPortGroup("Rendering",[t,n]);e.onLinkChanged=()=>{if(!e.isLinked())z.setRef(CGL.Texture.getEmptyTexture(R));else z.setRef(B)};s.onTriggered=M.onChange=k.onChange=P.onChange=w.onChange=C.onChange=x.onChange=A.onChange=N.onChange=f.onChange=v.onChange=O.onChange=j.onChange=_.onChange=Y.onChange=Z.onChange=K.onChange=W.onChange=S.onChange=y.onChange=E.onChange=I.onChange=J.onChange=L.onChange=function(){X=true;ue()};z.ignoreValueSerialize=true;const R=h.patch.cgl;let B=new CGL.Texture(R);let G=2;let F=2;const q=document.createElement("canvas");q.id="texturetext_"+CABLES.generateUUID();q.style.display="none";document.body.appendChild(q);q.style.letterSpacing="0px";u.setRef(q);let H=q.getContext("2d");let X=true;const c=CGL.MESHES.getSimpleRect(R,"texttexture rect");const r=vec3.create();const a=new CGL.Shader(R,"texttexture");a.setModules(["MODULE_VERTEX_POSITION","MODULE_COLOR","MODULE_BEGIN_FRAG"]);a.setSource(o.text_vert,o.text_frag);const d=new CGL.Uniform(a,"t","tex");const m=new CGL.Uniform(a,"f","aspect",0);const g=new CGL.Uniform(a,"f","a",w);const b=new CGL.Uniform(a,"4f","color",M,k,P,w);if(h.patch.isEditorMode())CABLES.UI.SIMPLEWIREFRAMERECT=CABLES.UI.SIMPLEWIREFRAMERECT||new CGL.WireframeRect(R);e.onTriggered=oe;t.onChange=ue;ue();h.on("delete",()=>{H=null;q.remove()});E.onChange=T.onChange=V.onChange=()=>{if(B)B.delete();B=null;X=true};D.onChange=Q.onChange=$.onChange=ee.onChange=M.onChange=k.onChange=P.onChange=w.onChange=()=>{if(!t.get()||z.isLinked())X=true};z.onLinkChanged=()=>{if(z.isLinked())X=true};h.patch.on("fontLoaded",e=>{if(e==I.get())X=true});document.fonts.ready.then(()=>{if(i.get())X=true});document.fonts.onloadingdone=function(e){if(i.get())X=true};function re(){return F}function ae(){return G}function oe(){let e=0;while(X&&e<10){ie();le();e++}if(t.get()){r[0]=r[1]=r[2]=n.get();R.pushBlendMode(CGL.BLEND_NORMAL,false);R.pushModelMatrix();mat4.scale(R.mMatrix,R.mMatrix,r);a.popTextures();a.pushTexture(d,B.tex);m.set(p.get());if(R.shouldDrawHelpers(h))CABLES.UI.SIMPLEWIREFRAMERECT.render(p.get(),1,1);R.pushShader(a);c.render(h.patch.cg.getShader());R.popShader();R.popBlendMode();R.popModelMatrix()}l.trigger()}function ie(){if(B)B.setSize(re(),ae());H.canvas.width=q.width=re();H.canvas.height=q.height=ae();p.set(q.width/q.height);X=true}function se(n){let r="";for(let e=0;e<n.length;e++){if(!n[e]){r+="\n";continue}let t=0;const a=n[e].split(U);for(let e=0;e<a.length;e++){if(!a[e])continue;t+=H.measureText(a[e]+U).width;if(t>v.get()){r+="\n"+a[e]+U;t=H.measureText(a[e]+U).width}else{r+=a[e]+U}}r+="\n"}let e=r;n=e.split("\n");if(n[n.length-1]=="")n.pop();return n}function le(){R.checkFrameStarted("texttrexture refresh");const e="rgba("+Math.floor(D.get()*255)+","+Math.floor(Q.get()*255)+","+Math.floor($.get()*255)+","+ee.get()+")";H.fillStyle=e;H.fillRect(0,0,H.canvas.width,H.canvas.height);const t="rgba("+Math.floor(M.get()*255)+","+Math.floor(k.get()*255)+","+Math.floor(P.get()*255)+","+w.get()+")";H.fillStyle=t;let n=parseFloat(S.get());let r=I.get();if(r.indexOf(U)>-1)r='"'+r+'"';H.font=y.get()+U+n+"px "+r+"";H.textBaseline="top";H.textAlign=j.get();H.letterSpacing=_.get()+"px";let a=(W.get()+"").replace(/<br\/>/g,"\n");a=a.trim();let o=a.split("\n");X=false;let i=Math.max(0,Y.get());let s=Math.max(0,Z.get());let l=Math.max(0,K.get());F=0;G=0;if(x.get()&&f.get()=="Manual"){if(v.get()>128){o=se(o)}}const u=[];for(let e=0;e<o.length;e++){const b=H.measureText(o[e]);u[e]=Math.ceil(b.fontBoundingBoxAscent)+Math.ceil(b.fontBoundingBoxDescent)+N.get()}for(let e=0;e<o.length;e++){const b=H.measureText(o[e]);F=Math.max(F,Math.ceil(b.width));G+=u[e]}F+=l*2;if(N.get()<0)G+=N.get()/2*-1;let p=G;if(f.get()=="Manual"){F=v.get()+l*2;if(!A.get()){G=O.get()}}G=Math.ceil(G);F=Math.ceil(F);if(F>R.maxTexSize||G>R.maxTexSize)h.setUiError("textoobig","Texture too big!");else h.setUiError("textoobig",null);G=Math.min(R.maxTexSize,G);F=Math.min(R.maxTexSize,F);let c=0;if(C.get()=="Middle")c=(G-p)/2;else if(C.get()=="Bottom")c=G-p;c+=i;G+=i+s;if(H.canvas.width!=F||H.canvas.height!=G)ie();const d=J.get();for(let t=0;t<o.length;t++){let e=0+l;if(j.get()=="center")e=H.canvas.width/2;if(j.get()=="right")e=H.canvas.width-l;if(f.get()=="Manual")e+=_.get();H.fillText(o[t],e,c);if(d){H.lineWidth=3;H.strokeStyle="#FF0000";H.beginPath();H.moveTo(0,c);H.lineTo(H.canvas.width,c);H.stroke()}c+=u[t]}let m=CGL.Texture.WRAP_REPEAT;if(V.get()=="mirrored repeat")m=CGL.Texture.WRAP_MIRRORED_REPEAT;else if(V.get()=="clamp to edge")m=CGL.Texture.WRAP_CLAMP_TO_EDGE;let g=CGL.Texture.FILTER_LINEAR;if(T.get()=="nearest")g=CGL.Texture.FILTER_NEAREST;else if(T.get()=="mipmap")g=CGL.Texture.FILTER_MIPMAP;if(!L.get()||!B||!z.get()||B.width!=q.width||B.height!=q.height||B.anisotropic!=parseFloat(E.get())){if(B)B.delete();B=new CGL.Texture.createFromImage(R,q,{filter:g,anisotropic:parseFloat(E.get()),wrap:m})}B.unpackAlpha=false;B.flip=false;B.initTexture(q,g);te.set(H.canvas.height/H.canvas.width);ne.set(o.length);z.setRef(B)}function ue(){v.setUiAttribs({greyout:f.get()!="Manual"});O.setUiAttribs({greyout:f.get()!="Manual"||A.get()});x.setUiAttribs({greyout:f.get()!="Manual"});C.setUiAttribs({greyout:f.get()!="Manual"});A.setUiAttribs({greyout:f.get()!="Manual"});n.setUiAttribs({greyout:!t.get()})}}};CABLES.OPS["2c042efa-3604-4717-b8f4-5ad08d6740e5"]={f:Ops.Gl.Textures.TextTexture_v6,objName:"Ops.Gl.Textures.TextTexture_v6"};Ops.Array.ArrayToString_v3=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const r=e.inArray("Array"),a=e.inString("Seperator",","),o=e.inValueBool("New Line"),i=e.outString("Result");r.onChange=i.onChange=a.onChange=o.onChange=n;function n(){var e=r.get();var t="";var n=a.get();if(o.get())n+="\n";if(e&&e.join){t=e.join(n)}i.set(t)}}};CABLES.OPS["7b539bb3-8e86-4367-9e00-a637d3cfd87a"]={f:Ops.Array.ArrayToString_v3,objName:"Ops.Array.ArrayToString_v3"};Ops.Data.Compose.Array.CompArray=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inTrigger("Update"),r=e.inBool("Active",true),a=e.inBool("Clear",true),o=e.inTriggerButton("Reset"),i=e.outTrigger("Next"),s=e.outArray("Result");o.onTriggered=()=>{l=[];s.setRef([])};let l=[];n.onTriggered=()=>{if(!r.get())return i.trigger();e.patch.tempData.compArray=e.patch.tempData.compArray||[];if(a.get()){l=[]}e.patch.tempData.compArray.push(l);i.trigger();s.setRef(e.patch.tempData.compArray.pop())}}};CABLES.OPS["16f1ce37-9e0d-4632-a9ba-dfd42c4eb254"]={f:Ops.Data.Compose.Array.CompArray,objName:"Ops.Data.Compose.Array.CompArray"};Ops.Data.Compose.Array.CompArrayPushNumber=class extends CABLES.Op{constructor(){super(...arguments);const t=this;const e=t.attachments={};const n=t.inTrigger("Update"),r=t.inFloat("Number",0),a=t.outTrigger("Next");n.onTriggered=()=>{if(t.patch.tempData.compArray&&t.patch.tempData.compArray.length>0){let e=t.patch.tempData.compArray[t.patch.tempData.compArray.length-1];if(e)e.push(r.get())}a.trigger()}}};CABLES.OPS["49741334-d249-4f62-96ea-3ff582f38598"]={f:Ops.Data.Compose.Array.CompArrayPushNumber,objName:"Ops.Data.Compose.Array.CompArrayPushNumber"};Ops.Ui.SubPatchInput=class extends CABLES.Op{constructor(){super(...arguments);const t=this;const e=t.attachments={};t.innerInput=true;const n=t.inTriggerButton("Goto SubPatchOp");n.setUiAttribs({hidePort:true});n.onTriggered=()=>{const e=t.patch.getSubPatchOuterOp(t.uiAttribs.subPatch);gui.patchView.centerSelectOp(e.id)}}};CABLES.OPS["c4e4e933-136e-479e-8de8-0b35b75d9217"]={f:Ops.Ui.SubPatchInput,objName:"Ops.Ui.SubPatchInput"};Ops.Ui.SubPatchOutput=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};e.innerOutput=true}};CABLES.OPS["02d45073-7936-4830-81ad-59a162febf1f"]={f:Ops.Ui.SubPatchOutput,objName:"Ops.Ui.SubPatchOutput"};Ops.Patch.PK3cVbR.TextUVCoordinates2=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inTrigger("Execute"),o=e.inArray("Text Ratios"),i=e.outArray("UV Coordinates");n.onTriggered=()=>{try{const t=o.get();const n=t.length;const r=t.reduce((e,t)=>{return Math.max(e,t)});const a=[];{for(let e=0;e<n;e++){a.push(0,(n-e-1)/n,t[e]/r,1/n)}i.set(a)}}catch(e){i.set([])}}}};CABLES.OPS["7b8f26db-748a-49e1-ad65-218b881d80b2"]={f:Ops.Patch.PK3cVbR.TextUVCoordinates2,objName:"Ops.Patch.PK3cVbR.TextUVCoordinates2"};Ops.Array.StringToArray_v2=class extends CABLES.Op{constructor(){super(...arguments);const r=this;const e=r.attachments={};const a=r.inStringEditor("text","1,2,3"),o=r.inString("separator",","),i=r.inValueBool("Numbers",true),s=r.inValueBool("Trim",true),l=r.inBool("Split Lines",false),u=r.outArray("array"),p=r.outTrigger("Parsed"),c=r.outNumber("length");a.setUiAttribs({ignoreBigPort:true});a.onChange=o.onChange=i.onChange=s.onChange=t;l.onChange=()=>{o.setUiAttribs({greyout:l.get()});t()};t();function t(){if(!a.get()){u.set(null);u.set([]);c.set(0);return}let e=a.get();if(s.get()&&e){e=e.replace(/^\s+|\s+$/g,"");e=e.trim()}let n;let t=o.get();if(o.get()==="\\n")t="\n";if(l.get())n=e.split("\n");else n=e.split(t);if(n[n.length-1]==="")n.length-=1;c.set(n.length);if(s.get()){for(let e=0;e<n.length;e++){n[e]=n[e].replace(/^\s+|\s+$/g,"");n[e]=n[e].trim()}}r.setUiError("notnum",null);if(i.get()){let t=false;for(let e=0;e<n.length;e++){n[e]=Number(n[e]);if(!CABLES.isNumeric(n[e])){t=true}}if(t){r.setUiError("notnum","Parse Error / Not all values numerical!",1)}}u.setRef(n);p.trigger()}}};CABLES.OPS["c974de41-4ce4-4432-b94d-724741109c71"]={f:Ops.Array.StringToArray_v2,objName:"Ops.Array.StringToArray_v2"};Ops.String.String_v2=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inString("value",""),r=e.outString("String");n.onChange=function(){if(!n.isLinked())e.setUiAttrib({extendTitle:n.get()});r.set(n.get())}}};CABLES.OPS["d697ff82-74fd-4f31-8f54-295bc64e713d"]={f:Ops.String.String_v2,objName:"Ops.String.String_v2"};Ops.Gl.TextureArrayLoaderFromArray_v2=class extends CABLES.Op{constructor(){super(...arguments);const s=this;const e=s.attachments={};const t=s.inArray("urls"),n=s.inDropDown("filter",["nearest","linear","mipmap"],"linear"),r=s.inDropDown("wrap",["repeat","mirrored repeat","clamp to edge"],"repeat"),l=s.inBool("Flip",false),u=s.inBool("unpackPreMultipliedAlpha",false),p=s.inBool("Caching",false),c=s.inBool("Asset in patch",false),d=s.outArray("TextureArray"),m=s.outNumber("width"),g=s.outNumber("height"),a=s.outBoolNum("loading"),b=s.outNumber("Aspect Ratio");s.toWorkPortsNeedToBeLinked(t);const h=s.patch.cgl;const f=[];let v=CGL.Texture.FILTER_LINEAR;let O=CGL.Texture.WRAP_MIRRORED_REPEAT;let o=null;let i=0;d.set(f);c.onChange=l.onChange=u.onChange=t.onChange=A;n.onChange=y;r.onChange=S;function A(e){if(!t.isLinked()){d.setRef(null);return}clearTimeout(i);i=setTimeout(function(){I(e)},30)}function x(e,t,n,r){let a=t;const o=e;if(!a)return;if(c.get()){let e=null;if(s.storage&&s.storage.blueprint&&s.storage.blueprint.patchId){e=s.storage.blueprint.patchId}a=s.patch.getAssetPath(e)+a}a=s.patch.getFilePath(a);if(!p.get())if(n)a+="?rnd="+CABLES.generateUUID();let i=CGL.Texture.load(h,a,function(e){if(e){const t='could not load texture "'+a+'"';s.uiAttr({error:t});s.warn("[TextureArrayLoader] "+t);if(r)r();return}else s.uiAttr({error:null});m.set(i.width);g.set(i.height);b.set(i.width/i.height);f[o]=i;d.setRef(f);if(r)r()},{wrap:O,flip:l.get(),unpackAlpha:u.get(),filter:v})}function I(n){const r=t.get();if(!r||r.length==0)return;if(o)h.patch.loading.finished(o);o=h.patch.loading.start("texturearray",CABLES.uuid(),s);a.set(true);for(let t=0;t<r.length;t++){f[t]=CGL.Texture.getEmptyTexture(h);let e=null;if(t==r.length-1){e=()=>{a.set(false);h.patch.loading.finished(o)}}if(!r[t]){if(e)e()}else x(t,r[t],n,e)}}function y(){if(n.get()=="nearest")v=CGL.Texture.FILTER_NEAREST;if(n.get()=="linear")v=CGL.Texture.FILTER_LINEAR;if(n.get()=="mipmap")v=CGL.Texture.FILTER_MIPMAP;A()}function S(){if(r.get()=="repeat")O=CGL.Texture.WRAP_REPEAT;if(r.get()=="mirrored repeat")O=CGL.Texture.WRAP_MIRRORED_REPEAT;if(r.get()=="clamp to edge")O=CGL.Texture.WRAP_CLAMP_TO_EDGE;A()}s.onFileChanged=function(e){}}};CABLES.OPS["f994015c-72ab-42f4-9ef7-a6409a9efb9b"]={f:Ops.Gl.TextureArrayLoaderFromArray_v2,objName:"Ops.Gl.TextureArrayLoaderFromArray_v2"};Ops.String.StringReplace=class extends CABLES.Op{constructor(){super(...arguments);const t=this;const e=t.attachments={};const n=t.inString("String"),r=t.inString("Search For","foo"),a=t.inString("Replace","bar"),o=t.inSwitch("Replace What",["All","First"],"All"),i=t.outString("Result");a.onChange=n.onChange=o.onChange=r.onChange=s;function s(){t.setUiError("exception",null);let e="";try{if(o.get()=="All")e=String(n.get()).replace(new RegExp(r.get(),"g"),a.get());else e=String(n.get()).replace(r.get(),a.get())}catch(e){t.setUiError("exception","exception "+e.message)}i.set(e)}}};CABLES.OPS["4a053e7a-6b00-4e71-bd51-90cdb190994c"]={f:Ops.String.StringReplace,objName:"Ops.String.StringReplace"};Ops.String.StringTrim_v2=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inString("String"),r=e.outString("Result","");n.onChange=function(){if(!n.get())r.set("");else r.set(n.get().trim())}}};CABLES.OPS["a9aed302-328a-4d33-bd3f-27e3e6690b9e"]={f:Ops.String.StringTrim_v2,objName:"Ops.String.StringTrim_v2"};Ops.String.StringCompose_v3=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inString("Format","hello $a, $b $c und $d"),r=e.inString("String A","world"),a=e.inString("String B",1),o=e.inString("String C",2),i=e.inString("String D",3),s=e.inString("String E"),l=e.inString("String F"),u=e.outString("Result");n.onChange=r.onChange=a.onChange=o.onChange=i.onChange=s.onChange=l.onChange=p;p();function p(){var e=n.get()||"";if(typeof e!="string")e="";e=e.replace(/\$a/g,r.get());e=e.replace(/\$b/g,a.get());e=e.replace(/\$c/g,o.get());e=e.replace(/\$d/g,i.get());e=e.replace(/\$e/g,s.get());e=e.replace(/\$f/g,l.get());u.set(e)}}};CABLES.OPS["6afea9f4-728d-4f3c-9e75-62ddc1448bf0"]={f:Ops.String.StringCompose_v3,objName:"Ops.String.StringCompose_v3"};Ops.String.StringLength_v2=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inString("String"),r=e.outNumber("Result");n.onChange=function(){if(!n.get())r.set(0);else r.set(String(n.get()).length)}}};CABLES.OPS["aa47bb8b-d5d7-4175-b217-ab0157d3365d"]={f:Ops.String.StringLength_v2,objName:"Ops.String.StringLength_v2"};Ops.Patch.PK3cVbR.ComputeWordCenterPosition=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inArray("Text Original Positions"),r=e.inArray("String Lengths"),d=e.outArray("Centered Positions");n.onChange=()=>{try{const o=n.get();const i=r.get();const t=i.length;const s=[];let a=0;for(let e=0;e<t;e++){const l=i[e];const u=o[a];const p=o[a+1];const c=o[a+2];let t=0;let n=0;let r=0;for(let e=0;e<l;e++){t+=o[a+e*3];n+=o[a+e*3+1];r+=o[a+e*3+2]}t=t/l;n=n/l;r=r/l;s.push(t);s.push(n);s.push(r);a+=l*3}d.set(s)}catch(e){d.set(null)}};r.onChange=n.onChange}};CABLES.OPS["e685226b-6189-4f57-86ab-208b77f71c4e"]={f:Ops.Patch.PK3cVbR.ComputeWordCenterPosition,objName:"Ops.Patch.PK3cVbR.ComputeWordCenterPosition"};Ops.Gl.MainLoop_v2=class extends CABLES.Op{constructor(){super(...arguments);const n=this;const e=n.attachments={};const t=n.inFloat("Max Pixel Density (DPR)",2),r=n.inValue("FPS Limit",0),a=n.inValueBool("Reduce FPS unfocussed",false),o=n.inValueBool("Transparent",false),i=n.inValueBool("Active",1),s=n.inValueBool("Focus canvas",1),l=n.outTrigger("trigger"),u=n.outNumber("width"),p=n.outNumber("height"),c=n.outNumber("Pixel Density");n.onAnimFrame=C;t.onChange=y;const d=n.patch.cg=n.patch.cgl;let m=0;let g=0;let b=null;let h=false;if(!n.patch.cgl)n.uiAttr({error:"No webgl cgl context"});const f=vec3.create();vec3.set(f,0,0,0);const v=vec3.create();vec3.set(v,0,0,-2);let O=true;let A=null;let x=true;let I=true;window.addEventListener("blur",()=>{x=false});window.addEventListener("focus",()=>{x=true});document.addEventListener("visibilitychange",()=>{I=!document.hidden});_();n.patch.tempData.mainloopOp=this;function y(){j();if(CABLES.UI){if(t.get()<1)n.patch.cgl.canvas.style.imageRendering="pixelated"}n.patch.cgl.updateSize();if(CABLES.UI)gui.setLayout()}i.onChange=function(){n.patch.removeOnAnimFrame(n);if(i.get()){n.setUiAttrib({extendTitle:""});n.onAnimFrame=C;n.patch.addOnAnimFrame(n);n.log("adding again!")}else{n.setUiAttrib({extendTitle:"Inactive"})}};function S(){if(a.get()){if(!I)return 10;if(!x)return 30}return r.get()}n.onDelete=function(){d.gl.clearColor(0,0,0,0);d.gl.clear(d.gl.COLOR_BUFFER_BIT|d.gl.DEPTH_BUFFER_BIT)};function j(){if(t.get()!=0)n.patch.cgl.pixelDensity=Math.min(t.get(),window.devicePixelRatio);else n.patch.cgl.pixelDensity=window.devicePixelRatio}function C(e){if(!i.get())return;if(d.aborted||d.canvas.clientWidth===0||d.canvas.clientHeight===0)return;n.patch.cg=d;j();const t=performance.now();n.patch.config.fpsLimit=S();if(d.canvasWidth==-1){d.setCanvas(n.patch.config.glCanvasId);return}if(d.canvasWidth!=u.get()||d.canvasHeight!=p.get()){u.set(d.canvasWidth/1);p.set(d.canvasHeight/1)}if(CABLES.now()-g>1e3){CGL.fpsReport=CGL.fpsReport||[];if(n.patch.loading.getProgress()>=1&&g!==0)CGL.fpsReport.push(m);m=0;g=CABLES.now()}CGL.MESH.lastShader=null;CGL.MESH.lastMesh=null;d.renderStart(d,f,v);if(!o.get())d.gl.clearColor(0,0,0,1);else d.gl.clearColor(0,0,0,0);d.gl.clear(d.gl.COLOR_BUFFER_BIT|d.gl.DEPTH_BUFFER_BIT);l.trigger();if(CGL.MESH.lastMesh)CGL.MESH.lastMesh.unBind();if(CGL.Texture.previewTexture){if(!CGL.Texture.texturePreviewer)CGL.Texture.texturePreviewer=new CGL.Texture.texturePreview(d);CGL.Texture.texturePreviewer.render(CGL.Texture.previewTexture)}d.renderEnd(d);n.patch.cg=null;if(!o.get()){d.gl.clearColor(1,1,1,1);d.gl.colorMask(false,false,false,true);d.gl.clear(d.gl.COLOR_BUFFER_BIT);d.gl.colorMask(true,true,true,true)}if(!d.tempData.phong)d.tempData.phong={};m++;if(O){if(s.get())d.canvas.focus();O=false}c.set(n.patch.cgl.pixelDensity);n.patch.cgl.profileData.profileMainloopMs=performance.now()-t}function _(){clearTimeout(b);b=setTimeout(()=>{if(n.patch.getOpsByObjName(n.name).length>1){n.setUiError("multimainloop","there should only be one mainloop op!");if(!h)h=n.patch.addEventListener("onOpDelete",_)}else n.setUiError("multimainloop",null,1)},500)}}};CABLES.OPS["f1029550-d877-42da-9b1e-63a5163a0350"]={f:Ops.Gl.MainLoop_v2,objName:"Ops.Gl.MainLoop_v2"};Ops.Vars.VarSetArray_v2=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inArray("Value",null);e.varName=e.inDropDown("Variable",[],"",true);new CABLES.VarSetOpWrapper(e,"array",n,e.varName)}};CABLES.OPS["8088290f-45d4-4312-b4ca-184d34ca4667"]={f:Ops.Vars.VarSetArray_v2,objName:"Ops.Vars.VarSetArray_v2"};Ops.Vars.VarGetArray_v2=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.outArray("Value");e.varName=e.inValueSelect("Variable",[],"",true);new CABLES.VarGetOpWrapper(e,"array",e.varName,n)}};CABLES.OPS["afa79294-aa9c-43bc-a49a-cade000a1de5"]={f:Ops.Vars.VarGetArray_v2,objName:"Ops.Vars.VarGetArray_v2"};Ops.Math.GaussianRandomArray=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inValueInt("Num",100),r=e.outArray("Array"),a=e.inValue("Deviation",1),o=e.inValueFloat("Random Seed");let i=[];let s=1;let l=false;let u=null;let p;o.onChange=a.onChange=n.onChange=d;d();function c(e,t){let n,r,a,o;if(l){n=p;l=false}else{do{r=Math.seededRandom()*2-1;a=Math.seededRandom()*2-1;o=r*r+a*a}while(o>=1);o=Math.sqrt(-2*Math.log(o)/o);n=r*o;p=a*o;l=true}let i=e||0;let s=t||1;return n*s+i}function d(){s=a.get();Math.randomSeed=o.get();i.length=Math.floor(n.get())||0;for(let e=0;e<i.length;e++){i[e]=c(0,s)}r.set(null);r.set(i)}}};CABLES.OPS["1a8c3535-6fce-4cba-8601-ddb7a5dd7656"]={f:Ops.Math.GaussianRandomArray,objName:"Ops.Math.GaussianRandomArray"};Ops.Vars.VarGetNumber_v2=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.outNumber("Value");e.varName=e.inValueSelect("Variable",[],"",true);new CABLES.VarGetOpWrapper(e,"number",e.varName,n)}};CABLES.OPS["421f5b52-c0fa-47c4-8b7a-012b9e1c864a"]={f:Ops.Vars.VarGetNumber_v2,objName:"Ops.Vars.VarGetNumber_v2"};Ops.Math.Math=class extends CABLES.Op{constructor(){super(...arguments);const t=this;const e=t.attachments={};const n=t.inFloat("number 0",0),r=t.inFloat("number 1",0),a=t.inSwitch("math mode",["+","-","*","/","%","min","max"],"+"),o=t.outNumber("result");let i;n.onChange=r.onChange=f;a.onChange=h;let s=0;let l=0;const u=function(e,t){return e+t};const p=function(e,t){return e-t};const c=function(e,t){return e*t};const d=function(e,t){return e/t};const m=function(e,t){return e%t};const g=function(e,t){return Math.min(e,t)};const b=function(e,t){return Math.max(e,t)};function h(){let e=a.get();if(e=="+")i=u;else if(e=="-")i=p;else if(e=="*")i=c;else if(e=="/")i=d;else if(e=="%")i=m;else if(e=="min")i=g;else if(e=="max")i=b;f();t.setUiAttrib({extendTitle:e})}function f(){s=n.get();l=r.get();o.set(i(s,l))}h()}};CABLES.OPS["e9fdcaca-a007-4563-8a4d-e94e08506e0f"]={f:Ops.Math.Math,objName:"Ops.Math.Math"};Ops.Gl.MeshInstancer_v4=class extends CABLES.Op{constructor(){super(...arguments);const b=this;const e=b.attachments={billboard_vert:"\n#ifdef BILLBOARDING\n\n    modelViewMatrix[0][0] = 1.0;\n    modelViewMatrix[0][1] = 0.0;\n    modelViewMatrix[0][2] = 0.0;\n\n    #ifndef BILLBOARDING_CYLINDRIC\n        modelViewMatrix[1][0] = 0.0;\n        modelViewMatrix[1][1] = 1.0;\n        modelViewMatrix[1][2] = 0.0;\n    #endif\n\n    modelViewMatrix[2][0] = 0.0;\n    modelViewMatrix[2][1] = 0.0;\n    modelViewMatrix[2][2] = 1.0;\n\n#endif",instancer_body_frag:"#define INSTANCING\n#ifdef COLORIZE_INSTANCES\n    #ifdef BLEND_MODE_MULTIPLY\n        col.rgb *= frag_instColor.rgb;\n        col.a *= frag_instColor.a;\n    #endif\n\n    #ifdef BLEND_MODE_ADD\n        col.rgb += frag_instColor.rgb;\n        col.a += frag_instColor.a;\n    #endif\n\n    #ifdef BLEND_MODE_NONE\n        col.rgb = frag_instColor.rgb;\n        col.a = frag_instColor.a;\n    #endif\n#endif\n",instancer_body_vert:"\n\n#ifdef HAS_TEXCOORDS\ntexCoord=(texCoord*instTexCoords.zw)+instTexCoords.xy;\n#endif\n\nmMatrix*=instMat;\npos.xyz*=MOD_scale;\n\n#ifdef HAS_COLORS\nfrag_instColor=instColor;\n#endif\n#ifndef HAS_COLORS\nfrag_instColor=vec4(1.0);\n#endif\n\n\nfrag_instIndex=instanceIndex;\n\n",instancer_head_frag:"IN vec4 frag_instColor;\n\n#ifdef WEBGL2\n    flat IN float frag_instIndex;\n#endif\n#ifdef WEBGL1\n    IN float frag_instIndex;\n#endif\n",instancer_head_vert:"\nIN vec4 instColor;\nIN mat4 instMat;\nIN vec4 instTexCoords;\nIN float instanceIndex;\nOUT mat4 instModelMat;\nOUT vec4 frag_instColor;\n\n#ifdef WEBGL2\n    flat OUT float frag_instIndex;\n#endif\n#ifdef WEBGL1\n    OUT float frag_instIndex;\n#endif\n\n\n\n#define INSTANCING\n\n"};const t=b.inTrigger("exe"),n=b.inObject("geom",null,"geometry"),r=b.inValue("Scale",1),a=b.inValueBool("Limit Instances",false),o=b.inValueInt("Limit",100),h=b.inArray("positions",3),f=b.inArray("Scale Array",3),v=b.inArray("Rotations",3),O=b.inSwitch("Rotation Type",["Euler","Quaternions","Normals"],"Euler"),i=b.inSwitch("Billboarding",["Off","Spherical","Cylindrical"],"Off"),s=b.inSwitch("Material blend mode",["Multiply","Add","Normal"],"Multiply"),A=b.inArray("Colors",4),x=b.inArray("TexCoords",4),l=b.outTrigger("Trigger Out"),u=b.outNumber("Num");b.setPortGroup("Limit Number of Instances",[o,a]);b.setPortGroup("Parameters",[f,v,h,O]);b.toWorkPortsNeedToBeLinked(n);b.toWorkPortsNeedToBeLinked(t);n.ignoreValueSerialize=true;const p=b.patch.cgl;const I=mat4.create();let y=new Float32Array(1),S=new Float32Array(1),j=new Float32Array(1),C=null,_=true,N=0,T=true,V=true,E=true;const L=new CGL.ShaderModifier(p,b.name,{opId:b.id});L.addModule({name:"MODULE_VERTEX_POSITION",title:b.name,priority:-2,srcHeadVert:e.instancer_head_vert,srcBodyVert:e.instancer_body_vert});L.addModule({name:"MODULE_VERTEX_MODELVIEW",title:b.name+"_billboard",srcBodyVert:e.billboard_vert});L.addModule({name:"MODULE_COLOR",priority:-2,title:b.name,srcHeadFrag:e.instancer_head_frag,srcBodyFrag:e.instancer_body_frag});L.addUniformVert("f","MOD_scale",r);let M=true;s.onChange=()=>{M=true};a.onChange=g;t.onTriggered=P;t.onLinkChanged=function(){if(!t.isLinked())d()};g();v.onChange=f.onChange=h.onChange=O.onChange=function(){E=true;_=true};i.onChange=x.onChange=function(){V=true;_=true;M=true};A.onChange=function(){T=true;_=true;M=true};function c(){T=true,E=true;_=true}function k(){L.toggleDefine("BILLBOARDING",i.get()!="Off");L.toggleDefine("BILLBOARDING_CYLINDRIC",i.get()=="Cylindrical");L.toggleDefine("COLORIZE_INSTANCES",A.get());L.toggleDefine("TEXCOORDS_INSTANCES",x.get());L.toggleDefine("BLEND_MODE_MULTIPLY",s.get()==="Multiply");L.toggleDefine("BLEND_MODE_ADD",s.get()==="Add");L.toggleDefine("BLEND_MODE_NONE",s.get()==="Normal");M=false}n.onChange=function(){if(C)C.dispose();if(!n.get()){C=null;return}C=new CGL.Mesh(p,n.get());c()};function d(){}function m(){if(!C)return;let e=h.get();if(!e)e=[0,0,0];N=Math.floor(e.length/3);if(M)k();const n=A.get();const r=x.get();const a=f.get();const o=O.get()=="Quaternions";const i=O.get()=="Euler";const s=O.get()=="Normals";let t=3;if(o)t=4;v.setUiAttribs({stride:t});if(a&&a.length!=e.length)b.setUiError("lengthScales","Scales array has wrong length");else b.setUiError("lengthScales",null);if(y.length!=N*16)y=new Float32Array(N*16);if(S.length!=N*4){T=true;S=new Float32Array(N*4)}if(j.length!=N*4){V=true;j=new Float32Array(N*4)}const l=v.get();for(let t=0;t<N;t++){mat4.identity(I);mat4.translate(I,I,[e[t*3],e[t*3+1],e[t*3+2]]);if(l){if(o){const u=mat4.create();const p=[l[t*4+0],l[t*4+1],l[t*4+2],l[t*4+3]];quat.normalize(p,p);mat4.fromQuat(u,p);mat4.mul(I,I,u)}else if(s){const c=[l[t*3+0],l[t*3+1],l[t*3+2]];const d=[1,0,0];const m=vec3.create();vec3.cross(m,d,c);vec3.normalize(m,m);const g=Math.acos(vec3.dot(d,c));const p=quat.create();quat.setAxisAngle(p,m,g);quat.normalize(p,p);const u=mat4.create();mat4.fromQuat(u,p);mat4.mul(I,I,u)}if(i){mat4.rotateX(I,I,l[t*3+0]*CGL.DEG2RAD);mat4.rotateY(I,I,l[t*3+1]*CGL.DEG2RAD);mat4.rotateZ(I,I,l[t*3+2]*CGL.DEG2RAD)}}if(T&&n){S[t*4+0]=n[t*4+0];S[t*4+1]=n[t*4+1];S[t*4+2]=n[t*4+2];S[t*4+3]=n[t*4+3]}if(V&&r){j[t*4+0]=r[t*4+0];j[t*4+1]=r[t*4+1];j[t*4+2]=r[t*4+2];j[t*4+3]=r[t*4+3]}if(a&&a.length>t)mat4.scale(I,I,[a[t*3],a[t*3+1],a[t*3+2]]);else mat4.scale(I,I,[1,1,1]);for(let e=0;e<16;e++)y[t*16+e]=I[e]}C.setNumInstances(N);if(E)C.addAttribute("instMat",y,16);if(T)C.addAttribute("instColor",S,4,{instanced:true});if(V)C.addAttribute("instTexCoords",j,4,{instanced:true});L.toggleDefine("HAS_TEXCOORDS",r);L.toggleDefine("HAS_COLORS",n);T=false;_=false}function g(){o.setUiAttribs({greyout:!a.get()})}function P(){if(!C)return;if(_)m();b.checkGraphicsApi();L.bind();if(a.get())C.setNumInstances(Math.min(N,o.get()));else C.setNumInstances(N);u.set(C.numInstances);if(C.numInstances>0)C.render(p.getShader());l.trigger();L.unbind()}}};CABLES.OPS["cb58f461-a0bd-4159-a3cb-5e396198b4e9"]={f:Ops.Gl.MeshInstancer_v4,objName:"Ops.Gl.MeshInstancer_v4"};Ops.Graphics.Meshes.Cube_v2=class extends CABLES.Op{constructor(){super(...arguments);const i=this;const e=i.attachments={};const t=i.inTrigger("Render"),n=i.inValueBool("Render Mesh",true),s=i.inValue("Width",1),l=i.inValue("Length",1),u=i.inValue("Height",1),p=i.inValueBool("Center",true),c=i.inSwitch("Mapping",["Side","Cube +-","SideWrap"],"Side"),d=i.inValue("Bias",0),m=i.inValueBool("Flip X",true),g=i.inValueBool("Top",true),b=i.inValueBool("Bottom",true),h=i.inValueBool("Left",true),f=i.inValueBool("Right",true),v=i.inValueBool("Front",true),O=i.inValueBool("Back",true),r=i.outTrigger("Next"),A=i.outObject("geometry",null,"geometry");const a=i.patch.cgl;i.toWorkPortsNeedToBeLinked(t);i.toWorkShouldNotBeChild("Ops.Gl.TextureEffects.ImageCompose",CABLES.OP_PORT_TYPE_FUNCTION);i.setPortGroup("Mapping",[c,d,m]);i.setPortGroup("Geometry",[s,u,l,p]);i.setPortGroup("Sides",[g,b,h,f,v,O]);let x=null,I=null,y=true,S=true;d.onChange=m.onChange=g.onChange=b.onChange=h.onChange=f.onChange=v.onChange=O.onChange=c.onChange=s.onChange=u.onChange=l.onChange=p.onChange=o;function o(){S=true}t.onLinkChanged=function(){if(!t.isLinked())A.set(null);else A.setRef(x)};t.onTriggered=function(){if(S)j();if(n.get()&&I&&y)I.render();r.trigger()};i.preRender=function(){j();if(I&&a)I.render()};function j(){if(!x)x=new CGL.Geometry("cubemesh");x.clear();let e=s.get();let t=-1*s.get();let n=u.get();let r=-1*u.get();let a=l.get();let o=-1*l.get();if(!p.get()){t=0;r=0;o=0}else{e*=.5;t*=.5;n*=.5;r*=.5;a*=.5;o*=.5}N(x,e,n,a,t,r,o);if(c.get()=="Side")C(x,1,1,1);else if(c.get()=="SideWrap")C(x,e,n,a);else _(x);x.verticesIndices=[];if(g.get())x.verticesIndices.push(8,9,10,8,10,11);if(b.get())x.verticesIndices.push(12,13,14,12,14,15);if(h.get())x.verticesIndices.push(20,21,22,20,22,23);if(f.get())x.verticesIndices.push(16,17,18,16,18,19);if(O.get())x.verticesIndices.push(4,5,6,4,6,7);if(v.get())x.verticesIndices.push(0,1,2,0,2,3);if(x.verticesIndices.length===0)y=false;else y=true;if(I)I.dispose();if(i.patch.cg)I=i.patch.cg.createMesh(x,{opId:i.id});A.setRef(x);S=false}i.onDelete=function(){if(I)I.dispose()};function C(e,t,n,r){const a=d.get();let o=1-a;let i=0+a;if(m.get()){[o,i]=[i,o]}let s=1-a;let l=0+a;e.setTexCoords([t*i,n*s,t*o,n*s,t*o,n*l,t*i,n*l,t*o,n*s,t*o,n*l,t*i,n*l,t*i,n*s,t*i,r*l,t*i,r*s,t*o,r*s,t*o,r*l,t*o,n*l,t*i,n*l,t*i,n*s,t*o,n*s,r*o,n*s,r*o,n*l,r*i,n*l,r*i,n*s,r*i,n*s,r*o,n*s,r*o,n*l,r*i,n*l])}function _(e,t,n,r,a,o,i){const s=.25;const l=1/3;const u=d.get();let p=0;if(m.get())p=1;const c=[];c.push(p+s+u,l*2-u,p+s*2-u,l*2-u,p+s*2-u,l+u,p+s+u,l+u,p+s*4-u,l*2-u,p+s*4-u,l+u,p+s*3+u,l+u,p+s*3+u,l*2-u);if(m.get())c.push(s+u,0-u,s*2-u,0-u,s*2-u,l*1+u,s+u,l*1+u,s+u,l*3+u,s+u,l*2-u,s*2-u,l*2-u,s*2-u,l*3+u);else c.push(s+u,0+u,s+u,l*1-u,s*2-u,l*1-u,s*2-u,0+u,s+u,l*3-u,s*2-u,l*3-u,s*2-u,l*2+u,s+u,l*2+u);c.push(p+s*3-u,1-l-u,p+s*3-u,1-l*2+u,p+s*2+u,1-l*2+u,p+s*2+u,1-l-u,p+s*0+u,1-l-u,p+s*1-u,1-l-u,p+s*1-u,1-l*2+u,p+s*0+u,1-l*2+u);e.setTexCoords(c)}function N(e,t,n,r,a,o,i){e.vertices=[a,o,r,t,o,r,t,n,r,a,n,r,a,o,i,a,n,i,t,n,i,t,o,i,a,n,i,a,n,r,t,n,r,t,n,i,a,o,i,t,o,i,t,o,r,a,o,r,t,o,i,t,n,i,t,n,r,t,o,r,a,o,i,a,o,r,a,n,r,a,n,i];e.vertexNormals=new Float32Array([0,0,1,0,0,1,0,0,1,0,0,1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,1,0,0,1,0,0,1,0,0,1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,1,0,0,1,0,0,1,0,0,1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0]);e.tangents=new Float32Array([0,1,0,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,0,1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,1,0,0,1,0,0,1,0,0,1]);e.biTangents=new Float32Array([-1,0,0,-1,0,0,-1,0,0,-1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,0,0,1,0,0,1,0,0,1,0,0,1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,-1,0,0,-1,0,0,-1,0,0,-1])}}};CABLES.OPS["37b92ba4-cea5-42ae-bf28-a513ca28549c"]={f:Ops.Graphics.Meshes.Cube_v2,objName:"Ops.Graphics.Meshes.Cube_v2"};Ops.Vars.VarSetNumber_v2=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inValueFloat("Value",0);e.varName=e.inDropDown("Variable",[],"",true);new CABLES.VarSetOpWrapper(e,"number",n,e.varName)}};CABLES.OPS["b5249226-6095-4828-8a1c-080654e192fa"]={f:Ops.Vars.VarSetNumber_v2,objName:"Ops.Vars.VarSetNumber_v2"};Ops.Trigger.TriggerReceive=class extends CABLES.Op{constructor(){super(...arguments);const r=this;const e=r.attachments={};const t=r.outTrigger("Triggered");r.varName=r.inValueSelect("Named Trigger",[],"",true);r.varName.setUiAttribs({_triggerSelect:true});o();r.patch.addEventListener("namedTriggersChanged",o);let n=null;function a(){t.trigger()}function o(){if(CABLES.UI){let t=[];let n=r.patch.namedTriggers;for(let e in n)t.push(e);t=t.sort();r.varName.uiAttribs.values=t}}r.varName.onChange=function(){if(n){let e=r.patch.namedTriggers[n];let t=e.indexOf(a);if(t!=-1)e.splice(t,1)}r.setTitle(">"+r.varName.get());r.patch.namedTriggers[r.varName.get()]=r.patch.namedTriggers[r.varName.get()]||[];let e=r.patch.namedTriggers[r.varName.get()];e.push(a);n=r.varName.get();i();r.patch.emitEvent("opTriggerNameChanged",r,r.varName.get())};r.on("uiParamPanel",i);function i(){if(!r.varName.get()){r.setUiError("unknowntrigger","unknown trigger")}else r.setUiError("unknowntrigger",null)}}};CABLES.OPS["0816c999-f2db-466b-9777-2814573574c5"]={f:Ops.Trigger.TriggerReceive,objName:"Ops.Trigger.TriggerReceive"};Ops.Color.ColorValue=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inValueSlider("r",Math.random());const r=e.inValueSlider("g",Math.random());const a=e.inValueSlider("b",Math.random());n.setUiAttribs({colorPick:true});const o=e.inValueSlider("a",1);const i=e.outNumber("outr");const s=e.outNumber("outg");const l=e.outNumber("outb");const u=e.outNumber("outa");const p=e.outNumber("Hex","000000");const c=e.outArray("Array");n.onChange=r.onChange=a.onChange=o.onChange=m;function d(e){let t=Math.round(e*255).toString(16);if(t.length===1){t="0"+t}return t.toUpperCase()}function m(){i.set(n.get());s.set(r.get());l.set(a.get());u.set(o.get());let e=d(n.get())+d(r.get())+d(a.get());p.set(e);c.set([n.get(),r.get(),a.get(),o.get()])}m()}};CABLES.OPS["7caa37c8-f2a7-49f2-a29c-96af362abca0"]={f:Ops.Color.ColorValue,objName:"Ops.Color.ColorValue"};Ops.Array.Array3=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const o=e.inValueInt("Num Triplets",100),i=e.inValueFloat("X",0),s=e.inValueFloat("Y",0),l=e.inValueFloat("Z",0),u=e.outArray("Array",null,3),p=e.outNumber("Total points"),c=e.outNumber("Array length");o.onChange=i.onChange=s.onChange=l.onChange=n;let d=[];n();function n(){let t=Math.floor(o.get()*3);if(t<0)t=0;if(d.length!=t)d.length=t;const n=i.get();const r=s.get();const a=l.get();for(let e=0;e<t;e+=3){d[e]=n;d[e+1]=r;d[e+2]=a}u.setRef(d);p.set(t/3);c.set(t)}}};CABLES.OPS["2766606a-3ea0-4204-8613-b8950a124435"]={f:Ops.Array.Array3,objName:"Ops.Array.Array3"};Ops.Array.ArrayMerge_v3=class extends CABLES.Op{constructor(){super(...arguments);const t=this;const e=t.attachments={};const n=8;const r=[];for(let e=0;e<n;e++){r[e]=t.inArray("Array "+e);r[e].onChange=function(){s()}}const a=t.outArray("Result"),o=t.outNumber("Array length");let i=[];function s(){i.length=0;for(let e=0;e<n;e++){const t=r[e].get();if(t)i=i.concat(t)}a.setRef(i);o.set(i.length)}}};CABLES.OPS["753d053a-04a3-44c7-abf0-ae2676ced13e"]={f:Ops.Array.ArrayMerge_v3,objName:"Ops.Array.ArrayMerge_v3"};Ops.Devices.Mouse.Mouse_v3=class extends CABLES.Op{constructor(){super(...arguments);const t=this;const P=t.attachments={};const e=t.inSwitch("Coordinates",["-1 to 1","Pixel Display","Pixel","0 to 1"],"-1 to 1"),a=t.inValueSelect("Area",["Canvas","Document","Parent Element","Canvas Area"],"Canvas"),o=t.inValueBool("flip y",true),n=t.inBool("right click prevent default",true),r=t.inValueBool("Touch support",true),i=t.inValueBool("Passive Events",false),s=t.inValueBool("Active",true),l=t.outNumber("x",0),u=t.outNumber("y",0),p=t.outTrigger("click"),c=t.outTrigger("click right"),d=t.outBoolNum("Button is down"),m=t.outBoolNum("Mouse is hovering"),g=t.outNumber("Movement X",0),b=t.outNumber("Movement Y",0);const h=t.patch.cgl;let f=1;let v=null;let O=null;i.onChange=a.onChange=k;e.onChange=D;t.onDelete=M;k();t.on("loadedValueSet",A);function A(){if(f==0){if(O.clientWidth===0)setTimeout(A,50);l.set(O.clientWidth/2);u.set(O.clientHeight/2)}else if(f==1){l.set(0);u.set(0)}else if(f==2){l.set(.5);u.set(.5)}else if(f==3){if(O.clientWidth===0){setTimeout(A,50)}l.set(O.clientWidth/2/h.pixelDensity);u.set(O.clientHeight/2/h.pixelDensity)}else console.error("unknown normalize mouse",f)}function w(a,o){a=a||0;o=o||0;if(f==0){l.set(a);u.set(o)}else if(f==3){l.set(a*h.pixelDensity);u.set(o*h.pixelDensity)}else{let n=O.clientWidth/h.pixelDensity;let r=O.clientHeight/h.pixelDensity;n=n||1;r=r||1;if(f==1){let e=a/n*2-1;let t=o/r*2-1;e=CABLES.clamp(e,-1,1);t=CABLES.clamp(t,-1,1);l.set(e);u.set(t)}else if(f==2){let e=a/n;let t=o/r;e=CABLES.clamp(e,0,1);t=CABLES.clamp(t,0,1);l.set(e);u.set(t)}}}function x(e){if(!O)return;const t=O.getBoundingClientRect();return e.clientX>t.left&&e.clientX<t.left+t.width&&e.clientY>t.top&&e.clientY<t.top+t.height}r.onChange=function(){M();k()};s.onChange=function(){if(v)M();if(s.get())k()};function D(){if(e.get()=="Pixel")f=0;else if(e.get()=="-1 to 1")f=1;else if(e.get()=="0 to 1")f=2;else if(e.get()=="Pixel Display")f=3}function I(e){d.set(false);m.set(x(e))}function y(e){if(!x(e))return;d.set(true)}function S(e){d.set(false)}function j(e){if(!x(e))return;c.trigger();if(n.get())e.preventDefault()}function C(e){if(!x(e))return;p.trigger()}function _(e){d.set(false);m.set(x(e))}function N(e){let t=e.clientX;let n=e.clientY;if(a.get()!="Document"){t=e.offsetX;n=e.offsetY}if(a.get()==="Canvas Area"){const r=O.getBoundingClientRect();t=e.clientX-r.left;n=e.clientY-r.top;if(t<0||t>r.width||n>r.height||n<0)return;t=CABLES.clamp(t,0,r.width);n=CABLES.clamp(n,0,r.height)}if(o.get())n=O.clientHeight-n;w(t/h.pixelDensity,n/h.pixelDensity)}function T(e){m.set(x(e));if(a.get()==="Canvas Area"){const t=O.getBoundingClientRect();const n=e.clientX-t.left;const r=e.clientY-t.top;if(n<0||n>t.width||r>t.height||r<0)return}N(e);g.set(e.movementX/h.pixelDensity);b.set(e.movementY/h.pixelDensity)}function V(e){if(event.touches&&event.touches.length>0)N(e.touches[0])}function E(e){d.set(true);if(e.touches&&e.touches.length>0)y(e.touches[0])}function L(e){d.set(false);S()}function M(){if(!v)return;v.removeEventListener("touchend",L);v.removeEventListener("touchstart",E);v.removeEventListener("touchmove",V);v.removeEventListener("click",C);v.removeEventListener("mousemove",T);v.removeEventListener("mouseleave",_);v.removeEventListener("mousedown",y);v.removeEventListener("mouseup",S);v.removeEventListener("mouseenter",I);v.removeEventListener("contextmenu",j);v=null}function k(){if(v||!s.get())M();if(!s.get())return;v=O=h.canvas;if(a.get()=="Canvas Area"){O=h.canvas.parentElement;v=document.body}if(a.get()=="Document")O=v=document.body;if(a.get()=="Parent Element")v=O=h.canvas.parentElement;if(!O){t.setUiError("noarea","could not find area element for mouse",2);return}t.setUiError("noarea",null);let e=false;if(i.get())e={passive:true};if(r.get()){v.addEventListener("touchend",L,e);v.addEventListener("touchstart",E,e);v.addEventListener("touchmove",V,e)}v.addEventListener("mousemove",T,e);v.addEventListener("mouseleave",_,e);v.addEventListener("mousedown",y,e);v.addEventListener("mouseup",S,e);v.addEventListener("mouseenter",I,e);v.addEventListener("contextmenu",j,e);v.addEventListener("click",C,e)}}};CABLES.OPS["6d1edbc0-088a-43d7-9156-918fb3d7f24b"]={f:Ops.Devices.Mouse.Mouse_v3,objName:"Ops.Devices.Mouse.Mouse_v3"};Ops.Devices.TouchScreen=class extends CABLES.Op{constructor(){super(...arguments);const a=this;const e=a.attachments={};const t=a.inValueBool("Disable Scaling",true),n=a.inValueBool("Disable Scroll",true),o=a.inValueBool("HDPI Coordinates",false),r=a.inValueBool("Active",true),i=a.outNumber("Touched",false),s=a.outNumber("Fingers",0),l=a.outNumber("Finger 1 X",0),u=a.outNumber("Finger 1 Y",0),p=a.outNumber("Finger 1 Force",0),c=a.outNumber("Finger 2 X",0),d=a.outNumber("Finger 2 Y",0),m=a.outNumber("Finger 2 Force",0),g=a.inSwitch("Area",["Canvas","Document"],"Canvas"),b=a.outArray("Events"),h=a.inValueBool("Normalize Coordinates"),f=a.inValueBool("Flip Y"),v=a.outTrigger("Touch Start"),O=a.outTrigger("Touch End");g.onChange=_;function A(e){if(e.touches&&e.touches.length>0){var t=e.target.getBoundingClientRect();var n=e.touches[0].clientX-e.touches[0].target.offsetLeft;var r=e.touches[0].clientY-e.touches[0].target.offsetTop;if(f.get())r=t.height-r;if(o.get()){n*=a.patch.cgl.pixelDensity||1;r*=a.patch.cgl.pixelDensity||1}if(h.get()){n=n/t.width*2-1;r=r/t.height*2-1}l.set(n);u.set(r);if(e.touches[0].force)p.set(e.touches[0].force)}if(e.touches&&e.touches.length>1){var t=e.target.getBoundingClientRect();var n=e.touches[1].clientX-e.touches[1].target.offsetLeft;var r=e.touches[1].clientY-e.touches[1].target.offsetTop;if(o.get()){n*=a.patch.cgl.pixelDensity||1;r*=a.patch.cgl.pixelDensity||1}if(h.get()){n=n/t.width*2-1;r=r/t.height*2-1}c.set(n);d.set(r);if(e.touches[1].force)m.set(e.touches[1].force)}b.set(e.touches)}const x=function(e){i.set(true);A(e);s.set(e.touches.length);v.trigger()};const I=function(e){i.set(false);p.set(0);m.set(0);A(e);s.set(e.touches.length);O.trigger()};const y=function(e){A(e);s.set(e.touches.length);if(n.get()||t.get()&&e.scale!==1){e.preventDefault();document.body.style["touch-action"]="none"}else{document.body.style["touch-action"]="initial"}};const S=a.patch.cgl;let j=null;function C(){j.addEventListener("touchmove",y,{passive:false});j.addEventListener("touchstart",x,{passive:false});j.addEventListener("touchend",I,{passive:false})}function _(){N();if(g.get()=="Document")j=document;else j=S.canvas;if(r.get())C()}function N(){if(j){j.removeEventListener("touchmove",y);j.removeEventListener("touchstart",x);j.removeEventListener("touchend",I)}j=null}r.onChange=function(){_()};_()}};CABLES.OPS["cedffacf-0f09-4342-bd21-540bd9c8037d"]={f:Ops.Devices.TouchScreen,objName:"Ops.Devices.TouchScreen"};Ops.Trigger.TriggerSend=class extends CABLES.Op{constructor(){super(...arguments);const r=this;const e=r.attachments={};const t=r.inTriggerButton("Trigger"),n=r.outTrigger("Next");r.varName=r.inValueSelect("Named Trigger",[],"",true);r.varName.onChange=o;t.onTriggered=i;r.patch.addEventListener("namedTriggersChanged",a);a();r.varName.setUiAttribs({_triggerSelect:true});function a(){if(CABLES.UI){let e=[];const t=r.patch.namedTriggers;e.push("+ create new one");for(const n in t)e.push(n);e=e.sort();r.varName.uiAttribs.values=e}}function o(){if(CABLES.UI){if(r.varName.get()=="+ create new one"){new CABLES.UI.ModalDialog({prompt:true,title:"New Trigger",text:"Enter a name for the new trigger",promptValue:"",promptOk:e=>{r.varName.set(e);r.patch.namedTriggers[e]=r.patch.namedTriggers[e]||[];a()}});return}r.refreshParams()}if(!r.patch.namedTriggers[r.varName.get()]){r.patch.namedTriggers[r.varName.get()]=r.patch.namedTriggers[r.varName.get()]||[];r.patch.emitEvent("namedTriggersChanged")}r.setTitle(">"+r.varName.get());r.refreshParams();r.patch.emitEvent("opTriggerNameChanged",r,r.varName.get())}function i(){const t=r.patch.namedTriggers[r.varName.get()];r.patch.emitEvent("namedTriggerSent",r.varName.get());if(!t){r.setUiError("unknowntrigger","unknown trigger");return}else r.setUiError("unknowntrigger",null);for(let e=0;e<t.length;e++){t[e]()}n.trigger()}}};CABLES.OPS["ce1eaf2b-943b-4dc0-ab5e-ee11b63c9ed0"]={f:Ops.Trigger.TriggerSend,objName:"Ops.Trigger.TriggerSend"};Ops.Number.TriggerOnChangeNumber=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inFloat("Value"),r=e.outTrigger("Next"),a=e.outNumber("Number");n.onChange=function(){a.set(n.get());r.trigger()}}};CABLES.OPS["f5c8c433-ce13-49c4-9a33-74e98f110ed0"]={f:Ops.Number.TriggerOnChangeNumber,objName:"Ops.Number.TriggerOnChangeNumber"};Ops.Trigger.TriggerOnce=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inTriggerButton("Exec"),r=e.inTriggerButton("Reset"),a=e.outTrigger("Next"),o=e.outBoolNum("Was Triggered");let i=false;e.toWorkPortsNeedToBeLinked(n);r.onTriggered=function(){i=false;o.set(i)};n.onTriggered=function(){if(i)return;i=true;a.trigger();o.set(i)}}};CABLES.OPS["cf3544e4-e392-432b-89fd-fcfb5c974388"]={f:Ops.Trigger.TriggerOnce,objName:"Ops.Trigger.TriggerOnce"};Ops.Array.ArrayLength_v2=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inArray("array"),r=e.outNumber("length");r.ignoreValueSerialize=true;function a(){let e=0;if(n.get())e=n.get().length;r.set(e)}n.onChange=a}};CABLES.OPS["6f665caa-96ed-45d8-8620-e34f0f8e062c"]={f:Ops.Array.ArrayLength_v2,objName:"Ops.Array.ArrayLength_v2"};Ops.Html.Cursor_v2=class extends CABLES.Op{constructor(){super(...arguments);const t=this;const e=t.attachments={};const n=t.inTriggerButton("Update"),r=t.inDropDown("CSS Cursors",["auto","crosshair","pointer","hand","move","n-resize","ne-resize","e-resize","se-resize","s-resize","sw-resize","w-resize","nw-resize","ew-resize","text","wait","help","none"],"pointer"),a=t.inBool("Set Parent Element",true),o=t.outTrigger("Next");const i="";n.onTriggered=l;let s="";n.onLinkChanged=o.onLinkChanged=()=>{t.patch.cgl.setCursor("auto")};a.onChange=()=>{if(!a.get()){s="auto";t.patch.cgl.canvas.parentElement.style.cursor="auto"}};function l(){let e=null;t.patch.cgl.setCursor(r.get(),e);if(a.get()&&s!=r.get())t.patch.cgl.canvas.parentElement.style.cursor=r.get();o.trigger()}}};CABLES.OPS["39486799-bdad-42d3-a300-4642c23578a8"]={f:Ops.Html.Cursor_v2,objName:"Ops.Html.Cursor_v2"};Ops.Gl.Orthogonal_v2=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inTrigger("render"),r=e.inValue("bounds",2),a=e.inSwitch("Axis",["X","Y","None"],"X"),o=e.inValue("frustum near",-100),i=e.inValue("frustum far",100),s=e.outTrigger("trigger"),l=e.outNumber("Ratio"),u=e.outNumber("Width"),p=e.outNumber("Height");const c=e.patch.cgl;n.onTriggered=function(){const e=c.getViewPort();if(a.get()=="X"){const t=e[3]/e[2];c.pushPMatrix();mat4.ortho(c.pMatrix,-r.get(),r.get(),-r.get()*t,r.get()*t,parseFloat(o.get()),parseFloat(i.get()));u.set(r.get()*2);p.set(r.get()*t*2);l.set(t)}else if(a.get()=="Y"){const t=e[2]/e[3];c.pushPMatrix();mat4.ortho(c.pMatrix,-r.get()*t,r.get()*t,-r.get(),r.get(),parseFloat(o.get()),parseFloat(i.get()));u.set(r.get()*t*2);p.set(r.get()*2);l.set(t)}else{c.pushPMatrix();mat4.ortho(c.pMatrix,-r.get(),r.get(),-r.get(),r.get(),parseFloat(o.get()),parseFloat(i.get()));u.set(r.get()*2);p.set(r.get()*2);l.set(1)}s.trigger();c.popPMatrix()}}};CABLES.OPS["b9235490-eaf2-4960-b1be-4279a4051ec6"]={f:Ops.Gl.Orthogonal_v2,objName:"Ops.Gl.Orthogonal_v2"};Ops.Math.Divide=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inValueFloat("number1",1),r=e.inValueFloat("number2",2),a=e.outNumber("result");e.setUiAttribs({mathTitle:true});n.onChange=r.onChange=o;o();function o(){a.set(n.get()/r.get())}}};CABLES.OPS["86fcfd8c-038d-4b91-9820-a08114f6b7eb"]={f:Ops.Math.Divide,objName:"Ops.Math.Divide"};Ops.Gl.ViewPortSize=class extends CABLES.Op{constructor(){super(...arguments);const t=this;const e=t.attachments={};const n=t.inTrigger("Exec"),r=t.outTrigger("Next"),a=t.outNumber("X"),o=t.outNumber("Y"),i=t.outNumber("Width"),s=t.outNumber("Height");n.onTriggered=function(){const e=t.patch.cgl.viewPort;a.set(e[0]);o.set(e[1]);i.set(e[2]);s.set(e[3]);r.trigger()}}};CABLES.OPS["7cb99d8f-d7ef-478e-902b-54e054e387a0"]={f:Ops.Gl.ViewPortSize,objName:"Ops.Gl.ViewPortSize"};Ops.Math.Multiply=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inValueFloat("number1",1),r=e.inValueFloat("number2",1),a=e.outNumber("result");e.setUiAttribs({mathTitle:true});n.onChange=r.onChange=o;o();function o(){const e=n.get();const t=r.get();a.set(e*t)}}};CABLES.OPS["1bbdae06-fbb2-489b-9bcc-36c9d65bd441"]={f:Ops.Math.Multiply,objName:"Ops.Math.Multiply"};Ops.Sidebar.Button_v2=class extends CABLES.Op{constructor(){super(...arguments);const t=this;const e=t.attachments={};const n=t.inObject("link");const r=t.inString("Text","Button");const a=t.outObject("childs");const o=t.outTrigger("Pressed Trigger");const i=t.inBool("Grey Out",false);const s=t.inBool("Visible",true);const l=document.createElement("div");l.dataset.op=t.id;l.classList.add("cablesEle");l.classList.add("sidebar__item");l.classList.add("sidebar--button");const u=document.createElement("button");u.classList.add("sidebar__button-input");l.appendChild(u);u.addEventListener("click",d);u.style.width="100%";const p=document.createTextNode(r.get());u.appendChild(p);t.toWorkNeedsParent("Ops.Sidebar.Sidebar");n.onChange=g;r.onChange=m;t.onDelete=f;const c=document.createElement("div");c.classList.add("sidebar__greyout");l.appendChild(c);c.style.display="none";i.onChange=function(){c.style.display=i.get()?"block":"none"};s.onChange=function(){l.style.display=s.get()?"block":"none"};function d(){o.trigger()}function m(){const e=r.get();u.textContent=e;u.setAttribute("aria-label","button "+r.get());if(CABLES.UI)t.setUiAttrib({extendTitle:e})}function g(){a.set(null);const e=n.get();if(e&&e.parentElement){e.parentElement.appendChild(l);a.set(e)}else{if(l.parentElement){l.parentElement.removeChild(l)}}}function b(e){if(e){e.style.display="block"}}function h(e){if(e){e.style.display="none"}}function f(){v(l)}function v(e){if(e&&e.parentNode&&e.parentNode.removeChild){e.parentNode.removeChild(e)}}}};CABLES.OPS["5e9c6933-0605-4bf7-8671-a016d917f327"]={f:Ops.Sidebar.Button_v2,objName:"Ops.Sidebar.Button_v2"};Ops.Sidebar.Sidebar=class extends CABLES.Op{constructor(){super(...arguments);const i=this;const n=i.attachments={style_css:" /*\n * SIDEBAR\n  http://danielstern.ca/range.css/#/\n  https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-progress-value\n */\n\n.sidebar-icon-undo\n{\n    width:10px;\n    height:10px;\n    background-image: url(\"data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' stroke='grey' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 7v6h6'/%3E%3Cpath d='M21 17a9 9 0 00-9-9 9 9 0 00-6 2.3L3 13'/%3E%3C/svg%3E\");\n    background-size: 19px;\n    background-repeat: no-repeat;\n    top: -19px;\n    margin-top: -7px;\n}\n\n.icon-chevron-down {\n    top: 2px;\n    right: 9px;\n}\n\n.iconsidebar-chevron-up,.sidebar__close-button {\n\tbackground-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM4ODg4ODgiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0iZmVhdGhlciBmZWF0aGVyLWNoZXZyb24tdXAiPjxwb2x5bGluZSBwb2ludHM9IjE4IDE1IDEyIDkgNiAxNSI+PC9wb2x5bGluZT48L3N2Zz4=);\n}\n\n.iconsidebar-minimizebutton {\n    background-position: 98% center;\n    background-repeat: no-repeat;\n}\n\n.sidebar-cables-right\n{\n    right: 15px;\n    left: initial !important;\n}\n\n.sidebar-cables *\n{\n    color: #BBBBBB !important;\n    font-family: Arial;\n}\n\n.sidebar-cables {\n    --sidebar-color: #07f78c;\n    --sidebar-width: 220px;\n    --sidebar-border-radius: 10px;\n    --sidebar-monospace-font-stack: \"SFMono-Regular\", Consolas, \"Liberation Mono\", Menlo, Courier, monospace;\n    --sidebar-hover-transition-time: .2s;\n\n    position: absolute;\n    top: 15px;\n    left: 15px;\n    border-radius: var(--sidebar-border-radius);\n    z-index: 100000;\n    width: var(--sidebar-width);\n    max-height: 100%;\n    box-sizing: border-box;\n    overflow-y: auto;\n    overflow-x: hidden;\n    font-size: 13px;\n    line-height: 1em; /* prevent emojis from breaking height of the title */\n}\n\n.sidebar-cables::selection {\n    background-color: var(--sidebar-color);\n    color: #EEEEEE;\n}\n\n.sidebar-cables::-webkit-scrollbar {\n    background-color: transparent;\n    --cables-scrollbar-width: 8px;\n    width: var(--cables-scrollbar-width);\n}\n\n.sidebar-cables::-webkit-scrollbar-track {\n    background-color: transparent;\n    width: var(--cables-scrollbar-width);\n}\n\n.sidebar-cables::-webkit-scrollbar-thumb {\n    background-color: #333333;\n    border-radius: 4px;\n    width: var(--cables-scrollbar-width);\n}\n\n.sidebar-cables--closed {\n    width: auto;\n}\n\n.sidebar__close-button {\n    background-color: #222;\n    /*-webkit-user-select: none;  */\n    /*-moz-user-select: none;     */\n    /*-ms-user-select: none;      */\n    /*user-select: none;          */\n    /*transition: background-color var(--sidebar-hover-transition-time);*/\n    /*color: #CCCCCC;*/\n    height: 2px;\n    /*border-bottom:20px solid #222;*/\n\n    /*box-sizing: border-box;*/\n    /*padding-top: 2px;*/\n    /*text-align: center;*/\n    /*cursor: pointer;*/\n    /*border-radius: 0 0 var(--sidebar-border-radius) var(--sidebar-border-radius);*/\n    /*opacity: 1.0;*/\n    /*transition: opacity 0.3s;*/\n    /*overflow: hidden;*/\n}\n\n.sidebar__close-button-icon {\n    display: inline-block;\n    /*opacity: 0;*/\n    width: 20px;\n    height: 20px;\n    /*position: relative;*/\n    /*top: -1px;*/\n\n\n}\n\n.sidebar--closed {\n    width: auto;\n    margin-right: 20px;\n}\n\n.sidebar--closed .sidebar__close-button {\n    margin-top: 8px;\n    margin-left: 8px;\n    padding:10px;\n\n    height: 25px;\n    width:25px;\n    border-radius: 50%;\n    cursor: pointer;\n    opacity: 0.3;\n    background-repeat: no-repeat;\n    background-position: center center;\n    transform:rotate(180deg);\n}\n\n.sidebar--closed .sidebar__group\n{\n    display:none;\n\n}\n.sidebar--closed .sidebar__close-button-icon {\n    background-position: 0px 0px;\n}\n\n.sidebar__close-button:hover {\n    background-color: #111111;\n    opacity: 1.0 !important;\n}\n\n/*\n * SIDEBAR ITEMS\n */\n\n.sidebar__items {\n    /* max-height: 1000px; */\n    /* transition: max-height 0.5;*/\n    background-color: #222;\n    padding-bottom: 20px;\n}\n\n.sidebar--closed .sidebar__items {\n    /* max-height: 0; */\n    height: 0;\n    display: none;\n    pointer-interactions: none;\n}\n\n.sidebar__item__right {\n    float: right;\n}\n\n/*\n * SIDEBAR GROUP\n */\n\n.sidebar__group {\n    /*background-color: #1A1A1A;*/\n    overflow: hidden;\n    box-sizing: border-box;\n    animate: height;\n    /*background-color: #151515;*/\n    /* max-height: 1000px; */\n    /* transition: max-height 0.5s; */\n--sidebar-group-header-height: 33px;\n}\n\n.sidebar__group-items\n{\n    padding-top: 15px;\n    padding-bottom: 15px;\n}\n\n.sidebar__group--closed {\n    /* max-height: 13px; */\n    height: var(--sidebar-group-header-height);\n}\n\n.sidebar__group-header {\n    box-sizing: border-box;\n    color: #EEEEEE;\n    background-color: #151515;\n    -webkit-user-select: none;  /* Chrome all / Safari all */\n    -moz-user-select: none;     /* Firefox all */\n    -ms-user-select: none;      /* IE 10+ */\n    user-select: none;          /* Likely future */\n\n    /*height: 100%;//var(--sidebar-group-header-height);*/\n\n    padding-top: 7px;\n    text-transform: uppercase;\n    letter-spacing: 0.08em;\n    cursor: pointer;\n    /*transition: background-color var(--sidebar-hover-transition-time);*/\n    position: relative;\n}\n\n.sidebar__group-header:hover {\n  background-color: #111111;\n}\n\n.sidebar__group-header-title {\n  /*float: left;*/\n  overflow: hidden;\n  padding: 0 15px;\n  padding-top:5px;\n  padding-bottom:10px;\n  font-weight:bold;\n}\n\n.sidebar__group-header-undo {\n    float: right;\n    overflow: hidden;\n    padding-right: 15px;\n    padding-top:5px;\n    font-weight:bold;\n  }\n\n.sidebar__group-header-icon {\n    width: 17px;\n    height: 14px;\n    background-repeat: no-repeat;\n    display: inline-block;\n    position: absolute;\n    background-size: cover;\n\n    /* icon open */\n    /* feather icon: chevron up */\n    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM4ODg4ODgiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0iZmVhdGhlciBmZWF0aGVyLWNoZXZyb24tdXAiPjxwb2x5bGluZSBwb2ludHM9IjE4IDE1IDEyIDkgNiAxNSI+PC9wb2x5bGluZT48L3N2Zz4=);\n    top: 4px;\n    right: 5px;\n    opacity: 0.0;\n    transition: opacity 0.3;\n}\n\n.sidebar__group-header:hover .sidebar__group-header-icon {\n    opacity: 1.0;\n}\n\n/* icon closed */\n.sidebar__group--closed .sidebar__group-header-icon {\n    /* feather icon: chevron down */\n    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM4ODg4ODgiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0iZmVhdGhlciBmZWF0aGVyLWNoZXZyb24tZG93biI+PHBvbHlsaW5lIHBvaW50cz0iNiA5IDEyIDE1IDE4IDkiPjwvcG9seWxpbmU+PC9zdmc+);\n    top: 4px;\n    right: 5px;\n}\n\n/*\n * SIDEBAR ITEM\n */\n\n.sidebar__item\n{\n    box-sizing: border-box;\n    padding: 7px;\n    padding-left:15px;\n    padding-right:15px;\n\n    overflow: hidden;\n    position: relative;\n}\n\n.sidebar__item-label {\n    display: inline-block;\n    -webkit-user-select: none;  /* Chrome all / Safari all */\n    -moz-user-select: none;     /* Firefox all */\n    -ms-user-select: none;      /* IE 10+ */\n    user-select: none;          /* Likely future */\n    width: calc(50% - 7px);\n    margin-right: 7px;\n    margin-top: 2px;\n    text-overflow: ellipsis;\n    /* overflow: hidden; */\n}\n\n.sidebar__item-value-label {\n    font-family: var(--sidebar-monospace-font-stack);\n    display: inline-block;\n    text-overflow: ellipsis;\n    overflow: hidden;\n    white-space: nowrap;\n    max-width: 60%;\n}\n\n.sidebar__item-value-label::selection {\n    background-color: var(--sidebar-color);\n    color: #EEEEEE;\n}\n\n.sidebar__item + .sidebar__item,\n.sidebar__item + .sidebar__group,\n.sidebar__group + .sidebar__item,\n.sidebar__group + .sidebar__group {\n    /*border-top: 1px solid #272727;*/\n}\n\n/*\n * SIDEBAR ITEM TOGGLE\n */\n\n/*.sidebar__toggle */\n.icon_toggle{\n    cursor: pointer;\n}\n\n.sidebar__toggle-input {\n    --sidebar-toggle-input-color: #CCCCCC;\n    --sidebar-toggle-input-color-hover: #EEEEEE;\n    --sidebar-toggle-input-border-size: 2px;\n    display: inline;\n    float: right;\n    box-sizing: border-box;\n    border-radius: 50%;\n    /*outline-style: solid;*/\n    /*outline-color:red;*/\n    cursor: pointer;\n    --toggle-size: 11px;\n    margin-top: 2px;\n    background-color: transparent !important;\n    border: var(--sidebar-toggle-input-border-size) solid var(--sidebar-toggle-input-color);\n    width: var(--toggle-size);\n    height: var(--toggle-size);\n    transition: background-color var(--sidebar-hover-transition-time);\n    transition: border-color var(--sidebar-hover-transition-time);\n}\n.sidebar__toggle:hover .sidebar__toggle-input {\n    border-color: var(--sidebar-toggle-input-color-hover);\n}\n\n.sidebar__toggle .sidebar__item-value-label {\n    -webkit-user-select: none;  /* Chrome all / Safari all */\n    -moz-user-select: none;     /* Firefox all */\n    -ms-user-select: none;      /* IE 10+ */\n    user-select: none;          /* Likely future */\n    max-width: calc(50% - 12px);\n}\n.sidebar__toggle-input::after { clear: both; }\n\n.sidebar__toggle--active .icon_toggle\n{\n\n    background-image: url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjE1cHgiIHdpZHRoPSIzMHB4IiBmaWxsPSIjMDZmNzhiIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTAwIDEwMCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGcgZGlzcGxheT0ibm9uZSI+PGcgZGlzcGxheT0iaW5saW5lIj48Zz48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZmlsbD0iIzA2Zjc4YiIgZD0iTTMwLDI3QzE3LjM1LDI3LDcsMzcuMzUsNyw1MGwwLDBjMCwxMi42NSwxMC4zNSwyMywyMywyM2g0MCBjMTIuNjUsMCwyMy0xMC4zNSwyMy0yM2wwLDBjMC0xMi42NS0xMC4zNS0yMy0yMy0yM0gzMHogTTcwLDY3Yy05LjM4OSwwLTE3LTcuNjEtMTctMTdzNy42MTEtMTcsMTctMTdzMTcsNy42MSwxNywxNyAgICAgUzc5LjM4OSw2Nyw3MCw2N3oiPjwvcGF0aD48L2c+PC9nPjwvZz48Zz48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTMwLDI3QzE3LjM1LDI3LDcsMzcuMzUsNyw1MGwwLDBjMCwxMi42NSwxMC4zNSwyMywyMywyM2g0MCAgIGMxMi42NSwwLDIzLTEwLjM1LDIzLTIzbDAsMGMwLTEyLjY1LTEwLjM1LTIzLTIzLTIzSDMweiBNNzAsNjdjLTkuMzg5LDAtMTctNy42MS0xNy0xN3M3LjYxMS0xNywxNy0xN3MxNyw3LjYxLDE3LDE3ICAgUzc5LjM4OSw2Nyw3MCw2N3oiPjwvcGF0aD48L2c+PGcgZGlzcGxheT0ibm9uZSI+PGcgZGlzcGxheT0iaW5saW5lIj48cGF0aCBmaWxsPSIjMDZmNzhiIiBzdHJva2U9IiMwNmY3OGIiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBkPSJNNyw1MGMwLDEyLjY1LDEwLjM1LDIzLDIzLDIzaDQwICAgIGMxMi42NSwwLDIzLTEwLjM1LDIzLTIzbDAsMGMwLTEyLjY1LTEwLjM1LTIzLTIzLTIzSDMwQzE3LjM1LDI3LDcsMzcuMzUsNyw1MEw3LDUweiI+PC9wYXRoPjwvZz48Y2lyY2xlIGRpc3BsYXk9ImlubGluZSIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9IiMwNmY3OGIiIHN0cm9rZT0iIzA2Zjc4YiIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIGN4PSI3MCIgY3k9IjUwIiByPSIxNyI+PC9jaXJjbGU+PC9nPjxnIGRpc3BsYXk9Im5vbmUiPjxwYXRoIGRpc3BsYXk9ImlubGluZSIgZD0iTTcwLDI1SDMwQzE2LjIxNSwyNSw1LDM2LjIxNSw1LDUwczExLjIxNSwyNSwyNSwyNWg0MGMxMy43ODUsMCwyNS0xMS4yMTUsMjUtMjVTODMuNzg1LDI1LDcwLDI1eiBNNzAsNzEgICBIMzBDMTguNDIxLDcxLDksNjEuNTc5LDksNTBzOS40MjEtMjEsMjEtMjFoNDBjMTEuNTc5LDAsMjEsOS40MjEsMjEsMjFTODEuNTc5LDcxLDcwLDcxeiBNNzAsMzFjLTEwLjQ3NywwLTE5LDguNTIzLTE5LDE5ICAgczguNTIzLDE5LDE5LDE5czE5LTguNTIzLDE5LTE5UzgwLjQ3NywzMSw3MCwzMXogTTcwLDY1Yy04LjI3MSwwLTE1LTYuNzI5LTE1LTE1czYuNzI5LTE1LDE1LTE1czE1LDYuNzI5LDE1LDE1Uzc4LjI3MSw2NSw3MCw2NXoiPjwvcGF0aD48L2c+PC9zdmc+);\n    opacity: 1;\n    transform: rotate(0deg);\n    background-position: -4px -9px;\n}\n\n\n.icon_toggle\n{\n    float: right;\n    width:40px;\n    height:18px;\n    background-image: url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjE1cHgiIHdpZHRoPSIzMHB4IiBmaWxsPSIjYWFhYWFhIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTAwIDEwMCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGcgZGlzcGxheT0ibm9uZSI+PGcgZGlzcGxheT0iaW5saW5lIj48Zz48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZmlsbD0iI2FhYWFhYSIgZD0iTTMwLDI3QzE3LjM1LDI3LDcsMzcuMzUsNyw1MGwwLDBjMCwxMi42NSwxMC4zNSwyMywyMywyM2g0MCBjMTIuNjUsMCwyMy0xMC4zNSwyMy0yM2wwLDBjMC0xMi42NS0xMC4zNS0yMy0yMy0yM0gzMHogTTcwLDY3Yy05LjM4OSwwLTE3LTcuNjEtMTctMTdzNy42MTEtMTcsMTctMTdzMTcsNy42MSwxNywxNyAgICAgUzc5LjM4OSw2Nyw3MCw2N3oiPjwvcGF0aD48L2c+PC9nPjwvZz48Zz48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTMwLDI3QzE3LjM1LDI3LDcsMzcuMzUsNyw1MGwwLDBjMCwxMi42NSwxMC4zNSwyMywyMywyM2g0MCAgIGMxMi42NSwwLDIzLTEwLjM1LDIzLTIzbDAsMGMwLTEyLjY1LTEwLjM1LTIzLTIzLTIzSDMweiBNNzAsNjdjLTkuMzg5LDAtMTctNy42MS0xNy0xN3M3LjYxMS0xNywxNy0xN3MxNyw3LjYxLDE3LDE3ICAgUzc5LjM4OSw2Nyw3MCw2N3oiPjwvcGF0aD48L2c+PGcgZGlzcGxheT0ibm9uZSI+PGcgZGlzcGxheT0iaW5saW5lIj48cGF0aCBmaWxsPSIjYWFhYWFhIiBzdHJva2U9IiNhYWFhYWEiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBkPSJNNyw1MGMwLDEyLjY1LDEwLjM1LDIzLDIzLDIzaDQwICAgIGMxMi42NSwwLDIzLTEwLjM1LDIzLTIzbDAsMGMwLTEyLjY1LTEwLjM1LTIzLTIzLTIzSDMwQzE3LjM1LDI3LDcsMzcuMzUsNyw1MEw3LDUweiI+PC9wYXRoPjwvZz48Y2lyY2xlIGRpc3BsYXk9ImlubGluZSIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9IiNhYWFhYWEiIHN0cm9rZT0iI2FhYWFhYSIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIGN4PSI3MCIgY3k9IjUwIiByPSIxNyI+PC9jaXJjbGU+PC9nPjxnIGRpc3BsYXk9Im5vbmUiPjxwYXRoIGRpc3BsYXk9ImlubGluZSIgZD0iTTcwLDI1SDMwQzE2LjIxNSwyNSw1LDM2LjIxNSw1LDUwczExLjIxNSwyNSwyNSwyNWg0MGMxMy43ODUsMCwyNS0xMS4yMTUsMjUtMjVTODMuNzg1LDI1LDcwLDI1eiBNNzAsNzEgICBIMzBDMTguNDIxLDcxLDksNjEuNTc5LDksNTBzOS40MjEtMjEsMjEtMjFoNDBjMTEuNTc5LDAsMjEsOS40MjEsMjEsMjFTODEuNTc5LDcxLDcwLDcxeiBNNzAsMzFjLTEwLjQ3NywwLTE5LDguNTIzLTE5LDE5ICAgczguNTIzLDE5LDE5LDE5czE5LTguNTIzLDE5LTE5UzgwLjQ3NywzMSw3MCwzMXogTTcwLDY1Yy04LjI3MSwwLTE1LTYuNzI5LTE1LTE1czYuNzI5LTE1LDE1LTE1czE1LDYuNzI5LDE1LDE1Uzc4LjI3MSw2NSw3MCw2NXoiPjwvcGF0aD48L2c+PC9zdmc+);\n    background-size: 50px 37px;\n    background-position: -6px -10px;\n    transform: rotate(180deg);\n    opacity: 0.4;\n}\n\n\n\n/*.sidebar__toggle--active .sidebar__toggle-input {*/\n/*    transition: background-color var(--sidebar-hover-transition-time);*/\n/*    background-color: var(--sidebar-toggle-input-color);*/\n/*}*/\n/*.sidebar__toggle--active .sidebar__toggle-input:hover*/\n/*{*/\n/*    background-color: var(--sidebar-toggle-input-color-hover);*/\n/*    border-color: var(--sidebar-toggle-input-color-hover);*/\n/*    transition: background-color var(--sidebar-hover-transition-time);*/\n/*    transition: border-color var(--sidebar-hover-transition-time);*/\n/*}*/\n\n/*\n * SIDEBAR ITEM BUTTON\n */\n\n.sidebar__button {}\n\n.sidebar__button-input:active\n{\n    background-color: #555 !important;\n}\n\n.sidebar__button-input {\n    -webkit-user-select: none;  /* Chrome all / Safari all */\n    -moz-user-select: none;     /* Firefox all */\n    -ms-user-select: none;      /* IE 10+ */\n    user-select: none;          /* Likely future */\n    min-height: 24px;\n    background-color: transparent;\n    color: #CCCCCC;\n    box-sizing: border-box;\n    padding-top: 3px;\n    text-align: center;\n    border-radius: 125px;\n    border:2px solid #555;\n    cursor: pointer;\n    padding-bottom: 3px;\n    display:block;\n}\n\n.sidebar__button-input.plus, .sidebar__button-input.minus {\n    display: inline-block;\n    min-width: 20px;\n}\n\n.sidebar__button-input:hover {\n  background-color: #333;\n  border:2px solid var(--sidebar-color);\n}\n\n/*\n * VALUE DISPLAY (shows a value)\n */\n\n.sidebar__value-display {}\n\n/*\n * SLIDER\n */\n\n.sidebar__slider {\n    --sidebar-slider-input-height: 3px;\n}\n\n.sidebar__slider-input-wrapper {\n    width: 100%;\n\n    margin-top: 8px;\n    position: relative;\n}\n\n.sidebar__slider-input {\n    -webkit-appearance: none;\n    appearance: none;\n    margin: 0;\n    width: 100%;\n    height: var(--sidebar-slider-input-height);\n    background: #555;\n    cursor: pointer;\n    /*outline: 0;*/\n\n    -webkit-transition: .2s;\n    transition: background-color .2s;\n    border: none;\n}\n\n.sidebar__slider-input:focus, .sidebar__slider-input:hover {\n    border: none;\n}\n\n.sidebar__slider-input-active-track {\n    user-select: none;\n    position: absolute;\n    z-index: 11;\n    top: 0;\n    left: 0;\n    background-color: var(--sidebar-color);\n    pointer-events: none;\n    height: var(--sidebar-slider-input-height);\n    max-width: 100%;\n}\n\n/* Mouse-over effects */\n.sidebar__slider-input:hover {\n    /*background-color: #444444;*/\n}\n\n/*.sidebar__slider-input::-webkit-progress-value {*/\n/*    background-color: green;*/\n/*    color:green;*/\n\n/*    }*/\n\n/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */\n\n.sidebar__slider-input::-moz-range-thumb\n{\n    position: absolute;\n    height: 15px;\n    width: 15px;\n    z-index: 900 !important;\n    border-radius: 20px !important;\n    cursor: pointer;\n    background: var(--sidebar-color) !important;\n    user-select: none;\n\n}\n\n.sidebar__slider-input::-webkit-slider-thumb\n{\n    position: relative;\n    appearance: none;\n    -webkit-appearance: none;\n    user-select: none;\n    height: 15px;\n    width: 15px;\n    display: block;\n    z-index: 900 !important;\n    border: 0;\n    border-radius: 20px !important;\n    cursor: pointer;\n    background: #777 !important;\n}\n\n.sidebar__slider-input:hover ::-webkit-slider-thumb {\n    background-color: #EEEEEE !important;\n}\n\n/*.sidebar__slider-input::-moz-range-thumb {*/\n\n/*    width: 0 !important;*/\n/*    height: var(--sidebar-slider-input-height);*/\n/*    background: #EEEEEE;*/\n/*    cursor: pointer;*/\n/*    border-radius: 0 !important;*/\n/*    border: none;*/\n/*    outline: 0;*/\n/*    z-index: 100 !important;*/\n/*}*/\n\n.sidebar__slider-input::-moz-range-track {\n    background-color: transparent;\n    z-index: 11;\n}\n\n.sidebar__slider input[type=text],\n.sidebar__slider input[type=paddword]\n{\n    box-sizing: border-box;\n    /*background-color: #333333;*/\n    text-align: right;\n    color: #BBBBBB;\n    display: inline-block;\n    background-color: transparent !important;\n\n    width: 40%;\n    height: 18px;\n    /*outline: none;*/\n    border: none;\n    border-radius: 0;\n    padding: 0 0 0 4px !important;\n    margin: 0;\n}\n\n.sidebar__slider input[type=text]:active,\n.sidebar__slider input[type=text]:focus,\n.sidebar__slider input[type=text]:hover\n.sidebar__slider input[type=password]:active,\n.sidebar__slider input[type=password]:focus,\n.sidebar__slider input[type=password]:hover\n{\n\n    color: #EEEEEE;\n}\n\n/*\n * TEXT / DESCRIPTION\n */\n\n.sidebar__text .sidebar__item-label {\n    width: auto;\n    display: block;\n    max-height: none;\n    margin-right: 0;\n    line-height: 1.1em;\n}\n\n/*\n * SIDEBAR INPUT\n */\n.sidebar__text-input textarea,\n.sidebar__text-input input[type=date],\n.sidebar__text-input input[type=datetime-local],\n.sidebar__text-input input[type=text],\n.sidebar__text-input input[type=password] {\n    box-sizing: border-box;\n    background-color: #333333;\n    color: #BBBBBB;\n    display: inline-block;\n    width: 50%;\n    height: 18px;\n\n\n    border: none;\n    border-radius: 0;\n    border:1px solid #666;\n    padding: 0 0 0 4px !important;\n    margin: 0;\n    color-scheme: dark;\n}\n\n.sidebar__text-input textarea:focus::placeholder {\n  color: transparent;\n}\n\n\n\n\n\n.sidebar__color-picker .sidebar__item-label\n{\n    width:45%;\n}\n\n.sidebar__text-input textarea,\n.sidebar__text-input input[type=text]:active,\n.sidebar__text-input input[type=text]:focus,\n.sidebar__text-input input[type=text]:hover,\n.sidebar__text-input input[type=password]:active,\n.sidebar__text-input input[type=password]:focus,\n.sidebar__text-input input[type=password]:hover {\n    background-color: transparent;\n    color: #EEEEEE;\n\n}\n\n.sidebar__text-input textarea\n{\n    margin-top:10px;\n    height:60px;\n    width:100%;\n}\n\n/*\n * SIDEBAR SELECT\n */\n\n\n\n .sidebar__select {}\n .sidebar__select-select {\n    color: #BBBBBB;\n    /*-webkit-appearance: none;*/\n    /*-moz-appearance: none;*/\n    appearance: none;\n    /*box-sizing: border-box;*/\n    width: 50%;\n    /*height: 20px;*/\n    background-color: #333333;\n    /*background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM4ODg4ODgiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0iZmVhdGhlciBmZWF0aGVyLWNoZXZyb24tZG93biI+PHBvbHlsaW5lIHBvaW50cz0iNiA5IDEyIDE1IDE4IDkiPjwvcG9seWxpbmU+PC9zdmc+);*/\n    background-repeat: no-repeat;\n    background-position: right center;\n    background-size: 16px 16px;\n    margin: 0;\n    /*padding: 0 2 2 6px;*/\n    border-radius: 5px;\n    border: 1px solid #777;\n    background-color: #444;\n    cursor: pointer;\n    /*outline: none;*/\n    padding-left: 5px;\n\n }\n\n.sidebar__select-select:hover,\n.sidebar__select-select:active,\n.sidebar__select-select:inactive {\n    background-color: #444444;\n    color: #EEEEEE;\n}\n\n/*.sidebar__select-select option*/\n/*{*/\n/*    background-color: #444444;*/\n/*    color: #bbb;*/\n/*}*/\n\n.sidebar__select-select option:checked\n{\n    background-color: #000;\n    color: #FFF;\n}\n\n\n/*\n * COLOR PICKER\n */\n\n\n .sidebar__color-picker input[type=text] {\n    box-sizing: border-box;\n    background-color: #333333;\n    color: #BBBBBB;\n    display: inline-block;\n    width: calc(50% - 21px); /* 50% minus space of picker circle */\n    height: 18px;\n    /*outline: none;*/\n    border: none;\n    border-radius: 0;\n    padding: 0 0 0 4px !important;\n    margin: 0;\n    margin-right: 7px;\n}\n\n.sidebar__color-picker input[type=text]:active,\n.sidebar__color-picker input[type=text]:focus,\n.sidebar__color-picker input[type=text]:hover {\n    background-color: #444444;\n    color: #EEEEEE;\n}\n\ndiv.sidebar__color-picker-color-input,\n.sidebar__color-picker input[type=color],\n.sidebar__palette-picker input[type=color] {\n    display: inline-block;\n    border-radius: 100%;\n    height: 14px;\n    width: 14px;\n\n    padding: 0;\n    border: none;\n    /*border:2px solid red;*/\n    border-color: transparent;\n    outline: none;\n    background: none;\n    appearance: none;\n    -moz-appearance: none;\n    -webkit-appearance: none;\n    cursor: pointer;\n    position: relative;\n    top: 3px;\n}\n.sidebar__color-picker input[type=color]:focus,\n.sidebar__palette-picker input[type=color]:focus {\n    outline: none;\n}\n.sidebar__color-picker input[type=color]::-moz-color-swatch,\n.sidebar__palette-picker input[type=color]::-moz-color-swatch {\n    border: none;\n}\n.sidebar__color-picker input[type=color]::-webkit-color-swatch-wrapper,\n.sidebar__palette-picker input[type=color]::-webkit-color-swatch-wrapper {\n    padding: 0;\n}\n.sidebar__color-picker input[type=color]::-webkit-color-swatch,\n.sidebar__palette-picker input[type=color]::-webkit-color-swatch {\n    border: none;\n    border-radius: 100%;\n}\n\n/*\n * Palette Picker\n */\n.sidebar__palette-picker .sidebar__palette-picker-color-input.first {\n    margin-left: 0;\n}\n.sidebar__palette-picker .sidebar__palette-picker-color-input.last {\n    margin-right: 0;\n}\n.sidebar__palette-picker .sidebar__palette-picker-color-input {\n    margin: 0 4px;\n}\n\n.sidebar__palette-picker .circlebutton {\n    width: 14px;\n    height: 14px;\n    border-radius: 1em;\n    display: inline-block;\n    top: 3px;\n    position: relative;\n}\n\n/*\n * Preset\n */\n.sidebar__item-presets-preset\n{\n    padding:4px;\n    cursor:pointer;\n    padding-left:8px;\n    padding-right:8px;\n    margin-right:4px;\n    background-color:#444;\n}\n\n.sidebar__item-presets-preset:hover\n{\n    background-color:#666;\n}\n\n.sidebar__greyout\n{\n    background: #222;\n    opacity: 0.8;\n    width: 100%;\n    height: 100%;\n    position: absolute;\n    z-index: 1000;\n    right: 0;\n    top: 0;\n}\n\n.sidebar_tabs\n{\n    background-color: #151515;\n    padding-bottom: 0px;\n}\n\n.sidebar_switchs\n{\n    float: right;\n}\n\n.sidebar_tab\n{\n    float:left;\n    background-color: #151515;\n    border-bottom:1px solid transparent;\n    padding-right:7px;\n    padding-left:7px;\n    padding-bottom: 5px;\n    padding-top: 5px;\n    cursor:pointer;\n}\n\n.sidebar_tab_active\n{\n    background-color: #272727;\n    color:white;\n}\n\n.sidebar_tab:hover\n{\n    border-bottom:1px solid #777;\n    color:white;\n}\n\n\n.sidebar_switch\n{\n    float:left;\n    background-color: #444;\n    padding-right:7px;\n    padding-left:7px;\n    padding-bottom: 5px;\n    padding-top: 5px;\n    cursor:pointer;\n}\n\n.sidebar_switch:last-child\n{\n    border-top-right-radius: 7px;\n    border-bottom-right-radius: 7px;\n}\n\n.sidebar_switch:first-child\n{\n    border-top-left-radius: 7px;\n    border-bottom-left-radius: 7px;\n}\n\n\n.sidebar_switch_active\n{\n    background-color: #999;\n    color:white;\n}\n\n.sidebar_switch:hover\n{\n    color:white;\n}\n\n.sidebar__text-input-input::focus-visible,\n/*.sidebar__text-input-input:active,*/\n.sidebar__button-input:focus-visible,\n.sidebar__text-input:focus-visible\n/*.sidebar__text-input:active*/\n{\n    outline-style: solid;\n    outline-color:white;\n    outline-width: 1px;\n\n}\n\n"};const r="cables-sidebar-style";const a="cables-sidebar-dynamic-style";const s="sidebar-cables";const l="sidebar"+CABLES.uuid();const u="sidebar__items";const p="sidebar__close-button";const o="";const c="";let d=null;let P=null;let m=null;const e=i.inValueBool("Visible",true);const t=i.inValueSlider("Opacity",1);const g=i.inValueBool("Default Minimized");const b=i.inValueSlider("Minimized Opacity",.5);const h=i.inValueBool("Show undo button",false);const f=i.inValueBool("Show Minimize",false);const v=i.inString("Title","");const O=i.inValueBool("Side");const A=i.inValueBool("Default CSS",true);let x=i.patch.cgl.canvas.ownerDocument;const I=i.outObject("childs");I.setUiAttribs({title:"Children"});const y=i.outBool("Opfened");y.setUiAttribs({title:"Opened"});let S=x.querySelector("."+l);if(!S)S=D();const j=S.querySelector("."+u);I.set({parentElement:j,parentOp:i});V();k();L();A.onChange=()=>{k();L()};e.onChange=w;t.onChange=E;g.onChange=V;b.onChange=C;h.onChange=N;i.onDelete=U;function C(){L()}f.onChange=_;function _(e){if(!e||e.uiAttribs)e=x.querySelector(".sidebar-cables .sidebar__group-header");if(!e)return;const t=x.querySelector(".sidebar-cables .sidebar__group-header .sidebar__group-header-undo");if(f.get()){e.classList.add("iconsidebar-chevron-up");e.classList.add("iconsidebar-minimizebutton");if(t)t.style.marginRight="20px"}else{e.classList.remove("iconsidebar-chevron-up");e.classList.remove("iconsidebar-minimizebutton");if(t)t.style.marginRight="initial"}}O.onChange=function(){if(!S)return;if(O.get())S.classList.add("sidebar-cables-right");else S.classList.remove("sidebar-cables-right")};function N(){const e=x.querySelector(".sidebar-cables .sidebar__group-header");if(e){T(e)}}function T(e){if(e){const t=x.querySelector(".sidebar-cables .sidebar__group-header .sidebar__group-header-undo");if(t){if(!h.get()){t.remove()}}else{if(h.get()){const n=x.createElement("span");n.classList.add("sidebar__group-header-undo");n.classList.add("sidebar-icon-undo");n.addEventListener("click",function(e){e.stopPropagation();const t=x.querySelectorAll(".sidebar-cables .sidebar__reloadable");const n=x.createEvent("MouseEvents");n.initEvent("dblclick",true,true);t.forEach(e=>{e.dispatchEvent(n)})});e.appendChild(n)}}}_(e)}function V(){if(!d){return}if(g.get()){S.classList.add("sidebar--closed");if(e.get())y.set(false)}else{S.classList.remove("sidebar--closed");if(e.get())y.set(true)}}function E(){const e=t.get();S.style.opacity=e}function w(){if(!S)return;if(e.get()){S.style.display="block";if(!S.classList.contains("sidebar--closed"))y.set(true)}else{S.style.display="none";y.set(false)}}O.onChanged=function(){};function L(){const e=x.querySelectorAll("."+a);if(e){e.forEach(function(e){e.parentNode.removeChild(e)})}if(!A.get())return;const t=x.createElement("style");t.classList.add("cablesEle");t.classList.add(a);let n=".sidebar--closed .sidebar__close-button { ";n+="opacity: "+b.get();n+="}";const r=x.createTextNode(n);t.appendChild(r);x.body.appendChild(t)}function D(){const e=x.createElement("div");e.classList.add(s);e.classList.add(l);const t=i.patch.cgl.canvas.parentElement;const n=x.createElement("div");n.classList.add("sidebar__group");e.appendChild(n);const r=x.createElement("div");r.classList.add("sidebar__group-header");e.appendChild(r);const a=x.createElement("span");a.classList.add("sidebar__group-header-title");m=x.createElement("span");m.classList.add("sidebar__group-header-title-text");m.innerHTML=v.get();a.appendChild(m);r.appendChild(a);T(r);_(r);n.appendChild(r);e.appendChild(n);n.addEventListener("click",M);if(!t){i.warn("[sidebar] no canvas parentelement found...");return}t.appendChild(e);const o=x.createElement("div");o.classList.add(u);e.appendChild(o);d=x.createElement("div");d.classList.add(p);d.addEventListener("click",M);e.appendChild(d);return e}v.onChange=function(){if(m)m.innerHTML=v.get()};function z(e){}function M(e){e.stopPropagation();if(!S){i.logError("Sidebar could not be closed...");return}S.classList.toggle("sidebar--closed");const t=e.target;let n=o;if(S.classList.contains("sidebar--closed")){n=c;y.set(false)}else{y.set(true)}}function k(){const e=x.querySelectorAll("."+r);if(e){e.forEach(e=>{e.parentNode.removeChild(e)})}if(!A.get())return;const t=x.createElement("style");t.innerHTML=n.style_css;t.classList.add(r);t.classList.add("cablesEle");x.body.appendChild(t)}function U(){R(S)}function R(e){if(e&&e.parentNode&&e.parentNode.removeChild)e.parentNode.removeChild(e)}}};CABLES.OPS["5a681c35-78ce-4cb3-9858-bc79c34c6819"]={f:Ops.Sidebar.Sidebar,objName:"Ops.Sidebar.Sidebar"};Ops.Ui.Area=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inString("Title",""),r=e.inTriggerButton("Delete");n.setUiAttribs({hidePort:true});e.setUiAttrib({hasArea:true});e.init=n.onChange=e.onLoaded=a;a();function a(){if(CABLES.UI){gui.savedState.setUnSaved("areaOp",e.getSubPatch());e.uiAttr({comment_title:n.get()||" "});e.name=n.get()}}r.onTriggered=()=>{e.patch.deleteOp(e.id)}}};CABLES.OPS["38f79614-b0de-4960-8da5-2827e7f43415"]={f:Ops.Ui.Area,objName:"Ops.Ui.Area"};Ops.Gl.BlendMode=class extends CABLES.Op{constructor(){super(...arguments);const t=this;const e=t.attachments={};const n=t.inTrigger("Render"),r=t.inValueSelect("Blendmode",["None","Normal","Add","Subtract","Multiply"],"Normal"),a=t.inValueBool("Premultiplied"),o=t.outTrigger("Next");const i=t.patch.cgl;let s=0;r.onChange=l;l();function l(){if(r.get()=="Normal")s=CGL.BLEND_NORMAL;else if(r.get()=="Add")s=CGL.BLEND_ADD;else if(r.get()=="Subtract")s=CGL.BLEND_SUB;else if(r.get()=="Multiply")s=CGL.BLEND_MUL;else s=CGL.BLEND_NONE;if(CABLES.UI){let e="";if(r.get()=="Normal")e="";else if(r.get()=="Add")e="Add";else if(r.get()=="Subtract")e="Sub";else if(r.get()=="Multiply")e="Mul";else e="None";t.setUiAttrib({extendTitle:e})}}n.onTriggered=function(){t.checkGraphicsApi();i.pushBlendMode(s,a.get());i.pushBlend(s!=CGL.BLEND_NONE);o.trigger();i.popBlend();i.popBlendMode();i.gl.blendEquationSeparate(i.gl.FUNC_ADD,i.gl.FUNC_ADD);i.gl.blendFuncSeparate(i.gl.SRC_ALPHA,i.gl.ONE_MINUS_SRC_ALPHA,i.gl.ONE,i.gl.ONE_MINUS_SRC_ALPHA)}}};CABLES.OPS["ce0fff72-1438-4373-924f-e1d0f78b053f"]={f:Ops.Gl.BlendMode,objName:"Ops.Gl.BlendMode"};Ops.Math.Sum=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inValueFloat("number1",0),r=e.inValueFloat("number2",0),a=e.outNumber("result");e.setUiAttribs({mathTitle:true});n.onChange=r.onChange=o;o();function o(){const e=n.get()+r.get();if(!isNaN(e))a.set(e)}}};CABLES.OPS["c8fb181e-0b03-4b41-9e55-06b6267bc634"]={f:Ops.Math.Sum,objName:"Ops.Math.Sum"};Ops.Math.TriggerRandomNumber_v2=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inTriggerButton("Generate"),r=e.inValue("min",0),a=e.inValue("max",1),o=e.outTrigger("next"),i=e.outNumber("result"),s=e.inValueBool("Integer",false),l=e.inValueBool("No consecutive duplicates",false);e.setPortGroup("Value Range",[r,a]);n.onTriggered=a.onChange=r.onChange=s.onChange=u;u();function u(){let e=Math.random()*(a.get()-r.get())+r.get();if(s.get())e=p();if(r.get()!=a.get()&&a.get()>r.get())while(l.get()&&e==i.get())e=p();i.set(e);o.trigger()}function p(){return Math.floor(Math.random()*(a.get()-r.get()+1)+r.get())}}};CABLES.OPS["26f446cc-9107-4164-8209-5254487fa132"]={f:Ops.Math.TriggerRandomNumber_v2,objName:"Ops.Math.TriggerRandomNumber_v2"};Ops.Array.Array3Sum=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inArray("Array3x",3),r=e.inValue("Add X",1),a=e.inValue("Add Y",1),o=e.inValue("Add Z",1),i=e.outArray("Result");i.setUiAttribs({stride:3});let s=[];a.onChange=r.onChange=o.onChange=n.onChange=function(){let t=n.get();if(t){if(s.length!=t.length)s.length=t.length;for(let e=0;e<t.length;e+=3){s[e+0]=t[e+0]+r.get();s[e+1]=t[e+1]+a.get();s[e+2]=t[e+2]+o.get()}i.setRef(s)}else{i.setRef(null)}}}};CABLES.OPS["5120ca09-6ce3-457a-afc1-79b15a06137c"]={f:Ops.Array.Array3Sum,objName:"Ops.Array.Array3Sum"};Ops.Array.Array3To2=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};let n=e.inArray("Array3x",3);let r=e.outArray("Array2x",2);let a=[];n.onChange=function(){let t=n.get();if(!t||t.length/3%1!=0){return}if(!t)return;if(t.length/3*2!=a.length){a.length=t.length/3*2}for(let e=0;e<t.length/3;e++){a[e*2+0]=t[e*3+0];a[e*2+1]=t[e*3+1]}r.set(null);r.set(a)}}};CABLES.OPS["c451ee12-67f4-4dc9-8fb8-7a6cc4295a4c"]={f:Ops.Array.Array3To2,objName:"Ops.Array.Array3To2"};Ops.Patch.PK3cVbR.AdjMatrix=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inTrigger("Execute"),o=e.inInt("Categories Count"),i=e.inInt("Content Count"),s=e.outArray("Result"),l=e.outNumber("Edges Count");function u(e,t,n,r,a){e[n*t+r]=a;e[r*t+n]=a}n.onTriggered=()=>{const e=o.get();const t=i.get();const n=e+t;const r=new Array(n*n).fill(0);u(r,n,0,2,.4);u(r,n,0,3,.5);u(r,n,1,2,.2);u(r,n,1,3,.5);u(r,n,1,5,.2);u(r,n,2,3,.8);u(r,n,2,4,.31);u(r,n,3,4,.7);u(r,n,3,5,.3);u(r,n,4,5,.3);u(r,n,6,1,.1);u(r,n,6,0,.1);u(r,n,7,1,.1);u(r,n,7,0,.1);u(r,n,8,1,.1);u(r,n,8,0,.1);u(r,n,9,1,.1);u(r,n,9,1,.1);u(r,n,10,1,.1);u(r,n,11,1,.1);u(r,n,12,1,.1);u(r,n,13,1,.1);const a=r.reduce((e,t)=>{if(t>0){return e+.5}else return e});s.set(r);l.set(a)}}};CABLES.OPS["1013d68d-5a2e-4f30-a284-ce0248c7c2af"]={f:Ops.Patch.PK3cVbR.AdjMatrix,objName:"Ops.Patch.PK3cVbR.AdjMatrix"};Ops.Array.Array_v3=class extends CABLES.Op{constructor(){super(...arguments);const t=this;const e=t.attachments={};const r=t.inValueInt("Array length",10),n=t.inSwitch("Mode select",["Number","1,2,3,4","0-1"],"Number"),a=t.inValueFloat("Default Value"),o=t.inBool("Reverse",false),i=t.outArray("Array"),s=t.outNumber("Array length out");let l=[];let u=0;const p=0;const c=1;const d=2;n.onChange=m;o.onChange=a.onChange=r.onChange=g;m();g();function m(){let e=n.get();if(e==="Number")u=p;else if(e==="1,2,3,4")u=c;else if(e==="0-1")u=d;a.setUiAttribs({greyout:u!==p});t.setUiAttrib({extendTitle:n.get()});g()}function g(){l.length=0;let e=r.get();let t=a.get();let n;if(u===p){for(n=0;n<e;n++){l[n]=t}}else if(u===c){for(n=0;n<e;n++){l[n]=n}}else if(u===d){if(e>1){for(n=0;n<e;n++){l[n]=n/(e-1)}}else{l=[0]}}if(o.get())l=l.reverse();i.setRef(l);s.set(l.length)}}};CABLES.OPS["e4d31a46-bf64-42a8-be34-4cbb2bbc2600"]={f:Ops.Array.Array_v3,objName:"Ops.Array.Array_v3"};Ops.Patch.PK3cVbR.DrawVariableWidthEdgesCategories=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inTrigger("Trigger");const _=e.inArray("NodePositions2D");const N=e.inArray("EdgeWeightMatrix");const T=e.inInt("GraphSize");const V=e.inInt("Categories Count");const E=e.inFloat("MinThickness",.15);const L=e.inFloat("MaxThickness",1.5);const M=e.inFloat("DefaultEdgeZ",0);const k=e.inBool("NormalizeWeights",true);const P=e.outTrigger("Next");const w=e.outArray("EdgeTranslations");const D=e.outArray("EdgeRotations");const z=e.outArray("EdgeScales");const U=e.outNumber("EdgeInstanceCount");function R(e,t,n,r,a){const o=Math.max(t,Math.min(n,e));if(t===n)return(r+a)/2;return r+(a-r)*(o-t)/(n-t)}n.onTriggered=()=>{const r=_.get();const a=N.get();const o=T.get();const e=V.get();const i=E.get();const s=L.get();const l=M.get();const u=k.get();const p=[];const c=[];const d=[];let m=0;if(!r||!a||o===0||r.length<o*2||a.length<o*o){console.warn("PrepareEdgeMeshes: Insufficient data.");w.set(new Float32Array(0));D.set(new Float32Array(0));z.set(new Float32Array(0));U.set(0);P.trigger();return}let g=Infinity;let b=-Infinity;if(u){for(let t=0;t<o;t++){for(let e=t+1;e<o;e++){const h=a[t*o+e];if(h>0){if(h<g)g=h;if(h>b)b=h}}}if(g===Infinity){g=0;b=1}}for(let n=0;n<o;n++){for(let t=n+1;t<o;t++){const h=a[n*o+t];if(h>0){m++;const f=r[n*2];const v=r[n*2+1];const O=r[t*2];const A=r[t*2+1];const x=(f+O)/2;const I=(v+A)/2;p.push(x,I,l);const y=O-f;const S=A-v;const j=Math.sqrt(y*y+S*S);let e;if(u){e=R(h,g,b,i,s)}else{e=Math.max(i,Math.min(s,h))}e=Math.max(.001,e);d.push(j,e,1);const C=Math.atan2(S,y)*180/3.1415;c.push(0,0,C)}}}w.set(new Float32Array(p));D.set(new Float32Array(c));z.set(new Float32Array(d));U.set(m);P.trigger()}}};CABLES.OPS["a461cbd3-fed6-4634-8433-01cd9cd6ff67"]={f:Ops.Patch.PK3cVbR.DrawVariableWidthEdgesCategories,objName:"Ops.Patch.PK3cVbR.DrawVariableWidthEdgesCategories"};Ops.Gl.Meshes.Cylinder_v2=class extends CABLES.Op{constructor(){super(...arguments);const y=this;const e=y.attachments={};const t=y.inTrigger("render"),n=y.inValueBool("Draw",true),S=y.inValueInt("segments",40),j=y.inValueInt("stacks",1),C=y.inValueFloat("length",1),_=y.inValueFloat("outer radius",.5),N=y.inValueFloat("inner radius",0),T=y.inValueSelect("UV mode",["simple","atlas"],"simple"),V=y.inValueBool("Flip Mapping",false),E=y.inValueBool("Caps",true),L=y.inValueBool("Flat Normals",false),r=y.outTrigger("next"),M=y.outObject("geometry"),k=new CGL.Geometry("cylinder");n.setUiAttribs({title:"Render mesh"});const P=Math.PI*2,a=y.patch.cgl;let w=true;let D=null;T.setUiAttribs({hidePort:true});y.onDelete=function(){if(D)D.dispose()};y.preRender=o;function o(){const e=V.get();const t=Math.max(S.get(),3)|0,n=Math.max(N.get(),0),r=Math.max(_.get(),n),a=Math.max(j.get(),j.defaultValue)|0,o=C.get(),i=o/a,s=P/t,l=T.get();let u=[],p=[],c=[],d=[],m=[],g=[],b,h,f,v,O,A,x,I;if(l=="atlas")I=.5;else I=1;for(v=0,f=-o/2;v<=a;v++,f+=i){for(O=A=0;O<=t;O++,A+=s){u.push((b=Math.sin(A))*r,(h=Math.cos(A))*r,f);x=Math.sqrt(b*b+h*h);b/=x;h/=x;p.push(b,h,0);c.push(-h,b,0);d.push(0,0,1);if(e)m.push(O/t,1-(f/o+.5)*I);else m.push((f/o+.5)*I,O/t)}}for(O=0;O<a;O++){for(v=0,x=O*(t+1);v<t;v++,x++){A=x+1;g.push(x+(t+1),A,x,x+(t+1),A+(t+1),A)}}if(n){x=u.length;for(v=O=0;v<x;v+=3,O+=2){u.push(u[v]/r*n,u[v+1]/r*n,u[v+2]);p.push(-p[v],-p[v+1],0);c.push(-c[v],-c[v+1],0);d.push(0,-d[v+1],-d[v+2]);m.push(m[O],1-m[O+1])}A=x/3;x=g.length;for(v=0;v<x;v+=6){g.push(A+g[v],A+g[v+2],A+g[v+1],A+g[v+3],A+g[v+5],A+g[v+4])}if(E.get()){A=u.length;I=A/2;x=t*3;Array.prototype.push.apply(u,u.slice(0,x));Array.prototype.push.apply(u,u.slice(I,I+x));Array.prototype.push.apply(u,u.slice(I-x,I));Array.prototype.push.apply(u,u.slice(A-x,A));x=t*2;for(v=0;v<x;v++)p.push(0,0,-1),c.push(-1,0,0),d.push(0,-1,0);for(v=0;v<x;v++)p.push(0,0,1),c.push(1,0,0),d.push(0,1,0);if(l=="atlas"){x=n/r*.5;for(v=I=0;v<t;v++,I+=s)m.push(Math.sin(I)*.25+.75,Math.cos(I)*.25+.25);for(v=I=0;v<t;v++,I+=s)m.push((Math.sin(I)*x+.5)*.5+.5,(Math.cos(I)*x+.5)*.5);for(v=I=0;v<t;v++,I+=s)m.push(Math.sin(I)*.25+.75,Math.cos(I)*.25+.75);for(v=I=0;v<t;v++,I+=s)m.push((Math.sin(I)*x+.5)*.5+.5,(Math.cos(I)*x+.5)*.5+.5)}else{for(v=0;v<x;v++)m.push(0,0);for(v=0;v<x;v++)m.push(1,1)}for(v=0,I=A/3+b;v<t-1;v++,I++){g.push(I+1,I+t,I,I+t+1,I+t,I+1)}g.push(I+t,A/3+b,A/3+t+b,I+t,I,A/3+b);b+=t*2;for(v=0,I=A/3+b;v<t-1;v++,I++){g.push(I,I+t,I+1,I+1,I+t,I+t+1)}g.push(A/3+t+b,A/3+b,I+t,A/3+b,I,I+t)}}else{A=u.length;x=A/3;u.push(0,0,-o/2);Array.prototype.push.apply(u,u.slice(0,t*3));for(v=0;v<=t;v++)p.push(0,0,-1),c.push(-1,0,0),d.push(0,-1,0);if(E.get()){u.push(0,0,o/2);Array.prototype.push.apply(u,u.slice(A-t*3,A));for(v=0;v<=t;v++)p.push(0,0,1),c.push(1,0,0),d.push(0,1,0);if(l=="atlas"){m.push(.75,.25);for(v=A=0;v<t;v++,A+=s)m.push(Math.sin(A)*.25+.75,Math.cos(A)*.25+.25);m.push(.75,.75);for(v=A=0;v<t;v++,A+=s)m.push(Math.sin(A)*.25+.75,Math.cos(A)*.25+.75)}else{for(v=0;v<=t;v++)m.push(0,0);for(v=0;v<=t;v++)m.push(1,1)}g.push(x+1,x,x+t);for(v=1;v<t;v++)g.push(x,x+v,x+v+1);x+=t+1;g.push(x,x+1,x+t);for(v=1;v<t;v++)g.push(x,x+v+1,x+v);x+=t+1}}k.clear();k.vertices=u;k.texCoords=m;k.vertexNormals=p;k.tangents=c;k.biTangents=d;k.verticesIndices=g;if(L.get())k.unIndex();M.setRef(k);if(y.patch.cg)if(!D)D=y.patch.cg.createMesh(k,{opId:y.id});else D.setGeom(k);w=false}t.onTriggered=function(){if(w)o();if(n.get()&&D)D.render();r.trigger()};S.onChange=_.onChange=N.onChange=E.onChange=C.onChange=V.onChange=j.onChange=L.onChange=T.onChange=function(){w=true}}};CABLES.OPS["2899ad67-1e64-4692-af2a-c3b9078f1b5f"]={f:Ops.Gl.Meshes.Cylinder_v2,objName:"Ops.Gl.Meshes.Cylinder_v2"};Ops.Gl.Shader.PointMaterial_v6=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={pointmat_frag:"\n{{MODULES_HEAD}}\n\nUNI vec4 color;\nUNI float atlasNumX;\n\n// IN vec2 pointCoord;\nIN float ps;\nIN vec2 texCoord;\n\n#ifdef HAS_TEXTURE_DIFFUSE\n    UNI sampler2D diffTex;\n#endif\n#ifdef HAS_TEXTURE_MASK\n    UNI sampler2D texMask;\n#endif\n#ifdef HAS_TEXTURE_COLORIZE\n    IN vec4 colorize;\n#endif\n#ifdef HAS_TEXTURE_OPACITY\n    IN float opacity;\n#endif\n\n#ifdef HAS_TEXTURE_ROT\n    UNI sampler2D texRot;\n#endif\n\n\n#ifdef USE_ATLAS\n    IN float randAtlas;\n    #ifdef HAS_TEXTURE_ATLASLOOKUP\n        UNI sampler2D texAtlasLookup;\n    #endif\n#endif\n\n\n#ifdef VERTEX_COLORS\n    IN vec4 vertexColor;\n#endif\n\nvec3 lumcoeff = vec3(0.299,0.587,0.114);\n\n#define PI 3.14159265\n#define TAU (2.0*PI)\n\nvoid pR(inout vec2 p, float a)\n{\n\tp = cos(a)*p + sin(a)*vec2(p.y, -p.x);\n}\n\n\nvoid main()\n{\n    #ifdef FLIP_TEX\n        vec2 pointCoord=vec2(gl_PointCoord.x,(1.0-gl_PointCoord.y));\n    #endif\n    #ifndef FLIP_TEX\n        vec2 pointCoord=gl_PointCoord;\n    #endif\n\n    #ifdef HAS_TEXTURE_ROT\n        float r=texture(texRot,texCoord).r;\n        pointCoord-=vec2(0.5);\n        pR(pointCoord,r*TAU);\n        pointCoord+=vec2(0.5);\n    #endif\n\n    vec2 origPointCoord=pointCoord;\n\n\n    #ifdef USE_ATLAS\n\n        float atlasIdx=randAtlas;\n\n        #ifdef HAS_TEXTURE_ATLASLOOKUP\n            atlasIdx=texture(texAtlasLookup,texCoord).r;\n        #endif\n\n        #ifdef ATLAS_XFADE\n            vec2 pointCoord2=vec2(origPointCoord);\n            pointCoord2.x=origPointCoord.x/atlasNumX+ceil(atlasIdx)*(1.0/atlasNumX);\n        #endif\n\n        pointCoord.x=origPointCoord.x/atlasNumX+floor(atlasIdx)*(1.0/atlasNumX);\n\n\n    #endif\n\n    {{MODULE_BEGIN_FRAG}}\n\n    if(ps<1.0)discard;\n\n    vec4 col=color;\n\n    #ifdef HAS_TEXTURE_MASK\n        float mask;\n        #ifdef TEXTURE_MASK_R\n            mask=texture(texMask,pointCoord).r;\n        #endif\n        #ifdef TEXTURE_MASK_A\n            mask=texture(texMask,pointCoord).a;\n        #endif\n        #ifdef TEXTURE_MASK_LUMI\n        \tmask = dot(texture(texMask,pointCoord).rgb, lumcoeff);\n        #endif\n\n        #ifdef ATLAS_XFADE\n            float mask2=texture(texMask,pointCoord2).r;\n\n            #ifdef TEXTURE_MASK_A\n                mask2=texture(texMask,pointCoord2).a;\n            #endif\n            #ifdef TEXTURE_MASK_LUMI\n            \tmask2 = dot(texture(texMask,pointCoord2).rgb, lumcoeff);\n            #endif\n\n            mask=mix(mask,mask2,fract(atlasIdx));\n        #endif\n    #endif\n\n    #ifdef HAS_TEXTURE_DIFFUSE\n\n        col=texture(diffTex,pointCoord);\n\n        #ifdef ATLAS_XFADE\n            vec4 col2=texture(diffTex,pointCoord2);\n            col=mix(col,col2,fract(atlasIdx));\n        #endif\n\n        #ifdef COLORIZE_TEXTURE\n            col.rgb*=color.rgb;\n        #endif\n    #endif\n\n    col.a*=color.a;\n\n\n    #ifdef MAKE_ROUND\n\n        #ifndef MAKE_ROUNDAA\n            if ((gl_PointCoord.x-0.5)*(gl_PointCoord.x-0.5) + (gl_PointCoord.y-0.5)*(gl_PointCoord.y-0.5) > 0.25) discard; //col.a=0.0;\n        #endif\n\n        #ifdef MAKE_ROUNDAA\n            float circ=(gl_PointCoord.x-0.5)*(gl_PointCoord.x-0.5) + (gl_PointCoord.y-0.5)*(gl_PointCoord.y-0.5);\n\n            float a=smoothstep(0.25,0.25-fwidth(gl_PointCoord.x),circ);\n            if(a==0.0)discard;\n            col.a=a*color.a;\n        #endif\n    #endif\n\n    #ifdef HAS_TEXTURE_COLORIZE\n        col*=colorize;\n    #endif\n\n    #ifdef TEXTURE_COLORIZE_MUL\n        col*=color;\n    #endif\n\n    #ifdef HAS_TEXTURE_MASK\n        col.a*=mask;\n    #endif\n\n    #ifdef HAS_TEXTURE_OPACITY\n        col.a*=opacity;\n    #endif\n\n    #ifdef VERTEX_COLORS\n        col.rgb = vertexColor.rgb;\n        col.a *= vertexColor.a;\n    #endif\n\n    if (col.a <= 0.0) discard;\n\n    #ifdef HAS_TEXTURE_COLORIZE\n        col*=colorize;\n    #endif\n\n    {{MODULE_COLOR}}\n\n\n    outColor = col;\n}\n",pointmat_vert:"{{MODULES_HEAD}}\n\n\n\nIN vec3 vPosition;\nIN vec2 attrTexCoord;\nIN vec3 attrVertNormal;\nIN vec3 attrTangent;\nIN vec3 attrBiTangent;\nIN float attrPointSize;\n\n#ifdef VERTEX_COLORS\n    IN vec4 attrVertColor;\n    OUT vec4 vertexColor;\n#endif\n\nOUT vec3 norm;\nOUT float ps;\n\nOUT vec2 texCoord;\n\n\n#ifdef HAS_TEXTURES\n#endif\n\n#ifdef HAS_TEXTURE_COLORIZE\n   UNI sampler2D texColorize;\n   OUT vec4 colorize;\n#endif\n#ifdef HAS_TEXTURE_OPACITY\n    UNI sampler2D texOpacity;\n    OUT float opacity;\n#endif\n\n#ifdef HAS_TEXTURE_POINTSIZE\n   UNI sampler2D texPointSize;\n   UNI float texPointSizeMul;\n#endif\n\nUNI mat4 projMatrix;\nUNI mat4 modelMatrix;\nUNI mat4 viewMatrix;\n\nUNI float pointSize;\nUNI vec3 camPos;\n\nUNI float canvasWidth;\nUNI float canvasHeight;\nUNI float camDistMul;\nUNI float randomSize;\nUNI float minPointSize;\nUNI float pixelRatio;\n\nIN float attrVertIndex;\n\nUNI float atlasNumX;\n\n#ifdef USE_ATLAS\n    OUT float randAtlas;\n#endif\n\nfloat rand(float n){return fract(sin(n) * 5711.5711123);}\n\n#define POINTMATERIAL\n\nvoid main()\n{\n    norm=attrVertNormal;\n    #ifdef PIXELSIZE\n        float psMul=1.0;\n    #endif\n\n    #ifndef PIXELSIZE\n        float psMul=sqrt(canvasWidth/canvasHeight)+0.00000000001;\n    #endif\n\n    #ifdef USE_ATLAS\n        randAtlas=atlasNumX*rand(attrVertIndex+vPosition.x);\n    #endif\n\n    vec3 tangent=attrTangent;\n    vec3 bitangent=attrBiTangent;\n\n\n    #ifdef VERTEX_COLORS\n        vertexColor=attrVertColor;\n    #endif\n\n    // #ifdef HAS_TEXTURES\n        texCoord=attrTexCoord;\n    // #endif\n\n    #ifdef HAS_TEXTURE_OPACITY\n        // opacity=texture(texOpacity,vec2(rand(attrVertIndex+texCoord.x*texCoord.y+texCoord.y+texCoord.x),rand(texCoord.y*texCoord.x-texCoord.x-texCoord.y-attrVertIndex))).r;\n        opacity=texture(texOpacity,texCoord).r;\n    #endif\n\n\n    #ifdef HAS_TEXTURE_COLORIZE\n        #ifdef RANDOM_COLORIZE\n            colorize=texture(texColorize,vec2(rand(attrVertIndex+texCoord.x*texCoord.y+texCoord.y+texCoord.x),rand(texCoord.y*texCoord.x-texCoord.x-texCoord.y-attrVertIndex)));\n        #endif\n        #ifndef RANDOM_COLORIZE\n            colorize=texture(texColorize,texCoord);\n        #endif\n    #endif\n\n\n\n\n\n    mat4 mMatrix=modelMatrix;\n    vec4 pos = vec4( vPosition, 1. );\n\n    gl_PointSize=0.0;\n\n    {{MODULE_VERTEX_POSITION}}\n\n    vec4 model=mMatrix * pos;\n\n    psMul+=rand(texCoord.x*texCoord.y+texCoord.y*3.0+texCoord.x*2.0+attrVertIndex)*randomSize;\n\n    float addPointSize=0.0;\n    #ifdef HAS_TEXTURE_POINTSIZE\n\n        #ifdef POINTSIZE_CHAN_R\n            addPointSize=texture(texPointSize,texCoord).r;\n        #endif\n        #ifdef POINTSIZE_CHAN_G\n            addPointSize=texture(texPointSize,texCoord).g;\n        #endif\n        #ifdef POINTSIZE_CHAN_B\n            addPointSize=texture(texPointSize,texCoord).b;\n        #endif\n\n        #ifdef DOTSIZEREMAPABS\n            addPointSize=1.0-(distance(addPointSize,0.5)*2.0);\n            addPointSize=addPointSize*addPointSize*addPointSize*2.0;\n        #endif\n\n        addPointSize*=texPointSizeMul;\n\n    #endif\n\n    ps=0.0;\n    #ifndef SCALE_BY_DISTANCE\n        ps = (pointSize+addPointSize+attrPointSize) * psMul;\n    #endif\n    #ifdef SCALE_BY_DISTANCE\n        float cameraDist = distance(model.xyz, camPos);\n        ps = ( (pointSize+addPointSize+attrPointSize) / cameraDist) * psMul;\n    #endif\n    ps=max(minPointSize,ps);\n    ps*=pixelRatio;\n\n    gl_PointSize += ps;\n\n\n    gl_Position = projMatrix * viewMatrix * model;\n}\n"};const n=e.patch.cgl;const r=e.inTrigger("render"),a=e.inValueFloat("PointSize",3),o=e.inBool("Size in Pixels",false),i=e.inValue("Random Size",0),s=e.inValueBool("Round",true),l=e.inValueBool("Round Antialias",false),u=e.inValueBool("Scale by Distance",false),p=e.inValueSlider("r",Math.random()),c=e.inValueSlider("g",Math.random()),d=e.inValueSlider("b",Math.random()),m=e.inValueSlider("a",1),g=e.inBool("Vertex Colors",false),b=e.inTexture("texture"),h=e.inBool("Colorize Texture"),f=e.inTexture("Texture Mask"),v=e.inSwitch("Mask Channel",["R","A","Luminance"],"R"),O=e.inTexture("Texture Colorize"),A=e.inValueBool("Colorize Randomize",false),x=e.inTexture("Texture Opacity"),I=e.inTexture("Texture Point Size"),y=e.inSwitch("Point Size Channel",["R","G","B"],"R"),S=e.inFloat("Texture Point Size Mul",1),j=e.inSwitch("Map Size 0",["Black","Grey"],"Black"),C=e.inValueBool("Flip Texture",false),_=e.inBool("Atlas Cross Fade",false),N=e.inFloat("Atlas Repeat X ",1),T=e.inTexture("Atlas Lookup"),V=e.inTexture("Rotate Texture"),w=e.inValueFloat("Min Point Size",0),D=e.outTrigger("trigger"),E=e.outObject("shader",null,"shader");e.setPortGroup("Texture",[b,h,f,v,O,x,A]);e.setPortGroup("Color",[p,c,d,m,g]);e.setPortGroup("Size",[a,i,s,l,u,o,I,S,y,j]);e.setPortGroup("Atlas",[N,T,_]);p.setUiAttribs({colorPick:true});const L=new CGL.Shader(n,"PointMaterial",this);L.setModules(["MODULE_VERTEX_POSITION","MODULE_COLOR","MODULE_BEGIN_FRAG"]);L.define("MAKE_ROUND");e.toWorkPortsNeedToBeLinked(r);const z=new CGL.Uniform(L,"f","pointSize",a),U=new CGL.Uniform(L,"f","texPointSizeMul",S),R=new CGL.Uniform(L,"f","randomSize",i),B=new CGL.Uniform(L,"f","minPointSize",w),G=new CGL.Uniform(L,"4f","color",p,c,d,m),F=new CGL.Uniform(L,"f","atlasNumX",N),q=new CGL.Uniform(L,"f","pixelRatio",1),H=new CGL.Uniform(L,"f","canvasWidth",n.canvasWidth),X=new CGL.Uniform(L,"f","canvasHeight",n.canvasHeight),W=new CGL.Uniform(L,"t","diffTex"),Y=new CGL.Uniform(L,"t","texColorize"),Z=new CGL.Uniform(L,"t","texOpacity"),K=new CGL.Uniform(L,"t","texPointSize"),J=new CGL.Uniform(L,"t","texPointSize"),Q=new CGL.Uniform(L,"t","texMask"),$=new CGL.Uniform(L,"t","texAtlasLookup"),ee=new CGL.Uniform(L,"t","texRot");L.setSource(t.pointmat_vert,t.pointmat_frag);L.glPrimitive=n.gl.POINTS;E.setRef(L);E.ignoreValueSerialize=true;u.onChange=N.onChange=s.onChange=l.onChange=b.onChange=O.onChange=f.onChange=A.onChange=C.onChange=v.onChange=o.onChange=x.onChange=I.onChange=j.onChange=y.onChange=h.onChange=T.onLinkChanged=V.onLinkChanged=g.onChange=te;r.onTriggered=M;P();e.preRender=function(){if(L)L.bind();M()};function M(){H.setValue(n.canvasWidth);X.setValue(n.canvasHeight);e.checkGraphicsApi();n.pushShader(L);L.popTextures();if(b.get()&&!b.get().deleted)L.pushTexture(W,b.get());if(f.get())L.pushTexture(Q,f.get());if(O.get())L.pushTexture(Y,O.get());if(x.get())L.pushTexture(Z,x.get());if(I.get())L.pushTexture(J,I.get());if(T.get())L.pushTexture($,T.get());if(V.get())L.pushTexture(ee,V.get());q.set(n.pixelDensity);D.trigger();n.popShader()}function k(){return N.get()>0||T.isLinked()}function P(){N.setUiAttribs({greyout:!k()});v.setUiAttribs({greyout:!f.isLinked()});y.setUiAttribs({greyout:!I.isLinked()});S.setUiAttribs({greyout:!I.isLinked()});j.setUiAttribs({greyout:!I.isLinked()})}function te(){L.toggleDefine("USE_ATLAS",k());L.toggleDefine("SCALE_BY_DISTANCE",u.get());L.toggleDefine("MAKE_ROUND",s.get());L.toggleDefine("MAKE_ROUNDAA",l.get());L.toggleDefine("ATLAS_XFADE",_.get());L.toggleDefine("VERTEX_COLORS",g.get());L.toggleDefine("RANDOM_COLORIZE",A.get());L.toggleDefine("HAS_TEXTURE_DIFFUSE",b.get());L.toggleDefine("HAS_TEXTURE_MASK",f.isLinked());L.toggleDefine("HAS_TEXTURE_COLORIZE",O.isLinked());L.toggleDefine("HAS_TEXTURE_OPACITY",x.isLinked());L.toggleDefine("HAS_TEXTURE_POINTSIZE",I.isLinked());L.toggleDefine("HAS_TEXTURE_ATLASLOOKUP",T.isLinked());L.toggleDefine("HAS_TEXTURE_ROT",V.isLinked());L.toggleDefine("TEXTURE_COLORIZE_MUL",h.get());L.toggleDefine("FLIP_TEX",C.get());L.toggleDefine("TEXTURE_MASK_R",v.get()=="R");L.toggleDefine("TEXTURE_MASK_A",v.get()=="A");L.toggleDefine("TEXTURE_MASK_LUMI",v.get()=="Luminance");L.toggleDefine("PIXELSIZE",o.get());L.toggleDefine("POINTSIZE_CHAN_R",y.get()=="R");L.toggleDefine("POINTSIZE_CHAN_G",y.get()=="G");L.toggleDefine("POINTSIZE_CHAN_B",y.get()=="B");L.toggleDefine("DOTSIZEREMAPABS",j.get()=="Grey");P()}}};CABLES.OPS["e44df958-00c7-46e4-95bb-3e6ac6c4188f"]={f:Ops.Gl.Shader.PointMaterial_v6,objName:"Ops.Gl.Shader.PointMaterial_v6"};Ops.Graphics.Geometry.TransformGeometry=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const r=e.inObject("Geometry"),a=e.inValue("Translate X"),o=e.inValue("Translate Y"),i=e.inValue("Translate Z"),s=e.inValueSlider("Scale X",1),l=e.inValueSlider("Scale Y",1),u=e.inValueSlider("Scale Z",1),p=e.inValue("Rotation X"),c=e.inValue("Rotation Y"),d=e.inValue("Rotation Z"),m=e.outObject("Result",null,"geometry");a.onChange=o.onChange=i.onChange=s.onChange=l.onChange=u.onChange=p.onChange=c.onChange=d.onChange=r.onChange=f;const g=vec3.create();const n=vec3.create();const b=vec3.create();const h=vec3.create();function f(){const e=r.get();const t=0;if(e&&e.copy){const n=e.copy();for(let e=0;e<n.vertices.length;e+=3){n.vertices[e+0]*=s.get();n.vertices[e+1]*=l.get();n.vertices[e+2]*=u.get();n.vertices[e+0]+=a.get();n.vertices[e+1]+=o.get();n.vertices[e+2]+=i.get()}for(let e=0;e<n.vertices.length;e+=3){vec3.set(g,n.vertices[e+0],n.vertices[e+1],n.vertices[e+2]);vec3.rotateX(g,g,b,p.get()*CGL.DEG2RAD);vec3.rotateY(g,g,b,c.get()*CGL.DEG2RAD);vec3.rotateZ(g,g,b,d.get()*CGL.DEG2RAD);n.vertices[e+0]=g[0];n.vertices[e+1]=g[1];n.vertices[e+2]=g[2]}m.setRef(n)}else{m.setRef(null)}}}};CABLES.OPS["9678fee2-5436-499c-b94d-2603cdbeb380"]={f:Ops.Graphics.Geometry.TransformGeometry,objName:"Ops.Graphics.Geometry.TransformGeometry"};Ops.Graphics.Meshes.Circle_v3=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inTrigger("render"),V=e.inValue("radius",.5),E=e.inValueSlider("innerRadius",0),L=e.inValueInt("segments",40),M=e.inValueSlider("percent",1),k=e.inValue("steps",0),P=e.inValueBool("invertSteps",false),w=e.inSwitch("mapping",["flat","round"]),D=e.inValueBool("Spline",false),r=e.inValueBool("Draw",true),a=e.outTrigger("trigger"),z=e.outObject("geometry",null,"geometry");e.setPortGroup("Size",[V,E]);e.setPortGroup("Display",[M,k,P]);e.toWorkShouldNotBeChild("Ops.Gl.TextureEffects.ImageCompose",CABLES.OP_PORT_TYPE_FUNCTION);r.setUiAttribs({title:"Render mesh"});w.set("flat");w.onChange=L.onChange=V.onChange=E.onChange=M.onChange=k.onChange=P.onChange=D.onChange=c;z.ignoreValueSerialize=true;const o=e.patch.cgl;let U=new CGL.Geometry("circle");let R=null;const i=-1;let s=0;let l=null;let B=true;n.onTriggered=u;e.onDelete=function(){if(R)R.dispose()};e.preRender=()=>{u()};n.onLinkChanged=function(){if(!n.isLinked())z.set(null);else z.setRef(U)};function u(){if(!e.patch.cg)return;if(B)p();if(!CGL.TextureEffect.checkOpNotInTextureEffect(e))return;l=e.patch.cg.getShader();if(!l)return;s=l.glPrimitive;if(D.get())l.glPrimitive=o.gl.LINE_STRIP;if(r.get()&&R){R.render(l)}a.trigger();l.glPrimitive=s}function p(){const n=Math.max(3,Math.floor(L.get()));U.clear();const t=[];const r=[];const a=[];const o=[];const i=[];let s=0,l=0;let u=0,p=0;let c=0,d=0;let m=0,g=0;let b=0,h=0;let f=0,v=0;let O=0,A=0;let x=0,I=0;const y=Math.max(0,M.get());const S=[];if(D.get()){let e=0;let t=0;const j=[];for(s=0;s<=n*y;s++){l=360/n*s*CGL.DEG2RAD;x=Math.cos(l)*V.get();I=Math.sin(l)*V.get();A=.5;if(s>0){S.push(e);S.push(t);S.push(0);O=1-(s-1)/n;j.push(O,A)}S.push(x);S.push(I);S.push(0);e=x;t=I}U.setPointVertices(S)}else if(E.get()<=0){for(s=0;s<=n*y;s++){l=360/n*s*CGL.DEG2RAD;x=Math.cos(l)*V.get();I=Math.sin(l)*V.get();if(w.get()=="flat"){O=(Math.cos(l)+1)/2;A=1-(Math.sin(l)+1)/2;f=.5;v=.5}else if(w.get()=="round"){O=1-s/n;A=0;f=O;v=1}t.push([0,0,0],[u,p,0],[x,I,0]);r.push(f,v,c,d,O,A);a.push(0,0,1,0,0,1,0,0,1);o.push(1,0,0,1,0,0,1,0,0);i.push(0,-1,0,0,-1,0,0,-1,0);c=O;d=A;u=x;p=I}U=CGL.Geometry.buildFromFaces(t,"circle");U.vertexNormals=a;U.tangents=o;U.biTangents=i;U.texCoords=r}else{let e=0;const C=n*y;const _=0;for(s=0;s<=C;s++){e++;l=360/n*s*CGL.DEG2RAD;x=Math.cos(l)*V.get();I=Math.sin(l)*V.get();const N=Math.cos(l)*E.get()*V.get();const T=Math.sin(l)*E.get()*V.get();if(w.get()=="round"){O=1-s/n;A=0;f=O;v=1}if(k.get()===0||e%parseInt(k.get(),10)===0&&!P.get()||e%parseInt(k.get(),10)!==0&&P.get()){t.push([N,T,0],[u,p,0],[x,I,0]);t.push([m,g,0],[u,p,0],[N,T,0]);r.push(O,0,c,0,f,1,O,1,c,0,b,1);a.push(0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1);o.push(1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0);i.push(0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1,0,0,-1)}b=f;h=v;c=O;d=A;u=x;p=I;m=N;g=T}U=CGL.Geometry.buildFromFaces(t,"circle");U.vertexNormals=a;U.tangents=o;U.biTangents=i;if(w.get()=="flat")U.mapTexCoords2d();else U.texCoords=r}z.setRef(U);if(U.vertices.length==0)return;if(R)R.dispose();R=null;if(e.patch.cg)R=e.patch.cg.createMesh(U,{opId:e.id});B=false}function c(){B=true}}};CABLES.OPS["ae07830b-91c3-4cbe-a7d6-d3b737392c16"]={f:Ops.Graphics.Meshes.Circle_v3,objName:"Ops.Graphics.Meshes.Circle_v3"};Ops.Math.Subtract=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inValue("number1",1),r=e.inValue("number2",1),a=e.outNumber("result");e.setUiAttribs({mathTitle:true});n.onChange=r.onChange=o;o();function o(){let e=n.get()-r.get();if(!isNaN(e))a.set(e)}}};CABLES.OPS["a4ffe852-d200-4b96-9347-68feb01122ca"]={f:Ops.Math.Subtract,objName:"Ops.Math.Subtract"};Ops.Array.ArrayChunk=class extends CABLES.Op{constructor(){super(...arguments);const i=this;const e=i.attachments={};const s=i.inArray("Input Array"),l=i.inValueInt("Begin Index",0),u=i.inValueInt("Chunk Size",1),p=i.inValueBool("Circular",false),c=i.outArray("Output Array"),d=i.outNumber("Array length");let m=[];s.onChange=t;l.onChange=t;u.onChange=t;p.onChange=t;function t(){let t=s.get();let n=Math.floor(l.get());let e=Math.floor(u.get());let r=p.get();if(!t){c.set(null);return}if(n<0){n=0}if(r&&n>=t.length){n%=t.length}if(!t||e<1){c.set(null);return}let a=e+n;let o=Math.min(t.length,n+a)-n;if(o<0){o=0}else i.setUiError("idx",null);o=Math.min(o,e);if(o>e)o=t.length;m.length=o;for(let e=n;e<o+n;e++){m[e-n]=t[e]}d.set(o);c.setRef(m)}}};CABLES.OPS["c7ee6c6e-ca88-4c24-b289-78bb922bf5f7"]={f:Ops.Array.ArrayChunk,objName:"Ops.Array.ArrayChunk"};Ops.Vars.VarSetObject_v2=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inObject("Value",null);e.varName=e.inDropDown("Variable",[],"",true);new CABLES.VarSetOpWrapper(e,"object",n,e.varName)}};CABLES.OPS["c7608375-5b45-4bca-87ef-d0c5e970779a"]={f:Ops.Vars.VarSetObject_v2,objName:"Ops.Vars.VarSetObject_v2"};Ops.Vars.VarGetObject_v2=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.outObject("Value");e.varName=e.inValueSelect("Variable",[],"",true);new CABLES.VarGetOpWrapper(e,"object",e.varName,n)}};CABLES.OPS["321419d9-69c7-4310-a327-93d310bc2b8e"]={f:Ops.Vars.VarGetObject_v2,objName:"Ops.Vars.VarGetObject_v2"};Ops.Patch.PK3cVbR.ExtractContentNodesPositions=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const s=e.inArray("Current Positions"),l=e.inInt("Graph Size"),u=e.inInt("Categories Count"),p=e.inArray("Nodes Mask"),c=e.outArray("Content Masked Positions"),d=e.outArray("Global Masked Positions");u.onChange=s.onChange;p.onChange=s.onChange;s.onChange=()=>{const e=s.get();const t=u.get();const n=p.get();const r=l.get();const a=[];const o=[];for(var i=0;i<r;i++){if(n[i]!=0){o.push(e[i*2],e[i*2+1]);if(i>=t){a.push(e[i*2],e[i*2+1])}}}c.set(a);d.set(o)}}};CABLES.OPS["5d9ab002-5642-49fa-b62d-3b4dd21d2921"]={f:Ops.Patch.PK3cVbR.ExtractContentNodesPositions,objName:"Ops.Patch.PK3cVbR.ExtractContentNodesPositions"};Ops.Patch.PK3cVbR.SubMatrix=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inTrigger("Trigger"),l=e.inArray("Matrix"),u=e.inArray("Mask"),p=e.inSwitch("Type",["Intersection","Union","Keep N nodes"],"Union"),r=e.inInt("Main Nodes",0),a=e.outTrigger("Next"),c=e.outArray("SubMatrix");n.onTriggered=()=>{const r=p.get();const a=l.get();const o=u.get();const i=o.length;const s=new Array(i*i);for(let n=0;n<i;n++){for(let t=0;t<i;t++){let e=n*i+t;if(r=="Union"&&(o[n]!=0||o[t]!=0)){s[e]=a[e]}else if(r=="Intersection"&&o[n]!=0&&o[t]!=0){s[e]=a[e]}else{s[e]=0}}}c.set(s)}}};CABLES.OPS["917b24b8-f572-4acc-aae4-fc621a8470db"]={f:Ops.Patch.PK3cVbR.SubMatrix,objName:"Ops.Patch.PK3cVbR.SubMatrix"};Ops.Patch.PK3cVbR.DrawVariableWidthEdgesContent=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inTrigger("Trigger");const N=e.inArray("NodePositions2D");const T=e.inArray("EdgeWeightMatrix");const V=e.inInt("GraphSize");const E=e.inInt("Categories Count");const L=e.inFloat("MinThickness",.15);const M=e.inFloat("MaxThickness",1.5);const k=e.inFloat("DefaultEdgeZ",0);const P=e.inBool("NormalizeWeights",true);const w=e.inArray("Nodes Mask");const D=e.outTrigger("Next");const z=e.outArray("EdgeTranslations");const U=e.outArray("EdgeRotations");const R=e.outArray("EdgeScales");const B=e.outNumber("EdgeInstanceCount");function G(e,t,n,r,a){const o=Math.max(t,Math.min(n,e));if(t===n)return(r+a)/2;return r+(a-r)*(o-t)/(n-t)}w.onChange=n.onTriggered;n.onTriggered=()=>{const r=N.get();const a=T.get();const o=V.get();const e=E.get();const i=L.get();const s=M.get();const l=k.get();const u=P.get();const p=w.get();const c=[];const d=[];const m=[];let g=0;if(!r||!a||o===0||r.length<o*2||a.length<o*o){console.warn("PrepareEdgeMeshes: Insufficient data.");z.set(new Float32Array(0));U.set(new Float32Array(0));R.set(new Float32Array(0));B.set(0);D.trigger();return}let b=Infinity;let h=-Infinity;if(u){for(let t=0;t<o;t++){for(let e=t+1;e<o;e++){const f=a[t*o+e];if(f>0){if(f<b)b=f;if(f>h)h=f}}}if(b===Infinity){b=0;h=1}}for(let n=0;n<o;n++){for(let t=n+1;t<o;t++){const f=a[n*o+t];if(f>0&&p[n]!=0&&p[t]!=0){g++;const v=r[n*2];const O=r[n*2+1];const A=r[t*2];const x=r[t*2+1];const I=(v+A)/2;const y=(O+x)/2;c.push(I,y,l);const S=A-v;const j=x-O;const C=Math.sqrt(S*S+j*j);let e;if(u){e=G(f,b,h,i,s)}else{e=Math.max(i,Math.min(s,f))}e=Math.max(.001,e);m.push(C,e,1);const _=Math.atan2(j,S)*180/3.1415;d.push(0,0,_)}}}z.set(new Float32Array(c));U.set(new Float32Array(d));R.set(new Float32Array(m));B.set(g);D.trigger()}}};CABLES.OPS["efd65f3e-ae98-4ac9-ac7e-5acf77f81e2e"]={f:Ops.Patch.PK3cVbR.DrawVariableWidthEdgesContent,objName:"Ops.Patch.PK3cVbR.DrawVariableWidthEdgesContent"};Ops.Sidebar.Slider_v3=class extends CABLES.Op{constructor(){super(...arguments);const a=this;const P=a.attachments={};const e=1e-5;const t=a.inObject("link");const n=a.inString("Text","Slider");const o=a.inValue("Min",0);const i=a.inValue("Max",1);const r=a.inValue("Step",e);const s=a.inString("Suffix","");const l=a.inBool("Grey Out",false);const u=a.inBool("Visible",true);const p=a.inValue("Input",.5);const c=a.inTriggerButton("Set Default");const d=a.inTriggerButton("Reset");let m=null;const g=a.inValue("Default",.5);g.setUiAttribs({hidePort:true,greyout:true});const b=a.outObject("childs");const h=a.outNumber("Result",g.get());a.toWorkNeedsParent("Ops.Sidebar.Sidebar");a.setPortGroup("Range",[o,i,r]);a.setPortGroup("Display",[l,u]);const f=document.createElement("div");f.addEventListener("dblclick",function(){h.set(parseFloat(g.get()));p.set(parseFloat(g.get()));M(g.get())});f.dataset.op=a.id;f.classList.add("cablesEle");f.classList.add("sidebar__item");f.classList.add("sidebar__slider");f.classList.add("sidebar__reloadable");a.patch.on("sidebarStylesChanged",()=>{V()});const v=document.createElement("div");v.classList.add("sidebar__item-label");const O=document.createElement("div");O.classList.add("sidebar__greyout");f.appendChild(O);O.style.display="none";const A=document.createTextNode(n.get());v.appendChild(A);f.appendChild(v);const x=document.createElement("input");x.value=g.get();x.classList.add("sidebar__text-input-input");x.setAttribute("type","text");x.oninput=C;f.appendChild(x);const I=document.createElement("span");f.appendChild(I);s.onChange=()=>{I.innerHTML=s.get()};const y=document.createElement("div");y.classList.add("sidebar__slider-input-wrapper");f.appendChild(y);const S=document.createElement("div");S.classList.add("sidebar__slider-input-active-track");y.appendChild(S);const j=document.createElement("input");j.classList.add("sidebar__slider-input");j.setAttribute("min",o.get());j.setAttribute("max",i.get());j.setAttribute("type","range");j.setAttribute("step",r.get());j.setAttribute("value",g.get());j.style.display="block";y.appendChild(j);V();j.addEventListener("input",T);t.onChange=U;n.onChange=z;p.onChange=_;g.onChange=D;c.onTriggered=N;o.onChange=E;i.onChange=L;r.onChange=w;a.onDelete=G;a.onLoaded=a.onInit=function(){if(a.patch.config.sidebar){a.patch.config.sidebar[n.get()];h.set(a.patch.config.sidebar[n.get()])}else{h.set(parseFloat(g.get()));p.set(parseFloat(g.get()))}};d.onTriggered=function(){const e=parseFloat(g.get());h.set(e);M(e);k(e);p.set(e);V()};l.onChange=function(){O.style.display=l.get()?"block":"none"};u.onChange=function(){f.style.display=u.get()?"block":"none"};function C(e){let t=parseFloat(e.target.value);if(isNaN(t))t=0;const n=o.get();const r=i.get();if(t<n){t=n}else if(t>r){t=r}h.set(t);V();p.set(t);a.refreshParams()}function _(){let e=parseFloat(p.get());const t=o.get();const n=i.get();if(e>n){e=n}else if(e<t){e=t}k(e);h.set(e);V()}function N(){let e=parseFloat(p.get());const t=o.get();const n=i.get();if(e>n){e=n}else if(e<t){e=t}M(e);k(e);h.set(e);g.set(e);a.refreshParams();V()}function T(e){e.preventDefault();e.stopPropagation();M(e.target.value);const t=parseFloat(e.target.value);h.set(t);p.set(t);a.refreshParams();V();return false}function w(){const e=r.get();j.setAttribute("step",e);V()}function V(e){let t=parseFloat(j.value);if(typeof e!=="undefined")t=e;let n=S.parentElement.getBoundingClientRect().width||220;if(m)n=parseInt(getComputedStyle(m.parentElement).getPropertyValue("--sidebar-width"))-20;const r=CABLES.map(t,parseFloat(j.min),parseFloat(j.max),0,n-16);S.style.width=r+"px"}function E(){const e=o.get();j.setAttribute("min",e);V()}function L(){const e=i.get();j.setAttribute("max",e);V()}function D(){const e=g.get();h.set(parseFloat(e));E();L();k(e);M(e);V(e)}function z(){const e=n.get();v.textContent=e;if(CABLES.UI)a.setUiAttrib({extendTitle:e});x.setAttribute("aria-label","slider "+n.get());j.setAttribute("aria-label","slider "+n.get())}function U(){b.set(null);m=t.get();if(m&&m.parentElement){m.parentElement.appendChild(f);b.set(m)}else if(f.parentElement)f.parentElement.removeChild(f);V()}function M(e){x.value=e}function k(e){j.value=e}function R(e){if(e)e.style.display="block"}function B(e){if(e)e.style.display="none"}function G(){F(f)}function F(e){if(e&&e.parentNode&&e.parentNode.removeChild)e.parentNode.removeChild(e)}}};CABLES.OPS["74730122-5cba-4d0d-b610-df334ec6220a"]={f:Ops.Sidebar.Slider_v3,objName:"Ops.Sidebar.Slider_v3"};Ops.Number.TriggerOnChangeNumber_v2=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inFloat("Value"),r=e.outTrigger("Next"),a=e.outNumber("Number");n.onChange=function(){a.set(n.get());r.trigger()};e.init=()=>{if(n.isLinked())r.trigger()}}};CABLES.OPS["63ec7ad7-a436-4f72-8b5e-257cc20049d4"]={f:Ops.Number.TriggerOnChangeNumber_v2,objName:"Ops.Number.TriggerOnChangeNumber_v2"};Ops.Array.Array2To3=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inArray("Array2x",2),r=e.outArray("Array3x",3),a=e.outNumber("Total points"),o=e.outNumber("Array length");let i=[];let s=false;n.onChange=function(){let t=n.get();if(!t){r.set(null);return}if(t.length%2!=0){if(!s){e.setUiError("warning","Arrays length not divisible by 2!");s=true}r.set(null);a.set(0);o.set(0);return}if(s){s=false;e.setUiError("warning",null)}if(t.length/2*3!=i.length){i.length=t.length/2*3}for(let e=0;e<t.length/2;e++){i[e*3+0]=t[e*2+0];i[e*3+1]=t[e*2+1];i[e*3+2]=0}r.setRef(i);a.set(i.length/3);o.set(i.length)}}};CABLES.OPS["9854162e-d415-4300-a47b-173772b454e9"]={f:Ops.Array.Array2To3,objName:"Ops.Array.Array2To3"};Ops.Array.ArrayIteratorTextures=class extends CABLES.Op{constructor(){super(...arguments);const n=this;const e=n.attachments={};const t=n.inTrigger("exe"),r=n.inArray("array"),a=n.outTrigger("trigger"),o=n.outTrigger("finished"),i=n.outNumber("index"),s=n.outObject("value",null,"texture");t.onTriggered=function(){const t=r.get();if(!t){s.set(CGL.Texture.getEmptyTexture(n.patch.cgl));return}for(let e=0;e<t.length;e++){s.setRef(t[e]||CGL.Texture.getEmptyTexture(n.patch.cgl));i.set(e);a.trigger()}o.trigger()}}};CABLES.OPS["dc000b9e-74c4-4284-851d-55cc79d7f76b"]={f:Ops.Array.ArrayIteratorTextures,objName:"Ops.Array.ArrayIteratorTextures"};Ops.String.NumberToString_v2=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inValue("Number"),r=e.inInt("Decimal Places",4),a=e.outString("Result");let o=false;let i=1;r.onChange=s;n.onChange=l;s();l();function s(){o=r.get()<100;i=Math.pow(10,r.get());l()}function l(){if(o)a.set(String(Math.round(n.get()*i)/i));else a.set(String(n.get()||0))}}};CABLES.OPS["5c6d375a-82db-4366-8013-93f56b4061a9"]={f:Ops.String.NumberToString_v2,objName:"Ops.String.NumberToString_v2"};Ops.Html.Elements.Element_v2=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const P=e.attachments={};const t=e.inString("Text","Element"),n=e.inSwitch("Position",["Absolute","Static","Relative","Fixed"],"Absolute"),r=e.inSwitch("Interactive",["True","False","No Pointer Events"],"True"),a=e.inValueBool("Set Size",false),o=e.inFloat("Width",100),i=e.inFloat("Height",100),s=e.inSwitch("Size  Units",["px","%","vwh"],"px"),l=e.inSwitch("Overflow",["Visible","Hidden","Scroll","Auto"],"Hidden"),u=e.inStringEditor("Inline Style","","inline-css"),p=e.inString("CSS Class"),w=e.inString("Disable CSS Props"),c=e.inDropDown("Display",["None","Block","Inline","inline-block","flex","inline-flex","grid","inline-grid","flow-root"],"Block"),d=e.inString("Tag Name","div"),m=e.inFloatSlider("Opacity",1),D=e.inValueBool("Propagate Click-Events",true),g=e.outObject("DOM Element",null,"element"),b=e.outBoolNum("Hovering"),h=e.outTrigger("Clicked");e.setPortGroup("Area",[o,i,a,s,l]);e.setPortGroup("CSS",[p,u,w]);let f=null;let v=null;let z="block";let O=null;const A=e.patch.cgl.canvas.parentElement;I();p.onChange=C;t.onChange=S;d.onChange=()=>{y();I();C();S()};a.onChange=U;c.onChange=m.onChange=n.onChange=o.onChange=i.onChange=l.onChange=s.onChange=i.onChange=u.onChange=j;r.onChange=L;S();j();k();L();let x="";e.onDelete=y;g.onLinkChanged=j;r.onLinkChanged=h.onLinkChanged=()=>{e.setUiError("interactiveProblem",null);if(h.isLinked()&&!E())e.setUiError("interactiveProblem","Interactive should be activated when linking clicked port")};function U(){o.setUiAttribs({greyout:!a.get()});i.setUiAttribs({greyout:!a.get()});j()}function I(){O=e.patch.getDocument().createElement(d.get()||"div");O.dataset.op=e.id;O.classList.add("cablesEle");A.appendChild(O);g.setRef(O);j()}function y(){if(O)R();if(O&&O.parentNode)O.parentNode.removeChild(O);v=null;O=null}function S(){let e=t.get();if(v===e)return;v=e;if(O.innerHTML!=e)O.innerHTML=e}function j(){if(!O)return;O.setAttribute("style",u.get());O.style.position=n.get().toLowerCase();O.style.overflow=l.get().toLowerCase();O.style.display=c.get();O.style.opacity=m.get();if(r.get()=="No Pointer Events")O.style.pointerEvents="none";if(a.get()){O.style.width=o.get()+s.get();O.style.height=i.get()+s.get()}else{O.style.width="";O.style.height=""}g.setRef(O);if(!O.parentElement)A.appendChild(O);k()}function R(){if(!O)return;const t=(p.get()||"").split(" ");for(let e=0;e<t.length;e++){if(t[e])O.classList.remove(t[e])}x=""}function C(){const t=(p.get()||"").split(" ");const n=(x||"").split(" ");let r=false;for(let e=0;e<n.length;e++){if(n[e]&&t.indexOf(n[e].trim())==-1){r=true;O.classList.remove(n[e])}}for(let e=0;e<t.length;e++){if(t[e]){O.classList.add(t[e].trim())}}x=p.get();k();g.setRef(O)}function _(e){b.set(true)}function N(e){b.set(false)}function T(e){if(e.keyCode==13||e.keyCode==32)h.trigger()}function V(e){if(!D.get())e.stopPropagation();h.trigger()}function E(){return r.get()!="No Pointer Events"}function L(){e.setUiError("interactiveProblem",null);M();if(E())B();j()}function M(){if(f){f.removeEventListener("pointerdown",V);f.removeEventListener("pointerleave",N);f.removeEventListener("pointerenter",_);f.removeEventListener("keydown",T,false);f.removeAttribute("tabindex");f=null}}function B(){if(f)M();f=O;if(f){f.addEventListener("pointerdown",V);f.addEventListener("pointerleave",N);f.addEventListener("pointerenter",_);f.setAttribute("tabindex",0);f.addEventListener("keydown",T,false)}}e.addEventListener("onEnabledChange",e=>{y();if(!e)return;I();j();C();S();L()});function k(){if(p.get()&&u.get()){e.setUiError("error","Element uses external and inline CSS",1)}else{e.setUiError("error",null)}}}};CABLES.OPS["a0d2cc80-0b2f-4422-ba2d-c903ac9ca297"]={f:Ops.Html.Elements.Element_v2,objName:"Ops.Html.Elements.Element_v2"};Ops.Vars.VarTriggerNumber=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inTriggerButton("Trigger"),r=e.inValueFloat("Value",0),a=e.outTrigger("Next");e.varName=e.inDropDown("Variable",[],"",true);new CABLES.VarSetOpWrapper(e,"number",r,e.varName,n,a)}};CABLES.OPS["2c29baf0-2af2-486d-9218-4299594ee9c1"]={f:Ops.Vars.VarTriggerNumber,objName:"Ops.Vars.VarTriggerNumber"};Ops.Math.Compare.Equals=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inValue("number1",1),r=e.inValue("number2",1),a=e.outBoolNum("result");n.onChange=r.onChange=o;o();function o(){a.set(n.get()==r.get())}}};CABLES.OPS["4dd3cc55-eebc-4187-9d4e-2e053a956fab"]={f:Ops.Math.Compare.Equals,objName:"Ops.Math.Compare.Equals"};Ops.Boolean.IfFalseThen=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inTrigger("Exe"),r=e.inValueBool("Boolean",false),a=e.outTrigger("then"),o=e.outTrigger("else");r.onChange=i;n.onTriggered=s;function i(){if(n.isLinked())return;s()}function s(){if(!r.get())a.trigger();else o.trigger()}}};CABLES.OPS["91cf65f1-94ac-423f-a536-af71eed08440"]={f:Ops.Boolean.IfFalseThen,objName:"Ops.Boolean.IfFalseThen"};Ops.Patch.PK3cVbR.ArrayMovingAverage=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inTrigger("Trigger");const s=e.inArray("Array");const l=e.inInt("WindowSize",5);const u=e.inInt("ArraySize (optional)",0);const r=e.inTrigger("Reset");const p=e.outTrigger("Next");const c=e.outArray("AveragedArray");let d=[];let m=0;let g=0;let b=null;function a(r,e,a,t){const o=[];for(let n=0;n<e;n++){let t=0;for(let e=0;e<a;e++){t+=r[e][n]}o[n]=t/a}return o}function o(){const e=s.get();const t=Math.max(1,l.get());const n=u.get();if(n!==g){m=n>0?n:m;d.length=0;b=null}g=n;if(m===0){m=e.length}let r=e;if(e!==b){r=e;b=e}else{r=d[d.length-1]}const a=new Float32Array(m);for(let e=0;e<m;e++){a[e]=r[e]}d.push(a);while(d.length>t){d.shift()}const o=d.length;const i=new Float32Array(m);for(let n=0;n<m;n++){let t=0;for(let e=0;e<o;e++){t+=d[e][n]}i[n]=t/o}c.set(i);p.trigger()}n.onTriggered=o;s.onNewValue=()=>{o()};function i(){d.length=0;m=0;g=0;b=null;c.set(new Float32Array(0));p.trigger()}r.onTriggered=i}};CABLES.OPS["9eb28cd4-ae24-4917-a28e-1ebd7dcf0669"]={f:Ops.Patch.PK3cVbR.ArrayMovingAverage,objName:"Ops.Patch.PK3cVbR.ArrayMovingAverage"};Ops.Patch.PK3cVbR.ScreenOrientationAndSizeConstants=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const s=e.inFloat("Screen Aspect Ratio"),l=e.inFloat("Visual Margin"),u=e.outObject("Categories Bounds"),p=e.outObject("Content Bounds"),c=e.outNumber("Size Coefficient");l.onChange=s.onChange;s.onChange=()=>{const e=s.get();const t={minX:0,minY:0,maxX:0,maxY:0};const n={minX:0,minY:0,maxX:0,maxY:0};const r=l.get();const a=1/3;const o=-1+r;const i=1-r;if(e<1){t.minX=e*o;t.maxX=e*i;t.minY=o+a*(i-o);t.maxY=i;n.minX=t.minX;n.maxX=t.maxX;n.minY=o;n.maxY=o+a*(i-o)}else{t.minX=e*o;t.maxX=e*(o+(1-a)*(i-o));t.minY=o;t.maxY=i;n.minX=e*(o+(1-a)*(i-o));n.maxX=e*i;n.minY=o;n.maxY=i}u.set(t);p.set(n);if(e<1){c.set(e)}else{c.set(1)}}}};CABLES.OPS["907e2d7d-986f-41ac-907b-f0a3584b1ed0"]={f:Ops.Patch.PK3cVbR.ScreenOrientationAndSizeConstants,objName:"Ops.Patch.PK3cVbR.ScreenOrientationAndSizeConstants"};Ops.Html.FontFile_v2=class extends CABLES.Op{constructor(){super(...arguments);const a=this;const e=a.attachments={};const o=a.inUrl("file",[".otf",".ttf",".woff",".woff2"]),i=a.inString("family"),s=a.inBool("Active",true),l=a.outBoolNum("Loaded"),u=a.outTrigger("Loaded Trigger");let p=null;let c;let d=null;let t=null;let m=null;let g="";o.onChange=function(){l.set(false);r(null)};s.onChange=i.onChange=()=>{n()};function n(){clearTimeout(t);t=setTimeout(()=>{r(null)},50)}a.patch.on("windowChanged",e=>{c=null;r(e.document)});function r(e){if(m)m.remove();if(c){const t=d.fonts.delete(c);c=null;setTimeout(()=>{a.patch.emitEvent("fontLoaded",g)},100)}if(!s.get())return;d=e||d||a.patch.cgl.canvas.ownerDocument||document;if(p)p=a.patch.cgl.patch.loading.finished(p);a.setUiError("loadingerror",null);g=i.get();if(o.get()&&i.get()){if(d.fonts){let e='url("'+a.patch.getFilePath(String(o.get()))+'")';c=new FontFace(i.get(),e);p=a.patch.cgl.patch.loading.start("FontFile",o.get(),a);d.fonts.add(c);c.loaded.then(e=>{l.set(true);u.trigger();p=a.patch.cgl.patch.loading.finished(p);a.patch.emitEvent("fontLoaded",i.get())},e=>{a.setUiError("loadingerror","Font loading error: "+c.status+"("+o.get()+")");p=a.patch.cgl.patch.loading.finished(p);l.set(true)}).catch(e=>{p=a.patch.cgl.patch.loading.finished(p);console.error("catch ",e)});c.load()}else{const n=a.patch.getFilePath(String(o.get()));const r="".endl()+"@font-face".endl()+"{".endl()+'  font-family: "'+i.get()+'";'.endl()+'  src: url("'+n+'") format("truetype");'.endl()+"}";m=document.createElement("style");m.classList.add("cablesEle");m.type="text/css";m.innerHTML=r;document.getElementsByTagName("head")[document.getElementsByTagName("head").length-1].appendChild(m)}}}}};CABLES.OPS["68177370-116e-4c76-aef3-3b10d68e7227"]={f:Ops.Html.FontFile_v2,objName:"Ops.Html.FontFile_v2"};Ops.Trigger.TriggerCounter=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inTriggerButton("exe"),r=e.inTriggerButton("reset"),a=e.outTrigger("trigger"),o=e.outNumber("timesTriggered");e.toWorkPortsNeedToBeLinked(n);e.setUiAttrib({extendTitle:0});let i=0;r.onTriggered=e.onLoaded=s;n.onTriggered=function(){i++;o.set(i);e.setUiAttrib({extendTitle:i});a.trigger()};function s(){i=0;e.setUiAttrib({extendTitle:i});o.set(i)}}};CABLES.OPS["e640619f-235c-4543-bbf8-b358e0283180"]={f:Ops.Trigger.TriggerCounter,objName:"Ops.Trigger.TriggerCounter"};Ops.Graphics.Transform=class extends CABLES.Op{constructor(){super(...arguments);const n=this;const e=n.attachments={};const t=n.inTrigger("render"),r=n.inValue("posX",0),a=n.inValue("posY",0),o=n.inValue("posZ",0),i=n.inValue("scale",1),s=n.inValue("rotX",0),l=n.inValue("rotY",0),u=n.inValue("rotZ",0),p=n.outTrigger("trigger");n.setPortGroup("Rotation",[s,l,u]);n.setPortGroup("Position",[r,a,o]);n.setPortGroup("Scale",[i]);n.setUiAxisPorts(r,a,o);n.toWorkPortsNeedToBeLinked(t,p);const c=vec3.create();const d=vec3.create();const m=mat4.create();mat4.identity(m);let g=false,b=false,h=true,f=true,v=true;s.onChange=l.onChange=u.onChange=S;r.onChange=a.onChange=o.onChange=I;i.onChange=y;t.onTriggered=function(){let e=false;if(h){A();e=true}if(f){x();e=true}if(v)e=true;if(e)O();const t=n.patch.cg||n.patch.cgl;t.pushModelMatrix();mat4.multiply(t.mMatrix,t.mMatrix,m);p.trigger();t.popModelMatrix();if(CABLES.UI){if(!r.isLinked()&&!a.isLinked()&&!o.isLinked()){gui.setTransform(n.id,r.get(),a.get(),o.get());if(n.isCurrentUiOp())gui.setTransformGizmo({posX:r,posY:a,posZ:o})}}};function O(){mat4.identity(m);if(b)mat4.translate(m,m,c);if(s.get()!==0)mat4.rotateX(m,m,s.get()*CGL.DEG2RAD);if(l.get()!==0)mat4.rotateY(m,m,l.get()*CGL.DEG2RAD);if(u.get()!==0)mat4.rotateZ(m,m,u.get()*CGL.DEG2RAD);if(g)mat4.scale(m,m,d);v=false}function A(){b=false;if(r.get()!==0||a.get()!==0||o.get()!==0)b=true;vec3.set(c,r.get(),a.get(),o.get());h=false}function x(){g=true;vec3.set(d,i.get(),i.get(),i.get());f=false}function I(){h=true}function y(){f=true}function S(){v=true}O()}};CABLES.OPS["650baeb1-db2d-4781-9af6-ab4e9d4277be"]={f:Ops.Graphics.Transform,objName:"Ops.Graphics.Transform"};Ops.Array.ArrayGetNumber=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inArray("array"),r=e.inValueInt("index"),a=e.inFloat("Value Invalid Index",0),o=e.outNumber("value"),i=e.outBoolNum("Valid Index",true);n.ignoreValueSerialize=true;e.toWorkPortsNeedToBeLinked(n);r.onChange=n.onChange=s;function s(){if(n.get()){const e=n.get()[r.get()];if(isNaN(e)){o.set(a.get());i.set(false)}else{i.set(true);o.set(parseFloat(e))}}}}};CABLES.OPS["d1189078-70cf-437d-9a37-b2ebe89acdaf"]={f:Ops.Array.ArrayGetNumber,objName:"Ops.Array.ArrayGetNumber"};Ops.Patch.PK3cVbR.NodeDragger=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inTrigger("Trigger");const f=e.inFloat("Mouse X");const v=e.inFloat("Mouse Y");const O=e.inBool("Mouse Button Down");const A=e.inArray("CurrentNodePositions2D");const x=e.inArray("CurrentSelectedNodesArray",null);const I=e.inInt("GraphSize");const y=e.inFloat("NodeVisualRadius",.5);const S=e.inInt("DraggedNodesIndex",-1);const j=e.inBool("EnableDrag",true);const C=e.inArray("Text Aspect Ratio");const _=e.outArray("UpdatedNodePositions2D");const N=e.outNumber("DraggedNodeIndex");const T=e.outArray("NewSelectedNodes");const V=e.outBool("IsDragging");const E=e.outTrigger("Next");let L=false;let M=-1;let k=0;let P=0;let w=null;let D=false;let z=null;n.onTriggered=()=>{const r=f.get();const a=v.get();const e=O.get();const t=A.get();const o=I.get();const i=y.get();const n=j.get();const s=C.get();const l=S.get();let u=x.get();if(u===null){u=new Array(o).filled(0)}if(!r||!a||!t||o===0){if(t)_.set(t);else _.set(new Float32Array(0));N.set(-1);V.set(false);E.trigger();return}if(!w||w.length!==t.length){w=new Float32Array(t)}else{if(!L){if(w!==t){w.set(t)}}}if(!n){if(L){L=false;M=-1}_.set(w);N.set(M);V.set(L);E.trigger();return}if(e){if(!L&&!D){let t=i*i;let n=-1;for(let e=0;e<o;e++){const p=w[e*2];const c=w[e*2+1];const d=r-p;const m=a-c;const g=d*d+m*m;if(g<t){t=g;n=e}}if(l===-1&&n!==-1){u[n]=1-u[n]}if(n!==-1){L=true;M=n;k=r-w[n*2];P=a-w[n*2+1];console.warn("picked node: ",n,"\nmouseXY: ",r,a,"\nnodePositionXY: ",w[n*2],w[n*2+1])}}else if(L&&M!==-1){const b=r-k;const h=a-P;w[M*2]=b;w[M*2+1]=h}}else{if(L){L=false;D=true;if(z)clearTimeout(z);z=setTimeout(()=>{D=false},3)}}_.set(w);N.set(M);V.set(L);T.set(u);if(!e&&!L&&M!==-1&&!D){M=-1}E.trigger()};e.onDelete=()=>{if(z){clearTimeout(z)}}}};CABLES.OPS["bf428a68-8a37-4914-b17f-4f0ee128654a"]={f:Ops.Patch.PK3cVbR.NodeDragger,objName:"Ops.Patch.PK3cVbR.NodeDragger"};Ops.Patch.PK3cVbR.EdgesColor=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inInt("GraphSize",0);const d=e.inInt("NodeSelectedIndex",-1);const m=e.inArray("Adjacency Matrix");const g=e.inInt("Edges Count");const b=e.inArray("Nodes Mask");const h=e.inArray("ColorUnselected",[.5,.5,.5,1]);const f=e.inArray("ColorDragged",[1,0,0,1]);const v=e.inArray("ColorSelected",[1,0,0,1]);const O=e.inArray("Current Selected Nodes");const A=e.outArray("ColorsArray");const r=()=>{const r=n.get();const e=g.get();const a=m.get();const o=h.get();const i=f.get();const s=v.get();const l=d.get();const u=b.get();const p=O.get();let c=[];for(let n=0;n<r;n++){for(let t=n+1;t<r;t++){if(u[n]!=0&&u[t]!=0){let e=n*r+t;if(a[e]>0){if(n===l||t===l){c=c.concat(i)}else if(p[n]==1||p[t]==1){c=c.concat(s)}else{c=c.concat(o)}}}}}A.set(c)};d.onChange=r;b.onChange=r;n.onChange=r;h.onChange=r;v.onChange=r}};CABLES.OPS["38184be1-b854-47c3-bf25-abcce5220044"]={f:Ops.Patch.PK3cVbR.EdgesColor,objName:"Ops.Patch.PK3cVbR.EdgesColor"};Ops.Patch.PK3cVbR.NodesColor=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const u=e.inInt("GraphSize",0);const p=e.inInt("NodeSelectedIndex",-1);const c=e.inArray("Nodes Mask");const d=e.inArray("ColorUnselected",[.5,.5,.5,1]);const m=e.inArray("ColorDragged",[1,0,0,1]);const g=e.inArray("ColorSelected",[1,0,0,1]);const b=e.inArray("Current Selected Nodes");const h=e.outArray("ColorsArray");const n=()=>{const t=u.get();const n=d.get();const r=m.get();const a=g.get();const o=p.get();const i=c.get();const s=b.get();let l=[];if(typeof t!=="number"||t<=0){h.set([]);return}if(!Array.isArray(a)||!Array.isArray(n)||a.length<3||n.length<3){console.warn("Color inputs are not valid arrays.");h.set([]);return}for(let e=0;e<t;e++){if(i[e]!=0){if(e===o){l=l.concat(r)}else if(s[e]==1){l=l.concat(a)}else{l=l.concat(n)}}}h.set(l)};p.onChange=n;c.onChange=n;u.onChange=n;d.onChange=n;g.onChange=n}};CABLES.OPS["d770c6f9-6b79-48b2-82b7-d7dc53ecb238"]={f:Ops.Patch.PK3cVbR.NodesColor,objName:"Ops.Patch.PK3cVbR.NodesColor"};Ops.Patch.PK3cVbR.FruchtermanReingoldComputation=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inTrigger("Execute");const r=e.inTrigger("Reset");const X=e.inInt("Graph Size");const W=e.inArray("Positions");const Y=e.inArray("Adjacency Matrix");const Z=e.inArray("Node Text Sizes 2D");const a=e.inFloat("Initial Temperature",.06);const K=e.inFloat("Cooldown",5e-4);const J=e.inFloat("Density",.8);const Q=e.inBool("Center Graph in Bounds",true);const $=e.inFloat("Aspect Ratio",1);const ee=e.inFloat("Margin",.1);const te=e.inInt("Categories Count");const ne=e.inObject("Categories Bounds");const re=e.inObject("Content Bounds");const ae=e.inArray("Nodes Mask");const oe=e.inArray("Nodes Selected");const ie=e.outTrigger("Trigger");const se=e.outArray("Next Positions");const le=e.outArray("Debug - Current Graph Forces");const ue=e.outArray("Debug - Current Forces From Bounds");const pe=e.outNumber("Debug - Current Temperature");let ce=a.get();r.onTriggered=()=>{ce=a.get()};function de(e,t,n,r,a,o=false){let i=0;let s=e-t;let l=n-e;if(s>0){i+=a*(r/Math.max(s,.1))}else if(s<=0){i+=a*(Math.abs(s)/r)*10}if(l>0){i-=a*(r/Math.max(l,.1))}else if(l<=0){i-=a*(Math.abs(l)/r)*10}return i}n.onTriggered=()=>{let i=W.get();let D=Y.get();const s=X.get();const e=K.get();const l=1e-6;const a=Q.get();const z=J.get();const t=$.get();const n=ee.get();const U=Z.get();const o=-1+n;const u=1-n;const p=t*o;const c=t*u;const R=te.get();const r=ne.get();const d=re.get();let m=(r.maxX+r.minX)/2;let g=(r.maxY+r.minY)/2;let b=(d.maxX+d.minX)/2;let h=(d.maxY+d.minY)/2;if(t>1){m=r.maxX;b=d.minX}else{g=r.minY;h=d.maxY}const f=ae.get();const v=oe.get();const O=Math.sqrt((c-p)*(u-o))/9;const B=O*O;const A=new Float32Array(s*2);const x=new Float32Array(s*2);const I=new Float32Array(s*2);for(let o=0;o<s;o++){const j=i[o*2];const G=i[o*2+1];for(let a=o+1;a<s;a++){const F=i[a*2];const q=i[a*2+1];let e=j-F;let t=G-q;let n=e*e+t*t;let r=Math.sqrt(n);r=Math.max(l,r);const C=e/r;const _=t/r;const N=B/r*5;if(f[o]!=0&&f[a]!=0){A[o*2]+=C*N;A[o*2+1]+=_*N;A[a*2]-=C*N;A[a*2+1]-=_*N;const T=D[o*s+a];if(T>0){const V=n/O*T;A[o*2]-=C*V;A[o*2+1]-=_*V;A[a*2]+=C*V;A[a*2+1]+=_*V}}x[o*2]=Math.round(A[o*2]*100)/100;x[a*2]=Math.round(A[a*2]*100)/100;x[o*2+1]=Math.round(A[o*2+1]*100)/100;x[a*2+1]=Math.round(A[a*2+1]*100)/100}}if(a){const E=.2;for(let a=0;a<s;a++){let e;const H=a<R;if(H){e=r;if(v[a]===1){let e=i[a*2]-m;let t=i[a*2+1]-g;let n=e*e+t*t;let r=Math.sqrt(n);r=Math.max(l,r);const C=e/r;const _=t/r;const V=n/O*100;A[a*2]-=C*V;A[a*2+1]-=_*V}}else{e=d;if(v[a]===1){let e=i[a*2]-b;let t=i[a*2+1]-h;let n=e*e+t*t;let r=Math.sqrt(n);r=Math.max(l,r);const C=e/r;const _=t/r;const V=n/O*100;A[a*2]-=C*V;A[a*2+1]-=_*V}}A[a*2]+=de(i[a*2],e.minX,e.maxX,O,E,false)*2;A[a*2+1]+=de(i[a*2+1],e.minY,e.maxY,O,E,false)*2;I[a*2]+=Math.round(de(i[a*2],e.minX,e.maxX,O,E,false)*100)/100;I[a*2+1]+=Math.round(de(i[a*2+1],e.minY,e.maxY,O,E,false)*100)/100}}let y=0;const S=new Float32Array(s*2);for(let a=0;a<s;a++){if(f[a]!=0){const L=A[a*2];const M=A[a*2+1];const k=L*L+M*M;let e=0;let t=0;if(k>l*l){const P=Math.sqrt(k);const w=Math.min(P,ce);e=L/P*w;t=M/P*w}let n=i[a*2]+e;let r=i[a*2+1]+t;y+=k;n=Math.max(p,Math.min(c,n));r=Math.max(o,Math.min(u,r));S[a*2]=n;S[a*2+1]=r}else{S[a*2]=i[a*2];S[a*2+1]=i[a*2+1]}}if(y<O*40){ce=Math.max(0,ce-e*2)}else{ce=Math.max(0,ce-e/10)}pe.set(y);le.set(x);ue.set(I);se.set(S);ie.trigger()}}};CABLES.OPS["533d1f3e-5279-435d-bbc0-251fa937864f"]={f:Ops.Patch.PK3cVbR.FruchtermanReingoldComputation,objName:"Ops.Patch.PK3cVbR.FruchtermanReingoldComputation"};Ops.Patch.PK3cVbR.NodeNames=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inTrigger("Execute"),r=e.outArray("Category Names"),a=e.outArray("Node Weights");n.onTriggered=()=>{const e=["Mathematics","Machine Learning","Music","Theater","About","Games"];const t=[.1739130434782609,.4652173913043479,.882608695652174,1,.41304347826086957,.6304347826086957];r.set(e);a.set(t)}}};CABLES.OPS["eb89234c-f601-44fa-8108-f9dd093934e6"]={f:Ops.Patch.PK3cVbR.NodeNames,objName:"Ops.Patch.PK3cVbR.NodeNames"};Ops.Cables.FPS_v2=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.outNumber("FPS"),r=e.outNumber("MS");const a=e.patch.cgl.fpsCounter.addEventListener("performance",o);e.onDelete=function(){e.patch.removeEventListener(a)};function o(e){n.set(e.fps);r.set(e.ms)}}};CABLES.OPS["6dbb866c-b57a-4875-9f1d-22172162eaa8"]={f:Ops.Cables.FPS_v2,objName:"Ops.Cables.FPS_v2"};Ops.Patch.PK3cVbR.NodesMask=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inTrigger("Execute"),o=e.inInt("CategoriesCount"),i=e.inInt("Graph Size"),s=e.inInt("Content Elements Count"),l=e.outArray("Nodes Mask"),u=e.outArray("Nodes Selected");n.onTriggered=()=>{const n=o.get();const e=i.get();const r=s.get();const t=new Array(e).fill(0).map((e,t)=>{if(t<n){return 1}else if(t<n+r){return 1}else return 0});const a=new Array(e).fill(0);l.set(t);u.set(a)}}};CABLES.OPS["f8c99f4a-3920-4ebf-b198-f009026a6bc4"]={f:Ops.Patch.PK3cVbR.NodesMask,objName:"Ops.Patch.PK3cVbR.NodesMask"};Ops.Trigger.TriggerButton=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inTriggerButton("Trigger"),r=e.outTrigger("Next");n.onTriggered=function(){r.trigger()}}};CABLES.OPS["21630924-39e4-4df5-9965-b9136510d156"]={f:Ops.Trigger.TriggerButton,objName:"Ops.Trigger.TriggerButton"};Ops.Array.ArrayMultiply=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const r=e.inArray("In"),a=e.inValue("Value",1),o=e.outArray("Result");let i=[];o.set(i);r.onChange=a.onChange=r.onChange=function(){let t=r.get();if(!t)return;let n=a.get();if(i.length!=t.length)i.length=t.length;for(let e=0;e<t.length;e++)i[e]=t[e]*n;o.setRef(i)};r.onLinkChanged=()=>{if(r)r.copyLinkedUiAttrib("stride",o)}}};CABLES.OPS["a01c344b-4129-4b01-9c8f-36cefe86d7cc"]={f:Ops.Array.ArrayMultiply,objName:"Ops.Array.ArrayMultiply"};Ops.Vars.VarSetTexture_v2=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inTexture("Value",null);e.varName=e.inDropDown("Variable",[],"",true);new CABLES.VarSetOpWrapper(e,"object",n,e.varName)}};CABLES.OPS["4fbfc71e-1429-439f-8591-ad35961252ed"]={f:Ops.Vars.VarSetTexture_v2,objName:"Ops.Vars.VarSetTexture_v2"};Ops.Trigger.GateTrigger=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inTrigger("Execute"),r=e.inValueBool("Pass Through",true),a=e.outTrigger("Trigger out");n.onTriggered=function(){if(r.get())a.trigger()}}};CABLES.OPS["65e8b8a2-ba13-485f-883a-2bcf377989da"]={f:Ops.Trigger.GateTrigger,objName:"Ops.Trigger.GateTrigger"};Ops.Array.ArrayPack3=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inTrigger("Trigger in"),o=e.inArray("Array 1"),i=e.inArray("Array 2"),s=e.inArray("Array 3"),l=e.outTrigger("Trigger out"),u=e.outArray("Array out",3),p=e.outNumber("Num Points"),c=e.outNumber("Array length");let r=false;let d=[];let m=[];let g=true;n.onTriggered=b;o.onChange=i.onChange=s.onChange=a;function a(){g=true}function b(){let n=o.get();let r=i.get();let a=s.get();if(!n&&!r&&!a){u.set(null);p.set(0);return}if(g){let t=0;if(!n||!r||!a){if(n)t=n.length;else if(r)t=r.length;else if(a)t=a.length;if(m.length!=t)for(let e=0;e<t;e++)m[e]=0;if(!n)n=m;if(!r)r=m;if(!a)a=m}if(n.length!==r.length||r.length!==a.length){e.setUiError("arraylen","Arrays do not have the same length !");return}e.setUiError("arraylen",null);d.length=n.length;for(let e=0;e<n.length;e++){d[e*3+0]=n[e];d[e*3+1]=r[e];d[e*3+2]=a[e]}g=false;u.setRef(d);p.set(d.length/3);c.set(d.length)}l.trigger()}}};CABLES.OPS["2bcf32fe-3cbd-48fd-825a-61255bebda9b"]={f:Ops.Array.ArrayPack3,objName:"Ops.Array.ArrayPack3"};Ops.Array.ArrayUnpack2=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inArray("Array in xyz"),r=e.outArray("Array 1 out"),a=e.outArray("Array 2 out"),o=e.outNumber("Array lengths");let i=false;const s=[];const l=[];n.onChange=u;function u(){let t=n.get();if(!t){r.set(null);return}if(t.length%2!==0){if(!i){e.uiAttr({error:"Arrays length not divisible by 2 !"});o.set(0);i=true}return}if(t.length===0){o.set(0);r.set(null);a.set(null)}if(i){i=false;e.uiAttr({error:null})}s.length=Math.floor(t.length/2);l.length=Math.floor(t.length/2);for(let e=0;e<t.length/2;e++){s[e]=t[e*2];l[e]=t[e*2+1]}r.setRef(s);a.setRef(l);o.set(s.length)}}};CABLES.OPS["3f789664-9937-4478-ba28-63ccb67e5114"]={f:Ops.Array.ArrayUnpack2,objName:"Ops.Array.ArrayUnpack2"};Ops.Gl.Shader.MatCapMaterial_v3=class extends CABLES.Op{constructor(){super(...arguments);const t=this;const e=t.attachments={matcap_frag:"{{MODULES_HEAD}}\n\n#ifdef HAS_TEXTURES\n    IN vec2 texCoord;\n#endif\n\nIN vec3 transformedNormal;\nIN vec3 viewSpacePosition;\n\nUNI vec4 inColor;\n\nUNI sampler2D texMatcap;\n\n#ifdef HAS_DIFFUSE_TEXTURE\n   UNI sampler2D texDiffuse;\n#endif\n\n#ifdef USE_SPECULAR_TEXTURE\n   UNI sampler2D texSpec;\n   UNI sampler2D texSpecMatCap;\n#endif\n\n#ifdef HAS_AO_TEXTURE\n    UNI sampler2D texAo;\n    UNI float aoIntensity;\n#endif\n\n#ifdef HAS_NORMAL_TEXTURE\n    IN vec3 vBiTangent;\n    IN vec3 vTangent;\n    IN mat3 normalMatrix;\n\n    UNI sampler2D texNormal;\n    UNI float normalMapIntensity;\n#endif\n\n#ifdef HAS_TEXTURE_OPACITY\n    UNI sampler2D texOpacity;\n#endif\n\n#ifdef CALC_SSNORMALS\n    IN vec3 eye_relative_pos;\n\n    // from https://www.enkisoftware.com/devlogpost-20150131-1-Normal_generation_in_the_pixel_shader\n    vec3 CalculateScreenSpaceNormals() {\n    \tvec3 dFdxPos = dFdx(eye_relative_pos);\n    \tvec3 dFdyPos = dFdy(eye_relative_pos);\n    \tvec3 screenSpaceNormal = normalize( cross(dFdxPos, dFdyPos));\n        return normalize(screenSpaceNormal);\n    }\n#endif\n\n// * taken & modified from https://github.com/mrdoob/three.js/blob/dev/src/renderers/shaders/ShaderLib/meshmatcap_frag.glsl.js\nvec2 getMatCapUV(vec3 viewSpacePosition, vec3 normal) {\n    vec3 viewDir = normalize(-viewSpacePosition);\n\tvec3 x = normalize(vec3(viewDir.z, 0.0, - viewDir.x));\n\tvec3 y = normalize(cross(viewDir, x));\n\tvec2 uv = vec2(dot(x, normal), dot(y, normal)) * 0.495 + 0.5; // 0.495 to remove artifacts caused by undersized matcap disks\n\treturn uv;\n}\n\nvoid main()\n{\n    vec3 normal = normalize(transformedNormal);\n    {{MODULE_NORMAL}}\n\n\n\n    #ifdef HAS_TEXTURES\n        vec2 texCoords = texCoord;\n        {{MODULE_BEGIN_FRAG}}\n    #endif\n\n\n\n    #ifdef DOUBLE_SIDED\n        if(!gl_FrontFacing) normal *= -1.0;\n    #endif\n\n    #ifdef CALC_SSNORMALS\n        normal = CalculateScreenSpaceNormals();\n    #endif\n\n\n\n   #ifdef HAS_NORMAL_TEXTURE\n        vec3 normalFromMap = texture( texNormal, texCoord ).xyz * 2.0 - 1.0;\n        normalFromMap = normalize(normalFromMap);\n\n        vec3 tangent;\n        vec3 binormal;\n\n        #ifdef CALC_TANGENT\n            vec3 c1 = cross(normalFromMap, vec3(0.0, 0.0, 1.0));\n            vec3 c2 = cross(normalFromMap, vec3(0.0, 1.0, 0.0));\n\n            tangent = c1;\n            tangent = normalize(tangent);\n            binormal = cross(normal, tangent);\n            binormal = normalize(binormal);\n        #endif\n\n        #ifndef CALC_TANGENT\n            tangent = normalize(normalMatrix * vTangent);\n            vec3 bitangent = normalize(normalMatrix * vBiTangent);\n            binormal = normalize(cross(normal, bitangent));\n        #endif\n\n        normalFromMap = normalize(\n            tangent * normalFromMap.x\n            + binormal * normalFromMap.y\n            + normal * normalFromMap.z\n        );\n\n        vec3 mixedNormal = normalize(normal + normalFromMap * normalMapIntensity);\n\n        normal = mixedNormal;\n    #endif\n\n    vec4 col = texture(texMatcap, getMatCapUV(viewSpacePosition, normal));\n\n    #ifdef HAS_DIFFUSE_TEXTURE\n        col = col*texture(texDiffuse, texCoords);\n    #endif\n\n    col.rgb *= inColor.rgb;\n\n\n    #ifdef HAS_AO_TEXTURE\n        col = col\n            * mix(\n                vec4(1.0,1.0,1.0,1.0),\n                texture(texAo, texCoords),\n                aoIntensity\n            );\n    #endif\n\n    #ifdef USE_SPECULAR_TEXTURE\n        vec4 spec = texture(texSpecMatCap, getMatCapUV(viewSpacePosition, normal));\n        spec *= texture(texSpec, texCoords);\n        col += spec;\n    #endif\n\n    col.a *= inColor.a;\n\n    #ifdef HAS_TEXTURE_OPACITY\n        #ifdef TRANSFORMALPHATEXCOORDS\n            texCoords=vec2(texCoord.s,1.0-texCoord.t);\n            texCoords.y = 1. - texCoords.y;\n        #endif\n        #ifdef ALPHA_MASK_ALPHA\n            col.a*=texture(texOpacity,texCoords).a;\n        #endif\n        #ifdef ALPHA_MASK_LUMI\n            col.a*=dot(vec3(0.2126,0.7152,0.0722), texture(texOpacity,texCoords).rgb);\n        #endif\n        #ifdef ALPHA_MASK_R\n            col.a*=texture(texOpacity,texCoords).r;\n        #endif\n        #ifdef ALPHA_MASK_G\n            col.a*=texture(texOpacity,texCoords).g;\n        #endif\n        #ifdef ALPHA_MASK_B\n            col.a*=texture(texOpacity,texCoords).b;\n        #endif\n\n        #ifdef DISCARDTRANS\n            if(col.a < 0.2) discard;\n        #endif\n    #endif\n\n    {{MODULE_COLOR}}\n\n    outColor = col;\n}",matcap_vert:"IN vec3 vPosition;\n\n#ifdef HAS_TEXTURES\n    IN vec2 attrTexCoord;\n#endif\n\nIN vec3 attrVertNormal;\nIN float attrVertIndex;\n\n#ifdef HAS_NORMAL_TEXTURE\n    IN vec3 attrTangent;\n    IN vec3 attrBiTangent;\n    OUT vec3 vBiTangent;\n    OUT vec3 vTangent;\n#endif\n\nUNI mat4 projMatrix;\nUNI mat4 modelMatrix;\nUNI mat4 viewMatrix;\nUNI vec3 camPos;\n\n#ifdef HAS_TEXTURES\n    UNI vec2 texOffset;\n    UNI vec2 texRepeat;\n    OUT vec2 texCoord;\n#endif\n\nOUT mat3 normalMatrix;\nOUT vec3 viewSpacePosition;\nOUT vec3 transformedNormal;\n\n{{MODULES_HEAD}}\n\n#ifdef CALC_SSNORMALS\n    // from https://www.enkisoftware.com/devlogpost-20150131-1-Normal_generation_in_the_pixel_shader\n    OUT vec3 eye_relative_pos;\n#endif\n\nmat3 transposeMat3(mat3 m) {\n    return mat3(m[0][0], m[1][0], m[2][0],\n        m[0][1], m[1][1], m[2][1],\n        m[0][2], m[1][2], m[2][2]);\n}\n\n mat3 inverseMat3(mat3 m) {\n    float a00 = m[0][0], a01 = m[0][1], a02 = m[0][2];\n    float a10 = m[1][0], a11 = m[1][1], a12 = m[1][2];\n    float a20 = m[2][0], a21 = m[2][1], a22 = m[2][2];\n\n    float b01 = a22 * a11 - a12 * a21;\n    float b11 = -a22 * a10 + a12 * a20;\n    float b21 = a21 * a10 - a11 * a20;\n\n    float det = a00 * b01 + a01 * b11 + a02 * b21;\n\n    return mat3(b01, (-a22 * a01 + a02 * a21), (a12 * a01 - a02 * a11),\n        b11, (a22 * a00 - a02 * a20), (-a12 * a00 + a02 * a10),\n        b21, (-a21 * a00 + a01 * a20), (a11 * a00 - a01 * a10)) / det;\n}\n\nvoid main()\n{\n    #ifdef HAS_TEXTURES\n        texCoord = texRepeat * vec2(attrTexCoord.x, attrTexCoord.y) + texOffset;\n        texCoord.y = 1. - texCoord.y;\n    #endif\n\n    mat4 mMatrix = modelMatrix;\n    mat4 mvMatrix;\n\n    #ifdef HAS_NORMAL_TEXTURE\n        vec3 tangent = attrTangent;\n        vec3 bitangent = attrBiTangent;\n        vTangent = attrTangent;\n        vBiTangent = attrBiTangent;\n    #endif\n\n    vec4 pos = vec4(vPosition, 1.);\n    vec3 norm = attrVertNormal;\n\n    {{MODULE_VERTEX_POSITION}}\n\n    mvMatrix = viewMatrix * mMatrix;\n    vec3 normal = norm;\n\n    normalMatrix = transposeMat3(inverseMat3(mat3(mvMatrix)));\n\n    vec3 fragPos = vec3((mvMatrix) * pos);\n    viewSpacePosition = normalize(fragPos);\n\n    #ifdef CALC_SSNORMALS\n        eye_relative_pos = -(vec3(viewMatrix * vec4(camPos, 1.)) - fragPos);\n    #endif\n\n    transformedNormal = normalize(mat3(normalMatrix) * normal);\n\n    mat4 modelViewMatrix=mvMatrix;\n    {{MODULE_VERTEX_MODELVIEW}}\n\n    gl_Position = projMatrix * modelViewMatrix * pos;\n\n}\n"};const n=t.patch.cgl;const w=t.inTrigger("Render"),r=t.inTexture("MatCap"),a=t.inTexture("Diffuse"),o=t.inTexture("Normal"),i=t.inTexture("Specular Mask"),s=t.inTexture("Specular MatCap"),l=t.inTexture("AO Texture"),u=t.inTexture("Opacity Texture"),p=t.inValueSlider("r",1),c=t.inValueSlider("g",1),d=t.inValueSlider("b",1),m=t.inValueSlider("Opacity",1),g=t.inValueSlider("AO Intensity",1),b=t.inFloatSlider("Normal Map Intensity",1),h=t.inValue("Repeat X",1),f=t.inValue("Repeat Y",1),v=t.inValue("Offset X",0),O=t.inValue("Offset Y",0),A=t.inValueBool("Double Sided"),x=t.inValueBool("Screen Space Normals"),I=t.inValueBool("Calc normal tangents",true),y=t.inValueBool("Opacity TexCoords Transform",false),S=t.inValueBool("Discard Transparent Pixels"),D=t.outTrigger("Next"),z=t.outObject("Shader");p.setUiAttribs({colorPick:true});const j=t.inSwitch("Alpha Mask Source",["Luminance","R","G","B","A"],"Luminance");j.setUiAttribs({greyout:true});t.setPortGroup("Normals",[I,x,A]);t.setPortGroup("Texture Opacity",[j,y,S]);t.setPortGroup("Texture Transforms",[g,b,h,f,v,O]);t.setPortGroup("Texture Maps",[a,o,i,s,l,u]);t.setPortGroup("Color",[p,c,d,m]);const C=new CGL.Shader(n,"MatCapMaterialNew3");const U=new CGL.Uniform(C,"f","opacity",m);C.setModules(["MODULE_VERTEX_POSITION","MODULE_COLOR","MODULE_NORMAL","MODULE_BEGIN_FRAG","MODULE_VERTEX_MODELVIEW"]);C.setSource(e.matcap_vert,e.matcap_frag);z.setRef(C);const R=new CGL.Uniform(C,"t","texMatcap");let _=null;let N=null;let T=null;let V=null;let E=null;let L=null;const B=new CGL.Uniform(C,"2f","texOffset",v,O);const G=new CGL.Uniform(C,"2f","texRepeat",h,f);const F=new CGL.Uniform(C,"f","aoIntensity",g);const q=new CGL.Uniform(C,"4f","inColor",p,c,d,m);A.onChange=I.onChange=M;M();function M(){C.toggleDefine("DOUBLE_SIDED",A.get());if(I.get())C.define("CALC_TANGENT");else C.removeDefine("CALC_TANGENT")}x.onChange=function(){if(x.get()){if(n.glVersion<2){n.gl.getExtension("OES_standard_derivatives");C.enableExtension("GL_OES_standard_derivatives")}C.define("CALC_SSNORMALS")}else C.removeDefine("CALC_SSNORMALS")};r.onChange=k;function k(){if(!n.defaultMatcapTex3){const r=new Uint8Array(256*4);for(let n=0;n<16;n++){for(let t=0;t<16;t++){let e=t*16;e*=Math.min(1,(n+t/3)/8);r[(n+t*16)*4+0]=r[(n+t*16)*4+1]=r[(n+t*16)*4+2]=e;r[(n+t*16)*4+3]=255}}n.defaultMatcapTex3=new CGL.Texture(n);n.defaultMatcapTex3.initFromData(r,16,16,CGL.Texture.FILTER_LINEAR,CGL.Texture.WRAP_REPEAT)}}a.onChange=function(){if(a.get()){if(_!==null)return;C.define("HAS_DIFFUSE_TEXTURE");C.removeUniform("texDiffuse");_=new CGL.Uniform(C,"t","texDiffuse")}else{C.removeDefine("HAS_DIFFUSE_TEXTURE");C.removeUniform("texDiffuse");_=null}};o.onChange=function(){if(o.get()){if(N!==null)return;C.define("HAS_NORMAL_TEXTURE");C.removeUniform("texNormal");N=new CGL.Uniform(C,"t","texNormal");if(!T)T=new CGL.Uniform(C,"f","normalMapIntensity",b)}else{C.removeDefine("HAS_NORMAL_TEXTURE");C.removeUniform("texNormal");N=null}};l.onChange=function(){if(l.get()){if(L!==null)return;C.define("HAS_AO_TEXTURE");C.removeUniform("texAo");L=new CGL.Uniform(C,"t","texAo")}else{C.removeDefine("HAS_AO_TEXTURE");C.removeUniform("texAo");L=null}};i.onChange=s.onChange=function(){if(i.get()&&s.get()){if(V!==null)return;C.define("USE_SPECULAR_TEXTURE");C.removeUniform("texSpec");C.removeUniform("texSpecMatCap");V=new CGL.Uniform(C,"t","texSpec");E=new CGL.Uniform(C,"t","texSpecMatCap")}else{C.removeDefine("USE_SPECULAR_TEXTURE");C.removeUniform("texSpec");C.removeUniform("texSpecMatCap");V=null;E=null}};function H(){if(j.get()=="Alpha Channel")C.define("ALPHA_MASK_ALPHA");else C.removeDefine("ALPHA_MASK_ALPHA");if(j.get()=="Luminance")C.define("ALPHA_MASK_LUMI");else C.removeDefine("ALPHA_MASK_LUMI");if(j.get()=="R")C.define("ALPHA_MASK_R");else C.removeDefine("ALPHA_MASK_R");if(j.get()=="G")C.define("ALPHA_MASK_G");else C.removeDefine("ALPHA_MASK_G");if(j.get()=="B")C.define("ALPHA_MASK_B");else C.removeDefine("ALPHA_MASK_B")}j.onChange=H;u.onChange=X;let P=null;function X(){if(u.get()){if(P!==null)return;C.removeUniform("texOpacity");C.define("HAS_TEXTURE_OPACITY");if(!P)P=new CGL.Uniform(C,"t","texOpacity");j.setUiAttribs({greyout:false});S.setUiAttribs({greyout:false});y.setUiAttribs({greyout:false})}else{C.removeUniform("texOpacity");C.removeDefine("HAS_TEXTURE_OPACITY");P=null;j.setUiAttribs({greyout:true});S.setUiAttribs({greyout:true});y.setUiAttribs({greyout:true})}H()}S.onChange=function(){if(S.get())C.define("DISCARDTRANS");else C.removeDefine("DISCARDTRANS")};y.onChange=function(){if(y.get())C.define("TRANSFORMALPHATEXCOORDS");else C.removeDefine("TRANSFORMALPHATEXCOORDS")};function W(){if(i.get()&&!s.get()){t.setUiError("specNoMatCapSpec","You connected a specular texture but have not connected a specular matcap texture. You need to connect both texture inputs for the specular input to work.",1);t.setUiError("noSpecMatCapSpec",null)}else if(!i.get()&&s.get()){t.setUiError("noSpecMatCapSpec","You connected a specular matcap texture but have not connected a specular texture. You need to connect both texture inputs for the specular input to work.",1);t.setUiError("specNoMatCapSpec",null)}else if(i.get()&&s.get()){t.setUiError("specNoMatCapSpec",null);t.setUiError("noSpecMatCapSpec",null)}else{t.setUiError("specNoMatCapSpec",null);t.setUiError("noSpecMatCapSpec",null)}}w.onTriggered=function(){W();t.checkGraphicsApi();if(!n.defaultMatcapTex3)k();C.popTextures();const e=r.get()||n.defaultMatcapTex3;C.pushTexture(R,e.tex);if(a.get()&&_)C.pushTexture(_,a.get().tex);if(o.get()&&N)C.pushTexture(N,o.get().tex);if(i.get()&&V)C.pushTexture(V,i.get().tex);if(s.get()&&E)C.pushTexture(E,s.get().tex);if(l.get()&&L)C.pushTexture(L,l.get().tex);if(u.get()&&P)C.pushTexture(P,u.get().tex);n.pushShader(C);D.trigger();n.popShader()}}};CABLES.OPS["c1dd6e76-61b4-471a-b8d1-f550a5a9a4f4"]={f:Ops.Gl.Shader.MatCapMaterial_v3,objName:"Ops.Gl.Shader.MatCapMaterial_v3"};Ops.Gl.Shader.BasicMaterial_v3=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={basicmaterial_frag:"{{MODULES_HEAD}}\n\nIN vec2 texCoord;\n\n#ifdef VERTEX_COLORS\nIN vec4 vertCol;\n#endif\n\n#ifdef HAS_TEXTURES\n    IN vec2 texCoordOrig;\n    #ifdef HAS_TEXTURE_DIFFUSE\n        UNI sampler2D tex;\n    #endif\n    #ifdef HAS_TEXTURE_OPACITY\n        UNI sampler2D texOpacity;\n   #endif\n#endif\n\n\n\nvoid main()\n{\n    {{MODULE_BEGIN_FRAG}}\n    vec4 col=color;\n\n\n    #ifdef HAS_TEXTURES\n        vec2 uv=texCoord;\n\n        #ifdef CROP_TEXCOORDS\n            if(uv.x<0.0 || uv.x>1.0 || uv.y<0.0 || uv.y>1.0) discard;\n        #endif\n\n        #ifdef HAS_TEXTURE_DIFFUSE\n            col=texture(tex,uv);\n\n            #ifdef COLORIZE_TEXTURE\n                col.r*=color.r;\n                col.g*=color.g;\n                col.b*=color.b;\n            #endif\n        #endif\n        col.a*=color.a;\n        #ifdef HAS_TEXTURE_OPACITY\n            #ifdef TRANSFORMALPHATEXCOORDS\n                uv=texCoordOrig;\n            #endif\n            #ifdef ALPHA_MASK_IR\n                col.a*=1.0-texture(texOpacity,uv).r;\n            #endif\n            #ifdef ALPHA_MASK_IALPHA\n                col.a*=1.0-texture(texOpacity,uv).a;\n            #endif\n            #ifdef ALPHA_MASK_ALPHA\n                col.a*=texture(texOpacity,uv).a;\n            #endif\n            #ifdef ALPHA_MASK_LUMI\n                col.a*=dot(vec3(0.2126,0.7152,0.0722), texture(texOpacity,uv).rgb);\n            #endif\n            #ifdef ALPHA_MASK_R\n                col.a*=texture(texOpacity,uv).r;\n            #endif\n            #ifdef ALPHA_MASK_G\n                col.a*=texture(texOpacity,uv).g;\n            #endif\n            #ifdef ALPHA_MASK_B\n                col.a*=texture(texOpacity,uv).b;\n            #endif\n            // #endif\n        #endif\n    #endif\n\n    {{MODULE_COLOR}}\n\n    #ifdef DISCARDTRANS\n        if(col.a<0.2) discard;\n    #endif\n\n    #ifdef VERTEX_COLORS\n        col*=vertCol;\n    #endif\n\n    outColor = col;\n}\n",basicmaterial_vert:"\n{{MODULES_HEAD}}\n\nOUT vec2 texCoord;\nOUT vec2 texCoordOrig;\n\nUNI mat4 projMatrix;\nUNI mat4 modelMatrix;\nUNI mat4 viewMatrix;\n\n#ifdef HAS_TEXTURES\n    UNI float diffuseRepeatX;\n    UNI float diffuseRepeatY;\n    UNI float texOffsetX;\n    UNI float texOffsetY;\n#endif\n\n#ifdef VERTEX_COLORS\n    in vec4 attrVertColor;\n    out vec4 vertCol;\n\n#endif\n\n\nvoid main()\n{\n    mat4 mMatrix=modelMatrix;\n    mat4 modelViewMatrix;\n\n    norm=attrVertNormal;\n    texCoordOrig=attrTexCoord;\n    texCoord=attrTexCoord;\n    #ifdef HAS_TEXTURES\n        texCoord.x=texCoord.x*diffuseRepeatX+texOffsetX;\n        texCoord.y=(1.0-texCoord.y)*diffuseRepeatY+texOffsetY;\n    #endif\n\n    #ifdef VERTEX_COLORS\n        vertCol=attrVertColor;\n    #endif\n\n    vec4 pos = vec4(vPosition, 1.0);\n\n    #ifdef BILLBOARD\n       vec3 position=vPosition;\n       modelViewMatrix=viewMatrix*modelMatrix;\n\n       gl_Position = projMatrix * modelViewMatrix * vec4((\n           position.x * vec3(\n               modelViewMatrix[0][0],\n               modelViewMatrix[1][0],\n               modelViewMatrix[2][0] ) +\n           position.y * vec3(\n               modelViewMatrix[0][1],\n               modelViewMatrix[1][1],\n               modelViewMatrix[2][1]) ), 1.0);\n    #endif\n\n    {{MODULE_VERTEX_POSITION}}\n\n    #ifndef BILLBOARD\n        modelViewMatrix=viewMatrix * mMatrix;\n\n        {{MODULE_VERTEX_MODELVIEW}}\n\n    #endif\n\n    // mat4 modelViewMatrix=viewMatrix*mMatrix;\n\n    #ifndef BILLBOARD\n        // gl_Position = projMatrix * viewMatrix * modelMatrix * pos;\n        gl_Position = projMatrix * modelViewMatrix * pos;\n    #endif\n}\n"};const n=e.inTrigger("render");const r=e.outTrigger("trigger");const a=e.outObject("shader",null,"shader");a.ignoreValueSerialize=true;e.toWorkPortsNeedToBeLinked(n);e.toWorkShouldNotBeChild("Ops.Gl.TextureEffects.ImageCompose",CABLES.OP_PORT_TYPE_FUNCTION);const o=e.patch.cgl;const i=new CGL.Shader(o,"basicmaterial",this);i.addAttribute({type:"vec3",name:"vPosition"});i.addAttribute({type:"vec2",name:"attrTexCoord"});i.addAttribute({type:"vec3",name:"attrVertNormal",nameFrag:"norm"});i.addAttribute({type:"float",name:"attrVertIndex"});i.setModules(["MODULE_VERTEX_POSITION","MODULE_COLOR","MODULE_BEGIN_FRAG","MODULE_VERTEX_MODELVIEW"]);i.setSource(t.basicmaterial_vert,t.basicmaterial_frag);a.setRef(i);n.onTriggered=_;const s=e.inValueSlider("r",Math.random());const l=e.inValueSlider("g",Math.random());const u=e.inValueSlider("b",Math.random());const p=e.inValueSlider("a",1);s.setUiAttribs({colorPick:true});const c=i.addUniformFrag("4f","color",s,l,u,p);i.uniformColorDiffuse=c;const d=e.inTexture("texture");let m=null;d.onChange=T;const g=e.inValueBool("colorizeTexture",false);const b=e.inValueBool("Vertex Colors",false);const h=e.inTexture("textureOpacity");let f=null;const v=e.inSwitch("Alpha Mask Source",["Luminance","R","G","B","A","1-A","1-R"],"Luminance");v.setUiAttribs({greyout:true});h.onChange=N;const O=e.inValueBool("Opacity TexCoords Transform",false);const A=e.inValueBool("Discard Transparent Pixels");const x=e.inValue("diffuseRepeatX",1),I=e.inValue("diffuseRepeatY",1),y=e.inValue("Tex Offset X",0),S=e.inValue("Tex Offset Y",0),j=e.inBool("Crop TexCoords",false);i.addUniformFrag("f","diffuseRepeatX",x);i.addUniformFrag("f","diffuseRepeatY",I);i.addUniformFrag("f","texOffsetX",y);i.addUniformFrag("f","texOffsetY",S);const C=e.inValueBool("billboard",false);v.onChange=C.onChange=A.onChange=O.onChange=j.onChange=b.onChange=g.onChange=E;e.setPortGroup("Color",[s,l,u,p]);e.setPortGroup("Color Texture",[d,b,g]);e.setPortGroup("Opacity",[h,v,A,O]);e.setPortGroup("Texture Transform",[x,I,y,S,j]);N();T();e.preRender=function(){i.bind();_();if(!i)return};function _(){e.checkGraphicsApi();o.pushShader(i);i.popTextures();if(m&&d.get())i.pushTexture(m,d.get());if(f&&h.get())i.pushTexture(f,h.get());r.trigger();o.popShader()}function N(){if(h.get()){if(f!==null)return;i.removeUniform("texOpacity");i.define("HAS_TEXTURE_OPACITY");if(!f)f=new CGL.Uniform(i,"t","texOpacity")}else{i.removeUniform("texOpacity");i.removeDefine("HAS_TEXTURE_OPACITY");f=null}E()}function T(){if(d.get()){if(!i.hasDefine("HAS_TEXTURE_DIFFUSE"))i.define("HAS_TEXTURE_DIFFUSE");if(!m)m=new CGL.Uniform(i,"t","texDiffuse")}else{i.removeUniform("texDiffuse");i.removeDefine("HAS_TEXTURE_DIFFUSE");m=null}V()}function V(){const e=d.isLinked()||h.isLinked();x.setUiAttribs({greyout:!e});I.setUiAttribs({greyout:!e});y.setUiAttribs({greyout:!e});S.setUiAttribs({greyout:!e});g.setUiAttribs({greyout:!e});v.setUiAttribs({greyout:!h.get()});O.setUiAttribs({greyout:!h.get()});let t=true;t=d.get()&&!g.get();s.setUiAttribs({greyout:t});l.setUiAttribs({greyout:t});u.setUiAttribs({greyout:t})}function E(){i.toggleDefine("VERTEX_COLORS",b.get());i.toggleDefine("CROP_TEXCOORDS",j.get());i.toggleDefine("COLORIZE_TEXTURE",g.get());i.toggleDefine("TRANSFORMALPHATEXCOORDS",O.get());i.toggleDefine("DISCARDTRANS",A.get());i.toggleDefine("BILLBOARD",C.get());i.toggleDefine("ALPHA_MASK_ALPHA",v.get()=="A");i.toggleDefine("ALPHA_MASK_IALPHA",v.get()=="1-A");i.toggleDefine("ALPHA_MASK_IR",v.get()=="1-R");i.toggleDefine("ALPHA_MASK_LUMI",v.get()=="Luminance");i.toggleDefine("ALPHA_MASK_R",v.get()=="R");i.toggleDefine("ALPHA_MASK_G",v.get()=="G");i.toggleDefine("ALPHA_MASK_B",v.get()=="B");V()}}};CABLES.OPS["ec55d252-3843-41b1-b731-0482dbd9e72b"]={f:Ops.Gl.Shader.BasicMaterial_v3,objName:"Ops.Gl.Shader.BasicMaterial_v3"};Ops.Anim.Timer_v2=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const o=e.inValue("Speed",1),n=e.inValueBool("Play",true),r=e.inTriggerButton("Reset"),a=e.inValueBool("Sync to timeline",false),i=e.outNumber("Time");e.setPortGroup("Controls",[n,r,o]);const s=new CABLES.Timer;let l=null;let u=0;let p=false;n.onChange=c;c();function c(){if(n.get()){s.play();e.patch.addOnAnimFrame(e)}else{s.pause();e.patch.removeOnAnimFrame(e)}}r.onTriggered=d;function d(){u=0;l=null;s.setTime(0);i.set(0)}a.onChange=function(){p=a.get();n.setUiAttribs({greyout:p});r.setUiAttribs({greyout:p})};e.onAnimFrame=function(e,t,n){if(s.isPlaying()){if(CABLES.overwriteTime!==undefined){i.set(CABLES.overwriteTime*o.get())}else if(p){i.set(e*o.get())}else{s.update();const r=s.get();if(l===null){l=r;return}const a=Math.abs(r-l);l=r;u+=a*o.get();if(u!=u)u=0;i.set(u)}}}}};CABLES.OPS["aac7f721-208f-411a-adb3-79adae2e471a"]={f:Ops.Anim.Timer_v2,objName:"Ops.Anim.Timer_v2"};Ops.Patch.PK3cVbR.ContentNames=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inTrigger("Execute"),r=e.outArray("Category Names");n.onTriggered=()=>{const e=["Chimère(s)","Brûle Harold","Madame Rose","Georges","Musiques","Test"];r.set(e)}}};CABLES.OPS["8e140d0a-6de5-4464-b83a-caacb82d0558"]={f:Ops.Patch.PK3cVbR.ContentNames,objName:"Ops.Patch.PK3cVbR.ContentNames"};Ops.Gl.TextMeshMSDF_v2=class extends CABLES.Op{constructor(){super(...arguments);const a=this;const O=a.attachments={textmeshsdf_frag:"\nUNI sampler2D tex0;\nUNI sampler2D tex1;\nUNI sampler2D tex2;\nUNI sampler2D tex3;\n\nIN vec2 texCoord;\nIN vec4 fragAttrColors;\n\nUNI vec4 color;\nUNI vec2 texSize;\n\n#ifdef BORDER\n    UNI float borderWidth;\n    UNI float borderSmooth;\n    UNI vec3 colorBorder;\n#endif\n\n#ifdef TEXTURE_COLOR\nUNI sampler2D texMulColor;\n#endif\n#ifdef TEXTURE_MASK\nUNI sampler2D texMulMask;\n#endif\n\nUNI float smoothing;\nIN float texIndex;\n\n#ifdef SHADOW\n    UNI float shadowWidth;\n#endif\n\n\nfloat median(float r, float g, float b)\n{\n    return max(min(r, g), min(max(r, g), b));\n}\n\nvoid main()\n{\n    vec4 bgColor=vec4(0.0,0.0,0.0,0.0);\n    vec4 fgColor=color;\n    float opacity=1.0;\n\n    #ifndef SDF\n        if(int(texIndex)==0) outColor = texture(tex0, texCoord);\n        if(int(texIndex)==1) outColor = texture(tex1, texCoord);\n        if(int(texIndex)==2) outColor = texture(tex2, texCoord);\n        if(int(texIndex)==3) outColor = texture(tex3, texCoord);\n\n        return;\n    #endif\n\n\n    #ifdef TEXTURE_COLOR\n        fgColor.rgb *= texture(texMulColor, vec2(0.0,0.0)).rgb; //todo texcoords from char positioning\n    #endif\n    #ifdef TEXTURE_MASK\n        opacity *= texture(texMulMask, vec2(0.0,0.0)).r; //todo texcoords from char positioning\n    #endif\n\n\n    #ifdef SHADOW\n        vec2 msdfUnit1 = texSize;\n        vec2 tcv=vec2(texCoord.x-0.002,texCoord.y-0.002);\n        vec3 smpl1;\n        if(int(texIndex)==0) smpl1 = texture(tex0, tcv).rgb;\n        if(int(texIndex)==1) smpl1 = texture(tex1, tcv).rgb;\n        if(int(texIndex)==2) smpl1 = texture(tex2, tcv).rgb;\n        if(int(texIndex)==3) smpl1 = texture(tex3, tcv).rgb;\n\n        float sigDist1 = median(smpl1.r, smpl1.g, smpl1.b) - 0.001;\n        float opacity1 = smoothstep(0.0,0.9,sigDist1*sigDist1);\n        outColor = mix(bgColor, vec4(0.0,0.0,0.0,1.0), opacity1);\n    #endif\n\n    vec2 msdfUnit = 8.0/texSize;\n    vec3 smpl;\n\n    if(int(texIndex)==0) smpl = texture(tex0, texCoord).rgb;\n    if(int(texIndex)==1) smpl = texture(tex1, texCoord).rgb;\n    if(int(texIndex)==2) smpl = texture(tex2, texCoord).rgb;\n    if(int(texIndex)==3) smpl = texture(tex3, texCoord).rgb;\n\n\n    float sigDist = median(smpl.r, smpl.g, smpl.b) - 0.5;\n    sigDist *= dot(msdfUnit, (0.5+(smoothing-0.5))/fwidth(texCoord));\n    opacity *= clamp(sigDist + 0.5, 0.0, 1.0);\n\n    #ifdef BORDER\n        float sigDist2 = median(smpl.r, smpl.g, smpl.b) - 0.01;\n        float bw=borderWidth*0.6+0.24;\n        float opacity2 = smoothstep(bw-borderSmooth,bw+borderSmooth,sigDist2*sigDist2);\n        fgColor=mix(fgColor,vec4(colorBorder,1.0),1.0-opacity2);\n    #endif\n\n    float opa=opacity*color.a;\n\n    if(opa==0.0)discard;\n\n    outColor = mix(outColor, fgColor, opa);\n\n#ifdef HAS_ATTR_COLORS\n    outColor*=fragAttrColors;\n#endif\n}\n\n",textmeshsdf_vert:"UNI sampler2D tex1;\nUNI sampler2D tex2;\nUNI sampler2D tex3;\nUNI sampler2D tex4;\n\nUNI mat4 projMatrix;\nUNI mat4 modelMatrix;\nUNI mat4 viewMatrix;\n\nIN vec3 vPosition;\nIN vec2 attrTexCoord;\nIN mat4 instMat;\nIN vec2 attrTexOffsets;\nIN vec2 attrSize;\nIN vec2 attrTcSize;\nIN float attrPage;\nIN vec4 attrColors;\n\nOUT vec2 texCoord;\nOUT float texIndex;\nOUT vec4 fragAttrColors;\n\n\n\n\nconst float mulSize=0.01;\n\nvoid main()\n{\n    texCoord=(attrTexOffsets+attrTexCoord*attrTcSize);\n    texCoord.y=1.0-texCoord.y;\n\n    mat4 instMVMat=instMat;\n    vec4 vert=vec4( vPosition, 1. );\n    vert.x*=attrSize.x*mulSize;\n    vert.y*=attrSize.y*mulSize;\n\n    fragAttrColors=attrColors;\n\n    texIndex=attrPage+0.4; // strange ios rounding errors?!\n\n    mat4 mvMatrix=viewMatrix * modelMatrix * instMVMat;\n\n    gl_Position = projMatrix * mvMatrix * vert;\n}\n"};const A=a.inTrigger("Render"),B=a.inString("Text","cables"),o=a.inDropDown("Font",[],"",true),t=a.inFloat("Scale",.25),S=a.inFloat("Letter Spacing",0),j=a.inFloat("Line Height",1),C=a.inSwitch("Align",["Left","Center","Right"],"Center"),e=a.inSwitch("Vertical Align",["Zero","Top","Middle","Bottom"],"Middle"),n=a.inValueSlider("r",1),x=a.inValueSlider("g",1),I=a.inValueSlider("b",1),y=a.inValueSlider("a",1),r=a.inBool("SDF",true),G=a.inValueSlider("Smoothing",.3),i=a.inBool("Border",false),s=a.inFloatSlider("Border Width",.5),l=a.inFloatSlider("Smoothness",.25),u=a.inValueSlider("Border r",1),F=a.inValueSlider("Border g",1),q=a.inValueSlider("Border b",1),H=a.inBool("Shadow",false),p=a.inTexture("Texture Color"),c=a.inTexture("Texture Mask"),X=a.inArray("Positions"),W=a.inArray("Scalings"),Y=a.inArray("Rotations"),_=a.inArray("Colors"),Z=a.outTrigger("Next"),K=a.outArray("Positions Original",null,3),J=a.outArray("Scales",null,2),Q=a.outNumber("Num Lines"),$=a.outNumber("Width"),ee=a.outNumber("Height"),te=a.outNumber("Start Y"),ne=a.outNumber("Num Chars");a.setPortGroup("Size",[S,j,t]);a.setPortGroup("Character Transformations",[W,Y,X]);a.setPortGroup("Alignment",[C,e]);a.setPortGroup("Color",[n,x,I,y,r]);a.setPortGroup("Border",[u,F,q,l,s,i]);n.setUiAttribs({colorPick:true});u.setUiAttribs({colorPick:true});const N=a.patch.cgl;const re="font_data_";const ae=re.length;const oe=vec3.create();const ie=vec3.create();const d=new CGL.Shader(N,"TextMeshSDF");d.define("INSTANCING");let m=null;let T=null;let V=null;let g=true;let E=null;let L=null;let M=false;let b=1;let h=0,se=0;let k=0;let P,w,D,z;let U=true;let R=null;let f=0;if(N.glVersion==1){N.gl.getExtension("OES_standard_derivatives");d.enableExtension("GL_OES_standard_derivatives")}d.setSource(O.textmeshsdf_vert,O.textmeshsdf_frag);const le=new CGL.Uniform(d,"t","tex0",0),ue=new CGL.Uniform(d,"t","tex1",1),pe=new CGL.Uniform(d,"t","tex2",2),ce=new CGL.Uniform(d,"t","tex3",3),de=new CGL.Uniform(d,"t","texMulColor",4),me=new CGL.Uniform(d,"t","texMulMask",5),ge=new CGL.Uniform(d,"4f","color",n,x,I,y),be=new CGL.Uniform(d,"3f","colorBorder",u,F,q),he=new CGL.Uniform(d,"2f","texSize",0,0),fe=new CGL.Uniform(d,"f","smoothing",G),ve=new CGL.Uniform(d,"f","borderSmooth",l),Oe=new CGL.Uniform(d,"f","borderWidth",s);t.onChange=Ie;Y.onChange=X.onChange=W.onChange=function(){U=true};p.onChange=c.onChange=H.onChange=i.onChange=r.onChange=Ae;_.onLinkChanged=()=>{Ae();U=true;g=true};_.onChange=()=>{g=true;if(L&&_.get()&&_.isLinked())L.setAttribute("attrColors",new Float32Array(_.get()),4,{instanced:true})};C.onChange=B.onChange=S.onChange=j.onChange=function(){g=true};e.onChange=ye;a.patch.addEventListener("variablesChanged",v);a.patch.addEventListener("FontLoadedMSDF",v);o.onChange=xe;Ae();Ie();v();function Ae(){d.toggleDefine("SDF",r.get());d.toggleDefine("SHADOW",H.get());d.toggleDefine("BORDER",i.get());d.toggleDefine("TEXTURE_COLOR",p.isLinked());d.toggleDefine("TEXTURE_MASK",c.isLinked());d.toggleDefine("HAS_ATTR_COLORS",_.isLinked());u.setUiAttribs({greyout:!i.get()});F.setUiAttribs({greyout:!i.get()});q.setUiAttribs({greyout:!i.get()});l.setUiAttribs({greyout:!i.get()});s.setUiAttribs({greyout:!i.get()})}function xe(){v();const e=re+o.get();T=null;m=null;V={};const t=a.patch.getVar(e);if(!t||!t.getValue()){T=null;return}T=t.getValue().data;if(!T){return}const n=t.getValue().basename;const r=a.patch.getVar("font_tex_"+n);if(!r){m=null;T=null;return}m=r.getValue();for(let e=0;e<T.chars.length;e++)V[T.chars[e].char]=T.chars[e];g=true}function v(){const e=a.patch.getVars();const t=["..."];for(const n in e)if(e[n].type=="fontData")t.push(n.substr(ae));o.uiAttribs.values=t}function Ie(){const e=t.get();vec3.set(ie,e,e,e);vec3.set(oe,0,f*e,0);$.set(se*e);ee.set(h*e);te.set((w+f)*e)}function ye(){if(D==undefined)return;if(e.get()=="Top")b=0;else if(e.get()=="Middle")b=1;else if(e.get()=="Bottom")b=2;else if(e.get()=="Zero")b=3;f=0;se=Math.abs(D-z);h=Math.abs(P-w);if(b===1)f=h/2;else if(b===2)f=h;if(b!=0)f-=k;Ie()}function Se(){U=false;const t=[];const n=X.get()||K.get();const r=W.get();const a=Y.get();for(let e=0;e<L.numInstances;e++){const o=mat4.create();mat4.translate(o,o,[n[e*3+0],n[e*3+1],n[e*3+2]]);if(r)mat4.scale(o,o,[r[e*3+0],r[e*3+1],r[e*3+2]]);if(a){mat4.rotateX(o,o,a[e*3+0]*CGL.DEG2RAD);mat4.rotateY(o,o,a[e*3+1]*CGL.DEG2RAD);mat4.rotateZ(o,o,a[e*3+2]*CGL.DEG2RAD)}t.push(Array.prototype.slice.call(o))}R=[].concat.apply([],t)}A.onTriggered=function(){if(!T||!m){xe()}if(!T){a.setUiError("nodata","No font data!");a.setUiError("msdfhint","Use the FontMSDF op to create font and texture.",0)}if(!m){a.setUiError("nodata","No font texture");a.setUiError("msdfhint","Use the FontMSDF op to create font and texture.",0)}if(m&&T){a.setUiError("nodata",null);a.setUiError("msdfhint",null)}if(g){Ce();g=false}if(L&&L.numInstances>0&&m){N.pushShader(d);N.setTexture(0,CGL.Texture.getEmptyTexture(N).tex);if(m[0])he.setValue([m[0].width,m[0].height]);if(m[0])N.setTexture(0,m[0].tex);else N.setTexture(0,CGL.Texture.getEmptyTexture(N).tex);if(m[1])N.setTexture(1,m[1].tex);else N.setTexture(1,CGL.Texture.getEmptyTexture(N).tex);if(m[2])N.setTexture(2,m[2].tex);else N.setTexture(2,CGL.Texture.getEmptyTexture(N).tex);if(m[3])N.setTexture(3,m[3].tex);else N.setTexture(3,CGL.Texture.getEmptyTexture(N).tex);if(p.get())N.setTexture(4,p.get().tex);if(c.get())N.setTexture(5,c.get().tex);N.pushModelMatrix();mat4.translate(N.mMatrix,N.mMatrix,oe);if(U)Se();if(R)L.setAttribute("instMat",new Float32Array(R),16,{instanced:true});if(!M){mat4.scale(N.mMatrix,N.mMatrix,ie);L.render(N.getShader())}N.popModelMatrix();N.popShader()}Z.trigger()};function je(e){return V[String(e)]||V["?"]||V._||V.X}function Ce(){if(!T||!V){ne.set(0);return}const e=String(B.get()+"");if(!E){E=new CGL.Geometry("textmesh");E.vertices=[.5,.5,0,-.5,.5,0,.5,-.5,0,-.5,-.5,0];E.normals=[0,0,0,0,0,0,0,0,0,0,0,0];E.texCoords=new Float32Array([1,0,0,0,1,1,0,1]);E.verticesIndices=[0,1,2,2,1,3]}if(L)L.dispose();L=new CGL.Mesh(N,E);const a=e.split("\n");const o=[];const i=[];const s=[];const t=[];const l=[];const u=[];let p=0;const c=[];const d=.01;Q.set(a.length);P=99999;w=-99999;D=99999;z=-99999;k=0;for(let e=0;e<T.chars.length;e++){if(T.chars[e].height)k+=T.chars[e].height}k/=T.chars.length;k*=d;for(let r=0;r<a.length;r++){const m=a[r];const g=m.length;let t=0;for(let e=0;e<g;e++){const b=m.substring(e,e+1);const h=je(b);if(h)t+=h.xadvance*d+S.get()}let n=0;if(C.get()=="Right")n-=t;else if(C.get()=="Center")n-=t/2;for(let t=0;t<g;t++){const f=mat4.create();const b=m.substring(t,t+1);const h=je(b);if(!h)continue;u.push(h.page||0);s.push(h.width,h.height);i.push(h.x/T.common.scaleW,h.y/T.common.scaleH);const v=h.width/T.common.scaleW;const O=h.height/T.common.scaleH;const A=h.yoffset/T.common.scaleH;const x=h.xoffset/T.common.scaleW;if(b==" ")l.push(0,0);else l.push(v,O);mat4.identity(f);let e=h.xadvance/2*d;n+=e;const I=n+h.xoffset/2*d;const y=r*-j.get()+k-d*(h.yoffset+h.height/2);D=Math.min(I-v,D);z=Math.max(I+v,z);P=Math.min(y-O-k/2,P);w=Math.max(y+O+k/2,w);mat4.translate(f,f,[I,y,0]);c.push(I,y,0);e=h.xadvance/2*d+S.get();n+=e;D=Math.min(n-v,D);z=Math.max(n+v,z);o.push(Array.prototype.slice.call(f));p++}}R=[].concat.apply([],o);M=false;if(R.length==0)M=true;L.numInstances=R.length/16;ne.set(L.numInstances);if(L.numInstances==0){M=true;return}L.setAttribute("instMat",new Float32Array(R),16,{instanced:true});L.setAttribute("attrTexOffsets",new Float32Array(i),2,{instanced:true});L.setAttribute("attrTcSize",new Float32Array(l),2,{instanced:true});L.setAttribute("attrSize",new Float32Array(s),2,{instanced:true});L.setAttribute("attrPage",new Float32Array(u),1,{instanced:true});if(_.isLinked())L.setAttribute("attrColors",new Float32Array(_.get()),4,{instanced:true});J.set(s);ye();U=true;K.setRef(c)}}};CABLES.OPS["b5c99363-a749-4040-884b-66f91294bcad"]={f:Ops.Gl.TextMeshMSDF_v2,objName:"Ops.Gl.TextMeshMSDF_v2"};Ops.Gl.FontMSDF_v2=class extends CABLES.Op{constructor(){super(...arguments);const s=this;const e=s.attachments={};let t=null;let n=null;if(CABLES.UI){t="/assets/library/fonts_msdf/worksans-regular_int.png";n="/assets/library/fonts_msdf/worksans-regular_int.json"}const l=s.inString("Font Name",CABLES.uuid()),u=s.inUrl("Font Data",[".json"],n),p=s.inUrl("Font Image",[".png"],t),c=s.inUrl("Font Image 1",[".png"]),d=s.inUrl("Font Image 2",[".png"]),m=s.inUrl("Font Image 3",[".png"]),g=s.outBool("Loaded"),b=s.outNumber("Total Chars"),h=s.outString("Chars"),f=s.patch.cgl;let v=false,O=false,A=0;l.onChange=u.onChange=p.onChange=c.onChange=d.onChange=m.onChange=r;const x=[];function I(){const e=v&&O;if(!g.get()&&e)s.patch.emitEvent("FontLoadedMSDF");g.set(e)}s.onFileChanged=function(e){if(p.get()&&p.get().indexOf(e)>-1||c.get()&&c.get().indexOf(e)>-1||d.get()&&d.get().indexOf(e)>-1||m.get()&&m.get().indexOf(e)>-1){r()}};function r(){f.addNextFrameOnceCallback(a)}let y="";function a(){if(!u.get()||!p.get())return;x.length=0;s.patch.deleteVar("font_data_"+y);s.patch.deleteVar("font_tex_"+y);y=l.get();const a="font_data_"+l.get();const n="font_tex_"+l.get();s.patch.setVarValue(a,{});s.patch.setVarValue(n,x);s.patch.getVar(a).type="fontData";s.patch.getVar(n).type="fontTexture";v=O=false;I();s.patch.loading.finished(A);A=s.patch.loading.start("jsonFile",""+u.get(),s);s.setUiError("invaliddata",null);s.setUiError("jsonerr",null);s.setUiError("texurlerror",null);const e=s.patch.getFilePath(String(u.get()));f.patch.loading.addAssetLoadingTask(()=>{CABLES.ajax(e,(e,r,t)=>{if(e){return}try{let t=r;if(typeof t==="string")t=JSON.parse(r);if(!t.chars||!t.info||!t.info.face){s.setUiError("invaliddata","data file is invalid");return}b.set(t.chars.length);let n="";for(let e=0;e<t.chars.length;e++)n+=t.chars[e].char;h.set(n);s.setUiAttrib({extendTitle:t.info.face});s.patch.setVarValue(a,null);s.patch.setVarValue(a,{name:CABLES.basename(u.get()),basename:l.get(),data:t});s.patch.loading.finished(A);v=true;I()}catch(e){s.patch.setVarValue(a,null);s.patch.setVarValue(n,null);s.setUiError("jsonerr","Problem while loading json:<br/>"+e);s.patch.loading.finished(A);I();g.set(false)}})});for(let t=0;t<4;t++){const r=t;let e=p;if(t==1)e=c;if(t==2)e=d;if(t==3)e=m;if(!e.get())continue;const o=f.patch.loading.start(s.objName,e.get(),s);const i=s.patch.getFilePath(String(e.get()));CGL.Texture.load(f,i,function(e,t){if(e){s.setUiError("texurlerror","could not load texture");f.patch.loading.finished(o);O=false;return}x[r]=t;s.patch.setVarValue(n,null);s.patch.setVarValue(n,x);O=true;f.patch.loading.finished(o);I()},{filter:CGL.Texture.FILTER_LINEAR,flip:false})}}}};CABLES.OPS["6cbd5d67-25d5-4936-a2ad-3ee8ed478570"]={f:Ops.Gl.FontMSDF_v2,objName:"Ops.Gl.FontMSDF_v2"};Ops.Boolean.IfTrueThen_v2=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inTrigger("exe"),r=e.inValueBool("boolean",false),a=e.outTrigger("then"),o=e.outTrigger("else");n.onTriggered=i;function i(){if(r.get())a.trigger();else o.trigger()}}};CABLES.OPS["9549e2ed-a544-4d33-a672-05c7854ccf5d"]={f:Ops.Boolean.IfTrueThen_v2,objName:"Ops.Boolean.IfTrueThen_v2"};Ops.Trigger.DelayedTrigger=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inTriggerButton("exe"),r=e.inValueFloat("delay",1),a=e.inTriggerButton("Cancel"),o=e.outTrigger("next"),i=e.outBool("Delaying");let s=null;a.onTriggered=function(){if(s)clearTimeout(s);s=null};n.onTriggered=function(){i.set(true);if(s)clearTimeout(s);s=setTimeout(function(){i.set(false);s=null;o.trigger()},r.get()*1e3)}}};CABLES.OPS["f4ff66b0-8500-46f7-9117-832aea0c2750"]={f:Ops.Trigger.DelayedTrigger,objName:"Ops.Trigger.DelayedTrigger"};Ops.Number.Number=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inValueFloat("value"),r=e.outNumber("result");n.onChange=o;let a=false;n.onLinkChanged=()=>{if(!a&&n.isLinked())e.setUiAttribs({extendTitle:null});a=n.isLinked()};function o(){if(CABLES.UI&&!a)e.setUiAttribs({extendTitle:n.get()});r.set(Number(n.get()))}}};CABLES.OPS["8fb2bb5d-665a-4d0a-8079-12710ae453be"]={f:Ops.Number.Number,objName:"Ops.Number.Number"};Ops.Gl.Performance=class extends CABLES.Op{constructor(){super(...arguments);const i=this;const w=i.attachments={};const e=i.inTrigger("exe"),s=i.inValueBool("Active",true),l=i.inValueBool("Visible",true),D=i.inValueBool("Measure GPU",true),u=i.outTrigger("childs"),t=i.inSwitch("Position",["top","bottom"],"top"),n=i.inBool("Open",false),z=i.inBool("Smooth Graph",true),U=i.inFloat("Scale",3),p=i.inFloat("Size",128),R=i.outObject("Canvas"),B=i.outNumber("FPS");const r=i.patch.cgl;const a=document.createElement("div");let o=null;let c=null;let d=false;let m=0;let g=0;let b=0;let h=0;let f=0;const v=[];const O=[];const A=[];const x=[];let I=0;let y=0;let S=null;let G=0;let F=0;const j=["|","/","-","\\"];let C=true;const q="#007f9c";const H="#aaaaaa";const X="#222222";const _="#003f5c";const N="#7a5195";const T="#ef5675";const W="#ffa600";let Y=false;let V=0;let E=0;let L=0;i.toWorkPortsNeedToBeLinked(e,u);const Z=i.patch.cgl.gl;const K=Z.getExtension("EXT_disjoint_timer_query_webgl2");s.onChange=e.onLinkChanged=l.onChange=()=>{P();Q()};t.onChange=J;p.onChange=k;a.id="performance";a.style.position="absolute";a.style.left="0px";a.style.opacity="0.8";a.style.padding="10px";a.style.cursor="pointer";a.style.background="#222";a.style.color="white";a.style["font-family"]="monospace";a.style["font-size"]="12px";a.style["z-index"]="99999";a.innerHTML="&nbsp;";a.addEventListener("click",$);const M=i.patch.cgl.canvas.parentElement;M.appendChild(a);k();P();J();Q();i.onDelete=function(){if(S)S.remove();if(a)a.remove()};function J(){S.style["pointer-events"]="none";if(t.get()=="top"){S.style.top=a.style.top="0px";S.style.bottom=a.style.bottom="initial"}else{S.style.bottom=a.style.bottom="0px";S.style.top=a.style.top="initial"}}function Q(){if(!l.get()||!e.isLinked()||!s.get()){a.style.display="none";a.style.opacity=0;S.style.display="none"}else{a.style.display="block";a.style.opacity=1;S.style.display="block"}}function k(){if(!S)return;const t=Math.max(0,parseInt(p.get()));S.width=t;S.height=t;a.style.left=t+"px";v.length=0;O.length=0;A.length=0;x.length=0;for(let e=0;e<t;e++){v[e]=-1;O[e]=-1;A[e]=-1;x[e]=-1}}n.onChange=function(){d=n.get();P()};function $(){if(!l.get())return;a.style.opacity=1;d=!d;P()}function P(){ne();if(!S)te();if(d){S.style.display="block";a.style.left=p.get()+"px";a.style["min-height"]="56px"}else{S.style.display="none";a.style.left="0px";a.style["min-height"]="auto"}}function ee(){const t=S.height;const n=U.get();c.fillStyle=X;c.fillRect(0,0,S.width,t);c.fillStyle=_;let r=0;const a=Math.max(0,parseInt(p.get()));for(r=a;r>=0;r--){if(v[r]>30)c.fillStyle=q;if(v[r]>60)c.fillStyle=H;c.fillRect(a-r,t-v[r]*n,1,v[r]*n);if(v[r]>30)c.fillStyle=_}for(r=a;r>=0;r--){let e=0;c.fillStyle=N;e=O[r];c.fillRect(a-r,t-e*n,1,O[r]*n);c.fillStyle=T;e+=A[r];c.fillRect(a-r,t-e*n,1,A[r]*n);c.fillStyle=W;e+=x[r];c.fillRect(a-r,t-e*n,1,x[r]*n)}for(let e=10;e<t;e+=10){c.fillStyle="#888";const o=t-e*n;c.fillRect(S.width-5,o,5,1);c.font="8px arial";c.fillText(e+"ms",S.width-27,o+3)}c.fillStyle="#fff";c.fillRect(S.width-5,t-1e3/g*n,5,1);c.fillText(Math.round(1e3/g)+"ms",S.width-27,t-1e3/g*n)}function te(){S=document.createElement("canvas");S.id="performance_"+i.patch.config.glCanvasId;S.width=p.get();S.height=p.get();S.style.display="block";S.style.opacity=.9;S.style.position="absolute";S.style.left="0px";S.style.cursor="pointer";S.style.top="-64px";S.style["z-index"]="99998";M.appendChild(S);c=S.getContext("2d");S.addEventListener("click",$);k()}function ne(){if(!l.get())return;let e="";if(i.patch.cgl.profileData.profileShaderCompiles>0)e+="Shader compile ("+i.patch.cgl.profileData.profileShaderCompileName+") ";if(i.patch.cgl.profileData.profileShaderGetUniform>0)e+="Shader get uni loc! ("+i.patch.cgl.profileData.profileShaderGetUniformName+")";if(i.patch.cgl.profileData.profileTextureResize>0)e+="Texture resize! ";if(i.patch.cgl.profileData.profileFrameBuffercreate>0)e+="Framebuffer create! ";if(i.patch.cgl.profileData.profileEffectBuffercreate>0)e+="Effectbuffer create! ";if(i.patch.cgl.profileData.profileTextureDelete>0)e+="Texture delete! ";if(i.patch.cgl.profileData.profileNonTypedAttrib>0)e+="Not-Typed Buffer Attrib! "+i.patch.cgl.profileData.profileNonTypedAttribNames;if(i.patch.cgl.profileData.profileTextureNew>0)e+="new texture created! ";if(i.patch.cgl.profileData.profileGenMipMap>0)e+="generating mip maps!";if(e.length>0){e='| <span style="color:#f80;">WARNING: '+e+"<span>"}let t="";if(d){t+='<span style="color:'+_+'">■</span> '+g+" fps ";t+='<span style="color:'+N+'">■</span> '+Math.round(E*100)/100+"ms mainloop ";t+='<span style="color:'+T+'">■</span> '+Math.round(L*100)/100+"ms onframe ";if(V)t+='<span style="color:'+W+'">■</span> '+Math.round(V*100)/100+"ms GPU";t+=e;a.innerHTML=t}else{t+=g+" fps / ";t+="CPU: "+Math.round(i.patch.cgl.profileData.profileOnAnimFrameOps*100)/100+"ms / ";if(V)t+="GPU: "+Math.round(V*100)/100+"ms  ";a.innerHTML=t}if(i.patch.loading.getProgress()!=1){a.innerHTML+="<br/>loading "+Math.round(i.patch.loading.getProgress()*100)+"% "+j[++F%j.length]}if(d){let t=0;I=0;f=0;for(let e=v.length;e>v.length-v.length/3;e--){if(v[e]>-1){I+=v[e];t++}if(O[e]>-1)f+=O[e]}I/=t;f/=t;a.innerHTML+="<br/> "+r.canvasWidth+" x "+r.canvasHeight+" (x"+r.pixelDensity+") ";a.innerHTML+="<br/>frame avg: "+Math.round(f*100)/100+" ms ("+Math.round(f/I*100)+"%) / "+Math.round(I*100)/100+" ms";a.innerHTML+=" (self: "+Math.round(y*100)/100+" ms) ";a.innerHTML+="<br/>shader binds: "+Math.ceil(i.patch.cgl.profileData.profileShaderBinds/g)+" uniforms: "+Math.ceil(i.patch.cgl.profileData.profileUniformCount/g)+" mvp_uni_mat4: "+Math.ceil(i.patch.cgl.profileData.profileMVPMatrixCount/g)+" num glPrimitives: "+Math.ceil(i.patch.cgl.profileData.profileMeshNumElements/g)+" fenced pixelread: "+Math.ceil(i.patch.cgl.profileData.profileFencedPixelRead)+" mesh.setGeom: "+i.patch.cgl.profileData.profileMeshSetGeom+" videos: "+i.patch.cgl.profileData.profileVideosPlaying+" tex preview: "+i.patch.cgl.profileData.profileTexPreviews;a.innerHTML+=" draw meshes: "+Math.ceil(i.patch.cgl.profileData.profileMeshDraw/g)+" framebuffer blit: "+Math.ceil(i.patch.cgl.profileData.profileFramebuffer/g)+" texeffect blit: "+Math.ceil(i.patch.cgl.profileData.profileTextureEffect/g);a.innerHTML+=" all shader compiletime: "+Math.round(i.patch.cgl.profileData.shaderCompileTime*100)/100}i.patch.cgl.profileData.clear()}function re(e){e.style.padding="0px";e.style.margin="0px"}function ae(t,e,n,r){const a=20;t.usedAvg=t.usedAvg||t.used;if(!t.ele||C){const i=document.createElement("div");t.ele=i;if(t.childs&&t.childs.length>0)i.style.height="500px";else i.style.height=a+"px";i.style.overflow="hidden";i.style.display="inline-block";if(!t.isRoot){i.innerHTML='<div style="min-height:'+a+'px;width:100%;overflow:hidden;color:black;position:relative">&nbsp;'+t.name+"</div>";i.style["background-color"]="rgb("+t.colR+","+t.colG+","+t.colB+")";i.style["border-left"]="1px solid black"}e.appendChild(i)}if(!t.isRoot){if(performance.now()-t.lastTime>200){t.ele.style.display="none";t.hidden=true}else{if(t.hidden){t.ele.style.display="inline-block";t.hidden=false}}t.ele.style.float="left";t.ele.style.width=Math.floor(t.usedAvg/n*98)+"%"}else{t.ele.style.width="100%";t.ele.style.clear="both";t.ele.style.float="none"}if(t&&t.childs&&t.childs.length>0){let e=0;for(var o=0;o<t.childs.length;o++){t.childs[o].usedAvg=(t.childs[o].usedAvg||t.childs[o].used)*.95+t.childs[o].used*.05;e+=t.childs[o].usedAvg}for(var o=0;o<t.childs.length;o++){ae(t.childs[o],t.ele,e,r+1)}}}function oe(t){for(let e=0;e<t.childs.length;e++)oe(t.childs[e]);t.childs.length=0}function ie(){if(!CGL.performanceMeasures)return;if(!o){i.log("create measure ele");o=document.createElement("div");o.style.width="100%";o.style["background-color"]="#444";o.style.bottom="10px";o.style.height="100px";o.style.opacity="1";o.style.position="absolute";o.style["z-index"]="99999";o.innerHTML="";M.appendChild(o)}let t=0;const n=CGL.performanceMeasures[0];for(let e=0;e<n.childs.length;e++)t+=n.childs[e].used;ae(CGL.performanceMeasures[0],o,t,0);n.childs.length=0;oe(CGL.performanceMeasures[0]);CGL.performanceMeasures.length=0;C=false}e.onTriggered=se;function se(){const e=performance.now();if(s.get()){m++;if(K&&D.get()&&l.get())i.patch.cgl.profileData.doProfileGlQuery=true;else i.patch.cgl.profileData.doProfileGlQuery=false;if(b===0)b=Date.now();if(Date.now()-b>=1e3){g=m;m=0;B.set(g);if(l.get())ne();b=Date.now()}const n=i.patch.cgl.profileData.glQueryData;V=0;if(n){let t=0;for(let e in n){t++;if(n[e].time)V+=n[e].time}}if(l.get()){ie();if(d&&!i.patch.cgl.profileData.pause){v.push(i.patch.cgl.profileData.profileFrameDelta);v.shift();O.push(h);O.shift();A.push(i.patch.cgl.profileData.profileOnAnimFrameOps-i.patch.cgl.profileData.profileMainloopMs);A.shift();x.push(V);x.shift();ee()}}G=performance.now();y=performance.now()-e;R.setRef(S)}const t=performance.now();u.trigger();if(s.get()){const r=performance.now()-t;const a=i.patch.cgl.profileData.profileMainloopMs;const o=i.patch.cgl.profileData.profileOnAnimFrameOps-i.patch.cgl.profileData.profileMainloopMs;if(z.get()){h=h*.9+r*.1;E=E*.5+a*.5;L=L*.5+o*.5}else{h=r;E=a;L=o}i.patch.cgl.profileData.clearGlQuery()}}}};CABLES.OPS["9cd2d9de-000f-4a14-bd13-e7d5f057583c"]={f:Ops.Gl.Performance,objName:"Ops.Gl.Performance"};Ops.Patch.PK3cVbR.TransformCategoryLettersPositions=class extends CABLES.Op{constructor(){super(...arguments);const e=this;const t=e.attachments={};const n=e.inTrigger("Trigger"),p=e.inArray("Node Positions"),c=e.inArray("Text Original Positions"),d=e.inArray("Text Center Positions"),m=e.inArray("String Lengths"),g=e.inFloat("Scale",5.2),b=e.outTrigger("Next"),h=e.outArray("Updated Text Positions");let f=0;n.onTriggered=()=>{f++;try{const r=p.get();const a=c.get();const o=d.get();const e=m.get();const i=1/g.get();const s=e.length;const l=[];let n=0;for(let t=0;t<s;t++){const u=e[t];if(f%3e3==0){console.log("BEGINNING",t);console.log("i*3:",t*3,"idx:",n,"strLen:",u);console.log(r[t*3],a[n+1]-o[t*3+1])}for(let e=0;e<u;e++){l.push(r[t*3]*i+a[n]-o[t*3]);l.push(r[t*3+1]*i+a[n+1]-o[t*3+1]);l.push(r[t*3+2]*i+a[n+2]+o[t*3+2]);n+=3}}h.set(l)}catch(e){h.set(null)}b.trigger()}}};CABLES.OPS["66c6a785-8779-471e-aaa6-52c71935ce16"]={f:Ops.Patch.PK3cVbR.TransformCategoryLettersPositions,objName:"Ops.Patch.PK3cVbR.TransformCategoryLettersPositions"};window.addEventListener("load",function(e){CABLES.jsLoaded=new Event("CABLES.jsLoaded");document.dispatchEvent(CABLES.jsLoaded)});(()=>{var r={};(()=>{r.d=(e,t)=>{for(var n in t){if(r.o(t,n)&&!r.o(e,n)){Object.defineProperty(e,n,{enumerable:true,get:t[n]})}}}})();(()=>{r.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t)})();(()=>{r.r=e=>{if(typeof Symbol!=="undefined"&&Symbol.toStringTag){Object.defineProperty(e,Symbol.toStringTag,{value:"Module"})}Object.defineProperty(e,"__esModule",{value:true})}})();var n={};(()=>{"use strict";r.r(n);r.d(n,{VarGetOpWrapper:()=>t,VarSetOpWrapper:()=>e});const i=CABLES;class e{constructor(t,e,n,r,a,o){this._valuePort=n;this._varNamePort=r;this._op=t;this._type=e;this._typeId=-1;this._triggerPort=a;this._nextPort=o;this._var=null;this._btnCreate=t.inTriggerButton("Create new variable");this._btnCreate.setUiAttribs({hidePort:true});this._btnCreate.onTriggered=this._createVar.bind(this);this._helper=t.inUiTriggerButtons("",["Rename"]);this._helper.setUiAttribs({hidePort:true});this._helper.onTriggered=e=>{if(e=="Rename")CABLES.CMD.PATCH.renameVariable(t.varName.get())};this._op.setPortGroup("Variable",[this._helper,this._varNamePort,this._btnCreate]);r.setUiAttribs({_variableSelect:true});this._op.on("uiParamPanel",this._updateVarNamesDropdown.bind(this));this._op.patch.addEventListener("variablesChanged",this._updateName.bind(this));this._op.patch.addEventListener("variableRename",this._renameVar.bind(this));this._varNamePort.onChange=this._updateName.bind(this);this._isTexture=this._valuePort.uiAttribs.objType==="texture";this._valuePort.changeAlways=true;if(this._triggerPort){this._triggerPort.onTriggered=()=>{this._setVarValue(true)}}else{this._valuePort.onChange=this._setVarValue.bind(this)}this._op.init=()=>{this._updateName();if(!this._triggerPort)this._setVarValue();this._updateErrorUi()};if(e=="array")this._typeId=i.Port.TYPE_ARRAY;else if(e=="object")this._typeId=i.Port.TYPE_OBJECT;else if(e=="string")this._typeId=i.Port.TYPE_STRING;else if(e=="texture")this._typeId=i.Port.TYPE_TEXTURE;else this._typeId=i.Port.TYPE_VALUE}_updateErrorUi(){if(CABLES.UI){if(!this._varNamePort.get())this._op.setUiError("novarname","no variable selected");else{if(this._op.hasUiErrors)this._op.setUiError("novarname",null)}}}_updateName(){this._var=null;const e=this._varNamePort.get();this._op.setTitle("var set");this._op.setUiAttrib({extendTitle:"#"+e});this._updateErrorUi();const t=this._op.patch.getVar(e);if(t&&!t.type)t.type=this._type;if(!this._op.patch.hasVar(e)&&e!=0&&!this._triggerPort){this._setVarValue()}if(!this._op.patch.hasVar(e)&&e!=0&&this._triggerPort){if(this._type=="string")this._op.patch.setVarValue(e,"");else if(this._type=="number")this._op.patch.setVarValue(e,"");else this._op.patch.setVarValue(e,null)}if(this._op.isCurrentUiOp()){this._updateVarNamesDropdown();this._op.refreshParams()}this._updateDisplay();this._op.patch.emitEvent("opVariableNameChanged",this._op,this._varNamePort.get())}_createVar(){CABLES.CMD.PATCH.createVariable(this._op,this._type,()=>{this._updateName()})}_updateDisplay(){this._valuePort.setUiAttribs({greyout:!this._varNamePort.get()})}_updateVarNamesDropdown(){if(CABLES.UI&&CABLES.UI.loaded&&CABLES.UI.loaded){const e=gui.uiProfiler.start("[vars] _updateVarNamesDropdown");const t=[];const n=this._op.patch.getVars();for(const e in n)if(n[e].type==this._type&&e!="0")t.push(e);this._varNamePort.uiAttribs.values=t;e.finish()}}_renameVar(e,t){if(e!=this._varNamePort.get())return;this._varNamePort.set(t);this._updateName()}_setVarValue(e){const t=this._valuePort.get();if(!this._var){const n=this._varNamePort.get();if(!n)return;this._op.patch.setVarValue(n,t);this._var=this._op.patch.getVar(n)}if(this._typeId==i.Port.TYPE_VALUE||this._typeId==i.Port.TYPE_STRING){this._var.setValue(t)}else if(this._typeId==i.Port.TYPE_ARRAY){this._arr=[];i.utils.copyArray(t,this._arr);this._var.setValue(this._arr)}else{if(this._typeId==i.Port.TYPE_OBJECT){if(this._isTexture)this._var.setValue(CGL.Texture.getEmptyTexture(this._op.patch.cgl));else this._var.setValue(null);if(t&&t.tex&&t._cgl&&!this._isTexture)this._op.setUiError("texobj","Dont use object variables for textures, use varSetTexture");else this._op.setUiError("texobj",null)}this._var.setValue(t)}if(e&&this._nextPort)this._nextPort.trigger()}}class t{constructor(e,t,n,r){this._op=e;this._type=t;this._varnamePort=n;this._variable=null;this._valueOutPort=r;this._listenerId=null;this._typeId=0;if(t=="array")this._typeId=i.Port.TYPE_ARRAY;else if(t=="object")this._typeId=i.Port.TYPE_OBJECT;else if(t=="texture")this._typeId=i.Port.TYPE_TEXTURE;else if(t=="string")this._typeId=i.Port.TYPE_STRING;else this._typeId=i.Port.TYPE_VALUE;if(r)this._isTexture=r.uiAttribs.objType==="texture";this._op.on("uiParamPanel",this._updateVarNamesDropdown.bind(this));this._op.on("uiErrorChange",this._updateTitle.bind(this));this._op.patch.on("variableRename",this._renameVar.bind(this));this._op.patch.on("variableDeleted",e=>{if(this._op.isCurrentUiOp())this._op.refreshParams()});n.setUiAttribs({_variableSelect:true});n.setUiAttribs({_variableSelectGet:true});this._varnamePort.onChange=this._changeVar.bind(this);this._op.patch.addEventListener("variablesChanged",this._init.bind(this));this._op.onDelete=()=>{if(this._variable&&this._listenerId)this._variable.off(this._listenerId)};this._op.init=()=>{this._init()}}get variable(){return this._variable}_changeVar(){if(this._variable&&this._listenerId){this._variable.off(this._listenerId)}this._init()}_renameVar(e,t){if(e!=this._varnamePort.get())return;this._varnamePort.set(t);this._updateVarNamesDropdown();this._updateTitle();this._listenerId=this._variable.on("change",this._setValueOut.bind(this))}_updateVarNamesDropdown(){if(CABLES.UI&&CABLES.UI.loaded){const t=[];const n=this._op.patch.getVars();for(const e in n)if(n[e].type==this._type&&e!="0")t.push(e);this._op.varName.uiAttribs.values=t}}_setValueOut(e){if(this._valueOutPort)if(this._typeId==i.Port.TYPE_NUMBER||this._typeId==i.Port.TYPE_STRING)this._valueOutPort.set(e);else if(this._typeId==i.Port.TYPE_ARRAY||this._typeId==i.Port.TYPE_OBJECT||this._isTexture)this._valueOutPort.setRef(e);else console.log("unkown type?")}_updateTitle(){if(this._variable){this._op.setUiError("unknownvar",null);this._op.setTitle("var get");this._op.setUiAttrib({extendTitle:"#"+this._varnamePort.get()});if(this._valueOutPort)this._setValueOut(this._variable.getValue())}else{this._op.setUiError("unknownvar","unknown variable! - there is no setVariable with this name ("+this._varnamePort.get()+")");this._op.setUiAttrib({extendTitle:"#invalid"});if(this._valueOutPort)this._setValueOut(0)}}_init(){this._updateVarNamesDropdown();if(this._variable&&this._listenerId)this._variable.off(this._listenerId);this._variable=this._op.patch.getVar(this._op.varName.get());if(this._variable)this._listenerId=this._variable.on("change",this._setValueOut.bind(this));this._updateTitle();this._op.patch.emitEvent("opVariableNameChanged",this._op,this._varnamePort.get())}}})();var e=CABLES=typeof CABLES==="undefined"?{}:CABLES;for(var t in n)e[t]=n[t];if(n.__esModule)Object.defineProperty(e,"__esModule",{value:true})})();(()=>{var r={};(()=>{r.d=(e,t)=>{for(var n in t){if(r.o(t,n)&&!r.o(e,n)){Object.defineProperty(e,n,{enumerable:true,get:t[n]})}}}})();(()=>{r.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t)})();(()=>{r.r=e=>{if(typeof Symbol!=="undefined"&&Symbol.toStringTag){Object.defineProperty(e,Symbol.toStringTag,{value:"Module"})}Object.defineProperty(e,"__esModule",{value:true})}})();var t={};(()=>{"use strict";r.r(t);r.d(t,{ShaderModifier:()=>e});class e{constructor(e,t,n){this._cgl=e;this._name=t;this._origShaders={};this._uniforms=[];this._structUniforms=[];this._definesToggled={};this._defines={};this._mods=[];this._textures=[];this._boundShader=null;this._changedDefines=true;this._changedUniforms=true;this._modulesChanged=false;this.needsTexturePush=false;this._lastShader=null;this._attributes=[];if(n&&n.opId)this.opId=n.opId;if(this._cgl.glVersion==1){this._cgl.enableExtension("OES_texture_float");this._cgl.enableExtension("OES_texture_float_linear");this._cgl.enableExtension("OES_texture_half_float");this._cgl.enableExtension("OES_texture_half_float_linear")}}bind(e,t){const n=e||this._cgl.getShader();if(!n)return;this._boundShader=this._origShaders[n.id];let r=false;if(this._boundShader&&this._lastShader!=this._boundShader.shader){if(!this._boundShader.shader.hasModule(this._mods[0].id))r=true}if(r||!this._boundShader||n.lastCompile!=this._boundShader.lastCompile||this._modulesChanged||n.needsRecompile()){if(this._boundShader)this._boundShader.shader.dispose();if(n.needsRecompile())n.compile();this.needsTexturePush=true;this._boundShader=this._origShaders[n.id]={lastCompile:n.lastCompile,orig:n,shader:n.copy()};this._addModulesToShader(this._boundShader.shader);this._updateDefinesShader(this._boundShader.shader);this._updateUniformsShader(this._boundShader.shader)}this._boundShader.wireframe=n.wireframe;if(this._changedDefines)this._updateDefines();if(this._changedUniforms)this._updateUniforms();if(t!==false)this._cgl.pushShader(this._boundShader.shader);this._boundShader.shader.copyUniformValues(this._boundShader.orig);if(this.needsTexturePush){for(let e=0;e<this._textures.length;e++){const a=this._textures[e][0];const o=this._textures[e][1];const i=this._textures[e][2];if(this._getUniform(a)){const s=this.getPrefixedName(a);const l=this._boundShader.shader.getUniform(s);if(l)this._boundShader.shader.pushTexture(l,o,i)}}this.needsTexturePush=false;this._textures.length=0}this._modulesChanged=false;this._boundShader.shader.fromMod=this;if(this.onBind)this.onBind(this._boundShader.shader);return this._boundShader.shader}unbind(e){if(this._boundShader){if(e!==false)this._cgl.popShader()}this._boundShader=null}_addModulesToShader(t){let n;if(this._mods.length>1)n=this._mods[0];for(let e=0;e<this._mods.length;e++)t.addModule(this._mods[e],n)}_removeModulesFromShader(e){for(const t in this._origShaders)this._origShaders[t].shader.removeModule(e)}addModule(e){this._mods.push(e);this._modulesChanged=true}removeModule(t){const n=[];let r=false;for(let e=0;e<this._mods.length;e++){if(this._mods[e].title==t){r=true;this._removeModulesFromShader(this._mods[e]);n.push(e)}}for(let e=n.length-1;e>=0;e-=1)this._mods.splice(n[e],1);this._modulesChanged=true}_updateUniformsShader(r){for(let e=0;e<this._uniforms.length;e++){const t=this._uniforms[e];const n=this.getPrefixedName(t.name);if(!r.hasUniform(n)&&!t.structName){let e=null;if(t.shaderType==="both"){e=r.addUniformBoth(t.type,n,t.v1,t.v2,t.v3,t.v4);e.comment="mod: "+this._name}else if(t.shaderType==="frag"){e=r.addUniformFrag(t.type,n,t.v1,t.v2,t.v3,t.v4);e.comment="mod: "+this._name}else if(t.shaderType==="vert"){e=r.addUniformVert(t.type,n,t.v1,t.v2,t.v3,t.v4);e.comment="mod: "+this._name}}}for(let n=0;n<this._structUniforms.length;n+=1){const a=this._structUniforms[n];let e=a.uniformName;let t=a.structName;const o=a.members;e=this.getPrefixedName(a.uniformName);t=this.getPrefixedName(a.structName);if(a.shaderType==="frag"){r.addUniformStructFrag(t,e,o)}if(a.shaderType==="vert"){r.addUniformStructVert(t,e,o)}if(a.shaderType==="both"){r.addUniformStructBoth(t,e,o)}}}_updateUniforms(){for(const e in this._origShaders)this._updateUniformsShader(this._origShaders[e].shader);this._changedUniforms=false}_setUniformValue(e,t,n){const r=e.getUniform(t);if(r)r.setValue(n)}setUniformValue(e,t){const n=this._getUniform(e);if(!n)return;const r=this.getPrefixedName(e);for(const a in this._origShaders){this._setUniformValue(this._origShaders[a].shader,r,t)}}hasUniform(e){return this._getUniform(e)}_getUniform(t){for(let e=0;e<this._uniforms.length;e++){if(this._uniforms[e].name==t)return this._uniforms[e];if(this._uniforms[e].structName){if(this._uniforms[e].propertyName==t)return this._uniforms[e]}}return false}_getStructUniform(t){for(let e=0;e<this._structUniforms.length;e+=1)if(this._structUniforms[e].uniformName===t)return this._structUniforms[e];return null}_isStructUniform(t){for(let e=0;e<this._uniforms.length;e++){if(this._uniforms[e].name==t)return false;if(this._uniforms[e].structName){if(this._uniforms[e].propertyName==t)return true}}return false}addUniform(t,n,r,a,o,i,s,l,u,p){if(!this._getUniform(n)){let e="both";if(p)e=p;this._uniforms.push({type:t,name:n,v1:r,v2:a,v3:o,v4:i,structUniformName:s,structName:l,propertyName:u,shaderType:e});this._changedUniforms=true}}addUniformFrag(e,t,n,r,a,o){this.addUniform(e,t,n,r,a,o,null,null,null,"frag");this._changedUniforms=true}addUniformVert(e,t,n,r,a,o){this.addUniform(e,t,n,r,a,o,null,null,null,"vert");this._changedUniforms=true}addUniformBoth(e,t,n,r,a,o){this.addUniform(e,t,n,r,a,o,null,null,null,"both");this._changedUniforms=true}addUniformStruct(t,n,r,a){for(let e=0;e<r.length;e+=1){const o=r[e];if((o.type==="2i"||o.type==="i"||o.type==="3i")&&a==="both")console.error("Adding an integer struct member to both shaders can potentially error. Please use different structs for each shader. Error occured in struct:",t," with member:",o.name," of type:",o.type,".");if(!this._getUniform(n+"."+o.name)){this.addUniform(o.type,n+"."+o.name,o.v1,o.v2,o.v3,o.v4,n,t,o.name,a)}}if(!this._getStructUniform(n)){this._structUniforms.push({structName:t,uniformName:n,members:r,shaderType:a})}}addUniformStructVert(e,t,n){this.addUniformStruct(e,t,n,"vert")}addUniformStructFrag(e,t,n){this.addUniformStruct(e,t,n,"frag")}addUniformStructBoth(e,t,n){this.addUniformStruct(e,t,n,"both")}addAttribute(t){for(let e=0;e<this._attributes.length;e++){if(this._attributes[e].name==t.name&&this._attributes[e].nameFrag==t.nameFrag)return}this._attributes.push(t)}pushTexture(e,t,n){if(!t)throw new Error("no texture given to texturestack");this._textures.push([e,t,n]);this.needsTexturePush=true}_removeUniformFromShader(e,t){if(t.hasUniform(e))t.removeUniform(e)}removeUniform(t){if(this._getUniform(t)){for(let e=this._uniforms.length-1;e>=0;e-=1){const n=t;if(this._uniforms[e].name==t&&!this._uniforms[e].structName){for(const r in this._origShaders){this._removeUniformFromShader(this.getPrefixedName(n),this._origShaders[r].shader)}this._uniforms.splice(e,1)}}this._changedUniforms=true}}removeUniformStruct(t){if(this._getStructUniform(t)){for(let e=this._structUniforms.length-1;e>=0;e-=1){const n=this._structUniforms[e];if(n.uniformName===t){for(const r in this._origShaders){for(let e=0;e<n.members.length;e+=1){const a=n.members[e];this._removeUniformFromShader(this.getPrefixedName(a.name),this._origShaders[r].shader)}}this._structUniforms.splice(e,1)}}this._changedUniforms=true}}getPrefixedName(e){const t=this._mods[0].group;if(t===undefined){return}if(e.startsWith("MOD_")){e=e.substr("MOD_".length);e="mod"+t+"_"+e}return e}_updateDefinesShader(t){for(const e in this._defines){const n=this.getPrefixedName(e);if(this._defines[e]!==null&&this._defines[e]!==undefined)t.define(n,this._defines[e]);else t.removeDefine(n)}for(const e in this._definesToggled){const n=this.getPrefixedName(e);t.toggleDefine(n,this._definesToggled[e])}}_updateDefines(){for(const e in this._origShaders)this._updateDefinesShader(this._origShaders[e].shader);this._changedDefines=false}define(e,t){if(t===undefined)t=true;this._defines[e]=t;this._changedDefines=true}removeDefine(e){this._defines[e]=null;this._changedDefines=true}hasDefine(e){if(this._defines[e]!==null&&this._defines[e]!==undefined)return true;return false}toggleDefine(e,t){this._changedDefines=true;this._definesToggled[e]=t}currentShader(){if(!this._boundShader)return null;return this._boundShader.shader}dispose(){}}})();var e=CGL=typeof CGL==="undefined"?{}:CGL;for(var n in t)e[n]=t[n];if(t.__esModule)Object.defineProperty(e,"__esModule",{value:true})})();(()=>{var r={};(()=>{r.d=(e,t)=>{for(var n in t){if(r.o(t,n)&&!r.o(e,n)){Object.defineProperty(e,n,{enumerable:true,get:t[n]})}}}})();(()=>{r.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t)})();(()=>{r.r=e=>{if(typeof Symbol!=="undefined"&&Symbol.toStringTag){Object.defineProperty(e,Symbol.toStringTag,{value:"Module"})}Object.defineProperty(e,"__esModule",{value:true})}})();var n={};(()=>{"use strict";r.r(n);r.d(n,{SubPatchOp:()=>e});const t=CABLES;class e{constructor(n,e){e=e||{};this._op=n;n.patchId=n.addInPort(new t.Port(n,"patchId",t.CONSTANTS.OP.OP_PORT_TYPE_STRING,{display:"readonly",hidePort:true,hideParam:true}));n.setUiAttribs({subPatchOp:{version:2}});if(n.uiAttribs.parentOfSubpatch){n.patchId.set(n.uiAttribs.parentOfSubpatch)}else{if(e.subId)n.patchId.set(e.subId);else n.patchId.set(t.utils.generateUUID())}n.patchId.onChange=()=>{if(e.subId)n.patchId.value=e.subId};n.init=()=>{n.setStorage({subPatchVer:2})};n.loadDependencies=(e,t)=>{if(CABLES.UI){gui.serverOps.loadProjectDependencies(e,()=>{if(t)t()})}else if(t)t()};n.on("delete",()=>{if(n.patch.clearSubPatchCache)n.patch.clearSubPatchCache(this.patchId);const t=n.patch.ops;for(let e=t.length-1;e>=0;e--)if(t[e]&&t[e].uiAttribs&&t[e].uiAttribs.subPatch==n.patchId.get())n.patch.deleteOp(t[e].id)});this._op.isExposableSubpatchOp=()=>{return true}}get patchId(){return this._op.patchId.get()}}})();var e=CABLES=typeof CABLES==="undefined"?{}:CABLES;for(var t in n)e[t]=n[t];if(n.__esModule)Object.defineProperty(e,"__esModule",{value:true})})();(()=>{var r={};(()=>{r.d=(e,t)=>{for(var n in t){if(r.o(t,n)&&!r.o(e,n)){Object.defineProperty(e,n,{enumerable:true,get:t[n]})}}}})();(()=>{r.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t)})();(()=>{r.r=e=>{if(typeof Symbol!=="undefined"&&Symbol.toStringTag){Object.defineProperty(e,Symbol.toStringTag,{value:"Module"})}Object.defineProperty(e,"__esModule",{value:true})}})();var n={};(()=>{"use strict";r.r(n);r.d(n,{WireframeCube:()=>e,WireframeRect:()=>t});class e{constructor(e){this.cgl=e;this.geom=new CGL.Geometry("marker");this.geom.setPointVertices([-1,-1,1,1,-1,1,1,1,1,-1,1,1,-1,-1,-1,1,-1,-1,-1,1,-1,1,1,-1,1,-1,-1,1,1,-1,-1,1,-1,-1,-1,-1,1,1,1,1,-1,1,-1,1,1,-1,-1,1,1,1,-1,1,1,1,-1,1,-1,-1,1,1,1,-1,1,1,-1,-1,-1,-1,1,-1,-1,-1]);this.mesh=new CGL.Mesh(this.cgl,this.geom,this.cgl.gl.LINES);this.mesh.setGeom(this.geom);this.colorShader=new CGL.UniColorShader(this.cgl);this.colorShader.setColor([0,1,1,1]);this._vScale=vec3.create()}render(e,t,n){this.cgl.pushModelMatrix();this.cgl.pushShader(this.colorShader.shader);this.cgl.pushDepthTest(false);if(e==undefined)e=1;if(t==undefined)t=e;if(n==undefined)n=e;vec3.set(this._vScale,e,t,n);mat4.scale(this.cgl.mvMatrix,this.cgl.mvMatrix,this._vScale);this.mesh.render(this.cgl.getShader());this.cgl.popDepthTest();this.cgl.popShader();this.cgl.popModelMatrix()}}class t{constructor(e){this.cgl=e;this.geom=new CGL.Geometry("marker");const t=-1;const n=1;this.geom.setPointVertices([t,t,0,n,t,0,n,t,0,n,n,0,n,n,0,t,n,0,t,n,0,t,t,0]);this.mesh=new CGL.Mesh(this.cgl,this.geom,this.cgl.gl.LINES);this.mesh.setGeom(this.geom);this.colorShader=new CGL.UniColorShader(this.cgl);this.colorShader.setColor([0,1,1,1]);this._vScale=vec3.create()}render(e,t,n){this.cgl.pushModelMatrix();this.cgl.pushShader(this.colorShader.shader);this.cgl.pushDepthTest(false);vec3.set(this._vScale,e||1,t||e||1,n||e||1);mat4.scale(this.cgl.mvMatrix,this.cgl.mvMatrix,this._vScale);this.mesh.render(this.cgl.getShader());this.cgl.popDepthTest();this.cgl.popShader();this.cgl.popModelMatrix()}}})();var e=CGL=typeof CGL==="undefined"?{}:CGL;for(var t in n)e[t]=n[t];if(n.__esModule)Object.defineProperty(e,"__esModule",{value:true})})();
+var CABLES = CABLES || {}; CABLES.build = {"timestamp":1751883280825,"created":"2025-07-07T10:14:40.825Z","git":{"branch":"master","commit":"5ac55484344fd962b81b053230809aa18281d23f","date":"1751875203","message":"sidebar colorpicker opacity cables-gl/cables/issues/7458"}};
