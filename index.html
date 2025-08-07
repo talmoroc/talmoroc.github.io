@@ -107,6 +107,7 @@
     <div class="top-left-overlay">
         <img src="assets/profile_picture_small.webp" alt="Profile Picture">
         <p>monotom</p>
+        <p>composer and sound designer for theatre and games</p>
     </div>
     <div id="popup" class="popup">
         <button id="popup-close" class="popup-close-btn">×</button>
@@ -221,10 +222,10 @@
 
             popupTitle.textContent = content.title;
             popupText.textContent = content.description;
-            popupImg.src = content.thumbnail;
+            popupImg.src = 'assets/' + content.thumbnail;
 
             if (content.soundcloudUrl) {
-                const embedUrl = `https://w.soundcloud.com/player/?url=${content.soundcloudUrl}&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true`;
+                const embedUrl = `https://w.soundcloud.com/player/?url=${content.soundcloudUrl}&color=%23000000&auto_play=true&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false`;
                 popupSoundcloud.src = embedUrl;
                 popupSoundcloud.style.display = 'block';
             } else {
@@ -234,11 +235,11 @@
             popup.classList.add('visible');
         }
 
-        function hidePopup() {
+        function hidePopup(fromCloseButton = true) {
             popup.classList.remove('visible');
-            popupSoundcloud.src = ''; 
+            //popupSoundcloud.src = '';
             
-            if(gCablesPatch) {
+            if(gCablesPatch && fromCloseButton == true) {
                 gCablesPatch.config.popupClosed();
             }
         }
