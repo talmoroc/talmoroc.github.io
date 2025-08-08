@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>monotom</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="A portfolio website with a cables.gl interactive visualization."/>
-    
+    <meta name="description" content="A portfolio website with a cables.gl interactive visualization." />
+
     <style>
         :root {
             --popup-transition-speed: 0.5s;
         }
-        body, html {
+
+        body,
+        html {
             margin: 0;
             padding: 0;
             width: 100%;
@@ -19,6 +22,7 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             background-color: #111;
         }
+
         #glcanvas {
             display: block;
             position: absolute;
@@ -29,11 +33,16 @@
             outline: 0;
             z-index: 1;
         }
+
         * {
             -webkit-tap-highlight-color: transparent;
-            -webkit-touch-callout: none; -webkit-user-select: none;
-            -moz-user-select: none; -ms-user-select: none; user-select: none;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
         }
+
         .top-left-overlay {
             position: absolute;
             top: 20px;
@@ -47,13 +56,19 @@
             border-radius: 8px;
             color: rgb(187, 187, 187);
         }
+
         .top-left-overlay img {
             width: 40px;
             height: 40px;
             border-radius: 50%;
             border: 2px solid white;
         }
-        .top-left-overlay p { margin: 0; font-size: 14px; }
+
+        .top-left-overlay p {
+            margin: 0;
+            font-size: 14px;
+        }
+
         .popup {
             position: fixed;
             z-index: 20;
@@ -65,7 +80,11 @@
             display: flex;
             flex-direction: column;
         }
-        .popup.visible { transform: translate(0, 0); }
+
+        .popup.visible {
+            transform: translate(0, 0);
+        }
+
         .popup-close-btn {
             position: absolute;
             top: 15px;
@@ -81,26 +100,65 @@
             line-height: 30px;
             text-align: center;
         }
-        .popup-content { padding: 25px; overflow-y: auto; }
-        .popup-content h2 { margin-top: 10px; color: #efefef; }
-        .popup-content p { line-height: 1.6; color: #ccc; }
-        .popup-content img { width: 100%; height: auto; border-radius: 8px; margin-bottom: 15px; }
-        .soundcloud-player { width: 100%; height: 120px; border: none; border-radius: 4px; margin-top: 20px; }
+
+        .popup-content {
+            padding: 25px;
+            overflow-y: auto;
+        }
+
+        .popup-content h2 {
+            margin-top: 10px;
+            color: #efefef;
+        }
+
+        .popup-content p {
+            line-height: 1.6;
+            color: #ccc;
+        }
+
+        .popup-content img {
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .soundcloud-player {
+            width: 100%;
+            height: 120px;
+            border: none;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+
         @media (orientation: landscape) {
-            .popup { 
-                top: 0; 
-                right: 0; /* Changed from 'left: 0' to 'right: 0' */
-                width: 30vw; 
-                min-width: 380px; 
-                height: 100vh; 
-                transform: translateX(100%); /* Changed from 'translateX(-100%)' to 'translateX(100%)' */
+            .popup {
+                top: 0;
+                right: 0;
+                /* Changed from 'left: 0' to 'right: 0' */
+                width: 30vw;
+                min-width: 380px;
+                height: 100vh;
+                transform: translateX(100%);
+                /* Changed from 'translateX(-100%)' to 'translateX(100%)' */
             }
         }
+
         @media (orientation: portrait) {
-            .popup { bottom: 0; left: 0; width: 100vw; height: 50vh; transform: translateY(100%); }
+            .popup {
+                bottom: 0;
+                left: 0;
+                width: 100vw;
+                height: 50vh;
+                transform: translateY(100%);
+            }
         }
     </style>
 </head>
+
 <body>
 
     <canvas id="glcanvas" width="100vw" height="100vh" tabindex="1"></canvas>
@@ -114,12 +172,13 @@
             <img id="popup-img" src="" alt="Popup Image">
             <h2 id="popup-title"></h2>
             <p id="popup-text"></p>
-            <iframe id="popup-soundcloud" class="soundcloud-player" scrolling="no" frameborder="no" allow="autoplay" style="display: none;"></iframe>
+            <iframe id="popup-soundcloud" class="soundcloud-player" scrolling="no" frameborder="no" allow="autoplay"
+                style="display: none;"></iframe>
         </div>
     </div>
-    
+
     <script type="text/javascript" src="cables/js/patch.js" async></script>
-    
+
     <script type="text/javascript">
         const popup = document.getElementById('popup');
         const popupCloseBtn = document.getElementById('popup-close');
@@ -131,7 +190,7 @@
         let websiteData = null;
         let gCablesPatch = null;
         let isDataSent = false;
-        
+
         const CABLES_VARS_BY_NAME = {
             IN: {
                 POPUP_CLOSED_TRIGGER: 'PopupClosed',
@@ -141,7 +200,7 @@
                 NODE_CLICKED_ID: 'contentSelectedIndex'
             }
         };
-        
+
         function showError(initiator, ...args) {
             console.error("CABLES Error:", initiator, ...args);
         }
@@ -150,33 +209,33 @@
             gCablesPatch = patch;
 
             const nodeClickedVar = gCablesPatch.getVar(CABLES_VARS_BY_NAME.OUT.NODE_CLICKED_ID);
-            if(nodeClickedVar) {
+            if (nodeClickedVar) {
                 nodeClickedVar.on('change', (nodeId) => {
                     if (nodeId !== null && nodeId >= 0) {
                         showPopup(nodeId);
                     }
                 });
             } else {
-                 console.error(`Variable '${CABLES_VARS_BY_NAME.OUT.NODE_CLICKED_ID}' not found in patch.`);
+                console.error(`Variable '${CABLES_VARS_BY_NAME.OUT.NODE_CLICKED_ID}' not found in patch.`);
             }
         }
-        
-        async function patchFinishedLoading(patch) {
-        
-        if (isDataSent) {
-            console.log("Data already sent. Ignoring duplicate call to patchFinishedLoading.");
-            return;
-        }
-        isDataSent = true; // Set the flag immediately
 
-        console.log("Patch is ready. Fetching data...");
+        async function patchFinishedLoading(patch) {
+
+            if (isDataSent) {
+                console.log("Data already sent. Ignoring duplicate call to patchFinishedLoading.");
+                return;
+            }
+            isDataSent = true; // Set the flag immediately
+
+            console.log("Patch is ready. Fetching data...");
             try {
                 const contentResponse = await fetch('data/content.json');
                 websiteData = await contentResponse.json();
 
                 const graphResponse = await fetch('data/graph_data.json');
                 const graphData = await graphResponse.json();
-                
+
                 sendGraphDataToCables(graphData);
             } catch (error) {
                 console.error("Failed to load data files:", error);
@@ -193,22 +252,22 @@
                 "onError": showError,
                 "onPatchLoaded": patchInitialized,
                 "onFinishedLoading": patchFinishedLoading,
-                "canvas": {"alpha": true, "premultipliedAlpha": true }
+                "canvas": { "alpha": true, "premultipliedAlpha": true }
             });
-            
-            CABLES.patch.config.hidePopup = function() {
+
+            CABLES.patch.config.hidePopup = function () {
                 hidePopup(fromCloseButton = false);
             };
         });
 
         document.getElementById('glcanvas').addEventListener('touchmove', (e) => { e.preventDefault(); }, false);
-        
+
         function sendGraphDataToCables(graphData) {
             if (!gCablesPatch) {
                 console.error("Patch not ready to receive data.");
                 return;
             }
-            
+
             for (const key in graphData) {
                 if (Object.hasOwnProperty.call(graphData, key)) {
                     gCablesPatch.setVariable(key, graphData[key]);
@@ -241,8 +300,8 @@
         function hidePopup(fromCloseButton = true) {
             popup.classList.remove('visible');
             popupSoundcloud.src = '';
-            
-            if(gCablesPatch) {
+
+            if (gCablesPatch) {
                 gCablesPatch.config.popupClosed();
             }
         }
@@ -251,4 +310,5 @@
 
     </script>
 </body>
+
 </html>
