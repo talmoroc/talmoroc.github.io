@@ -2,51 +2,81 @@
   "contentNodes": [
     {
       "id": 0,
-      "title": "Boss Fight",
+      "title": "Soundtrack for a nonexistent game",
       "tags": ["Games", "Music"],
-      "description": "",
+      "description": "<i>Work in progress.</i>\nThis is an experimental project as well as a personal challenge to create a full soundtrack for a game that I will never make.",
       "soundcloudUrl": "https://soundcloud.com/user-555813077/boss-fight-2?in=user-555813077/sets/videogame-music",
       "thumbnail": "music.webp"
     },
     {
       "id": 1,
-      "title": "Mahdoton Paluu",
-      "tags": ["Music", "Theater"],
-      "description": "Music made for the theatre festival Soirs à Pressoirs, 2017",
+      "title": "SAP 2017",
+      "tags": ["Music", "Theatre"],
+      "description": "Music made for the diverse plays at the theatre festival <i><a href=\"url\">Soirs à Pressoirs</a></i> for the 2017 edition. It is made of : <ul><li><b>Mahtoton Paluu</b> — dark fantasy with colourful characters</li><li><b>Brûle Harold</b> — industrial and contemporary, twisted drama</li><li><b>La première seconde</b> — where I remixed the great compositions of Tom Helbert</ul>.",
       "soundcloudUrl": "https://soundcloud.com/user-555813077/mahdoton-paluu-akka-the-witch-8",
-      "thumbnail": "mahdoton_paluu.webp"
+      "thumbnail": "brule_harold.webp"
     },
     {
       "id": 2,
-      "title": "Sauna",
-      "tags": ["Music", "Theater"],
-      "description": "Music made for the theatre festival Soirs à Pressoirs, 2018",
-      "soundcloudUrl": "https://soundcloud.com/user-555813077/sauna-end-music-10?in=user-555813077/sets/theatre",
+      "title": "SAP 2018",
+      "tags": ["Music", "Theatre"],
+      "description": "Music made for the diverse plays at the theatre festival <i><a href=\"url\">Soirs à Pressoirs</a></i> for the 2018 edition. It is made of : <ul><li><b>Madame Rose</b> — absurd comedy at a funeral</li><li><b>Georges</b> — comedy about two clumsy thiefs</li><li><b>Sauna</b> — a story of friendships forming inside a sauna</ul>.",
+      "soundcloudUrl": "https://soundcloud.com/user-555813077/mahdoton-paluu-akka-the-witch-8",
       "thumbnail": "sauna.webp"
     },
     {
       "id": 3,
-      "title": "Piano",
-      "tags": ["Music"],
-      "description": "Personal music project. Solo piano improvisations",
-      "soundcloudUrl": "https://soundcloud.com/user-555813077/ludowigo?in=user-555813077/sets/solo-piano",
-      "thumbnail": "georges.webp"
+      "title": "Chimère(s)",
+      "tags": ["Music", "Theatre"],
+      "description": "Music made for the hellenic comedy <i>Chimère(s)</i> by the <i><a href=\"url\">Compagnie des Insupportés</a></i>. It is the story of Bellerophon, trying to defeat the Chimera, a monster with the body of a lion, the head of a goat and the tail of a snake. The music is a mix of electronic and acoustic sounds, inspired by reconstitutions of ancient Greek music.",
+      "soundcloudUrl": "https://soundcloud.com/user-555813077/sauna-end-music-10?in=user-555813077/sets/theatre",
+      "thumbnail": "chimeres.webp"
     },
     {
       "id": 4,
-      "title": "The elements",
-      "tags": ["Games", "Music"],
-      "description": "A set of tracks representing the four elements: earth, air, fire, and water.",
-      "soundcloudUrl": "https://soundcloud.com/user-555813077/the-elements-water-4?in=user-555813077/sets/videogame-music",
-      "thumbnail": "madame_rose.webp"
+      "title": "L'Oiseau bleu",
+      "tags": ["Music", "Theatre"],
+      "description": "Sound effects and music made for the play <i>L'Oiseau bleu</i> by the <i><a href=\"url\">Compagnie des Papesses</a></i>. It is a story of two children, who are looking for the blue bird of happiness. The music is a mix of electronic and acoustic sounds, of real-life and modified sounds, in order to blur the line between reality and fantasy.",
+      "soundcloudUrl": "https://soundcloud.com/user-555813077/ludowigo?in=user-555813077/sets/solo-piano",
+      "thumbnail": "oiseau_bleu.webp"
     },
     {
       "id": 5,
-      "title": "Spaceship Battle Music",
+      "title": "Aliens in the Barn",
+      "tags": ["Games", "Music"],
+      "description": "A set of tracks made for <a href=\"url\">a game</a> in the Dungeon Crawler Game Jam (2025) by CaptainCoder.",
+      "soundcloudUrl": "https://soundcloud.com/user-555813077/the-elements-water-4?in=user-555813077/sets/videogame-music",
+      "thumbnail": "aliens_in_the_barn.webp"
+    },
+    {
+      "id": 6,
+      "title": "Jerry Can",
       "tags": ["Music", "Games"],
-      "description": "Music for a videogame made in the DCJam 2025 by CaptainCoder",
+      "description": "Music for a <a href=\"url\">videogame we made for the GMTK Game Jam (2025)</a>. When triggering a <i>loop</i> in the game, the music transitions from a calm, ambient track to a more intense one, and then back to the ambient track when the loop ends.",
       "soundcloudUrl": "https://soundcloud.com/user-555813077/spaceship-battle-music-3",
-      "thumbnail": "brule_harold.webp"
+      "thumbnail": "jerry_can_cover.webp"
+    },
+    {
+      "id": 7,
+      "title": "Piano compositions",
+      "tags": ["Music"],
+      "description": "A collection of solo piano compositions that I made over the years, with classical and jazz influences. Most of them are based on improvisations.",
+      "soundcloudUrl": "https://soundcloud.com/user-555813077/spaceship-battle-music-3",
+      "thumbnail": "music.webp"
+    },
+    {
+      "id": 8,
+      "title": "Ear Training App",
+      "tags": ["Music", "Machine Learning"],
+      "description": "<i>Work in progress.</i>\nThis is an ongoing project to create an ear training app with Flutter that uses machine learning to adapt to the user's level. It will include dynamic music generation, linked to exercises for identifying intervals, chords and scales. The app will also provide feedback and suggestions for improvement based on the user's performance.\nIf you're interested in this project, feel free to <a href=\"mailto:tom.coral@outlook.com\">contact me</a>!",
+      "thumbnail": "flutter_logo.webp"
+    },
+    {
+      "id": 9,
+      "title": "About me",
+      "tags": ["About"],
+      "description": "I'm Tom Coral, a French musician composer and sound designer, mostly self-taught. I love to work on music for games, theatre and other projects. I also love mathematics, and I studied initially in an engineering school focused on statistics so I am also interested in machine learning and how it can be used to create music. I would also like to work on my development skills !",
+      "thumbnail": "profile_picture_small.webp"
     }
   ]
 }
