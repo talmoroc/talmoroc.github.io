@@ -54,7 +54,7 @@
       "tags": ["Music", "Games"],
       "description": "Music for a <a href=\"https://pscgames.itch.io/jerrycan\">videogame we made for the GMTK Game Jam (2025)</a>. When triggering a <i>loop</i> in the game, the music transitions from a calm, ambient track to a more intense one, and then back to the ambient track when the loop ends.",
       "soundcloudUrl": "https://soundcloud.com/user-555813077/sets/jerry-can-soundtrack",
-      "thumbnail": "jerry_can_cover.webp"
+      "thumbnail": "jerry_can_cover.gif"
     },
     {
       "id": 7,
