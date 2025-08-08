@@ -106,8 +106,7 @@
     <canvas id="glcanvas" width="100vw" height="100vh" tabindex="1"></canvas>
     <div class="top-left-overlay">
         <img src="assets/profile_picture_small.webp" alt="Profile Picture">
-        <p>monotom</p>
-        <p>composer and sound designer for theatre and games</p>
+        <p>monotom - composer and sound designer</p>
     </div>
     <div id="popup" class="popup">
         <button id="popup-close" class="popup-close-btn">×</button>
@@ -148,7 +147,7 @@
         }
 
         function patchInitialized(patch) {
-            gCablesPatch = patch; 
+            gCablesPatch = patch;
 
             const nodeClickedVar = gCablesPatch.getVar(CABLES_VARS_BY_NAME.OUT.NODE_CLICKED_ID);
             if(nodeClickedVar) {
@@ -196,6 +195,10 @@
                 "onFinishedLoading": patchFinishedLoading,
                 "canvas": {"alpha": true, "premultipliedAlpha": true }
             });
+            
+            CABLES.patch.config.hidePopup = function() {
+                hidePopup(fromCloseButton = false);
+            };
         });
 
         document.getElementById('glcanvas').addEventListener('touchmove', (e) => { e.preventDefault(); }, false);
@@ -216,13 +219,12 @@
         }
 
         function showPopup(nodeId) {
-        /*
             if (!websiteData || !websiteData.contentNodes) return;
             const content = websiteData.contentNodes.find(item => item.id === nodeId);
             if (!content) return;
 
             popupTitle.textContent = content.title;
-            popupText.textContent = content.description;
+            popupText.innerHTML = content.description;
             popupImg.src = 'assets/' + content.thumbnail;
 
             if (content.soundcloudUrl) {
@@ -234,14 +236,13 @@
                 popupSoundcloud.src = '';
             }
             popup.classList.add('visible');
-            */
         }
 
         function hidePopup(fromCloseButton = true) {
             popup.classList.remove('visible');
-            //popupSoundcloud.src = '';
+            popupSoundcloud.src = '';
             
-            if(gCablesPatch && fromCloseButton == true) {
+            if(gCablesPatch) {
                 gCablesPatch.config.popupClosed();
             }
         }
