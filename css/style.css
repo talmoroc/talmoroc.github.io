@@ -11,10 +11,16 @@ html {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    font-family: 'Jura', Helvetica, Arial, sans-serif;
+    font-family: 'Space Grotesk', Helvetica, Arial, sans-serif;
     background-color: #111;
 }
+a:link {
+  color: #ff35f2;
+}
 
+a:visited {
+  color: #b041ff;
+}
 #glcanvas {
     display: block;
     position: absolute;
