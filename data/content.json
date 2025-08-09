@@ -3,78 +3,140 @@
     {
       "id": 0,
       "title": "Soundtrack for a nonexistent game",
-      "tags": ["Games", "Music"],
+      "tags": [
+        "Games",
+        "Music"
+      ],
       "description": "<i>Work in progress.</i>\nThis is an experimental project as well as a personal challenge to create a full soundtrack for a game that I will never make.",
-      "soundcloudUrl": "https://soundcloud.com/user-555813077/sets/videogame-music",
+      "soundcloudUrl": [
+        "https://soundcloud.com/user-555813077/the-elements-air-3?in=user-555813077/sets/videogame-music",
+        "https://soundcloud.com/user-555813077/boss-fight-2?in=user-555813077/sets/videogame-music",
+        "https://soundcloud.com/user-555813077/edge-of-the-woods-1?in=user-555813077/sets/videogame-music",
+        "https://soundcloud.com/user-555813077/the-elements-fire-5?in=user-555813077/sets/videogame-music",
+        "https://soundcloud.com/user-555813077/the-elements-water-4?in=user-555813077/sets/videogame-music",
+        "https://soundcloud.com/user-555813077/the-elements-earth-6?in=user-555813077/sets/videogame-music",
+        "https://soundcloud.com/user-555813077/ringtone-7?in=user-555813077/sets/videogame-music"
+      ],
       "thumbnail": "music.webp"
     },
     {
       "id": 1,
       "title": "SAP 2017",
-      "tags": ["Music", "Theatre"],
+      "tags": [
+        "Music",
+        "Theatre"
+      ],
       "description": "Music made for the diverse plays at the theatre festival <i><a href=\"https://compagniedesinsupportes.com/\">Soirs à Pressoirs</a></i> for the 2017 edition. It is made of : <ul><li><b>Mahtoton Paluu</b> — dark fantasy with colourful characters</li><li><b>Brûle Harold</b> — industrial and contemporary, twisted drama</li><li><b>La première seconde</b> — where I remixed the great compositions of Tom Helbert</ul>.",
-      "soundcloudUrl": "https://soundcloud.com/user-555813077/sets/soirs-a-pressoirs-2017",
+      "soundcloudUrl": [
+        "https://soundcloud.com/user-555813077/mahdoton-paluu-akka-the-witch-8?in=user-555813077/sets/soirs-a-pressoirs-2017",
+        "https://soundcloud.com/user-555813077/brule-harold-factory-noise-4?in=user-555813077/sets/soirs-a-pressoirs-2017",
+        "https://soundcloud.com/user-555813077/mahdoton-paluu-kahru-and-kurkis-spirits-9?in=user-555813077/sets/soirs-a-pressoirs-2017"
+      ],
       "thumbnail": "brule_harold.webp"
     },
     {
       "id": 2,
       "title": "SAP 2018",
-      "tags": ["Music", "Theatre"],
+      "tags": [
+        "Music",
+        "Theatre"
+      ],
       "description": "Music made for the diverse plays at the theatre festival <i><a href=\"https://compagniedesinsupportes.com/\">Soirs à Pressoirs</a></i> for the 2018 edition. It is made of : <ul><li><b>Madame Rose</b> — absurd comedy at a funeral</li><li><b>Georges</b> — comedy about two clumsy thiefs</li><li><b>Sauna</b> — a story of friendships forming inside a sauna</ul>.",
-      "soundcloudUrl": "https://soundcloud.com/user-555813077/sets/soirs-a-pressoirs-2018",
+      "soundcloudUrl": [
+        "https://soundcloud.com/user-555813077/georges-masks-7?in=user-555813077/sets/soirs-a-pressoirs-2018",
+        "https://soundcloud.com/user-555813077/sauna-end-music-10?in=user-555813077/sets/soirs-a-pressoirs-2018"
+      ],
       "thumbnail": "sauna.webp"
     },
     {
       "id": 3,
       "title": "Chimère(s)",
-      "tags": ["Music", "Theatre"],
+      "tags": [
+        "Music",
+        "Theatre"
+      ],
       "description": "Music made for the hellenic comedy <i>Chimère(s)</i> by the <i><a href=\"urhttps://compagniedesinsupportes.com/l\">Compagnie des Insupportés</a></i>. It is the story of Bellerophon, trying to defeat the Chimera, a monster with the body of a lion, the head of a goat and the tail of a snake. The music is a mix of electronic and acoustic sounds, inspired by reconstitutions of ancient Greek music.",
-      "soundcloudUrl": "https://soundcloud.com/user-555813077/sets/chimere-s",
+      "soundcloudUrl": [
+        "https://soundcloud.com/user-555813077/chimeres-the-choirs-awakening-5?in=user-555813077/sets/chimere-s",
+        "https://soundcloud.com/user-555813077/chimeres-the-chimera-6?in=user-555813077/sets/chimere-s"
+      ],
       "thumbnail": "chimeres.webp"
     },
     {
       "id": 4,
       "title": "L'Oiseau bleu",
-      "tags": ["Music", "Theatre"],
+      "tags": [
+        "Music",
+        "Theatre"
+      ],
       "description": "Sound effects and music made for the play <i>L'Oiseau bleu</i> by the <i><a href=\"https://www.instagram.com/cielespapesses/?hl=en\">Compagnie des Papesses</a></i>. It is a story of two children, who are looking for the blue bird of happiness. The music is a mix of electronic and acoustic sounds, of real-life and modified sounds, in order to blur the line between reality and fantasy.",
-      "soundcloudUrl": "https://soundcloud.com/user-555813077/sets/loiseau-bleu",
+      "soundcloudUrl": [
+        "https://soundcloud.com/user-555813077/the-night-opening-the-last-door-2?in=user-555813077/sets/loiseau-bleu",
+        "https://soundcloud.com/user-555813077/fx-bird-3?in=user-555813077/sets/loiseau-bleu",
+        "https://soundcloud.com/user-555813077/fx-diamond-1?in=user-555813077/sets/loiseau-bleu"
+      ],
       "thumbnail": "oiseau_bleu.webp"
     },
     {
       "id": 5,
       "title": "Aliens in the Barn",
-      "tags": ["Games", "Music"],
+      "tags": [
+        "Games",
+        "Music"
+      ],
       "description": "A set of tracks made for <a href=\"yannz41.itch.io/aliens-in-the-barn\">a game</a> in the Dungeon Crawler Jam (2025) by CaptainCoder. I collaborated with <a href=\"https://open.spotify.com/artist/76CUcHd0t0XViSm9YBbHBw\">YannZ</a> to provide the whole soundtrack as a free assets pack!",
-      "soundcloudUrl": "https://soundcloud.com/user-555813077/sets/aliens-in-the-barn",
+      "soundcloudUrl": [
+        "https://soundcloud.com/user-555813077/barn-level-music-1?in=user-555813077/sets/aliens-in-the-barn",
+        "https://soundcloud.com/user-555813077/spaceship-battle-music-3?in=user-555813077/sets/aliens-in-the-barn",
+        "https://soundcloud.com/user-555813077/biolab-level-music-2?in=user-555813077/sets/aliens-in-the-barn"
+      ],
       "thumbnail": "aliens_in_the_barn.webp"
     },
     {
       "id": 6,
       "title": "Jerry Can",
-      "tags": ["Music", "Games"],
+      "tags": [
+        "Music",
+        "Games"
+      ],
       "description": "Music for a <a href=\"https://pscgames.itch.io/jerrycan\">videogame we made for the GMTK Game Jam (2025)</a>. When triggering a <i>loop</i> in the game, the music transitions from a calm, ambient track to a more intense one, and then back to the ambient track when the loop ends.",
-      "soundcloudUrl": "https://soundcloud.com/user-555813077/sets/jerry-can-soundtrack",
+      "soundcloudUrl": [
+        "https://soundcloud.com/user-555813077/calm-ambiance-1?in=user-555813077/sets/jerry-can-soundtrack",
+        "https://soundcloud.com/user-555813077/loop-rhythm-2?in=user-555813077/sets/jerry-can-soundtrack"
+      ],
       "thumbnail": "jerry_can_cover.gif"
     },
     {
       "id": 7,
       "title": "Piano compositions",
-      "tags": ["Music"],
+      "tags": [
+        "Music"
+      ],
       "description": "A collection of solo piano compositions that I made over the years, with classical and jazz influences. Most of them are based on improvisations.",
-      "soundcloudUrl": "https://soundcloud.com/user-555813077/sets/solo-piano",
+      "soundcloudUrl": [
+        "https://soundcloud.com/user-555813077/impro-29-01-2020?in=user-555813077/sets/solo-piano",
+        "https://soundcloud.com/user-555813077/ludowigo?in=user-555813077/sets/solo-piano",
+        "https://soundcloud.com/user-555813077/les-plinthes-dune-chambre?in=user-555813077/sets/solo-piano",
+        "https://soundcloud.com/user-555813077/nocturne-en-do-majeur?in=user-555813077/sets/solo-piano"
+      ],
       "thumbnail": "music.webp"
     },
     {
       "id": 8,
       "title": "Ear Training App",
-      "tags": ["Music", "Machine Learning"],
+      "tags": [
+        "Music",
+        "Machine Learning"
+      ],
       "description": "<i>Work in progress.</i>\nThis is an ongoing project to create an ear training app with Flutter that uses machine learning to adapt to the user's level. It will include dynamic music generation, linked to exercises for identifying intervals, chords and scales. The app will also provide feedback and suggestions for improvement based on the user's performance.\nIf you're interested in this project, feel free to <a href=\"mailto:tom.coral@outlook.com\">contact me</a>!",
       "thumbnail": "flutter_logo.webp"
     },
     {
       "id": 9,
       "title": "About me",
-      "tags": ["About"],
+      "tags": [
+        "About"
+      ],
       "description": "I'm Tom Coral, a French musician composer and sound designer, mostly self-taught. I love to work on music for games, theatre and other projects. I also love mathematics, and I studied initially in an engineering school focused on statistics so I am also interested in machine learning and how it can be used to create music. I would also like to work on my development skills !",
       "thumbnail": "profile_picture_small.webp"
     }

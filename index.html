@@ -33,8 +33,7 @@
             <img id="popup-img" src="" alt="Popup Image">
             <h2 id="popup-title"></h2>
             <p id="popup-text"></p>
-            <iframe id="popup-soundcloud" class="soundcloud-player" scrolling="no" frameborder="no" allow="autoplay"
-                style="display: none;"></iframe>
+            <div id="popup-soundcloud-array" style="display: none;"></div>
         </div>
     </div>
 
@@ -49,7 +48,7 @@
         const popupTitle = document.getElementById('popup-title');
         const popupText = document.getElementById('popup-text');
         const popupImg = document.getElementById('popup-img');
-        const popupSoundcloud = document.getElementById('popup-soundcloud');
+        const popupSoundcloudArray = document.getElementById('popup-soundcloud-array');
 
         let websiteData = null;
         let gCablesPatch = null;
@@ -149,22 +148,31 @@
             popupTitle.textContent = content.title;
             popupText.innerHTML = content.description;
             popupImg.src = 'assets/' + content.thumbnail;
+            popupSoundcloudArray.innerHTML = '';
 
-            if (content.soundcloudUrl) {
-                const embedUrl = `https://w.soundcloud.com/player/?url=${content.soundcloudUrl}&color=%23000000&auto_play=true&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=false`;
-                popupSoundcloud.src = embedUrl;
-                popupSoundcloud.style.display = 'block';
+            if (content.soundcloudUrl && Array.isArray(content.soundcloudUrl)) {
+                popupSoundcloudArray.style.display = 'block';
+                for (const url of content.soundcloudUrl) {
+                    //<iframe class="soundcloud-player" scrolling="no" frameborder="no" allow="autoplay" style="display: none;"></iframe>
+                    nextSoundcloudWidget = document.createElement('iframe');
+                    nextSoundcloudWidget.className = 'soundcloud-player';
+                    nextSoundcloudWidget.scrolling = 'no';
+                    nextSoundcloudWidget.frameBorder = 'no';
+                    nextSoundcloudWidget.allow = 'autoplay';
+                    const embedUrl = `https://w.soundcloud.com/player/?url=${url}&color=%23000000&auto_play=true&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=false`;
+                    nextSoundcloudWidget.src = embedUrl;
+                    popupSoundcloudArray.appendChild(nextSoundcloudWidget);
+                }
             } else {
-                popupSoundcloud.style.display = 'none';
-                popupSoundcloud.src = '';
+                popupSoundcloudArray.style.display = 'none';
             }
             popup.classList.add('visible');
         }
 
         function hidePopup(fromCloseButton = true) {
             popup.classList.remove('visible');
-            popupSoundcloud.src = '';
-
+            popupSoundcloudArray.innerHTML = '';
+            popupSoundcloudArray.style.display = 'none';
             if (gCablesPatch) {
                 gCablesPatch.config.popupClosed();
             }
