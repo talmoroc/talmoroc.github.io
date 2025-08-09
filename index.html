@@ -159,9 +159,9 @@
                     nextSoundcloudWidget.className = 'soundcloud-player';
                     nextSoundcloudWidget.scrolling = 'no';
                     nextSoundcloudWidget.frameBorder = 'no';
+                    nextSoundcloudWidget.allow = 'autoplay';
                     let embedUrl = `https://w.soundcloud.com/player/?url=${url}&color=%23000000&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=false`;
                     if (firstPlayer) {
-                        nextSoundcloudWidget.allow = 'autoplay';
                         embedUrl = `https://w.soundcloud.com/player/?url=${url}&color=%23000000&auto_play=true&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=false`;
                         firstPlayer = false;
                     }
