@@ -150,7 +150,7 @@
 
         function showPopup(nodeId) {
             if (!websiteData || !websiteData.contentNodes) return;
-            const content = websiteData.contentNodes.find(item => item.id === nodeId);
+            const content = websiteData.contentNodes[nodeId];
             if (!content) return;
 
             popupTitle.textContent = content.title;
