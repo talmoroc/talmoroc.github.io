@@ -49,16 +49,16 @@ a:visited {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #111;
+    background: #000;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
+    z-index: 5;
     transition: opacity 0.5s ease;
 }
 
 .spinner {
-    border: 5px solid rgba(255, 255, 255, 0.2);
+    border: 5px solid rgba(100, 100, 255, 0.8);
     border-top: 5px solid #fff;
     border-radius: 50%;
     width: 50px;
