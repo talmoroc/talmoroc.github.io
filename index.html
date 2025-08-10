@@ -22,23 +22,28 @@
         <div class="spinner"></div>
     </div>
 
-    <canvas id="glcanvas" width="100vw" height="100vh" tabindex="1"></canvas>
-    <div class="top-left-overlay">
-        <img src="assets/profile_picture_small.webp" alt="Profile Picture">
-        <p>monotom - composer and sound designer</p>
-    </div>
-    <div id="popup" class="popup">
-        <div class="popup-header">
-            <h2 id="popup-title"></h2>
-            <button id="popup-close" class="popup-close-btn">×</button>
+    <header class="site-header">
+        <img src="assets/profile_picture_small.webp" alt="profile picture" class="profile-picture">
+        <img src="assets/monotom_logo_white_transp_bg.webp" alt="monotom logo" class="logo">
+        <p class="paragraph-description">composer and sound&nbsp;designer</p>
+    </header>
+
+
+    <main class="main-content">
+        <canvas id="glcanvas" width="100vw" height="100vh" tabindex="1" class=></canvas>
+        <div id="popup" class="popup">
+            <div class="popup-header">
+                <h2 id="popup-title"></h2>
+                <button id="popup-close" class="popup-close-btn">×</button>
+            </div>
+            <div class="popup-content">
+                <img id="popup-img" src="" alt="Popup Image">
+                <p id="popup-text"></p>
+                <div id="popup-soundcloud-array"></div>
+            </div>
         </div>
-        <div class="popup-content">
-            <img id="popup-img" src="" alt="Popup Image">
-            <p id="popup-text"></p>
-            <div id="popup-soundcloud-array"></div>
-        </div>
-    </div>
-    
+    </main>
+
     <script type="text/javascript" src="cables/js/patch.js" async></script>
 
     <script type="text/javascript">
@@ -115,6 +120,7 @@
                 "assetPath": "assets/",
                 "glCanvasId": "glcanvas",
                 "glCanvasResizeToWindow": true,
+                "glCanvasResizeToParent": true,
                 "onError": showError,
                 "onPatchLoaded": patchInitialized,
                 "onFinishedLoading": patchFinishedLoading,
