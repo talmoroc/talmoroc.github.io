@@ -87,26 +87,27 @@ a:visited {
     opacity: 0;
     pointer-events: none;
 }
-
+/* Make the header a flex container to align its main items */
 .site-header {
     display: flex;
-    align-items: center;
-    gap: 10px;
-    background: #000;
-    color: rgb(187, 187, 187);
-    padding: 15px 25px;
-    flex-shrink: 1;
-    height: 50px;
-    box-sizing: border-box;
-    z-index: 10;
-    cursor: crosshair;
-    pointer-events: none;
+    background-image:url('../assets/bg2.png');
+    background-size: cover;
+    background-color: black;
+    align-items: center; /* This vertically aligns the logo, picture, and the right-side content */
+    padding: 10px 20px; /* Optional: adds some spacing around the header */
+}
+
+/* New class for the right-side content wrapper */
+.header-right-content {
+    margin-left: auto; /* This is the key change: it pushes the entire div to the right */
+    text-align: right; /* Ensures text inside is right-aligned */
 }
 
 .site-header .profile-picture {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    margin-right: 15px; /* Add space between the picture and logo */
 }
 
 .site-header .logo {
@@ -115,11 +116,31 @@ a:visited {
 }
 
 .site-header .paragraph-description {
-    margin: 0;
-    font-size: 14px;
+    margin: 0 0 8px 0; /* Adds a little space below the description */
+    font-size: 18px;
     color: #ccc;
-    margin-left:auto;
-    text-align: right;
+    /* Removed margin-left: auto and text-align since the parent handles it now */
+}
+
+.site-header .paragraph-socials {
+    margin: 0;
+    font-size: 20px;
+    color: #ccc;
+}
+
+.svg-logo {
+  max-height: 20px;
+  width: auto;
+  fill: white;
+}
+
+svg:hover path {
+  fill: blueviolet;
+  transition: all ease 0.3s;
+}
+
+svg path {
+  transition: all ease 0.3s;
 }
 
 .popup {
